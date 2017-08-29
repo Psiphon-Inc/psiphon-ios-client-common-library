@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Timeouts</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>disableTimeouts</string>
+			<key>Title</key>
+			<string>Disable Timeouts</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Proxy</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>useUpstreamProxy</string>
+			<key>Title</key>
+			<string>Use upstream proxy</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyHostAddress</string>
+			<key>Title</key>
+			<string>Host address</string>
+			<key>Type</key>
+			<string>IASKCustomViewSpecifier</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>KeyboardType</key>
+			<string>URL</string>
+			<key>IASKPlaceholder</key>
+			<string>example.com</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Port</string>
+			<key>Key</key>
+			<string>upstreamProxyPort</string>
+			<key>Type</key>
+			<string>IASKCustomViewSpecifier</string>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IASKPlaceholder</key>
+			<string>12345</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>useProxyAuthentication</string>
+			<key>Title</key>
+			<string>Use proxy authentication</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>proxyUsername</string>
+			<key>Title</key>
+			<string>Proxy username</string>
+			<key>Type</key>
+			<string>IASKCustomViewSpecifier</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IASKPlaceholder</key>
+			<string>username</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>IASKCustomViewSpecifier</string>
+			<key>IsSecure</key>
+			<true/>
+			<key>Title</key>
+			<string>Proxy password</string>
+			<key>Key</key>
+			<string>proxyPassword</string>
+			<key>IASKPlaceholder</key>
+			<string>password</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>proxyDomain</string>
+			<key>Title</key>
+			<string>Proxy domain</string>
+			<key>Type</key>
+			<string>IASKCustomViewSpecifier</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IASKPlaceholder</key>
+			<string>example.com</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>LOGS</string>
+			<key>Type</key>
+			<string>IASKCustomViewSpecifier</string>
+			<key>Key</key>
+			<string>logs</string>
+		</dict>
+	</array>
+</dict>
+</plist>

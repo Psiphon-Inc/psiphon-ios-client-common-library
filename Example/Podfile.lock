@@ -1,0 +1,19 @@
+PODS:
+  - InAppSettingsKit (2.8.1)
+  - PsiphonClientCommonLibrary (0.1.2):
+    - InAppSettingsKit
+
+DEPENDENCIES:
+  - PsiphonClientCommonLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  PsiphonClientCommonLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  InAppSettingsKit: 94d2fba3ccd700fc4e32c6d09fabcc0af2426744
+  PsiphonClientCommonLibrary: bbe6b57781f645dbfded7d697898a14f41837942
+
+PODFILE CHECKSUM: 8bd265fc764d97925610cc647765addea0577cd9
+
+COCOAPODS: 1.2.1
