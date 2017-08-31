@@ -68,6 +68,19 @@
 	return self;
 }
 
+- (id)init:(NSString*)msg {
+	self = [super init];
+
+	if (self) {
+		DiagnosticEntry *result = [[DiagnosticEntry alloc] init:msg nameValuePairs:@[@"msg", msg]];
+		_timestamp = result.timestamp;
+		_message = result.message;
+		_data = result.data;
+	}
+
+	return self;
+}
+
 - (id)init:(NSString*)msg andTimestamp:(NSString*)timestamp {
 	self = [super init];
 
