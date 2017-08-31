@@ -59,6 +59,7 @@ typedef NS_ENUM(NSInteger, PriorityLevel) {
 @end
 
 @interface DiagnosticEntry : NSObject
+- (id)init:(NSString*)msg;
 - (id)init:(NSString*)msg andTimestamp:(NSString*)timestamp;
 - (NSString*)getTimestampForDisplay;
 - (NSString*)getTimestampISO8601;
