@@ -30,7 +30,7 @@ A shared library that encapsulates common client code used across different Psip
 
   s.source_files = 'PsiphonClientCommonLibrary/Classes/**/*'
   s.resource_bundles = {
-     'PsiphonClientCommonLibrary' => ['Resources/*.xcassets'],
+     'PsiphonClientCommonLibrary' => ['PsiphonClientCommonLibrary/Resources/*.xcassets'],
   }
 
   s.public_header_files = 'PsiphonClientCommonLibrary/Classes/**/*.h'
