@@ -81,20 +81,13 @@
 	return self;
 }
 
-- (id)init:(NSString*)msg andTimestamp:(NSString*)timestamp {
+- (id)init:(NSString*)msg andTimestamp:(NSDate*)timestamp {
 	self = [super init];
 
 	if (self) {
 		DiagnosticEntry *result = [[DiagnosticEntry alloc] init:msg nameValuePairs:@[@"msg", msg]];
 
-		// TODO: is conversion necessary? Or can we just use the string.
-		NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
-		[formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-		formatter.timeZone = [NSTimeZone timeZoneWithName:@"UTC"];
-		formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
-		NSDate *dateString = [formatter dateFromString:timestamp];
-
-		_timestamp = dateString;
+		_timestamp = timestamp;
 		_message = result.message;
 		_data = result.data;
 	}
