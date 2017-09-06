@@ -25,6 +25,7 @@ typedef void (^SendFeedbackHandler)(NSString *jsonString, NSString *pubKey, NSSt
 @interface FeedbackUpload : NSObject
 + (NSString*)generateFeedbackId;
 + (void)generateAndSendFeedback:(NSInteger)thumbIndex
+					  buildInfo:(NSString*)buildInfo
 					   comments:(NSString*)comments
 						  email:(NSString*)email
 			 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo

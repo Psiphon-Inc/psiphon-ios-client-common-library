@@ -51,6 +51,7 @@
 // https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/Android/app/src/main/java/com/psiphon3/psiphonlibrary/Diagnostics.java
 // TODO: will fail silently on any errors
 + (void)generateAndSendFeedback:(NSInteger)thumbIndex
+					  buildInfo:(NSString*)buildInfo
 					   comments:(NSString*)comments
 						  email:(NSString*)email
 			 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
@@ -151,7 +152,8 @@
 												 @"isAppStoreBuild": @YES,
 												 @"isJailbroken": isJailbroken ? @YES : @NO,
 												 @"language": safeNullable([[NSUserDefaults standardUserDefaults] objectForKey:appLanguage]),
-												 @"networkTypeName": safeNullable(connectionType)
+												 @"networkTypeName": safeNullable(connectionType),
+												 @"buildInfo": safeNullable(buildInfo)
 												 }
 										 };
 		[feedbackBlob setObject:diagnosticInfo forKey:@"DiagnosticInfo"];
