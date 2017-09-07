@@ -17,7 +17,6 @@
  *
  */
 
-
 #import <Foundation/Foundation.h>
 
 typedef void (^SendFeedbackHandler)(NSString *jsonString, NSString *pubKey, NSString *uploadServer, NSString *uploadServerHeaders);
@@ -30,6 +29,7 @@ typedef void (^SendFeedbackHandler)(NSString *jsonString, NSString *pubKey, NSSt
 						  email:(NSString*)email
 			 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
 			  withPsiphonConfig:(NSString*)psiphonConfig
+			 withClientPlatform:(NSString*)clientPlatform
 			 withConnectionType:(NSString*)connectionType
 				   isJailbroken:(BOOL)isJailbroken
 			sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler;

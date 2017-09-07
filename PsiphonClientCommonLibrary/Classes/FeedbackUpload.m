@@ -56,6 +56,7 @@
 						  email:(NSString*)email
 			 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
 			  withPsiphonConfig:(NSString*)psiphonConfig
+			 withClientPlatform:(NSString*)clientPlatform
 			 withConnectionType:(NSString*)connectionType
 				   isJailbroken:(BOOL)isJailbroken
 			sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
@@ -166,7 +167,7 @@
 
 	NSDictionary *metadata = @{
 							   @"id": rndmHexId,
-							   @"platform": @"ios",
+							   @"platform": safeNullable(clientPlatform),
 							   @"version": @1
 							   };
 	[feedbackBlob setObject:metadata forKey:@"Metadata"];
