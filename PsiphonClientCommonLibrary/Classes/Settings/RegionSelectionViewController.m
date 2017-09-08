@@ -41,9 +41,43 @@
 
 	self.table.tableHeaderView = nil;
 	self.table.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-	self.table.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin;
 
 	[self.view addSubview:self.table];
+
+	// Setup autolayout
+	self.table.translatesAutoresizingMaskIntoConstraints = NO;
+
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.table
+														  attribute:NSLayoutAttributeTop
+														  relatedBy:NSLayoutRelationEqual
+															 toItem:self.topLayoutGuide
+														  attribute:NSLayoutAttributeTop
+														 multiplier:1.0
+														   constant:0]];
+
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.table
+														  attribute:NSLayoutAttributeBottom
+														  relatedBy:NSLayoutRelationEqual
+															 toItem:self.view
+														  attribute:NSLayoutAttributeBottom
+														 multiplier:1.0
+														   constant:0]];
+
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.table
+														  attribute:NSLayoutAttributeLeft
+														  relatedBy:NSLayoutRelationEqual
+															 toItem:self.view
+														  attribute:NSLayoutAttributeLeft
+														 multiplier:1.0
+														   constant:0]];
+
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.table
+														  attribute:NSLayoutAttributeRight
+														  relatedBy:NSLayoutRelationEqual
+															 toItem:self.view
+														  attribute:NSLayoutAttributeRight
+														 multiplier:1.0
+														   constant:0]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
