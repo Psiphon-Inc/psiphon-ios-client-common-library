@@ -19,6 +19,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 typedef void (^SendFeedbackHandler)(NSString *jsonString, NSString *pubKey, NSString *uploadServer, NSString *uploadServerHeaders);
 
 @interface FeedbackUpload : NSObject

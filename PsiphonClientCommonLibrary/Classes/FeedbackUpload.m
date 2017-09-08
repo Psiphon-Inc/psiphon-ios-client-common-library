@@ -96,7 +96,7 @@
 	if (sendDiagnosticInfo == YES) {
 		NSMutableArray *diagnosticHistoryArray = [[NSMutableArray alloc] init];
 
-		for (DiagnosticEntry *d in [[PsiphonData sharedInstance] diagnosticHistory]) {
+		for (DiagnosticEntry *d in [[[PsiphonData sharedInstance] diagnosticHistory] copy]) {
 			NSDictionary *entry = @{
 									@"data": [d data],
 									@"msg": [d message],
