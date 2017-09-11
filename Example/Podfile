@@ -1,11 +1,14 @@
 use_frameworks!
 
 target 'PsiphonClientCommonLibrary_Example' do
+  pod "InAppSettingsKit", :git => "https://github.com/Psiphon-Inc/InAppSettingsKit.git"
+  #pod "InAppSettingsKit", :path => "../../InAppSettingsKit"
+
   pod 'PsiphonClientCommonLibrary', :path => '../'
 
   target 'PsiphonClientCommonLibrary_Tests' do
     inherit! :search_paths
 
-    
+
   end
 end

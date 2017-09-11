@@ -7,12 +7,16 @@
 		<dict>
 			<key>Title</key>
 			<string>Psiphon</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
 		<dict>
 			<key>Title</key>
 			<string>Change Region</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Key</key>
 			<string>regionSelection</string>
 			<key>Type</key>
@@ -23,6 +27,8 @@
 		<dict>
 			<key>Title</key>
 			<string>Language</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Key</key>
 			<string>appLanguage</string>
 			<key>Type</key>
@@ -81,12 +87,16 @@
 			<string>PsiphonSettings</string>
 			<key>Title</key>
 			<string>Psiphon Settings</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
 		<dict>
 			<key>Title</key>
 			<string>Help</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -95,12 +105,16 @@
 			<string>ConnectionHelp</string>
 			<key>Title</key>
 			<string>My connection is bad, help!</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
 		<dict>
 			<key>Title</key>
 			<string>Feedback</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>File</key>
 			<string>Feedback</string>
 			<key>Key</key>
@@ -111,6 +125,8 @@
 		<dict>
 			<key>Title</key>
 			<string>FAQ</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>IASKCustomViewSpecifier</string>
 			<key>Key</key>
@@ -119,6 +135,8 @@
 		<dict>
 			<key>Title</key>
 			<string>Privacy Policy</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>IASKCustomViewSpecifier</string>
 			<key>Key</key>
@@ -127,6 +145,8 @@
 		<dict>
 			<key>Title</key>
 			<string>Terms of Use</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>IASKCustomViewSpecifier</string>
 			<key>Key</key>
@@ -135,6 +155,8 @@
 		<dict>
 			<key>Title</key>
 			<string>About</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>IASKCustomViewSpecifier</string>
 			<key>Key</key>

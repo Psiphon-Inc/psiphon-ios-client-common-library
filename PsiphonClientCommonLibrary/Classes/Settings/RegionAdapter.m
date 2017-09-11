@@ -18,6 +18,7 @@
  */
 
 #import "RegionAdapter.h"
+#import "PsiphonClientCommonLibraryHelpers.h"
 
 
 @implementation Region
@@ -94,29 +95,29 @@
 
 + (NSDictionary*)getLocalizedRegionTitles {
 	return @{
-			 kPsiphonRegionBestPerformance: NSLocalizedString(@"Best Performance",@"The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short."),
-			 @"AT": NSLocalizedString(@"Austria", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"BE": NSLocalizedString(@"Belgium", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"BG": NSLocalizedString(@"Bulgaria", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"CA": NSLocalizedString(@"Canada", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"CH": NSLocalizedString(@"Switzerland", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"CZ": NSLocalizedString(@"Czech Republic", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"DE": NSLocalizedString(@"Germany",@"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"DK": NSLocalizedString(@"Denmark",@"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"ES": NSLocalizedString(@"Spain", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"FR": NSLocalizedString(@"France", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"GB": NSLocalizedString(@"United Kingdom", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"HK": NSLocalizedString(@"Hong Kong", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"HU": NSLocalizedString(@"Hungary", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"IN": NSLocalizedString(@"India", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"IT": NSLocalizedString(@"Italy", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"JP": NSLocalizedString(@"Japan", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"NL": NSLocalizedString(@"Netherlands", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"NO": NSLocalizedString(@"Norway", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"RO": NSLocalizedString(@"Romania", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"SE": NSLocalizedString(@"Sweden", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"SG": NSLocalizedString(@"Singapore", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"US": NSLocalizedString(@"United States", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country.")
+			 kPsiphonRegionBestPerformance: NSLocalizedStringWithDefaultValue(@"SERVER_REGION_BEST", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Best Performance",@"The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short."),
+			 @"AT": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_AT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Austria", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"BE": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_BE", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Belgium", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"BG": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_BG", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Bulgaria", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"CA": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_CA", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Canada", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"CH": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_CH", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Switzerland", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"CZ": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_CZ", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Czech Republic", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"DE": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_DE", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Germany",@"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"DK": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_DK", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Denmark",@"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"ES": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_ES", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Spain", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"FR": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_FR", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"France", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"GB": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_GB", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"United Kingdom", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"HK": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_HK", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Hong Kong", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"HU": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_HU", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Hungary", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"IN": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_IN", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"India", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"IT": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_IT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Italy", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"JP": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_JP", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Japan", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"NL": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_NL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Netherlands", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"NO": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_NO", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Norway", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"RO": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_RO", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Romania", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"SE": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_SE", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Sweden", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"SG": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_SG", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Singapore", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+			 @"US": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_US", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"United States", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country.")
 			 };
 }
 
