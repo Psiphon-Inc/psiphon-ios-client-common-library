@@ -18,7 +18,9 @@
 
 set -e
 
-STRINGS_DIR="PsiphonClientCommonLibrary/Resources/Strings/en.lproj"
+cd ../PsiphonClientCommonLibrary
+
+STRINGS_DIR="Resources/Strings/en.lproj"
 TEMP_DIR="${STRINGS_DIR}.temp"
 
 mkdir -p "${STRINGS_DIR}"
@@ -39,3 +41,5 @@ find ${TEMP_DIR} -name "*.strings"|while read fname; do
 done
 
 rm -rf ${TEMP_DIR}
+
+cd -
