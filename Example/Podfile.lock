@@ -1,5 +1,5 @@
 PODS:
-  - InAppSettingsKit (2.8.1)
+  - InAppSettingsKit (2.9.0)
   - PsiphonClientCommonLibrary (0.2.1):
     - InAppSettingsKit
 
@@ -15,11 +15,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   InAppSettingsKit:
-    :commit: 8044962429f4f58bf8907785ed75fa7239b1018e
+    :commit: b1660601c73539b0fddc10c7cd3703849ccc8667
     :git: https://github.com/Psiphon-Inc/InAppSettingsKit.git
 
 SPEC CHECKSUMS:
-  InAppSettingsKit: 94d2fba3ccd700fc4e32c6d09fabcc0af2426744
+  InAppSettingsKit: 0cdc3bc63b738f470638d5fed40db4f0a37f2327
   PsiphonClientCommonLibrary: ee25786a286c25984af7a6ecf7730a342e8bf880
 
 PODFILE CHECKSUM: 2ed09f3d0142decab2334d9df669d3102b4bf7b1
