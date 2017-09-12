@@ -229,7 +229,7 @@ BOOL linksEnabled;
 		[self loadUrlForSpecifier:specifier.key];
 	} else if ([specifier.key isEqualToString:kLogsSpecifierKey]) {
 		LogViewController *vc = [[LogViewController alloc] init];
-		vc.title = NSLocalizedString(@"Logs", @"Title screen displaying logs");
+		vc.title = NSLocalizedStringWithDefaultValue(@"LOGS_TITLE", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Logs", @"Title of screen that displays logs");
 		[self.navigationController pushViewController:vc animated:YES];
 	} else if ([specifier.key isEqualToString:kRegionSelectionSpecifierKey]) {
 		RegionSelectionViewController *targetViewController = [[RegionSelectionViewController alloc] init];
@@ -248,13 +248,13 @@ BOOL linksEnabled;
 {
 	NSString *url;
 	if ([key isEqualToString:kAboutSpecifierKey]) { // make this a hashmap
-		url = NSLocalizedString(@"https://psiphon.ca/en/about.html", @"External link to the about page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/about.html for french.");
+		url = NSLocalizedStringWithDefaultValue(@"ABOUT_PAGE_URL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"https://psiphon.ca/en/about.html", @"External link to the about page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/about.html for french.");
 	} else if ([key isEqualToString:kFAQSpecifierKey]) {
-		url = NSLocalizedString(@"https://psiphon.ca/en/faq.html", @"External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french.");
+		url = NSLocalizedStringWithDefaultValue(@"FAQ_URL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"https://psiphon.ca/en/faq.html", @"External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french.");
 	} else if ([key isEqualToString:kPrivacyPolicySpecifierKey]) {
-		url = NSLocalizedString(@"https://psiphon.ca/en/privacy.html", @"External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french.");
+		url = NSLocalizedStringWithDefaultValue(@"PRIVACY_POLICY_URL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"https://psiphon.ca/en/privacy.html", @"External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french.");
 	} else if ([key isEqualToString:kTermsOfUseSpecifierKey]) {
-		url = NSLocalizedString(@"https://psiphon.ca/en/license.html", @"External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french.");
+		url = NSLocalizedStringWithDefaultValue(@"LICENSE_PAGE_URL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"https://psiphon.ca/en/license.html", @"External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french.");
 	}
 
 	[self userPressedURL:[NSURL URLWithString:url]];

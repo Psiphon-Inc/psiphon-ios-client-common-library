@@ -1,0 +1,66 @@
+/* Settings item to change the application UI language. */
+"Language" = "زبان";
+/* Item in a list of languages. Sets the application UI language to the one used by the system. */
+"Default language" = "زبان پیش‌فرض";
+/* Settings item text. Leads to info about Psiphon Inc. */
+"About" = "درباره‌ی OONI";
+/* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
+"Change Region" = "تغییر کشور";
+/* Settings item text. Leads to a frequently asked questions page. */
+"FAQ" = "سوالات متداول";
+/* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
+"Help" = "راهنمایی";
+/* Settings item text. Leads to a web page with the Psiphon privacy policy. */
+"Privacy Policy" = "حریم خصوصی";
+/* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
+"Psiphon Settings" = "تنظیمات سایفون";
+/* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
+"Feedback" = "بازخوردها";
+/* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
+"Terms of Use" = "شرایط استفاده ";
+/* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
+"Disable Timeouts" = "از کار انداختن تایم‌اوت";
+/* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
+"Proxy" = "پروکسی";
+/* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
+"Timeouts" = "Timeouts";
+/* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
+"Use upstream proxy" = "استفاده از پروکسی بالادست";
+/* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
+"Host address" = "نشانی میزبان";
+/* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
+"Port" = "پورت ";
+/* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
+"Use proxy authentication" = " استفاده از پروکسی احراز هویت";
+/* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
+"username" = "نام کاربری";
+/* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
+"password" = "رمز عبور";
+/* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
+"example.com" = "example.com";
+/* Settings item text for upstream proxy authentication username. Text should be kept short. */
+"Proxy username" = "نام کاربری پروکسی";
+/* Settings item text for upstream proxy authentication password. Text should be kept short. */
+"Proxy password" = "رمز عبور پروکسی";
+/* Settings item text for upstream proxy authentication domain. Text should be kept short. */
+"Proxy domain" = "دامنه‌ی پروکسی";
+/* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
+"Your Comments" = "نظرهای شما";
+/* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
+"Your Email Address" = "آدرس ایمیل شما";
+/* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
+"Where can we respond to you?" = "کجا می‌توانیم به شما پاسخ بدهیم؟";
+/* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
+"Diagnostic Data" = "داده‌های تشخیصی";
+/* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
+"Upload diagnostic data" = "آپلود داده‌های تشخیصی";
+/* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
+"My connection is bad, help!" = "اتصال به‌خوبی برقرار نیست، به کمک نیاز دارم! ";
+/* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
+"Changing your region to Best Performance increases your chances of getting connected." = "تغییر منطقه‌ی سرور به بهترین عملکرد احتمال برقراری اتصال را بالا می‌برد.";
+/* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
+"Disabling timeouts may help you stay connected on slower networks." = "غیرفعال کردن تایم‌اوت شاید به برقراری اتصال در شبکه‌‌های ضعیف‌تر کمک کند.";
+/* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
+"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "اتصال دوباره به سرور سایفون شاید مشکل کندی و کارکرد نامناسب اتصال را رفع کند.";
+/* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
+"Reconnect to the Psiphon server" = "اتصال دوباره به سرور سایفون";

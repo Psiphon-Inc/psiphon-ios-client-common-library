@@ -34,7 +34,7 @@
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSString* language = [userDefaults objectForKey:appLanguage];
 	if([[language stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""]) {
-		language = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];;
+		language = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
 	}
 
 	if (language == nil) {
@@ -60,7 +60,7 @@
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSString* language = [userDefaults objectForKey:appLanguage];
 	if([[language stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""]) {
-		language = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];;
+		language = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
 	}
 
 	if (language == nil) {

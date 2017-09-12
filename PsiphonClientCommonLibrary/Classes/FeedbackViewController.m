@@ -22,6 +22,7 @@
 #import "FeedbackViewController.h"
 #import "IASKSettingsReader.h"
 #import "IASKTextViewCell.h"
+#import "PsiphonClientCommonLibraryHelpers.h"
 
 #define kCommentsFrameHeight 44*3
 
@@ -54,11 +55,11 @@
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
 	// Add send and cancel buttons
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Send", "Text of button to send feedback")
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringWithDefaultValue(@"FEEDBACK_SEND_BUTTON", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Send", "Text of button to send feedback")
 																			  style:UIBarButtonItemStyleDone
 																			 target:self
 																			 action:@selector(sendFeedback:)];
-	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Cancel", "Text of button to discard feedback and return to main settings menu")
+	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringWithDefaultValue(@"CANCEL_ACTION", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Cancel", "Cancel action")
 																			 style:UIBarButtonItemStyleDone
 																			target:self
 																			action:@selector(dismiss:)];
@@ -73,7 +74,7 @@
 
 	// Comments textView
 	_greyPlaceholderColor = [[UIColor alloc] initWithRed:199.0/255 green:199.0/255 blue:205.0/255 alpha:1];
-	_commentsPlaceholder = NSLocalizedString(@"What's on your mind? Please leave us your feedback", @"Comments section placeholder text");
+	_commentsPlaceholder = NSLocalizedStringWithDefaultValue(@"FEEDBACK_COMMENTS_PLACEHOLDER", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"What's on your mind? Please leave us your feedback", @"Comments section placeholder text");
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -210,9 +211,9 @@
 }
 
 -(NSAttributedString*)generateIntroString {
-	NSString *faqPhrase = NSLocalizedString(@"Frequently Asked Questions", @"FAQ link text");
-	NSString *introTextPart1 = [NSLocalizedString(@"Your feedback makes Psiphon better!", "Introduction text at top of feedback form") stringByAppendingString:@"\n\n"];
-	NSString *introTextPart2 = NSLocalizedString(@"You can find solutions to many common problems in our %@.", "Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed.");
+	NSString *faqPhrase = NSLocalizedStringWithDefaultValue(@"FAQ_LINK_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Frequently Asked Questions", @"FAQ link text");
+	NSString *introTextPart1 = [NSLocalizedStringWithDefaultValue(@"FEEDBACK_INTRODUCTION", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Your feedback makes Psiphon better!", "Introduction text at top of feedback form") stringByAppendingString:@"\n\n"];
+	NSString *introTextPart2 = NSLocalizedStringWithDefaultValue(@"FEEDBACK_FAQ_DIRECTION", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"You can find solutions to many common problems in our %@.", "Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed.");
 
 	NSString *faqText = [NSString stringWithFormat:introTextPart2, faqPhrase];
 	NSString *localizedIntroText = [introTextPart1 stringByAppendingString:faqText];
@@ -221,7 +222,7 @@
 	NSMutableAttributedString *intro = [[NSMutableAttributedString alloc] initWithString:localizedIntroText];
 	if (range.location != NSNotFound) {
 		[intro addAttribute:NSLinkAttributeName
-					  value:[[NSURL alloc] initWithString:NSLocalizedString(@"https://psiphon.ca/en/faq.html", @"External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french.")]
+					  value:[[NSURL alloc] initWithString:NSLocalizedStringWithDefaultValue(@"FAQ_URL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"https://psiphon.ca/en/faq.html", @"External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french.")]
 					  range: range];
 	}
 	[intro addAttribute:NSFontAttributeName
@@ -233,12 +234,12 @@
 
 
 - (NSAttributedString*)generateFooterString {
-	NSString *privacyPolicyPhrase = NSLocalizedString(@"Privacy Policy", "Privacy Policy link text");
+	NSString *privacyPolicyPhrase = NSLocalizedStringWithDefaultValue(@"PRIVACY_POLICY_LINK_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Privacy Policy", "Privacy Policy link text");
 	NSString *feedbackEmail = @"feedback.ios@psiphon.ca";
 
-	NSString *localizedTextPart1 = [NSLocalizedString(@"Please note that this diagnostic data does not identify you, and it helps us keep Psiphon running smoothly.", @"Feedback footer text.") stringByAppendingString:@"\n\n"];
-	NSString *footerTextPart2 = [NSLocalizedString(@"Learn more about the data we collect in our %@", @"Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed.") stringByAppendingString:@"\n\n"];
-	NSString *footerTextPart3 = NSLocalizedString(@"If the above form is not working or you would like to send screenshots, please email us at %@", @"Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed.");
+	NSString *localizedTextPart1 = [NSLocalizedStringWithDefaultValue(@"FEEDBACK_FOOTER_DIAGNOSTIC", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Please note that this diagnostic data does not identify you, and it helps us keep Psiphon running smoothly.", @"Feedback footer text.") stringByAppendingString:@"\n\n"];
+	NSString *footerTextPart2 = [NSLocalizedStringWithDefaultValue(@"FEEDBACK_FOOTER_DATA_COLLECTION", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Learn more about the data we collect in our %@", @"Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed.") stringByAppendingString:@"\n\n"];
+	NSString *footerTextPart3 = NSLocalizedStringWithDefaultValue(@"FEEDBACK_FOOTER_EMAIL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"If the above form is not working or you would like to send screenshots, please email us at %@", @"Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed.");
 
 	NSString *localizedTextPart2 = [NSString stringWithFormat:footerTextPart2, privacyPolicyPhrase];
 	NSString *localizedTextPart3 = [NSString stringWithFormat:footerTextPart3, feedbackEmail];
@@ -255,7 +256,7 @@
 	}
 	if (privacyPolicyTextRange.location != NSNotFound) {
 		[footer addAttribute:NSLinkAttributeName
-					   value:[[NSURL alloc] initWithString:NSLocalizedString(@"https://psiphon.ca/en/privacy.html", @"External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french.")]
+					   value:[[NSURL alloc] initWithString:NSLocalizedStringWithDefaultValue(@"PRIVACY_POLICY_URL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"https://psiphon.ca/en/privacy.html", @"External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french.")]
 					   range:privacyPolicyTextRange];
 	}
 	[footer addAttribute:NSFontAttributeName

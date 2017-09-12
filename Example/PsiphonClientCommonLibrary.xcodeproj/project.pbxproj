@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E93A0B81F55EBA400731DE7 /* InAppSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E93A0B71F55EB0500731DE7 /* InAppSettings.bundle */; };
+		52187843AF958BDC24F49B2F /* Pods_PsiphonClientCommonLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D4FBFFB868F518BDD4642 /* Pods_PsiphonClientCommonLibrary_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,9 +23,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		855625CCC7CDF40499EA4498 /* Pods_PsiphonClientCommonLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1026EA2DB15F9034739BAFAF /* Pods_PsiphonClientCommonLibrary_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		FCEA8CD796F2FDE0B04E217D /* Pods_PsiphonClientCommonLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5457668DFD3EBD96131038 /* Pods_PsiphonClientCommonLibrary_Example.framework */; };
+		CA05C288B7CF0854F5B87296 /* Pods_PsiphonClientCommonLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC34E5DFC7027EBA9688C3A /* Pods_PsiphonClientCommonLibrary_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EC9192827E1AB8058C5F199 /* Pods-PsiphonClientCommonLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiphonClientCommonLibrary_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Example/Pods-PsiphonClientCommonLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1026EA2DB15F9034739BAFAF /* Pods_PsiphonClientCommonLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PsiphonClientCommonLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D39EC4053BE52F8646A3938 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		302474AAB3843FC291176B4F /* Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		40395C00F743DABB2D738906 /* Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E93A0B71F55EB0500731DE7 /* InAppSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = InAppSettings.bundle; sourceTree = "<group>"; };
-		5B5457668DFD3EBD96131038 /* Pods_PsiphonClientCommonLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PsiphonClientCommonLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB0600478FD40B5E7CD5927 /* Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* PsiphonClientCommonLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PsiphonClientCommonLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,11 +62,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		844D4FBFFB868F518BDD4642 /* Pods_PsiphonClientCommonLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PsiphonClientCommonLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C60E9D7ED79B99FFED8F63 /* PsiphonClientCommonLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PsiphonClientCommonLibrary.podspec; path = ../PsiphonClientCommonLibrary.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B587B08719910BF04414102 /* Pods-PsiphonClientCommonLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiphonClientCommonLibrary_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Example/Pods-PsiphonClientCommonLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D77E2B3D154FAE02D1D2D00 /* Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Example/Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A01B04CE83AC78B3AF5FDD9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A2713AE6D579F60B3B3A5AF9 /* Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Example/Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D1D53EE3B9EEF074D45CBE30 /* Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFC34E5DFC7027EBA9688C3A /* Pods_PsiphonClientCommonLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PsiphonClientCommonLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				FCEA8CD796F2FDE0B04E217D /* Pods_PsiphonClientCommonLibrary_Example.framework in Frameworks */,
+				52187843AF958BDC24F49B2F /* Pods_PsiphonClientCommonLibrary_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				855625CCC7CDF40499EA4498 /* Pods_PsiphonClientCommonLibrary_Tests.framework in Frameworks */,
+				CA05C288B7CF0854F5B87296 /* Pods_PsiphonClientCommonLibrary_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				60398B416269C3E6E860B3CA /* Pods */,
+				DEB2D210CC41733DD7CC78A8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +125,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				5B5457668DFD3EBD96131038 /* Pods_PsiphonClientCommonLibrary_Example.framework */,
-				1026EA2DB15F9034739BAFAF /* Pods_PsiphonClientCommonLibrary_Tests.framework */,
+				844D4FBFFB868F518BDD4642 /* Pods_PsiphonClientCommonLibrary_Example.framework */,
+				EFC34E5DFC7027EBA9688C3A /* Pods_PsiphonClientCommonLibrary_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,17 +178,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		60398B416269C3E6E860B3CA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A2713AE6D579F60B3B3A5AF9 /* Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig */,
-				0EC9192827E1AB8058C5F199 /* Pods-PsiphonClientCommonLibrary_Example.release.xcconfig */,
-				D1D53EE3B9EEF074D45CBE30 /* Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig */,
-				302474AAB3843FC291176B4F /* Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +188,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		DEB2D210CC41733DD7CC78A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D77E2B3D154FAE02D1D2D00 /* Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig */,
+				8B587B08719910BF04414102 /* Pods-PsiphonClientCommonLibrary_Example.release.xcconfig */,
+				40395C00F743DABB2D738906 /* Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig */,
+				5AB0600478FD40B5E7CD5927 /* Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,12 +206,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "PsiphonClientCommonLibrary_Example" */;
 			buildPhases = (
-				6A6598AD228277D62C9FEF44 /* [CP] Check Pods Manifest.lock */,
+				FE715B5A83FCEF0CB41A92A2 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				AECD87E4A92017D425C915E9 /* [CP] Embed Pods Frameworks */,
-				E1DFB73C970E1DC3C45281EE /* [CP] Copy Pods Resources */,
+				205B1520471809715376F239 /* [CP] Embed Pods Frameworks */,
+				95E0394E5DB2F6D2722F85F5 /* [CP] Copy Pods Resources */,
+				661DA4CF1F68509300BB4B93 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -226,12 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "PsiphonClientCommonLibrary_Tests" */;
 			buildPhases = (
-				3C85BD53D027CAD8D410AAD8 /* [CP] Check Pods Manifest.lock */,
+				BCB8DE25485DC1860AE0AB30 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				22B17BF6AE409D530E5D1A6D /* [CP] Embed Pods Frameworks */,
-				B5D30736523B0002278DD915 /* [CP] Copy Pods Resources */,
+				35883A3B2B2A573C9E1A5785 /* [CP] Embed Pods Frameworks */,
+				1B53F6347E99A6D0A4D2F4CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,58 +305,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22B17BF6AE409D530E5D1A6D /* [CP] Embed Pods Frameworks */ = {
+		1B53F6347E99A6D0A4D2F4CC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3C85BD53D027CAD8D410AAD8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PsiphonClientCommonLibrary_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A6598AD228277D62C9FEF44 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PsiphonClientCommonLibrary_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AECD87E4A92017D425C915E9 /* [CP] Embed Pods Frameworks */ = {
+		205B1520471809715376F239 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,22 +340,35 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Example/Pods-PsiphonClientCommonLibrary_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5D30736523B0002278DD915 /* [CP] Copy Pods Resources */ = {
+		35883A3B2B2A573C9E1A5785 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1DFB73C970E1DC3C45281EE /* [CP] Copy Pods Resources */ = {
+		661DA4CF1F68509300BB4B93 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"../genstrings.sh\"\n";
+		};
+		95E0394E5DB2F6D2722F85F5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,6 +381,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Example/Pods-PsiphonClientCommonLibrary_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCB8DE25485DC1860AE0AB30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PsiphonClientCommonLibrary_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE715B5A83FCEF0CB41A92A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PsiphonClientCommonLibrary_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -539,7 +553,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2713AE6D579F60B3B3A5AF9 /* Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig */;
+			baseConfigurationReference = 9D77E2B3D154FAE02D1D2D00 /* Pods-PsiphonClientCommonLibrary_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q6HLNEX92A;
@@ -555,7 +569,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EC9192827E1AB8058C5F199 /* Pods-PsiphonClientCommonLibrary_Example.release.xcconfig */;
+			baseConfigurationReference = 8B587B08719910BF04414102 /* Pods-PsiphonClientCommonLibrary_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q6HLNEX92A;
@@ -571,7 +585,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1D53EE3B9EEF074D45CBE30 /* Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig */;
+			baseConfigurationReference = 40395C00F743DABB2D738906 /* Pods-PsiphonClientCommonLibrary_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -595,7 +609,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 302474AAB3843FC291176B4F /* Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig */;
+			baseConfigurationReference = 5AB0600478FD40B5E7CD5927 /* Pods-PsiphonClientCommonLibrary_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

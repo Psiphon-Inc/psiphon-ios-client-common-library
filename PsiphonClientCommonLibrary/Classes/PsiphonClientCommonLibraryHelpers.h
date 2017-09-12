@@ -21,6 +21,7 @@
 
 @interface PsiphonClientCommonLibraryHelpers : NSObject
 
++ (NSBundle * _Nonnull)commonLibraryBundle;
 + (UIImage * _Nullable)imageFromCommonLibraryNamed:(NSString* _Nonnull)imageName;
 + (void)initializeDefaultsFor:(NSString* _Nonnull)plist;
 + (NSString * _Nullable)getPsiphonConfigForFeedbackUpload;

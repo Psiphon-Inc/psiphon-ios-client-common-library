@@ -22,11 +22,16 @@
 
 @implementation PsiphonClientCommonLibraryHelpers
 
++ (NSBundle*)commonLibraryBundle {
+    NSBundle *frameworkBundle = [NSBundle bundleForClass:self.classForCoder];
+    NSString *bundlePath = [frameworkBundle pathForResource:kPsiphonClientCommonLibraryBundleName ofType:@"bundle"];
+	NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+	return bundle;
+}
+
 // From http://blog.flaviocaetano.com/post/cocoapods-and-resource_bundles/
 + (UIImage*)imageFromCommonLibraryNamed:(NSString*)imageName {
-	NSString *bundlePath = [[NSBundle mainBundle] pathForResource:kPsiphonClientCommonLibraryBundleName ofType:@"bundle"];
-	NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-	return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
+	return [UIImage imageNamed:imageName inBundle:[PsiphonClientCommonLibraryHelpers commonLibraryBundle] compatibleWithTraitCollection:nil];
 }
 
 + (void)initializeDefaultsFor:(NSString*)plist {
