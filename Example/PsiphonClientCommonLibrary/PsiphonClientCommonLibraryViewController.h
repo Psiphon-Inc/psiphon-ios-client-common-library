@@ -20,6 +20,8 @@
 
 @import UIKit;
 
-@interface PsiphonClientCommonLibraryViewController : UIViewController
+#import "PsiphonSettingsViewController.h"
+
+@interface PsiphonClientCommonLibraryViewController : UIViewController <PsiphonSettingsViewControllerDelegate>
 
 @end
