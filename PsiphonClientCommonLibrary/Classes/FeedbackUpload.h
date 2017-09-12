@@ -17,18 +17,20 @@
  *
  */
 
-
 #import <Foundation/Foundation.h>
+
 
 typedef void (^SendFeedbackHandler)(NSString *jsonString, NSString *pubKey, NSString *uploadServer, NSString *uploadServerHeaders);
 
 @interface FeedbackUpload : NSObject
 + (NSString*)generateFeedbackId;
 + (void)generateAndSendFeedback:(NSInteger)thumbIndex
+					  buildInfo:(NSString*)buildInfo
 					   comments:(NSString*)comments
 						  email:(NSString*)email
 			 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
 			  withPsiphonConfig:(NSString*)psiphonConfig
+			 withClientPlatform:(NSString*)clientPlatform
 			 withConnectionType:(NSString*)connectionType
 				   isJailbroken:(BOOL)isJailbroken
 			sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler;

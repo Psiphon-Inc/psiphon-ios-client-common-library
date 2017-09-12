@@ -51,10 +51,12 @@
 // https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/Android/app/src/main/java/com/psiphon3/psiphonlibrary/Diagnostics.java
 // TODO: will fail silently on any errors
 + (void)generateAndSendFeedback:(NSInteger)thumbIndex
+					  buildInfo:(NSString*)buildInfo
 					   comments:(NSString*)comments
 						  email:(NSString*)email
 			 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
 			  withPsiphonConfig:(NSString*)psiphonConfig
+			 withClientPlatform:(NSString*)clientPlatform
 			 withConnectionType:(NSString*)connectionType
 				   isJailbroken:(BOOL)isJailbroken
 			sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
@@ -94,7 +96,7 @@
 	if (sendDiagnosticInfo == YES) {
 		NSMutableArray *diagnosticHistoryArray = [[NSMutableArray alloc] init];
 
-		for (DiagnosticEntry *d in [[PsiphonData sharedInstance] diagnosticHistory]) {
+		for (DiagnosticEntry *d in [[[PsiphonData sharedInstance] diagnosticHistory] copy]) {
 			NSDictionary *entry = @{
 									@"data": [d data],
 									@"msg": [d message],
@@ -151,7 +153,8 @@
 												 @"isAppStoreBuild": @YES,
 												 @"isJailbroken": isJailbroken ? @YES : @NO,
 												 @"language": safeNullable([[NSUserDefaults standardUserDefaults] objectForKey:appLanguage]),
-												 @"networkTypeName": safeNullable(connectionType)
+												 @"networkTypeName": safeNullable(connectionType),
+												 @"buildInfo": safeNullable(buildInfo)
 												 }
 										 };
 		[feedbackBlob setObject:diagnosticInfo forKey:@"DiagnosticInfo"];
@@ -164,7 +167,7 @@
 
 	NSDictionary *metadata = @{
 							   @"id": rndmHexId,
-							   @"platform": @"ios",
+							   @"platform": safeNullable(clientPlatform),
 							   @"version": @1
 							   };
 	[feedbackBlob setObject:metadata forKey:@"Metadata"];

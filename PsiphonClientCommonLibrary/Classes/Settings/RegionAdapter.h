@@ -28,10 +28,6 @@
 @property (readonly, nonatomic) BOOL serverExists;
 @end
 
-@protocol RegionAdapterDelegate <NSObject>
-- (void)selectedRegionDisappearedThenSwitchedToBestPerformance;
-@end
-
 @interface RegionAdapter : NSObject
 + (instancetype)sharedInstance;
 - (void)onAvailableEgressRegions:(NSArray*)availableEgressRegions;
@@ -40,5 +36,4 @@
 - (NSArray*)getRegions;
 - (Region*)getSelectedRegion;
 - (NSString*)getLocalizedRegionTitle:(NSString*)regionCode;
-@property (weak, nonatomic) id<RegionAdapterDelegate> delegate;
 @end
