@@ -43,7 +43,7 @@ static BOOL (^safeStringsEqual)(NSString *, NSString *) = ^BOOL(NSString *a, NSS
 };
 
 @implementation PsiphonSettingsViewController {
-	BOOL forceReconnect;
+	BOOL forceReconnectRequired;
 	BOOL isRTL;
 }
 
@@ -239,7 +239,7 @@ BOOL linksEnabled;
 
 - (void)settingsViewController:(IASKAppSettingsViewController*)sender buttonTappedForSpecifier:(IASKSpecifier*)specifier {
 	if ([specifier.key isEqualToString:kForceReconnect]) {
-		forceReconnect = YES;
+		forceReconnectRequired = YES;
 		[self dismiss:nil];
 	}
 }
@@ -356,14 +356,14 @@ BOOL linksEnabled;
 		[self setHiddenKeys:hiddenKeys animated:NO];
 	} else if  ([fieldName isEqual:appLanguage]) {
 		[[NSNotificationCenter defaultCenter] removeObserver:self];
-		[self settingsWillDismissWithForceReconnect:forceReconnect];
+		[self settingsWillDismissWithForceReconnect:forceReconnectRequired];
 		[self reloadAndOpenSettings];
 	}
 }
 
 - (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController *)sender
 {
-	[self settingsWillDismissWithForceReconnect:forceReconnect];
+	[self settingsWillDismissWithForceReconnect:forceReconnectRequired];
 	// upon completion force connection state notification in case connection modal is
 	// still blocking UI but needs to be dismissed
 	[self.navigationController popViewControllerAnimated:NO];
@@ -371,7 +371,9 @@ BOOL linksEnabled;
 }
 
 - (void)updateAvailableRegions:(NSNotification*) notification {
-	[self.tableView reloadData];
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[self.tableView reloadData];
+	});
 }
 
 - (void)updateLinksState:(NSNotification*) notification {

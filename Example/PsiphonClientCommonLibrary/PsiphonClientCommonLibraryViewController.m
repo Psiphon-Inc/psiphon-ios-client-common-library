@@ -19,40 +19,116 @@
 
 
 #import "PsiphonClientCommonLibraryViewController.h"
-#import "PsiphonSettingsViewController.h"
-#import "UpstreamProxySettings.h"
 
 @interface PsiphonClientCommonLibraryViewController ()
 
 @end
 
-@implementation PsiphonClientCommonLibraryViewController
+@implementation PsiphonClientCommonLibraryViewController {
+	PsiphonSettingsViewController *appSettingsViewController;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	[self addOpenSettingsButton];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-	[super viewDidAppear:animated];
-
-	[self openPsiphonSettings];
-}
-
-- (void)openPsiphonSettings
-{
-	PsiphonSettingsViewController *appSettingsViewController;
-
-	if (appSettingsViewController == nil) {
-		appSettingsViewController = [[PsiphonSettingsViewController alloc] init];
-		appSettingsViewController.delegate = appSettingsViewController;
-		appSettingsViewController.showCreditsFooter = NO;
-		appSettingsViewController.showDoneButton = YES;
-		appSettingsViewController.neverShowPrivacySettings = YES;
-	}
+- (void)openPsiphonSettings {
+	// Assume previous view controller has been dismissed
+	appSettingsViewController = [[PsiphonSettingsViewController alloc] init];
+	appSettingsViewController.delegate = appSettingsViewController;
+	appSettingsViewController.showCreditsFooter = NO;
+	appSettingsViewController.showDoneButton = YES;
+	appSettingsViewController.neverShowPrivacySettings = YES;
+	appSettingsViewController.settingsDelegate = self;
 
 	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:appSettingsViewController];
 	[self presentViewController:navController animated:YES completion:nil];
+}
+
+- (void)addOpenSettingsButton {
+	UIButton *openSettingsButton = [[UIButton alloc] init];
+	[openSettingsButton setTitle:@"Open Settings" forState:UIControlStateNormal];
+	[openSettingsButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+	[openSettingsButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+	openSettingsButton.titleLabel.adjustsFontSizeToFitWidth = YES;
+	CGFloat height = 100;
+	openSettingsButton.layer.cornerRadius = height / 2;
+	openSettingsButton.layer.borderColor = [UIColor blueColor].CGColor;
+	openSettingsButton.layer.borderWidth = 1.f;
+
+	[self.view addSubview:openSettingsButton];
+
+	// Setup autolayout
+	openSettingsButton.translatesAutoresizingMaskIntoConstraints = NO;
+
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:openSettingsButton
+														  attribute:NSLayoutAttributeCenterX
+														  relatedBy:NSLayoutRelationEqual
+															 toItem:self.view
+														  attribute:NSLayoutAttributeCenterX
+														 multiplier:1.f
+														   constant:0]];
+
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:openSettingsButton
+														  attribute:NSLayoutAttributeCenterY
+														  relatedBy:NSLayoutRelationEqual
+															 toItem:self.view
+														  attribute:NSLayoutAttributeCenterY
+														 multiplier:1.f
+														   constant:0]];
+
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:openSettingsButton
+														  attribute:NSLayoutAttributeHeight
+														  relatedBy:NSLayoutRelationEqual
+															 toItem:nil
+														  attribute:NSLayoutAttributeNotAnAttribute
+														 multiplier:1.f
+														   constant:height]];
+
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:openSettingsButton
+														  attribute:NSLayoutAttributeWidth
+														  relatedBy:NSLayoutRelationEqual
+															 toItem:openSettingsButton
+														  attribute:NSLayoutAttributeHeight
+														 multiplier:2.f
+														   constant:0]];
+
+	[openSettingsButton addTarget:self action:@selector(openPsiphonSettings) forControlEvents:UIControlEventTouchUpInside];
+}
+
+
+# pragma mark - PsiphonSettingsViewControllerDelegate methods
+
+- (void)notifyPsiphonConnectionState {
+	// no action needed for example
+}
+
+- (void)reloadAndOpenSettings {
+	__weak PsiphonClientCommonLibraryViewController *weakSelf = self;
+	[appSettingsViewController dismissViewControllerAnimated:NO completion:^{
+		appSettingsViewController = nil;
+		[weakSelf openPsiphonSettings];
+	}];
+}
+
+- (void)settingsWillDismissWithForceReconnect:(BOOL)forceReconnect {
+	// no action needed for example
+}
+
+- (BOOL)shouldEnableSettingsLinks {
+	return YES; // always on in example
+}
+
+- (void)userPressedURL:(NSURL *)URL {
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[[UIApplication sharedApplication] openURL:URL];
+	});
+}
+
+- (void) userSubmittedFeedback:(NSUInteger)selectedThumbIndex comments:(NSString *)comments email:(NSString *)email uploadDiagnostics:(BOOL)uploadDiagnostics {
+	// no action needed for example
 }
 
 @end
