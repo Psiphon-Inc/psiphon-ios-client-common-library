@@ -9,6 +9,8 @@
 		<dict>
 			<key>Title</key>
 			<string>Timeouts</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -19,12 +21,16 @@
 			<string>disableTimeouts</string>
 			<key>Title</key>
 			<string>Disable Timeouts</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
 		<dict>
 			<key>Title</key>
 			<string>Proxy</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -35,6 +41,8 @@
 			<string>useUpstreamProxy</string>
 			<key>Title</key>
 			<string>Use upstream proxy</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
@@ -43,6 +51,8 @@
 			<string>upstreamProxyHostAddress</string>
 			<key>Title</key>
 			<string>Host address</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>IASKCustomViewSpecifier</string>
 			<key>AutocorrectionType</key>
@@ -55,6 +65,8 @@
 		<dict>
 			<key>Title</key>
 			<string>Port</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Key</key>
 			<string>upstreamProxyPort</string>
 			<key>Type</key>
@@ -73,6 +85,8 @@
 			<string>useProxyAuthentication</string>
 			<key>Title</key>
 			<string>Use proxy authentication</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
@@ -81,6 +95,8 @@
 			<string>proxyUsername</string>
 			<key>Title</key>
 			<string>Proxy username</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>IASKCustomViewSpecifier</string>
 			<key>AutocorrectionType</key>
@@ -95,6 +111,8 @@
 			<true/>
 			<key>Title</key>
 			<string>Proxy password</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Key</key>
 			<string>proxyPassword</string>
 			<key>IASKPlaceholder</key>
@@ -105,6 +123,8 @@
 			<string>proxyDomain</string>
 			<key>Title</key>
 			<string>Proxy domain</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>IASKCustomViewSpecifier</string>
 			<key>AutocorrectionType</key>
@@ -115,6 +135,8 @@
 		<dict>
 			<key>Title</key>
 			<string>LOGS</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>IASKCustomViewSpecifier</string>
 			<key>Key</key>
