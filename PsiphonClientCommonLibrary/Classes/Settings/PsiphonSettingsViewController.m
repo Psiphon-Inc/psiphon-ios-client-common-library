@@ -65,13 +65,12 @@ BOOL linksEnabled;
 	[center addObserver:self selector:@selector(updateLinksState:) name:kPsiphonConnectionStateNotification object:nil];
 	[center addObserver:self selector:@selector(updateAvailableRegions:) name:kPsiphonAvailableRegionsNotification object:nil];
 	[center addObserver:self selector:@selector(updateAvailableRegions:) name:kPsiphonSelectedNewRegionNotification object:nil];
-
-	[self setHiddenKeys];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	linksEnabled = [self shouldEnableSettingsLinks];
+	[self setHiddenKeys];
 }
 
 - (void)dealloc
@@ -103,7 +102,10 @@ BOOL linksEnabled;
 		}
 	}
 
-	self.hiddenKeys = hiddenKeys;
+	NSArray *hiddenKeysFromSettingsDelegate = [self hiddenSpecifierKeys];
+	NSSet *keys = [hiddenKeys setByAddingObjectsFromArray:hiddenKeysFromSettingsDelegate];
+	keys = [keys setByAddingObjectsFromSet:self.hiddenKeys]; // add any existing keys
+	[self setHiddenKeys:keys animated:NO];
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForSpecifier:(IASKSpecifier*)specifier {
@@ -376,13 +378,10 @@ BOOL linksEnabled;
 	});
 }
 
-- (void)updateLinksState:(NSNotification*) notification {
-	ConnectionState state = [[notification.userInfo objectForKey:kPsiphonConnectionState] unsignedIntegerValue];
-	if(state == ConnectionStateConnected) {
-		linksEnabled = true;
-	} else {
-		linksEnabled = false;
-	}
+- (void)updateLinksState:(NSNotification*)notification {
+//	ConnectionState state = [[notification.userInfo objectForKey:kPsiphonConnectionState] unsignedIntegerValue];
+	linksEnabled = [self shouldEnableSettingsLinks];
+	[self setHiddenKeys];
 	[self.tableView reloadData];
 }
 
@@ -395,6 +394,15 @@ BOOL linksEnabled;
 	}
 
 	return YES;
+}
+
+- (NSArray<NSString*>*)hiddenSpecifierKeys {
+	id<PsiphonSettingsViewControllerDelegate> strongDelegate = self.settingsDelegate;
+	if ([strongDelegate respondsToSelector:@selector(hiddenSpecifierKeys)]) {
+		return [strongDelegate hiddenSpecifierKeys];
+	}
+
+	return nil;
 }
 
 - (void)userPressedURL:(NSURL*)URL {

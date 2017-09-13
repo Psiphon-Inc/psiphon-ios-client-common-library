@@ -28,14 +28,17 @@
 
 // Globally used specifier keys
 #define kRegionSelectionSpecifierKey	@"regionSelection"
-#define kDisableTimeouts			@"disableTimeouts"
-#define kForceReconnect				@"forceReconnect"
+#define kDisableTimeouts				@"disableTimeouts"
+#define kForceReconnect					@"forceReconnect"
+#define kForceReconnectFooter			@"forceReconnectFooter"
 
 @protocol PsiphonSettingsViewControllerDelegate <FeedbackViewControllerDelegate>
 - (void)notifyPsiphonConnectionState;
 - (void)reloadAndOpenSettings;
 - (void)settingsWillDismissWithForceReconnect:(BOOL)forceReconnect;
+@optional
 - (BOOL)shouldEnableSettingsLinks;
+- (NSArray<NSString*>*)hiddenSpecifierKeys;
 @end
 
 @interface PsiphonSettingsViewController : IASKAppSettingsViewController <UITableViewDelegate, IASKSettingsDelegate, UIAlertViewDelegate>
