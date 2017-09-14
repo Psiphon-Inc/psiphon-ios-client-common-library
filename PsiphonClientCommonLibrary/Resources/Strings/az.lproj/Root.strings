@@ -1,99 +1,66 @@
 /* Settings item to change the application UI language. */
-"Language" = "Ngôn ngữ";
-
+"Language" = "Dil";
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
-"Default language" = "Ngôn ngữ mặc định";
-
+"Default language" = "Əsas dil";
 /* Settings item text. Leads to info about Psiphon Inc. */
-"About" = "Giới thiệu";
-
+"About" = "Haqqında";
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"Change Region" = "Đổi Khu Vực";
-
+"Change Region" = "Bölgəni dəyiş";
 /* Settings item text. Leads to a frequently asked questions page. */
-"FAQ" = "Câu Hỏi Thường Gặp";
-
+"FAQ" = "TTVS";
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
-"Help" = "Trợ giúp";
-
+"Help" = "Yardım";
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
-"Privacy Policy" = "Chính sách Riêng Tư";
-
+"Privacy Policy" = "Təhlükəsizlik Qaydaları";
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
-"Psiphon Settings" = "Thiết đặt Psiphon";
-
+"Psiphon Settings" = "Psiphon quraşdırmaları";
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"Feedback" = "Phản hồi";
-
+"Feedback" = "Şərh";
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"Terms of Use" = "Điều kiện sử dụng";
-
+"Terms of Use" = "İstifadə qaydaları";
 /* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"Disable Timeouts" = "Tắt Hạn Chờ";
-
+"Disable Timeouts" = "Dayanmaları söndür";
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
-"Proxy" = "Proxy";
-
+"Proxy" = "Proksi";
 /* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"Timeouts" = "Hạn Chờ";
-
+"Timeouts" = "Dayanmalar";
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
-"Use upstream proxy" = "Dùng proxy luồng trên";
-
+"Use upstream proxy" = "Yuxarı axın proksisini istifadə et";
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
-"Host address" = "Địa chỉ máy chủ";
-
+"Host address" = "Host ünvanı";
 /* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
-"Port" = "Cổng";
-
+"Port" = "Port";
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"Use proxy authentication" = "Dùng xác thực proxy";
-
+"Use proxy authentication" = "Proksi təsdiqləməsini istifadə et";
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
-"username" = "tên người dùng";
-
+"username" = "istifadəçi adı";
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
-"password" = "mật khẩu";
-
+"password" = "parol";
 /* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
-"example.com" = "example.com";
-
+"example.com" = "numune.com";
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"Proxy username" = "Tên người dùng proxy";
-
+"Proxy username" = "Proksi istifadəçi adı";
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
-"Proxy password" = "Mật khẩu proxy";
-
+"Proxy password" = "Proksi parolu";
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
-"Proxy domain" = "Tên miền proxy";
-
+"Proxy domain" = "Proksi domeni";
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Comments" = "Góp ý của bạn";
-
+"Your Comments" = "Şərhiniz";
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Email Address" = "Điạ chỉ email của bạn";
-
+"Your Email Address" = "Email ünvan";
 /* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
-"Where can we respond to you?" = "Chúng tôi gửi trả lời cho bạn về đâu?";
-
+"Where can we respond to you?" = "Sizə necə cavab verək?";
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
-"Diagnostic Data" = "Dữ liệu Chẩn đoán";
-
+"Diagnostic Data" = "Diaqnoz məlumatı";
 /* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
-"Upload diagnostic data" = "Tải dữ liệu chẩn đoán lên";
-
+"Upload diagnostic data" = "Diaqnoz məlumatı yüklə";
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"My connection is bad, help!" = "Đường kết nối tệ, giúp tôi!";
-
+"My connection is bad, help!" = "Qoşulmam çox pisdir, kömək edin!";
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"Changing your region to Best Performance increases your chances of getting connected." = "Đổi khu vực sang vùng Hiệu Năng Nhất để gia tăng xác suất kết nối.";
-
+"Changing your region to Best Performance increases your chances of getting connected." = "Bölgənizi Ən Sürətli Qoşulmaya dəyişməklə qoşulma sürətinizi artıra bilərsiniz.";
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
-"Disabling timeouts may help you stay connected on slower networks." = "Tắt hạn chờ có thể giúp đường nối kết chắc hơn trong mạng chậm";
-
+"Disabling timeouts may help you stay connected on slower networks." = "Dayanmaları söndürməklə aşağı sürətli şəbəkələrdə qoşulmanızı qoruya bilərsiniz.";
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
-"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Kết nối lại vào máy chủ Psiphon có thể khá hơn nếu kết nối hiện thời chậm hoặc không phản ứng.";
-
+"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Hazırkı qoşulma yavaşdırsa və ya cavab vermirsə Psiphon serverinə yenidən qoşulma kömək ola bilər.";
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
-"Reconnect to the Psiphon server" = "Kết nối lại vào máy chủ Psiphon";
-
+"Reconnect to the Psiphon server" = "Psiphon serverinə yenidən qoşulma";
