@@ -23,7 +23,7 @@
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "请注意此诊断数据不会泄露您的身份，它将帮助我们保持赛风平稳运行。";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "如果上方的表格無法運作，用戶可以將螢幕截圖，用電郵方式寄給我們%@";
+"FEEDBACK_FOOTER_EMAIL" = "如果上方的表格无法使用，用戶可以将屏幕截图，用电邮方式寄给我们%@";
 
 /* Introduction text at top of feedback form */
 "FEEDBACK_INTRODUCTION" = "您的回馈让赛风变得更好！";
@@ -44,7 +44,7 @@
 "LOGS_TITLE" = "日志";
 
 /* Privacy Policy link text */
-"PRIVACY_POLICY_LINK_TEXT" = "隱私政策";
+"PRIVACY_POLICY_LINK_TEXT" = "隐私政策";
 
 /* External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
 "PRIVACY_POLICY_URL" = "https://psiphon.ca/zh/privacy.html";
