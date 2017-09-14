@@ -1,66 +1,99 @@
 /* Settings item to change the application UI language. */
 "Language" = "Idioma";
+
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
 "Default language" = "Idioma predefinido";
+
 /* Settings item text. Leads to info about Psiphon Inc. */
 "About" = "Sobre";
+
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
 "Change Region" = "Alterar Região";
+
 /* Settings item text. Leads to a frequently asked questions page. */
 "FAQ" = "Perguntas Mais Frequentes";
+
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
 "Help" = "Ajuda";
+
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
 "Privacy Policy" = "Política de Privacidade";
+
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
 "Psiphon Settings" = "Definições do Psiphon";
+
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
 "Feedback" = "Comentário";
+
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
 "Terms of Use" = "Termos de Utilização";
+
 /* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
 "Disable Timeouts" = "Desativar 'Expiração'";
+
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
 "Proxy" = "Proxy";
+
 /* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
 "Timeouts" = "Expirações";
+
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
 "Use upstream proxy" = "Usar proxy de upstream";
+
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "Host address" = "Endereço do hospedeiro";
+
 /* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
 "Port" = "Porta";
+
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
 "Use proxy authentication" = "Usar autenticação de proxy";
+
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
 "username" = "username";
+
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "password" = "palavra-passe";
+
 /* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "example.com" = "example.com";
+
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
 "Proxy username" = "Nome de utilizador do Proxy";
+
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
 "Proxy password" = "Palavra-passe do Proxy";
+
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
 "Proxy domain" = "Domínio do Proxy";
+
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "Your Comments" = "Your Comments";
+
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
 "Your Email Address" = "Your Email Address";
+
 /* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
 "Where can we respond to you?" = "Where can we respond to you?";
+
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
 "Diagnostic Data" = "Diagnostic Data";
+
 /* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
 "Upload diagnostic data" = "Upload diagnostic data";
+
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
 "My connection is bad, help!" = "A minha ligação é má, ajuda!";
+
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
 "Changing your region to Best Performance increases your chances of getting connected." = "Changing your region to Best Performance increases your chances of getting connected.";
+
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "Disabling timeouts may help you stay connected on slower networks." = "Disabling timeouts may help you stay connected on slower networks.";
+
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
 "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.";
+
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
 "Reconnect to the Psiphon server" = "Reconnect to the Psiphon server";
+

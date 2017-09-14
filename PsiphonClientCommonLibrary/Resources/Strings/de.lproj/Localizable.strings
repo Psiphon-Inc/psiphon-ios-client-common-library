@@ -14,7 +14,7 @@
 "FEEDBACK_COMMENTS_PLACEHOLDER" = "Was haben Sie auf dem Herzen? Bitte hinterlassen Sie uns Ihre Rückmeldung";
 
 /* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "You can find solutions to many common problems in our %@.";
+"FEEDBACK_FAQ_DIRECTION" = "Zu vielen häufigen Probleme finden Sie Lösungen in unserem %@.";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "Erfahren Sie mehr über die Daten, die wir in unserem %@ sammeln";

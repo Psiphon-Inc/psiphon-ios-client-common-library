@@ -1,66 +1,99 @@
 /* Settings item to change the application UI language. */
 "Language" = "སྐད་ཡིག";
+
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
 "Default language" = "སྐད་རིགས་སོར་བཞག";
+
 /* Settings item text. Leads to info about Psiphon Inc. */
 "About" = "སྐོར།";
+
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
 "Change Region" = "ས་གནས་བརྗེ་བ།";
+
 /* Settings item text. Leads to a frequently asked questions page. */
 "FAQ" = "ཡང་སེ་སྐུལ་བའི་དྲི་བ།";
+
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
 "Help" = "Help";
+
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
 "Privacy Policy" = "གསང་དོན་སྲིད་བྱུས།";
+
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
 "Psiphon Settings" = "སཡི་ཕོན་སྒྲིག་བཀོད།";
+
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
 "Feedback" = "དགོངས་འཆར།";
+
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
 "Terms of Use" = "བེད་སྤྱོད་ཀྱི་དུས་ཡུན";
+
 /* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
 "Disable Timeouts" = "དུས་རྫོགས་མེད་པ་བཟོས།";
+
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
 "Proxy" = "ངོ་ཚབ།";
+
 /* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
 "Timeouts" = "དུས་རྫོགས།";
+
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
 "Use upstream proxy" = "ནང་བཅུག་ངོ་ཚབ་བེད་སྤྱོད།";
+
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "Host address" = "དོ་བདག་གི་ཁ་བྱང་།";
+
 /* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
 "Port" = "མཐུད་སྒོ།";
+
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
 "Use proxy authentication" = "ངོ་ཚབ་ཁུངས་ལྡན་བེད་སྤྱོད།";
+
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
 "username" = "སྤྱོད་མིང་།";
+
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "password" = "གསང་ཨང་།";
+
 /* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "example.com" = "example.com";
+
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
 "Proxy username" = "ངོ་ཚབ་ཀྱི་སྤྱོད་མིང་།";
+
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
 "Proxy password" = "ངོ་ཚབ་གསང་བའི་ཨང་གྲངས།";
+
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
 "Proxy domain" = "ངོ་ཚབ་ཀྱི་ཁ་བྱང་།";
+
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "Your Comments" = "ཁྱེད་ཀྱི་མཆན།";
+
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
 "Your Email Address" = "ཁྱེད་ཀྱི་གློག་འཕྲིན་ཁ་བྱང།";
+
 /* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
 "Where can we respond to you?" = "ང་ཚོས་ཁྱེད་རང་ལ་ལན་འདེབས་གང་དུ་བྱེད་དགོས་སམ།";
+
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
 "Diagnostic Data" = "བརྟག་དཔྱད་བྱས་པའི་ཡིག་ཆ།";
+
 /* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
 "Upload diagnostic data" = "བརྟག་དཔྱད་བྱས་པའི་ཡིག་ཆ་ནང་འཇུག";
+
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
 "My connection is bad, help!" = "ངའི་དྲྭ་རྒྱའི་མཐུད་ཀ་ཡག་པོ་མིན་འདུག། རོགས་པ་དགོས།";
+
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
 "Changing your region to Best Performance increases your chances of getting connected." = "ནུས་པ་ཆེ་ཤོས་ཐོན་སའི་ས་གནས་ལ་བརྗེ་པོ་རྒྱབ་པ་དེས་དྲྭ་རྒྱར་མཐུད་ཐུབ་པའི་རེ་བ་ཆེ་བ་ཡོད།";
+
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "Disabling timeouts may help you stay connected on slower networks." = "དུས་རྫོགས་མེད་པ་བཟོས་པ་དེས་ཁྱེད་རང་དྲྭ་རྒྱ་ཞན་པོ་ཡོད་ནའང་མཐུད་ཐུབ་པར་ཕན་ཐོག་སྲིད།";
+
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
 "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "གལ་ཏེ་ཁྱེད་རང་གི་དྲྭ་རྒྱའི་མཐུད་ཀ་ཞན་པོ་དང་བརྡ་ལན་སྤྲད་ཀྱི་མེད་ན་སཡི་ཕོན་ཞབས་ཞུ་འཕྲུལ་ཆས་ལ་ཡང་སྐྱར་མཐུད་ན་ཕན་ཐོག་ཡོང་སྲིད།";
+
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
 "Reconnect to the Psiphon server" = "སཡི་ཕོན་ཞབས་ཞུ་འཕྲུལ་ཆས་ཡང་སྐྱར་མཐུད།";
+
