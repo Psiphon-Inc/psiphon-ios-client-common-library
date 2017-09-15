@@ -59,7 +59,6 @@ DEFAULT_LANGS = {
     'tk': 'tk',         # Turkmen
     'tr': 'tr',         # Turkish
     'uk': 'uk',         # Ukrainian
-    #'ug': 'ug@Latn',    # Uighur (latin script)
     'uz': 'uz',         # Uzbek
     'vi': 'vi',         # Vietnamese
     'zh': 'zh-Hans',    # Chinese (simplified)

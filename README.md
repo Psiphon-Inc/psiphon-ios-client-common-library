@@ -94,7 +94,9 @@ This indicates that there is a well-translated language that is currently not pa
 
 2. **Run `transifex_pull.py`.** This will pull all translations, including the newly added one. You should see that `PsiphonClientCommonLibrary/Resources/Strings/<new-language>.lproj/Root.strings` and `Localizable.strings` have been created.
 
-3. **Add the language to our in-app language selector.** In `Example/PsiphonClientCommonLibrary/InAppSettings.bundle/Root.inApp.plist`, add the new language code and the name of the language as it's written in that language. If the language is not one of our top 3 or 4, it should be added in alphabetical order, based on the language code. (Finding the language name can be tricky. You can check the [Windows code](https://bitbucket.org/psiphon/psiphon-circumvention-system/src/0211b8c0106c907f3e2b4611f1cd11decab449e1/Client/psiclient/webui/_locales/locale-names.json?at=default) or [website code](https://bitbucket.org/psiphon/psiphon-circumvention-system/src/0211b8c0106c907f3e2b4611f1cd11decab449e1/Website/docpad.coffee?at=default#docpad.coffee-313). Otherwise, try Wikipedia.)
+3. **Add the language to our in-app language selector.** In `Example/PsiphonClientCommonLibrary/InAppSettings.bundle/Root.inApp.plist`, add the new language code and the name of the language as it's written in that language. If the language is not one of our top 3 or 4, it should be added in alphabetical order, based on the language code.
+
+To get the name of a language in that language, check the [Windows code](https://bitbucket.org/psiphon/psiphon-circumvention-system/src/0211b8c0106c907f3e2b4611f1cd11decab449e1/Client/psiclient/webui/_locales/locale-names.json?at=default) or [website code](https://bitbucket.org/psiphon/psiphon-circumvention-system/src/0211b8c0106c907f3e2b4611f1cd11decab449e1/Website/docpad.coffee?at=default#docpad.coffee-313), or look at the [Omniglot list](http://www.omniglot.com/language/names.htm).
 
 Run `pod update PsiphonClientCommonLibrary` in the `Example` directory. Do some testing. Commit.
 
