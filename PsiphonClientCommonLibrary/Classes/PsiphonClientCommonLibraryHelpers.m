@@ -92,4 +92,22 @@
 	return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
++ (BOOL)unsupportedCharactersForFont:(NSString*)font withString:(NSString*)string {
+    for (NSInteger charIdx = 0; charIdx < string.length; charIdx++) {
+        NSString *character = [NSString stringWithFormat:@"%C", [string characterAtIndex:charIdx]];
+        // TODO: need to enumerate a longer list of special characters for this to be more correct.
+        if ([character isEqualToString:@" "]) {
+            // Skip special characters
+            continue;
+        }
+        CGFontRef cgFont = CGFontCreateWithFontName((CFStringRef)font);
+        BOOL unsupported = (CGFontGetGlyphWithGlyphName(cgFont,  (__bridge CFStringRef)character) == 0);
+        CGFontRelease(cgFont);
+        if (unsupported) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 @end
