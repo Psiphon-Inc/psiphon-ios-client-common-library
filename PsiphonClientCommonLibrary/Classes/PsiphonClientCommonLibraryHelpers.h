@@ -25,6 +25,6 @@
 + (UIImage * _Nullable)imageFromCommonLibraryNamed:(NSString* _Nonnull)imageName;
 + (void)initializeDefaultsFor:(NSString* _Nonnull)plist;
 + (NSString * _Nullable)getPsiphonConfigForFeedbackUpload;
-+ (BOOL)unsupportedCharactersForFont:(NSString*)font withString:(NSString*)string;
++ (BOOL)unsupportedCharactersForFont:(NSString* _Nonnull)font withString:(NSString* _Nonnull)string;
 
 @end

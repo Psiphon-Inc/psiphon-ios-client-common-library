@@ -5,16 +5,16 @@
 "Default language" = "زبان پیش‌فرض";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
-"About" = "درباره‌ی OONI";
+"About" = "درباره‌ی سایفون";
 
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
 "Change Region" = "تغییر کشور";
 
 /* Settings item text. Leads to a frequently asked questions page. */
-"FAQ" = "سوالات متداول";
+"FAQ" = "سوال‌های متداول";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
-"Help" = "راهنمایی";
+"Help" = "راهنما";
 
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
 "Privacy Policy" = "حریم خصوصی";
@@ -23,7 +23,7 @@
 "Psiphon Settings" = "تنظیمات سایفون";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"Feedback" = "بازخوردها";
+"Feedback" = "بازخورد";
 
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
 "Terms of Use" = "شرایط استفاده ";
