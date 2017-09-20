@@ -92,7 +92,7 @@
 	return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
-+ (BOOL)unsupportedCharactersForFont:(NSString*)font withString:(NSString*)string {
++ (BOOL)unsupportedCharactersForFont:(NSString* _Nonnull)font withString:(NSString* _Nonnull)string {
     for (NSInteger charIdx = 0; charIdx < string.length; charIdx++) {
         NSString *character = [NSString stringWithFormat:@"%C", [string characterAtIndex:charIdx]];
         // TODO: need to enumerate a longer list of special characters for this to be more correct.

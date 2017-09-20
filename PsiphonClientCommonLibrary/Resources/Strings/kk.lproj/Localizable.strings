@@ -14,25 +14,25 @@
 "FEEDBACK_COMMENTS_PLACEHOLDER" = "Ойыңызда не бар? Кері байланыс пікіріңізді қалдырыңыз";
 
 /* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "Сіз әдеттегі көп мәселелер шешімдердін біздің %@ ішінен таба аласыз.";
+"FEEDBACK_FAQ_DIRECTION" = "Әдеттегі көп мәселелер шешімдерін біздің %@ ішінен табуға болады.";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "Біз жинайтын деректер туралы біздің %@ ішінен біліңіз";
 
 /* Feedback footer text. */
-"FEEDBACK_FOOTER_DIAGNOSTIC" = "Есіңізде болсын, бұл жөндеу деректері сізді анықтамайды, және бізге Psiphon-ды жөнді жұмыс жасайтындай етуге көмектеседі.";
+"FEEDBACK_FOOTER_DIAGNOSTIC" = "Есіңізде болсын, бұл жөндеу деректері сізді анықтамайды, және бізге Psiphon қызметін жақсы жұмыс жасайтындай етуге көмектеседі.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "Егер жоғарыдағы форма жасамаса, немесе скриншоттарды жіберуді қаласаңыз, бізге %@ адресіне жазыңыз";
 
 /* Introduction text at top of feedback form */
-"FEEDBACK_INTRODUCTION" = "Сіздің пікіріңіз Psiphon-ды жақсырақ қылады!";
+"FEEDBACK_INTRODUCTION" = "Сіздің пікіріңіз Psiphon қызметін жақсырақ қылады!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Жіберу";
 
 /* Text explaining thumbs down choice in feedback */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon жиі байланысты\nорната алмайды, немесе\nтиісті түрде жасамайды.";
+"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon жиі байланысты\nорната алмайды, немесе\nтиісті түрде жұмыс жасамайды.";
 
 /* Text explaining thumbs up choice in feedback */
 "FEEDBACK_THUMBS_UP_TEXT" = "Psiphon мен қалайтындай\nбайланысады және\nжұмыс жасайды.";
@@ -44,7 +44,7 @@
 "LOGS_TITLE" = "Журналдар";
 
 /* Privacy Policy link text */
-"PRIVACY_POLICY_LINK_TEXT" = "Жекелік саясаты";
+"PRIVACY_POLICY_LINK_TEXT" = "Құпиялылық саясаты";
 
 /* External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
 "PRIVACY_POLICY_URL" = "https://psiphon.ca/kk/privacy.html";

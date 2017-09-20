@@ -86,13 +86,13 @@
 "My connection is bad, help!" = "ការតភ្ជាប់របស់ខ្ញុំមិនល្អ, ជួយផង!";
 
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"Changing your region to Best Performance increases your chances of getting connected." = "Changing your region to Best Performance increases your chances of getting connected.";
+"Changing your region to Best Performance increases your chances of getting connected." = "ផ្លាស់ប្តូរតំបន់អ្នកដើម្បីទទួលបានការតភ្ជាប់ប្រសើរបំផុត។";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
-"Disabling timeouts may help you stay connected on slower networks." = "Disabling timeouts may help you stay connected on slower networks.";
+"Disabling timeouts may help you stay connected on slower networks." = "ការបិទការហួសម៉ោង អាចជួយអ្នកឲ្យតភ្ជាប់លើបណ្តាញដែលយឺត។";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
-"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.";
+"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "កំពុងតភ្ជាប់ឡើងវិញ ទៅម៉ាស៊ីនមេ Psiphon អាចជួយ បើស្ថានភាពតភ្ជាប់យឺត ឬគាំង។";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
 "Reconnect to the Psiphon server" = "តភ្ជាប់ម្តងទៀតទៅម៉ាស៊ីនមេ Psiphon ";
