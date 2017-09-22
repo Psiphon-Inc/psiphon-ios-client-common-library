@@ -10,7 +10,7 @@
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
 "Change Region" = "Changer de région";
 
-/* Settings item text. Leads to a frequently asked questions page. */
+/*[UNTRANSLATED] Settings item text. Leads to a frequently asked questions page. */
 "FAQ" = "FAQ";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
@@ -43,7 +43,7 @@
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "Host address" = "Adresse de l'hôte";
 
-/* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
+/*[UNTRANSLATED] Settings item text. The network port number for the upstream proxy. Text should be kept short. */
 "Port" = "Port";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */

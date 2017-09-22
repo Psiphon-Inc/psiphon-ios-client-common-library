@@ -43,7 +43,7 @@
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "Host address" = "လက်ခံသိမ်းဆည်းမှု၏လိပ်စာ";
 
-/* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
+/*[UNTRANSLATED] Settings item text. The network port number for the upstream proxy. Text should be kept short. */
 "Port" = "Port";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
@@ -55,7 +55,7 @@
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "password" = "စကားဝှက်";
 
-/* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
+/*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "example.com" = "example.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */

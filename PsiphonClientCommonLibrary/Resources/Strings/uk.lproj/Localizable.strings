@@ -1,20 +1,20 @@
-/* External link to the about page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/about.html for french. */
+/*[UNTRANSLATED] External link to the about page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/about.html for french. */
 "ABOUT_PAGE_URL" = "https://psiphon.ca/en/about.html";
 
 /* Cancel action */
 "CANCEL_ACTION" = "Скасувати";
 
 /* FAQ link text */
-"FAQ_LINK_TEXT" = "Питання Які Часто Задаються";
+"FAQ_LINK_TEXT" = "Часті Питання";
 
-/* External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french. */
+/*[UNTRANSLATED] External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french. */
 "FAQ_URL" = "https://psiphon.ca/en/faq.html";
 
 /* Comments section placeholder text */
-"FEEDBACK_COMMENTS_PLACEHOLDER" = "Що на вашу думку? Будь ласка, залиште нам свій відгук";
+"FEEDBACK_COMMENTS_PLACEHOLDER" = "Яка ваша думка? Будь ласка, залиште нам свій відгук";
 
 /* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "Ви можете знайти рішення багатьох загальних проблем у нашій %@.";
+"FEEDBACK_FAQ_DIRECTION" = "Ви можете знайти рішення багатьох поширених проблем у нашій %@.";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "Дізнайтеся більше про дані, які ми збираємо в нашій %@";
@@ -23,21 +23,21 @@
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "Зверніть увагу, що ці діагностичні дані не ідентифікують вас, і це допомагає нам забезпечити гладку роботу Psiphon.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "Якщо вищенаведена форма не працює або ви хочете надіслати скріншоти, надішліть нам електронний лист на адресу %@";
+"FEEDBACK_FOOTER_EMAIL" = "Якщо вищенаведена форма не працює або ви хочете надіслати знімок екрану, надішліть нам електронний лист на адресу %@";
 
 /* Introduction text at top of feedback form */
-"FEEDBACK_INTRODUCTION" = "Ваш відгук робить Psiphon краще!";
+"FEEDBACK_INTRODUCTION" = "Ваш відгук робить Psiphon кращим!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Відправити";
 
 /* Text explaining thumbs down choice in feedback */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon часто не вдається\nпідключити або\nне працює достатньо\nдобре.";
+"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon часто не вдається\nпід'єднатися або\nне працює достатньо\nдобре.";
 
 /* Text explaining thumbs up choice in feedback */
 "FEEDBACK_THUMBS_UP_TEXT" = "Psiphon з'єднується\nі виконує\nяк я хочу це зробити..";
 
-/* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
+/*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/en/license.html";
 
 /* Title of screen that displays logs */
@@ -46,7 +46,7 @@
 /* Privacy Policy link text */
 "PRIVACY_POLICY_LINK_TEXT" = "Політика конфіденційності";
 
-/* External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
+/*[UNTRANSLATED] External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
 "PRIVACY_POLICY_URL" = "https://psiphon.ca/en/privacy.html";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
@@ -56,7 +56,7 @@
 "SERVER_REGION_BE" = "Бельгія";
 
 /* The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short. */
-"SERVER_REGION_BEST" = "Найкраща Продуктивність";
+"SERVER_REGION_BEST" = "Найкраща продуктивність";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_BG" = "Болгарія";
@@ -89,7 +89,7 @@
 "SERVER_REGION_HK" = "Гонконг";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_HU" = "Венгрія";
+"SERVER_REGION_HU" = "Угорщина";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_IN" = "Індія";

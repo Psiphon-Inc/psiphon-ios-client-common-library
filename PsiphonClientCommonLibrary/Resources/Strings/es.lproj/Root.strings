@@ -49,7 +49,7 @@
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
 "Use proxy authentication" = "Utilizar autentificación en el proxy";
 
-/* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
+/*[UNTRANSLATED] Placeholder text for the upstream proxy authentication username. Text should be kept short. */
 "username" = "username";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
@@ -67,13 +67,13 @@
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
 "Proxy domain" = "Dominio del proxy";
 
-/* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
+/*[UNTRANSLATED] On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "Your Comments" = "Your Comments";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
 "Your Email Address" = "Su dirección de correo electrónico";
 
-/* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
+/*[UNTRANSLATED] On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
 "Where can we respond to you?" = "Where can we respond to you?";
 
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */

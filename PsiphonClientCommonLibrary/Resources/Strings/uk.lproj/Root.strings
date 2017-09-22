@@ -2,19 +2,19 @@
 "Language" = "Мова";
 
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
-"Default language" = "Мова по замовчуванні";
+"Default language" = "Типова мова";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
 "About" = "Про";
 
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"Change Region" = "Змінити Область";
+"Change Region" = "Змінити країну";
 
 /* Settings item text. Leads to a frequently asked questions page. */
 "FAQ" = "ЧАСТІ ПИТАННЯ";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
-"Help" = "Допомога";
+"Help" = "Довідка";
 
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
 "Privacy Policy" = "Політика конфіденційності";
@@ -23,25 +23,25 @@
 "Psiphon Settings" = "Налаштування Psiphon";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"Feedback" = "Відгуки";
+"Feedback" = "Відгук";
 
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
 "Terms of Use" = "Умови користування";
 
 /* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"Disable Timeouts" = "Вимкнути тайм-аути";
+"Disable Timeouts" = "Вимкнути блокування за часом";
 
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
 "Proxy" = "Проксі";
 
 /* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"Timeouts" = "Тайм-аути";
+"Timeouts" = "Час простою";
 
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
-"Use upstream proxy" = "Використовувати проксі проти течії";
+"Use upstream proxy" = "Використовувати проксі вищого рангу";
 
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
-"Host address" = "Адреса хосту";
+"Host address" = "Адреса вузла";
 
 /* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
 "Port" = "Порт";
@@ -50,12 +50,12 @@
 "Use proxy authentication" = "Використовувати автентифікацію проксі";
 
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
-"username" = "Ім'я Користувача";
+"username" = "Ім'я користувача";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "password" = "пароль";
 
-/* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
+/*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "example.com" = "example.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
@@ -68,7 +68,7 @@
 "Proxy domain" = "Проксі домен";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Comments" = "Ваші Коментарі";
+"Your Comments" = "Ваші коментарі";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
 "Your Email Address" = "Ваша електронна адреса";
@@ -77,7 +77,7 @@
 "Where can we respond to you?" = "Де ми можемо дати відповідь вам?";
 
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
-"Diagnostic Data" = "Дані Діагностики";
+"Diagnostic Data" = "Дані діагностики";
 
 /* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
 "Upload diagnostic data" = "Завантажте дані діагностики";
@@ -86,14 +86,14 @@
 "My connection is bad, help!" = "Моє з'єднання погане, допоможіть!";
 
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"Changing your region to Best Performance increases your chances of getting connected." = "Зміна вашого регіону до Найкращої Продуктивності збільшує ваші шанси на підключення.";
+"Changing your region to Best Performance increases your chances of getting connected." = "Зміна вашого регіону для найкращої продуктивності збільшує ваші шанси на під'єднання.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
-"Disabling timeouts may help you stay connected on slower networks." = "Вимкнення тайм-аутів може допомогти вам залишатися на зв'язку в більш повільних мережах.";
+"Disabling timeouts may help you stay connected on slower networks." = "Вимкнення часу простоювання може допомогти вам залишатися на зв'язку в повільніших мережах.";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
-"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Перепід'єднання до серверу Psiphon може допомогти, якщо поточне з'єднання є повільним або не одержує відповідь.";
+"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Повторне під'єднання до сервера Psiphon може допомогти, якщо поточне з'єднання є повільним або не одержує відповідь.";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
-"Reconnect to the Psiphon server" = "Знову перепід'єднати до серверу Psiphon";
+"Reconnect to the Psiphon server" = "Повторно під'єднати до сервера Psiphon";
 

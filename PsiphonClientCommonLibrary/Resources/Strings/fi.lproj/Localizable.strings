@@ -1,4 +1,4 @@
-/* External link to the about page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/about.html for french. */
+/*[UNTRANSLATED] External link to the about page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/about.html for french. */
 "ABOUT_PAGE_URL" = "https://psiphon.ca/en/about.html";
 
 /* Cancel action */
@@ -7,94 +7,94 @@
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "Usein Kysytyt Kysymykset";
 
-/* External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french. */
+/*[UNTRANSLATED] External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french. */
 "FAQ_URL" = "https://psiphon.ca/en/faq.html";
 
-/* Comments section placeholder text */
+/*[UNTRANSLATED] Comments section placeholder text */
 "FEEDBACK_COMMENTS_PLACEHOLDER" = "What's on your mind? Please leave us your feedback";
 
-/* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
+/*[UNTRANSLATED] Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
 "FEEDBACK_FAQ_DIRECTION" = "You can find solutions to many common problems in our %@.";
 
-/* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
+/*[UNTRANSLATED] Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "Learn more about the data we collect in our %@";
 
-/* Feedback footer text. */
+/*[UNTRANSLATED] Feedback footer text. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "Please note that this diagnostic data does not identify you, and it helps us keep Psiphon running smoothly.";
 
-/* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
+/*[UNTRANSLATED] Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "If the above form is not working or you would like to send screenshots, please email us at %@";
 
-/* Introduction text at top of feedback form */
+/*[UNTRANSLATED] Introduction text at top of feedback form */
 "FEEDBACK_INTRODUCTION" = "Your feedback makes Psiphon better!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Lähetä";
 
-/* Text explaining thumbs down choice in feedback */
+/*[UNTRANSLATED] Text explaining thumbs down choice in feedback */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon often fails\nto connect or\ndoesn't perform well\nenough.";
 
-/* Text explaining thumbs up choice in feedback */
+/*[UNTRANSLATED] Text explaining thumbs up choice in feedback */
 "FEEDBACK_THUMBS_UP_TEXT" = "Psiphon connects\nand performs the\nway I want it to.";
 
-/* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
+/*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/en/license.html";
 
 /* Title of screen that displays logs */
 "LOGS_TITLE" = "Logitiedostot";
 
-/* Privacy Policy link text */
+/*[UNTRANSLATED] Privacy Policy link text */
 "PRIVACY_POLICY_LINK_TEXT" = "Privacy Policy";
 
-/* External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
+/*[UNTRANSLATED] External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
 "PRIVACY_POLICY_URL" = "https://psiphon.ca/en/privacy.html";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_AT" = "Austria";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_BE" = "Belgium";
 
 /* The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short. */
 "SERVER_REGION_BEST" = "Paras suorituskyky";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_BG" = "Bulgaria";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_CA" = "Kanada";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_CH" = "Switzerland";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_CZ" = "Czech Republic";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_DE" = "Saksa";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_DK" = "Denmark";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_ES" = "Spain";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_FR" = "France";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_GB" = "Yhdistynyt kuningaskunta";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_HK" = "Hong Kong";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_HU" = "Hungary";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_IN" = "India";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_IT" = "Italy";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
@@ -103,16 +103,16 @@
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_NL" = "Hollanti";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_NO" = "Norway";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_RO" = "Romania";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_SE" = "Sweden";
 
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_SG" = "Singapore";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
