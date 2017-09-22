@@ -43,7 +43,7 @@
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "Host address" = "Eýe salgysy";
 
-/* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
+/*[UNTRANSLATED] Settings item text. The network port number for the upstream proxy. Text should be kept short. */
 "Port" = "Port";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */

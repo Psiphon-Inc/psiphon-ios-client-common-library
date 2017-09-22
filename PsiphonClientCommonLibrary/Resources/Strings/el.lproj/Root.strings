@@ -37,7 +37,7 @@
 /* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
 "Timeouts" = "Χρονικά Όρια";
 
-/* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
+/*[UNTRANSLATED] Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
 "Use upstream proxy" = "Use upstream proxy";
 
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
@@ -46,7 +46,7 @@
 /* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
 "Port" = "Θύρα";
 
-/* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
+/*[UNTRANSLATED] Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
 "Use proxy authentication" = "Use proxy authentication";
 
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
@@ -55,7 +55,7 @@
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "password" = "κωδικός πρόσβασης";
 
-/* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
+/*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "example.com" = "example.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
@@ -88,10 +88,10 @@
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
 "Changing your region to Best Performance increases your chances of getting connected." = "Αλλάζοντας την περιοχής σας στη Καλύτερη Απόδοση αυξάνει τις πιθανότητες σύνδεσης.";
 
-/* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
+/*[UNTRANSLATED] Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "Disabling timeouts may help you stay connected on slower networks." = "Disabling timeouts may help you stay connected on slower networks.";
 
-/* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
+/*[UNTRANSLATED] Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
 "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */

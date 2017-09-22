@@ -55,7 +55,7 @@
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "password" = "пароль";
 
-/* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
+/*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "example.com" = "example.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */

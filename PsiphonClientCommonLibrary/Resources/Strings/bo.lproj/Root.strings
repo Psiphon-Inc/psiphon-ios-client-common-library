@@ -13,7 +13,7 @@
 /* Settings item text. Leads to a frequently asked questions page. */
 "FAQ" = "ཡང་སེ་སྐུལ་བའི་དྲི་བ།";
 
-/* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
+/*[UNTRANSLATED] Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
 "Help" = "Help";
 
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
@@ -55,7 +55,7 @@
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "password" = "གསང་ཨང་།";
 
-/* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
+/*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "example.com" = "example.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */

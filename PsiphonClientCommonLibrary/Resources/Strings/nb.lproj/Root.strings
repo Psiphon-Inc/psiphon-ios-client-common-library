@@ -43,13 +43,13 @@
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "Host address" = "Vertsadresse";
 
-/* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
+/*[UNTRANSLATED] Settings item text. The network port number for the upstream proxy. Text should be kept short. */
 "Port" = "Port";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
 "Use proxy authentication" = "Bruk gyldighetssjekk for mellomtjener";
 
-/* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
+/*[UNTRANSLATED] Placeholder text for the upstream proxy authentication username. Text should be kept short. */
 "username" = "username";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
@@ -67,19 +67,19 @@
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
 "Proxy domain" = "Mellomtjener-domene";
 
-/* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
+/*[UNTRANSLATED] On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "Your Comments" = "Your Comments";
 
-/* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
+/*[UNTRANSLATED] On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
 "Your Email Address" = "Your Email Address";
 
-/* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
+/*[UNTRANSLATED] On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
 "Where can we respond to you?" = "Where can we respond to you?";
 
-/* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
+/*[UNTRANSLATED] On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
 "Diagnostic Data" = "Diagnostic Data";
 
-/* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
+/*[UNTRANSLATED] On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
 "Upload diagnostic data" = "Upload diagnostic data";
 
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
