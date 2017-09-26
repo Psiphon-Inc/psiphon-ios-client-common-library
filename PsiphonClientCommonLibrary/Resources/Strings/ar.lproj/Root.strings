@@ -1,3 +1,6 @@
+/*[UNTRANSLATED] Settings view subheading for Psiphon-specific settings. */
+"Psiphon" = "Psiphon";
+
 /* Settings item to change the application UI language. */
 "Language" = "اللغة";
 
@@ -83,10 +86,10 @@
 "Upload diagnostic data" = "تحميل بيانات التشخيص";
 
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"My connection is bad, help!" = "إتصالي بالإنترنت سيئ، ساعدوني!";
+"My connection is bad, help!" = "إتصالي بالإنترنت سيئ، ساعدني!";
 
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"Changing your region to Best Performance increases your chances of getting connected." = "تغيير منطقتك إلى أفضل أداء يزيد من فرص إتصالك";
+"Changing your region to Best Performance increases your chances of getting connected." = "تغيير منطقتك إلى أفضل أداء ليتحسن إتصالك";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "Disabling timeouts may help you stay connected on slower networks." = "يمكن أن يساعد إلغاء ميزة \"الإنقطاع عند نفاذ المدة\" في المحافظة على الإتصال على الشبكات الضعيفة";

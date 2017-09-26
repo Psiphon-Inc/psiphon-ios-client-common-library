@@ -1,3 +1,6 @@
+/*[UNTRANSLATED] Settings view subheading for Psiphon-specific settings. */
+"Psiphon" = "Psiphon";
+
 /*[UNTRANSLATED] Settings item to change the application UI language. */
 "Language" = "Language";
 
