@@ -180,7 +180,7 @@ sensitivity:(SensitivityLevel)sensitivity
 + (NSString*)timestampForDisplay:(NSDate*)timestamp {
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	formatter.locale = [NSLocale currentLocale];
-	formatter.dateFormat = @"HH:mm:ss";
+	formatter.dateFormat = @"HH:mm:ss.SSS";
 
 	return [formatter stringFromDate:timestamp];
 }
