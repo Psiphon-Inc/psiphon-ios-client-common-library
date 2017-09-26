@@ -1,3 +1,6 @@
+/* Settings view subheading for Psiphon-specific settings. */
+"Psiphon" = "سایفون";
+
 /* Settings item to change the application UI language. */
 "Language" = "زبان";
 

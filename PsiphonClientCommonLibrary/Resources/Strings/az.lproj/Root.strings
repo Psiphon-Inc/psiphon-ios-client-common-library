@@ -1,3 +1,6 @@
+/*[UNTRANSLATED] Settings view subheading for Psiphon-specific settings. */
+"Psiphon" = "Psiphon";
+
 /* Settings item to change the application UI language. */
 "Language" = "Dil";
 
@@ -68,13 +71,13 @@
 "Proxy domain" = "Proksi domeni";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Comments" = "Şərhiniz";
+"Your Comments" = "Şərhləriniz";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Email Address" = "Email ünvan";
+"Your Email Address" = "Email ünvanınız";
 
 /* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
-"Where can we respond to you?" = "Sizə necə cavab verək?";
+"Where can we respond to you?" = "Sizə hansı yolla cavab verək?";
 
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
 "Diagnostic Data" = "Diaqnoz məlumatı";
@@ -92,8 +95,8 @@
 "Disabling timeouts may help you stay connected on slower networks." = "Dayanmaları söndürməklə aşağı sürətli şəbəkələrdə qoşulmanızı qoruya bilərsiniz.";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
-"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Hazırkı qoşulma yavaşdırsa və ya cavab vermirsə Psiphon serverinə yenidən qoşulma kömək ola bilər.";
+"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Hazırkı qoşulmada sürət aşağıdırsa və ya cavab yoxdursa, Psiphon serverinə yenidən qoşula bilərsiniz.";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
-"Reconnect to the Psiphon server" = "Psiphon serverinə yenidən qoşulma";
+"Reconnect to the Psiphon server" = "Psiphon serverinə yenidən qoşulun";
 

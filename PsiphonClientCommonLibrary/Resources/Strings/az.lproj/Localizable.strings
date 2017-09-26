@@ -11,10 +11,10 @@
 "FAQ_URL" = "https://psiphon.ca/en/faq.html";
 
 /* Comments section placeholder text */
-"FEEDBACK_COMMENTS_PLACEHOLDER" = "Fikriniz nədir? Zəhmət olmasa öz şərhinizi yazın";
+"FEEDBACK_COMMENTS_PLACEHOLDER" = "Fikriniz nədir? Zəhmət olmasa, şərhinizi yazın";
 
 /* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "Bir sıra ümumi problemlərə cavab tapmaq üçün %@.";
+"FEEDBACK_FAQ_DIRECTION" = "Bəzi ümumi problemlərin həllini burda tapa bilərsiniz %@.";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "Topladığımız məlumat haqda öyrənmək üçün %@";
@@ -23,19 +23,19 @@
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "Qeyd edək ki, bu diaqnostika məlumatı sizin kimliyinizi açıqlamır, sadəcə Psiphonun yaxşı işləməsini təmin edir.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "Yuxarıdakı anket işləmirsə və ya ekran görüntülərini göndərmək istəyirsinizsə bizə email yazın %@";
+"FEEDBACK_FOOTER_EMAIL" = "Yuxarıdakı anket işləmirsə və ya ekran görüntülərini göndərmək istəyirsinizsə, bizə email yazın %@";
 
 /* Introduction text at top of feedback form */
-"FEEDBACK_INTRODUCTION" = "Şərhiniz Ösiphonu yaxılaşdırmağa kömək edir!";
+"FEEDBACK_INTRODUCTION" = "Şərhiniz Psiphonu yaxılaşdırmağa kömək edir!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Göndər";
 
 /* Text explaining thumbs down choice in feedback */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon tez-tez qoşulma\nxarab olur\nvə ya yaxşı\nişləmir.";
+"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon tez-tez xarab olur, yəni\nqoşulmur və ya\nyaxşı\nişləmir.";
 
 /* Text explaining thumbs up choice in feedback */
-"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon qoşulur\nvə istədiyim kimi\nfəaliyyət göstərir.";
+"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon qoşulur\nvə istədiyim kimi\nişləyir.";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/en/license.html";
@@ -44,7 +44,7 @@
 "LOGS_TITLE" = "Girişlər";
 
 /* Privacy Policy link text */
-"PRIVACY_POLICY_LINK_TEXT" = "Təhlükəsizlik Qaydaları";
+"PRIVACY_POLICY_LINK_TEXT" = "Təhlükəsizlik Siyasəti";
 
 /*[UNTRANSLATED] External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
 "PRIVACY_POLICY_URL" = "https://psiphon.ca/en/privacy.html";

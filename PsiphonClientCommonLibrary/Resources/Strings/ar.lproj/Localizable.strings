@@ -23,7 +23,7 @@
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "الرجاء الإنتباه أن هذه البيانات التشخيصية لا تكشف هويتك، إنما تساعد سايفون على العمل بشكل أفضل.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "إذا كان النموذج أعلاه لا يعمل، أو كنتم ترغبون في إرسال لقطة شاشة صورية ، يرجى مراسلتنا على %@";
+"FEEDBACK_FOOTER_EMAIL" = "إذا كان النموذج أعلاه لا يعمل، أو كنتم ترغبون في إرسال لقطة شاشة ، يرجى مراسلتنا على %@";
 
 /* Introduction text at top of feedback form */
 "FEEDBACK_INTRODUCTION" = "ملاحظاتك تجعل سايفون أفضل!";
