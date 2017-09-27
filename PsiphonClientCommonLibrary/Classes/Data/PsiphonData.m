@@ -153,8 +153,7 @@ sensitivity:(SensitivityLevel)sensitivity
 @synthesize diagnosticHistory = _diagnosticHistory;
 @synthesize statusHistory = _statusHistory;
 
-+ (instancetype)sharedInstance
-{
++ (instancetype)sharedInstance {
 	static dispatch_once_t once;
 	static id sharedInstance;
 	dispatch_once(&once, ^{
@@ -163,34 +162,44 @@ sensitivity:(SensitivityLevel)sensitivity
 	return sharedInstance;
 }
 
-/* Class variable */
-static NSDateFormatter *iso8601Formatter;
-static NSDateFormatter *displayFormatter;
 
-// ISO8601DateFormatter method only available in iOS 10.0+
-// Follows format specified in `getISO8601String` https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/Android/app/src/main/java/com/psiphon3/psiphonlibrary/Utils.java#Utils.java-614
-// http://stackoverflow.com/questions/28016578/swift-how-to-create-a-date-time-stamp-and-format-as-iso-8601-rfc-3339-utc-tim
+
+/**
+ This method is thread-safe.
+ // ISO8601DateFormatter method only available in iOS 10.0+
+ // Follows format specified in `getISO8601String` https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/Android/app/src/main/java/com/psiphon3/psiphonlibrary/Utils.java#Utils.java-614
+ // http://stackoverflow.com/questions/28016578/swift-how-to-create-a-date-time-stamp-and-format-as-iso-8601-rfc-3339-utc-tim
+ */
 + (NSString*)dateToISO8601:(NSDate*)date {
-    if (!iso8601Formatter) {
-        iso8601Formatter = [[NSDateFormatter alloc] init];
-        iso8601Formatter.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierISO8601];
-        iso8601Formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]; // https://developer.apple.com/library/mac/qa/qa1480/_index.html
-        iso8601Formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
-        iso8601Formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSX";
-    }
+    static dispatch_once_t once;
+    static NSDateFormatter *formatter;
+    dispatch_once(&once, ^{
+        formatter = [[NSDateFormatter alloc] init];
+        formatter.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierISO8601];
+        formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]; // https://developer.apple.com/library/mac/qa/qa1480/_index.html
+        formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+        formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSX";
+    });
 
-	return [iso8601Formatter stringFromDate:date];
+	return [formatter stringFromDate:date];
 }
 
-// Convert timestamp to shortened human readible format for display
-+ (NSString*)timestampForDisplay:(NSDate*)timestamp {
-    if (!displayFormatter) {
-        displayFormatter = [[NSDateFormatter alloc] init];
-        displayFormatter.locale = [NSLocale currentLocale];
-        displayFormatter.dateFormat = @"HH:mm:ss.SSS";
-    }
 
-	return [displayFormatter stringFromDate:timestamp];
+/**
+ Convert timestamp to shortened human readible format for display.
+ This method is thread-safe.
+ */
++ (NSString*)timestampForDisplay:(NSDate*)timestamp {
+    static dispatch_once_t once;
+    static NSDateFormatter *formatter;
+
+    dispatch_once(&once, ^{
+        formatter = [[NSDateFormatter alloc] init];
+        formatter.locale = [NSLocale currentLocale];
+        formatter.dateFormat = @"HH:mm:ss.SSS";
+    });
+
+	return [formatter stringFromDate:timestamp];
 }
 
 - (id)init {
