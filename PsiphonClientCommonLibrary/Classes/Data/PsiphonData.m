@@ -28,12 +28,12 @@
 
 - (id)init:(NSString*)msg withStackTrace:(NSArray*)trace {
 	self = [super init];
-
+	
 	if (self) {
 		_message = msg;
 		_stackTrace = trace;
 	}
-
+	
 	return self;
 }
 
@@ -48,50 +48,50 @@
 
 - (id)init:(NSString*)msg nameValuePairs:(NSArray*)nameValuePairs {
 	self = [super init];
-
+	
 	assert(nameValuePairs.count % 2 == 0);
-
+	
 	if (self) {
 		_timestamp = [NSDate date];
 		_message = msg;
-
+		
 		if (nameValuePairs != nil) {
 			NSMutableDictionary *jsonObject = [[NSMutableDictionary alloc] init];
-
+			
 			for (NSUInteger i = 0; i <= [nameValuePairs count]/2 - 1; i++) {
 				[jsonObject setObject:nameValuePairs[i*2+1] forKey:nameValuePairs[i*2]];
 			}
 			_data = jsonObject;
 		}
 	}
-
+	
 	return self;
 }
 
 - (id)init:(NSString*)msg {
 	self = [super init];
-
+	
 	if (self) {
 		DiagnosticEntry *result = [[DiagnosticEntry alloc] init:msg nameValuePairs:@[@"msg", msg]];
 		_timestamp = result.timestamp;
 		_message = result.message;
 		_data = result.data;
 	}
-
+	
 	return self;
 }
 
 - (id)init:(NSString*)msg andTimestamp:(NSDate*)timestamp {
 	self = [super init];
-
+	
 	if (self) {
 		DiagnosticEntry *result = [[DiagnosticEntry alloc] init:msg nameValuePairs:@[@"msg", msg]];
-
+		
 		_timestamp = timestamp;
 		_message = result.message;
 		_data = result.data;
 	}
-
+	
 	return self;
 }
 
@@ -121,7 +121,7 @@ formatArgs:(NSArray*)formatArgs
 sensitivity:(SensitivityLevel)sensitivity
   priority:(PriorityLevel)priority {
 	self = [super init];
-
+	
 	if (self) {
 		_timestamp = [NSDate date];
 		_id = identifier;
@@ -130,7 +130,7 @@ sensitivity:(SensitivityLevel)sensitivity
 		_throwable = throwable;
 		_priority = priority;
 	}
-
+	
 	return self;
 }
 
@@ -171,16 +171,16 @@ sensitivity:(SensitivityLevel)sensitivity
  // http://stackoverflow.com/questions/28016578/swift-how-to-create-a-date-time-stamp-and-format-as-iso-8601-rfc-3339-utc-tim
  */
 + (NSString*)dateToISO8601:(NSDate*)date {
-    static dispatch_once_t once;
-    static NSDateFormatter *formatter;
-    dispatch_once(&once, ^{
-        formatter = [[NSDateFormatter alloc] init];
-        formatter.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierISO8601];
-        formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]; // https://developer.apple.com/library/mac/qa/qa1480/_index.html
-        formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
-        formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSX";
-    });
-
+	static dispatch_once_t once;
+	static NSDateFormatter *formatter;
+	dispatch_once(&once, ^{
+		formatter = [[NSDateFormatter alloc] init];
+		formatter.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierISO8601];
+		formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]; // https://developer.apple.com/library/mac/qa/qa1480/_index.html
+		formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+		formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSX";
+	});
+	
 	return [formatter stringFromDate:date];
 }
 
@@ -190,28 +190,28 @@ sensitivity:(SensitivityLevel)sensitivity
  This method is thread-safe.
  */
 + (NSString*)timestampForDisplay:(NSDate*)timestamp {
-    static dispatch_once_t once;
-    static NSDateFormatter *formatter;
-
-    dispatch_once(&once, ^{
-        formatter = [[NSDateFormatter alloc] init];
-        formatter.locale = [NSLocale currentLocale];
-        formatter.dateFormat = @"HH:mm:ss.SSS";
-    });
-
+	static dispatch_once_t once;
+	static NSDateFormatter *formatter;
+	
+	dispatch_once(&once, ^{
+		formatter = [[NSDateFormatter alloc] init];
+		formatter.locale = [NSLocale currentLocale];
+		formatter.dateFormat = @"HH:mm:ss.SSS";
+	});
+	
 	return [formatter stringFromDate:timestamp];
 }
 
 - (id)init {
 	self = [super init];
-
+	
 	if (self) {
 		statusHistoryLock = [[NSLock alloc] init];
 		_statusHistory = [[NSMutableArray<StatusEntry*> alloc] init];
 		diagnosticHistoryLock = [[NSLock alloc] init];
 		_diagnosticHistory = [[NSMutableArray<DiagnosticEntry*> alloc] init];
 	}
-
+	
 	return self;
 }
 
@@ -253,29 +253,29 @@ sensitivity:(SensitivityLevel)sensitivity
 
 - (NSArray<NSString*>*)getDiagnosticLogsForDisplay {
 	NSMutableArray<NSString*> *logs = [[NSMutableArray<NSString*> alloc] init];
-
+	
 	[diagnosticHistoryLock lock];
 	for (DiagnosticEntry* entry in _diagnosticHistory) {
 		NSString *log = [NSString stringWithFormat:@"%@ %@", [entry getTimestampForDisplay], [entry message]];
 		[logs addObject:log];
 	}
 	[diagnosticHistoryLock unlock];
-
+	
 	return logs;
 }
 
 // Return array of status entries formatted as strings for display
 - (NSArray<NSString*>*)getStatusLogsForDisplay {
 	NSMutableArray<NSString*> *logs = [[NSMutableArray<NSString*> alloc] init];
-
+	
 	[statusHistoryLock lock];
 	for (StatusEntry* entry in _statusHistory) {
 		if (entry.sensitivity != SensitivityLevelNotSensitive) {
 			continue;
 		}
-
+		
 		NSString *infoString = entry.id;
-
+		
 		// Apply format args to string if provided
 		NSArray *formatArgs = entry.formatArgs;
 		if (formatArgs != nil) {
