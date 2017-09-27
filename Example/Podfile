@@ -1,5 +1,8 @@
 use_frameworks!
 
+# Disable sending stats
+ENV['COCOAPODS_DISABLE_STATS'] = 'true'
+
 target 'PsiphonClientCommonLibrary_Example' do
   pod "InAppSettingsKit", :git => "https://github.com/Psiphon-Inc/InAppSettingsKit.git"
   #pod "InAppSettingsKit", :path => "../../InAppSettingsKit"
