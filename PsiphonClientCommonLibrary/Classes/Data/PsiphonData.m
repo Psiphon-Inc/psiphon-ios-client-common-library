@@ -163,26 +163,34 @@ sensitivity:(SensitivityLevel)sensitivity
 	return sharedInstance;
 }
 
+/* Class variable */
+static NSDateFormatter *iso8601Formatter;
+static NSDateFormatter *displayFormatter;
+
 // ISO8601DateFormatter method only available in iOS 10.0+
 // Follows format specified in `getISO8601String` https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/Android/app/src/main/java/com/psiphon3/psiphonlibrary/Utils.java#Utils.java-614
 // http://stackoverflow.com/questions/28016578/swift-how-to-create-a-date-time-stamp-and-format-as-iso-8601-rfc-3339-utc-tim
 + (NSString*)dateToISO8601:(NSDate*)date {
-	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	formatter.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierISO8601];
-	formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]; // https://developer.apple.com/library/mac/qa/qa1480/_index.html
-	formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
-	formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSX";
+    if (!iso8601Formatter) {
+        iso8601Formatter = [[NSDateFormatter alloc] init];
+        iso8601Formatter.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierISO8601];
+        iso8601Formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]; // https://developer.apple.com/library/mac/qa/qa1480/_index.html
+        iso8601Formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+        iso8601Formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSX";
+    }
 
-	return [formatter stringFromDate:date];
+	return [iso8601Formatter stringFromDate:date];
 }
 
 // Convert timestamp to shortened human readible format for display
 + (NSString*)timestampForDisplay:(NSDate*)timestamp {
-	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	formatter.locale = [NSLocale currentLocale];
-	formatter.dateFormat = @"HH:mm:ss.SSS";
+    if (!displayFormatter) {
+        displayFormatter = [[NSDateFormatter alloc] init];
+        displayFormatter.locale = [NSLocale currentLocale];
+        displayFormatter.dateFormat = @"HH:mm:ss.SSS";
+    }
 
-	return [formatter stringFromDate:timestamp];
+	return [displayFormatter stringFromDate:timestamp];
 }
 
 - (id)init {
