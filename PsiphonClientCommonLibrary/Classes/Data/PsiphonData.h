@@ -27,28 +27,28 @@
 #define kDisplayLogEntry "DisplayLogEntry"
 
 typedef NS_ENUM(NSInteger, SensitivityLevel) {
-    /**
-     * The log does not contain sensitive information.
-     */
-    SensitivityLevelNotSensitive,
-    /**
-     * The log message itself is sensitive information.
-     */
-    SensitivityLevelSensitiveLog,
-    /**
-     * The format arguments to the log messages are sensitive, but the
-     * log message itself is not.
-     */
-    SensitivityLevelSensitiveFormatArgs
+	/**
+	 * The log does not contain sensitive information.
+	 */
+	SensitivityLevelNotSensitive,
+	/**
+	 * The log message itself is sensitive information.
+	 */
+	SensitivityLevelSensitiveLog,
+	/**
+	 * The format arguments to the log messages are sensitive, but the
+	 * log message itself is not.
+	 */
+	SensitivityLevelSensitiveFormatArgs
 };
 
 typedef NS_ENUM(NSInteger, PriorityLevel) {
-    PriorityVerbose,
-    PriorityDebug,
-    PriorityInfo,
-    PriorityWarn,
-    PriorityError,
-    PriorityAssert
+	PriorityVerbose,
+	PriorityDebug,
+	PriorityInfo,
+	PriorityWarn,
+	PriorityError,
+	PriorityAssert
 };
 
 @interface Throwable : NSObject
