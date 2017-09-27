@@ -208,6 +208,17 @@ BOOL linksEnabled;
 
 		targetViewController.delegate = targetViewController;
 		targetViewController.feedbackDelegate = self.settingsDelegate;
+
+		// NOTE: This comment and much of the code is copied from
+		// IASKAppSettingsViewController.m
+        // HACK: For right now we are only using bundle name in BundleTable, and
+        // the bundle for the string lookup is the same bundle where the child
+        // plist can be found, so we're going to overload BundleTable to do the
+        // child plist lookup. There might come a day where this is no longer good
+        // enough and we'll have to introduce new, separate attributes, properties, etc.
+        // TODO: Make this not a hack.
+        targetViewController.bundle = [IASKSettingsReader bundleFromName:specifier.bundleTable];
+
 		targetViewController.file = specifier.file;
 		targetViewController.settingsStore = self.settingsStore;
 		targetViewController.showDoneButton = NO;
