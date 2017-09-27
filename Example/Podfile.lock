@@ -1,6 +1,6 @@
 PODS:
-  - InAppSettingsKit (2.9.0)
-  - PsiphonClientCommonLibrary (0.2.9):
+  - InAppSettingsKit (2.9.2)
+  - PsiphonClientCommonLibrary (0.2.10):
     - InAppSettingsKit
 
 DEPENDENCIES:
@@ -15,13 +15,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   InAppSettingsKit:
-    :commit: b1660601c73539b0fddc10c7cd3703849ccc8667
+    :commit: 877f342920759b91ecb329123a8365158cac93e8
     :git: https://github.com/Psiphon-Inc/InAppSettingsKit.git
 
 SPEC CHECKSUMS:
-  InAppSettingsKit: 0cdc3bc63b738f470638d5fed40db4f0a37f2327
-  PsiphonClientCommonLibrary: e411b289e3c99873dbc4734e0d9cc17a937827f7
+  InAppSettingsKit: e81b468f9944bec83b1389a1e201600cc34ae922
+  PsiphonClientCommonLibrary: a09659a57f24970c43e911c9260143b548036b75
 
-PODFILE CHECKSUM: 2ed09f3d0142decab2334d9df669d3102b4bf7b1
+PODFILE CHECKSUM: b63686d57e697c91f162a29696f98f7cbdbaa244
 
 COCOAPODS: 1.3.1
