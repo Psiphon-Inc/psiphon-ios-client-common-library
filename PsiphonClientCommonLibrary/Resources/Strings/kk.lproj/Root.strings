@@ -1,102 +1,102 @@
 /*[UNTRANSLATED] Settings view subheading for Psiphon-specific settings. */
-"Psiphon" = "Psiphon";
+"PSIPHON" = "Psiphon";
 
 /* Settings item to change the application UI language. */
-"Language" = "Тіл";
+"SETTINGS_LANGUAGE" = "Тіл";
 
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
-"Default language" = "Үнсіз келісім тілі";
+"DEFAULT_LANGUAGE" = "Үнсіз келісім тілі";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
-"About" = "Осы туралы";
+"SETTINGS_ABOUT" = "Осы туралы";
 
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"Change Region" = "Аймақты өзгерту";
+"CHANGE_REGION" = "Аймақты өзгерту";
 
 /* Settings item text. Leads to a frequently asked questions page. */
-"FAQ" = "ЖҚС";
+"SETTINGS_FAQ" = "ЖҚС";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
-"Help" = "Көмек";
+"SETTINGS_HELP_SECTION" = "Көмек";
 
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
-"Privacy Policy" = "Құпиялылық саясаты";
+"SETTINGS_PRIVACY_POLICY" = "Құпиялылық саясаты";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
-"Psiphon Settings" = "Psiphon баптаулары";
+"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon баптаулары";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"Feedback" = "Кері байланыс";
+"SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "Кері байланыс";
 
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"Terms of Use" = "Пайдалану шарттары";
+"SETTINGS_TERMS_OF_USE" = "Пайдалану шарттары";
 
 /* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"Disable Timeouts" = "Таймауттарды сөндіру";
+"DISABLE_TIMEOUTS" = "Таймауттарды сөндіру";
 
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
-"Proxy" = "Прокси";
+"PSIPHON_SETTINGS_PROXY_SECTION" = "Прокси";
 
 /* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"Timeouts" = "Таймауттар";
+"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "Таймауттар";
 
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
-"Use upstream proxy" = "Сыртқы проксиді қолдану";
+"PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "Сыртқы проксиді қолдану";
 
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
-"Host address" = "Хост адресі";
+"PSIPHON_SETTINGS_UPSTREAM_HOST" = "Хост адресі";
 
 /* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
-"Port" = "Порт нөмірі";
+"PSIPHON_SETTINGS_UPSTREAM_PORT" = "Порт нөмірі";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"Use proxy authentication" = "Прокси аутентификациясын қолдану";
+"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "Прокси аутентификациясын қолдану";
 
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
-"username" = "пайдаланушы аты";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "пайдаланушы аты";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
-"password" = "құпиясөз";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "құпиясөз";
 
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
-"example.com" = "example.com";
+"EXAMPLE_HOSTNAME" = "example.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"Proxy username" = "Прокси пайдаланушы аты";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Прокси пайдаланушы аты";
 
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
-"Proxy password" = "Прокси құпиясөзі";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Прокси құпиясөзі";
 
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
-"Proxy domain" = "Прокси домені";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "Прокси домені";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Comments" = "Пікірлеріңіз";
+"FEEDBACK_COMMENTS_LABEL" = "Пікірлеріңіз";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Email Address" = "Эл. пошта адресіңіз";
+"FEEDBACK_EMAIL_LABEL" = "Эл. пошта адресіңіз";
 
 /* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
-"Where can we respond to you?" = "Сізге қайда жауап бере аламыз?";
+"FEEDBACK_EMAIL_PLACEHOLDER" = "Сізге қайда жауап бере аламыз?";
 
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
-"Diagnostic Data" = "Жөндеу деректері";
+"FEEDBACK_DIAGNOSTIC_DATA_SECTION" = "Жөндеу деректері";
 
 /* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
-"Upload diagnostic data" = "Жөндеу деректерін жүктеп жіберу";
+"FEEDBACK_DIAGNOSTIC_DATA_LABEL" = "Жөндеу деректерін жүктеп жіберу";
 
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"My connection is bad, help!" = "Менің байланысым нашар, көмектесіңіз!";
+"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "Менің байланысым нашар, көмектесіңіз!";
 
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"Changing your region to Best Performance increases your chances of getting connected." = "Аймағыңызды Ең жақсы өнімділікке орнату байланысты орнату мүмкіндігіңізді арттырады.";
+"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Аймағыңызды Ең жақсы өнімділікке орнату байланысты орнату мүмкіндігіңізді арттырады.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
-"Disabling timeouts may help you stay connected on slower networks." = "Таймауттарды сөндіру баяу желілерде байланысқан күйде қалуыңызға көмектесуі мүмкін.";
+"CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "Таймауттарды сөндіру баяу желілерде байланысқан күйде қалуыңызға көмектесуі мүмкін.";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
-"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Ағымдағы байланысыңыз баяу немесе жауап қайтармайтын болса, Psiphon серверіне байланысты қайта орнату көмектесе алады.";
+"CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "Ағымдағы байланысыңыз баяу немесе жауап қайтармайтын болса, Psiphon серверіне байланысты қайта орнату көмектесе алады.";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
-"Reconnect to the Psiphon server" = "Psiphon серверіне байланысты қайта орнату";
+"FORCE_RECONNECT" = "Psiphon серверіне байланысты қайта орнату";
 

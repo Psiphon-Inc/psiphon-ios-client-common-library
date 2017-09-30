@@ -1,102 +1,102 @@
 /*[UNTRANSLATED] Settings view subheading for Psiphon-specific settings. */
-"Psiphon" = "Psiphon";
+"PSIPHON" = "Psiphon";
 
 /* Settings item to change the application UI language. */
-"Language" = "اللغة";
+"SETTINGS_LANGUAGE" = "اللغة";
 
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
-"Default language" = "اللغة الإفتراضية";
+"DEFAULT_LANGUAGE" = "اللغة الإفتراضية";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
-"About" = "حول";
+"SETTINGS_ABOUT" = "حول";
 
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"Change Region" = "تغيير المنطقة";
+"CHANGE_REGION" = "تغيير المنطقة";
 
 /* Settings item text. Leads to a frequently asked questions page. */
-"FAQ" = "أسئلة متكررة";
+"SETTINGS_FAQ" = "أسئلة متكررة";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
-"Help" = "المساعدة";
+"SETTINGS_HELP_SECTION" = "المساعدة";
 
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
-"Privacy Policy" = "سياسة الخصوصية ";
+"SETTINGS_PRIVACY_POLICY" = "سياسة الخصوصية ";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
-"Psiphon Settings" = " إعدادات سايفون";
+"PSIPHON_SUBSETTINGS_LABEL" = " إعدادات سايفون";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"Feedback" = "الإفادة حول التطبيق";
+"SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "الإفادة حول التطبيق";
 
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"Terms of Use" = "شروط الإستخدام";
+"SETTINGS_TERMS_OF_USE" = "شروط الإستخدام";
 
 /* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"Disable Timeouts" = "إلغاء الإنقطاع عند نفاذ المهلة";
+"DISABLE_TIMEOUTS" = "إلغاء الإنقطاع عند نفاذ المهلة";
 
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
-"Proxy" = "الوكيل";
+"PSIPHON_SETTINGS_PROXY_SECTION" = "الوكيل";
 
 /* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"Timeouts" = "نفاذ المهلة";
+"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "نفاذ المهلة";
 
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
-"Use upstream proxy" = "إستعمال بروكسي upstream";
+"PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "إستعمال بروكسي upstream";
 
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
-"Host address" = "عنوان المضيف ";
+"PSIPHON_SETTINGS_UPSTREAM_HOST" = "عنوان المضيف ";
 
 /* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
-"Port" = "منفذ";
+"PSIPHON_SETTINGS_UPSTREAM_PORT" = "منفذ";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"Use proxy authentication" = "إستعمال مصادقة البروكسي ";
+"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "إستعمال مصادقة البروكسي ";
 
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
-"username" = "إسم المستخدم";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "إسم المستخدم";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
-"password" = "كلمة المرور";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "كلمة المرور";
 
 /* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
-"example.com" = "مثال.com";
+"EXAMPLE_HOSTNAME" = "مثال.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"Proxy username" = "اسم مستخدم البروكسي";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "اسم مستخدم البروكسي";
 
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
-"Proxy password" = "كلمة مرور البروكسي";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "كلمة مرور البروكسي";
 
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
-"Proxy domain" = "نطاق البروكسي ";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "نطاق البروكسي ";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Comments" = "تعليقاتك";
+"FEEDBACK_COMMENTS_LABEL" = "تعليقاتك";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Email Address" = "عنوان بريدك الإلكتروني";
+"FEEDBACK_EMAIL_LABEL" = "عنوان بريدك الإلكتروني";
 
 /* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
-"Where can we respond to you?" = "أين يمكننا الرد عليك؟";
+"FEEDBACK_EMAIL_PLACEHOLDER" = "أين يمكننا الرد عليك؟";
 
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
-"Diagnostic Data" = "بيانات التشخيص";
+"FEEDBACK_DIAGNOSTIC_DATA_SECTION" = "بيانات التشخيص";
 
 /* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
-"Upload diagnostic data" = "تحميل بيانات التشخيص";
+"FEEDBACK_DIAGNOSTIC_DATA_LABEL" = "تحميل بيانات التشخيص";
 
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"My connection is bad, help!" = "إتصالي بالإنترنت سيئ، ساعدني!";
+"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "إتصالي بالإنترنت سيئ، ساعدني!";
 
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"Changing your region to Best Performance increases your chances of getting connected." = "تغيير منطقتك إلى أفضل أداء ليتحسن إتصالك";
+"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "تغيير منطقتك إلى أفضل أداء ليتحسن إتصالك";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
-"Disabling timeouts may help you stay connected on slower networks." = "يمكن أن يساعد إلغاء ميزة \"الإنقطاع عند نفاذ المدة\" في المحافظة على الإتصال على الشبكات الضعيفة";
+"CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "يمكن أن يساعد إلغاء ميزة \"الإنقطاع عند نفاذ المدة\" في المحافظة على الإتصال على الشبكات الضعيفة";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
-"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "في حال كان إتصال الإنترنت ضعيف وغير تجاوبي حاول إعادة الإتصال بخادوم سايفون ";
+"CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "في حال كان إتصال الإنترنت ضعيف وغير تجاوبي حاول إعادة الإتصال بخادوم سايفون ";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
-"Reconnect to the Psiphon server" = "إعادة الإتصال بخادوم سايفون ";
+"FORCE_RECONNECT" = "إعادة الإتصال بخادوم سايفون ";
 

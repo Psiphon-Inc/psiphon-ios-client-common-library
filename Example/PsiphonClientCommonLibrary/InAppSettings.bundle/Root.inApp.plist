@@ -6,7 +6,11 @@
 	<array>
 		<dict>
 			<key>Title</key>
+			<string>PSIPHON</string>
+			<key>TitleDefault</key>
 			<string>Psiphon</string>
+			<key>TitleDescription</key>
+			<string>Settings view subheading for Psiphon-specific settings.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
@@ -14,7 +18,11 @@
 		</dict>
 		<dict>
 			<key>Title</key>
+			<string>CHANGE_REGION</string>
+			<key>TitleDefault</key>
 			<string>Change Region</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Key</key>
@@ -26,7 +34,11 @@
 		</dict>
 		<dict>
 			<key>Title</key>
+			<string>SETTINGS_LANGUAGE</string>
+			<key>TitleDefault</key>
 			<string>Language</string>
+			<key>TitleDescription</key>
+			<string>Settings item to change the application UI language.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Key</key>
@@ -74,47 +86,159 @@
 			</array>
 			<key>Titles</key>
 			<array>
-				<string>Default language</string>
-				<string>English</string>
-				<string>فارسی</string>
-				<string>العربية</string>
-				<string>简体中文</string>
-				<string>繁体中文</string>
-				<string>ኣማርኛ</string>
-				<string>Azərbaycanca</string>
-				<string>Беларуская</string>
-				<string>བོད་ཡིག</string>
-				<string>Deutsch</string>
-				<string>Ελληνικά</string>
-				<string>Español</string>
-				<string>Suomi</string>
-				<string>Français</string>
-				<string>Hrvatski</string>
-				<string>Bahasa Indonesia</string>
-				<string>Italiano</string>
-				<string>Қазақша</string>
-				<string>ភាសាខ្មែរ</string>
-				<string>한국어</string>
-				<string>Кыргызча</string>
-				<string>မြန်မာစာ</string>
-				<string>Norsk bokmål</string>
-				<string>Nederlands</string>
-				<string>Português (Brasil)</string>
-				<string>Português (Portugal)</string>
-				<string>Русский</string>
-				<string>ภาษาไทย</string>
-				<string>Türkmençe</string>
-				<string>Türkçe</string>
-				<string>Українська</string>
-				<string>O'zbekcha</string>
-				<string>Tiếng Việt</string>
+				<dict>
+					<key>Title</key>
+					<string>DEFAULT_LANGUAGE</string>
+					<key>TitleDefault</key>
+					<string>Default language</string>
+					<key>TitleDescription</key>
+					<string>Item in a list of languages. Sets the application UI language to the one used by the system.</string>
+					<key>BundleTable</key>
+					<string>PsiphonClientCommonLibrary</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>English</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>فارسی</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>العربية</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>简体中文</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>繁体中文</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>ኣማርኛ</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Azərbaycanca</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Беларуская</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>བོད་ཡིག</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Deutsch</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Ελληνικά</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Español</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Suomi</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Français</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Hrvatski</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Bahasa Indonesia</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Italiano</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Қазақша</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>ភាសាខ្មែរ</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>한국어</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Кыргызча</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>မြန်မာစာ</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Norsk bokmål</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Nederlands</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Português (Brasil)</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Português (Portugal)</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Русский</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>ภาษาไทย</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Türkmençe</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Türkçe</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Українська</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>O'zbekcha</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Tiếng Việt</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
 			<key>File</key>
 			<string>PsiphonSettings</string>
 			<key>Title</key>
+			<string>PSIPHON_SUBSETTINGS_LABEL</string>
+			<key>TitleDefault</key>
 			<string>Psiphon Settings</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
@@ -122,7 +246,11 @@
 		</dict>
 		<dict>
 			<key>Title</key>
+			<string>SETTINGS_HELP_SECTION</string>
+			<key>TitleDefault</key>
 			<string>Help</string>
+			<key>TitleDescription</key>
+			<string>Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
@@ -132,7 +260,11 @@
 			<key>File</key>
 			<string>ConnectionHelp</string>
 			<key>Title</key>
+			<string>SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL</string>
+			<key>TitleDefault</key>
 			<string>My connection is bad, help!</string>
+			<key>TitleDescription</key>
+			<string>Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
@@ -140,7 +272,11 @@
 		</dict>
 		<dict>
 			<key>Title</key>
+			<string>SETTINGS_FEEDBACK_SUBSETTINGS_LABEL</string>
+			<key>TitleDefault</key>
 			<string>Feedback</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>File</key>
@@ -152,7 +288,11 @@
 		</dict>
 		<dict>
 			<key>Title</key>
+			<string>SETTINGS_FAQ</string>
+			<key>TitleDefault</key>
 			<string>FAQ</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Leads to a frequently asked questions page.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
@@ -162,7 +302,11 @@
 		</dict>
 		<dict>
 			<key>Title</key>
+			<string>SETTINGS_PRIVACY_POLICY</string>
+			<key>TitleDefault</key>
 			<string>Privacy Policy</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Leads to a web page with the Psiphon privacy policy.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
@@ -172,7 +316,11 @@
 		</dict>
 		<dict>
 			<key>Title</key>
+			<string>SETTINGS_TERMS_OF_USE</string>
+			<key>TitleDefault</key>
 			<string>Terms of Use</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
@@ -182,7 +330,11 @@
 		</dict>
 		<dict>
 			<key>Title</key>
+			<string>SETTINGS_ABOUT</string>
+			<key>TitleDefault</key>
 			<string>About</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Leads to info about Psiphon Inc.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>

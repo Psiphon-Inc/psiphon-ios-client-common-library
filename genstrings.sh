@@ -18,6 +18,10 @@
 
 set -e
 
+#
+# Strings from ObjC files
+#
+
 cd ../PsiphonClientCommonLibrary
 
 STRINGS_DIR="Resources/Strings/en.lproj"
@@ -36,10 +40,21 @@ find . -name "*.m" -o -name "*.h" -o -name "*.swift" | xargs genstrings -o ${TEM
 # them into their proper location.
 find ${TEMP_DIR} -name "*.strings"|while read fname; do
   bname=$(basename ${fname})
-  echo "${bname} ${fname}"
-  iconv -c -f UTF-16 -t UTF-8 ${fname} > ${STRINGS_DIR}/${bname}
+  #echo "${bname} ${fname}"
+  printf "/* THIS FILE IS GENERATED. DO NOT EDIT. */\n\n" > ${STRINGS_DIR}/${bname}
+  iconv -c -f UTF-16 -t UTF-8 ${fname} >> ${STRINGS_DIR}/${bname}
 done
 
 rm -rf ${TEMP_DIR}
+
+cd -
+
+#
+# Strings from plist files
+#
+
+cd ..
+
+./genstrings_plist.py
 
 cd -

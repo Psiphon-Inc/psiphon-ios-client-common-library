@@ -1,102 +1,102 @@
 /*[UNTRANSLATED] Settings view subheading for Psiphon-specific settings. */
-"Psiphon" = "Psiphon";
+"PSIPHON" = "Psiphon";
 
 /* Settings item to change the application UI language. */
-"Language" = "Langue";
+"SETTINGS_LANGUAGE" = "Langue";
 
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
-"Default language" = "Langue par défaut";
+"DEFAULT_LANGUAGE" = "Langue par défaut";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
-"About" = "À propos";
+"SETTINGS_ABOUT" = "À propos";
 
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"Change Region" = "Changer de région";
+"CHANGE_REGION" = "Changer de région";
 
 /*[UNTRANSLATED] Settings item text. Leads to a frequently asked questions page. */
-"FAQ" = "FAQ";
+"SETTINGS_FAQ" = "FAQ";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
-"Help" = "Aide";
+"SETTINGS_HELP_SECTION" = "Aide";
 
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
-"Privacy Policy" = "Politique de confidentialité";
+"SETTINGS_PRIVACY_POLICY" = "Politique de confidentialité";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
-"Psiphon Settings" = "Paramètres de Psiphon";
+"PSIPHON_SUBSETTINGS_LABEL" = "Paramètres de Psiphon";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"Feedback" = "Rétroaction";
+"SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "Rétroaction";
 
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"Terms of Use" = "Conditions générales d'utilisation ";
+"SETTINGS_TERMS_OF_USE" = "Conditions générales d'utilisation ";
 
 /* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"Disable Timeouts" = "Désactiver les temporisations";
+"DISABLE_TIMEOUTS" = "Désactiver les temporisations";
 
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
-"Proxy" = "Mandataire";
+"PSIPHON_SETTINGS_PROXY_SECTION" = "Mandataire";
 
 /* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"Timeouts" = "Temporisations";
+"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "Temporisations";
 
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
-"Use upstream proxy" = "Utiliser un mandataire ascendant";
+"PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "Utiliser un mandataire ascendant";
 
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
-"Host address" = "Adresse de l'hôte";
+"PSIPHON_SETTINGS_UPSTREAM_HOST" = "Adresse de l'hôte";
 
 /*[UNTRANSLATED] Settings item text. The network port number for the upstream proxy. Text should be kept short. */
-"Port" = "Port";
+"PSIPHON_SETTINGS_UPSTREAM_PORT" = "Port";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"Use proxy authentication" = "Utiliser l'authentification pour le mandataire";
+"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "Utiliser l'authentification pour le mandataire";
 
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
-"username" = "nom d'utilisateur";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "nom d'utilisateur";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
-"password" = "mot de passe";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "mot de passe";
 
 /* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
-"example.com" = "exemple.com";
+"EXAMPLE_HOSTNAME" = "exemple.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"Proxy username" = "Mandataire - Nom d'utilisateur";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Mandataire - Nom d'utilisateur";
 
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
-"Proxy password" = "Mandataire - Mot de passe";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Mandataire - Mot de passe";
 
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
-"Proxy domain" = "Mandataire - Domaine";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "Mandataire - Domaine";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Comments" = "Vos commentaires";
+"FEEDBACK_COMMENTS_LABEL" = "Vos commentaires";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Email Address" = "Votre adresse courriel";
+"FEEDBACK_EMAIL_LABEL" = "Votre adresse courriel";
 
 /* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
-"Where can we respond to you?" = "Où pouvons-nous vous répondre ?";
+"FEEDBACK_EMAIL_PLACEHOLDER" = "Où pouvons-nous vous répondre ?";
 
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
-"Diagnostic Data" = "Données de diagnostic";
+"FEEDBACK_DIAGNOSTIC_DATA_SECTION" = "Données de diagnostic";
 
 /* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
-"Upload diagnostic data" = "Téléverser les données de diagnostic";
+"FEEDBACK_DIAGNOSTIC_DATA_LABEL" = "Téléverser les données de diagnostic";
 
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"My connection is bad, help!" = "Ma connexion est mauvaise, aidez-moi !";
+"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "Ma connexion est mauvaise, aidez-moi !";
 
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"Changing your region to Best Performance increases your chances of getting connected." = "Sélectionner « Les meilleures performances » comme région augmente vos chances d'être connecté.";
+"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Sélectionner « Les meilleures performances » comme région augmente vos chances d'être connecté.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
-"Disabling timeouts may help you stay connected on slower networks." = "La désactivation des temporisations pourrait vous aider à rester connecté sur les réseaux plus lents.";
+"CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "La désactivation des temporisations pourrait vous aider à rester connecté sur les réseaux plus lents.";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
-"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Vous reconnecter au serveur Psiphon pourrait vous aider si votre connexion actuelle est lente ou ne répond plus.";
+"CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "Vous reconnecter au serveur Psiphon pourrait vous aider si votre connexion actuelle est lente ou ne répond plus.";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
-"Reconnect to the Psiphon server" = "Se reconnecter au serveur Psiphon";
+"FORCE_RECONNECT" = "Se reconnecter au serveur Psiphon";
 
