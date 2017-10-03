@@ -59,7 +59,7 @@
 	[userDefaults synchronize];
 }
 
-+ (NSString * _Nullable)getPsiphonConfigForFeedbackUpload {
++ (NSString * _Nullable)getPsiphonBundledConfig {
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 
 	NSString *bundledConfigPath = [[[NSBundle mainBundle] resourcePath]
@@ -108,6 +108,20 @@
         }
     }
     return NO;
+}
+
+// Convert json string to dictionary
++ (NSDictionary*)jsonToDictionary:(NSString*)jsonString {
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *e = nil;
+
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&e];
+
+    if (e) {
+        return nil;
+    }
+
+    return json;
 }
 
 @end
