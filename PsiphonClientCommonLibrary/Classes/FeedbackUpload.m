@@ -26,6 +26,7 @@
 #import "FeedbackUpload.h"
 #import "PsiphonData.h"
 #import "PsiphonSettingsViewController.h"
+#import "PsiphonClientCommonLibraryHelpers.h"
 
 #define kThumbIndexUnselected -1
 #define kQuestionHash "24f5c290039e5b0a2fd17bfcdb8d3108"
@@ -62,7 +63,7 @@
 			sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
 			  {
 
-	NSDictionary *config = [FeedbackUpload jsonToDictionary:psiphonConfig];
+	NSDictionary *config = [PsiphonClientCommonLibraryHelpers jsonToDictionary:psiphonConfig];
 	if (config == nil) {
 		return;
 	}
@@ -260,20 +261,6 @@
 	  };
 
 	return deviceInfo;
-}
-
-// Convert json string to dictionary
-+ (NSDictionary*)jsonToDictionary:(NSString*)jsonString {
-	NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-	NSError *e = nil;
-
-	NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&e];
-
-	if (e) {
-		return nil;
-	}
-
-	return json;
 }
 
 @end
