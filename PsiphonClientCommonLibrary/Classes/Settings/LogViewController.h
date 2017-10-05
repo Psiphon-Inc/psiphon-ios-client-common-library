@@ -18,7 +18,14 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "PsiphonData.h"
 
 @interface LogViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+// Data source
+@property NSArray<DiagnosticEntry*> *diagnosticEntries;
+
+// Should be called when the data source has changed.
+- (void)onDataChanged;
 
 @end
