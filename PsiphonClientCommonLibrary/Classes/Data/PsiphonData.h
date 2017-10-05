@@ -20,8 +20,6 @@
 #ifndef PsiphonData_h
 #define PsiphonData_h
 
-#define MAX_LOG_LINES 250
-
 #import <Foundation/Foundation.h>
 
 #define kDisplayLogEntry "DisplayLogEntry"

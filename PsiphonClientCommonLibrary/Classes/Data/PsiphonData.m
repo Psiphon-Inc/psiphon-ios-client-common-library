@@ -236,10 +236,6 @@ sensitivity:(SensitivityLevel)sensitivity
 	[diagnosticHistoryLock lock];
 	[_diagnosticHistory addObjectsFromArray:entries];
 	// TODO: sync with PsiphonDataTransiting
-	// TODO: performance, once MAX_LOG_LINES logs are hit we truncate every time
-	if ([_diagnosticHistory count] > MAX_LOG_LINES) {
-		[_diagnosticHistory removeObjectsInRange:NSMakeRange(0, [_diagnosticHistory count] - MAX_LOG_LINES)];
-	}
 	[diagnosticHistoryLock unlock];
 	[self noticeLogAdded];
 }
