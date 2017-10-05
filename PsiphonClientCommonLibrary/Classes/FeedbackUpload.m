@@ -17,14 +17,7 @@
  *
  */
 
-
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
-#import <SystemConfiguration/SystemConfiguration.h>
-#import <CoreFoundation/CoreFoundation.h>
-
 #import "FeedbackUpload.h"
-#import "PsiphonData.h"
 #import "PsiphonSettingsViewController.h"
 #import "PsiphonClientCommonLibraryHelpers.h"
 
