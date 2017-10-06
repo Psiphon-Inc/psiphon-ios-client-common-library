@@ -235,7 +235,6 @@ sensitivity:(SensitivityLevel)sensitivity
 - (void)addDiagnosticEntries:(NSArray<DiagnosticEntry*>*)entries {
 	[diagnosticHistoryLock lock];
 	[_diagnosticHistory addObjectsFromArray:entries];
-	// TODO: sync with PsiphonDataTransiting
 	[diagnosticHistoryLock unlock];
 	[self noticeLogAdded];
 }
