@@ -23,9 +23,10 @@
 @interface LogViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 // Data source
-@property NSArray<DiagnosticEntry*> *diagnosticEntries;
+@property (nonatomic) NSArray<DiagnosticEntry*> *diagnosticEntries;
 
-// Should be called when the data source has changed.
-- (void)onDataChanged;
+@property (nonatomic) UITableView *tableView;
+
+- (void)scrollToBottom;
 
 @end
