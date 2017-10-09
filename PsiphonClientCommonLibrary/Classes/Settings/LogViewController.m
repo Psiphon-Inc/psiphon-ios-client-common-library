@@ -91,18 +91,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	DiagnosticEntry *entry = self.diagnosticEntries[indexPath.row];
 
-//	NSString *statusEntryForDisplay = [NSString stringWithFormat:@"%@ %@",
-//	[entry getTimestampForDisplay], [entry message]];
-
-
     NSMutableAttributedString *attrTextForDisplay = [[NSMutableAttributedString alloc]
-      initWithString:[entry getTimestampForDisplay]
+      initWithString:[NSString stringWithFormat:@"%@  ", [entry getTimestampForDisplay]]
           attributes:@{NSForegroundColorAttributeName: [UIColor blueColor],
                        NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:10.f]}];
 
+	NSDictionary *messageAttr;
+	if ([[entry message] isEqualToString:@"Tunnels: {count:1}"]) {
+		messageAttr = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f],
+		                NSBackgroundColorAttributeName: [UIColor greenColor]};
+	} else {
+		messageAttr = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f]};
+	}
+
     NSMutableAttributedString *attrEntryMessage = [[NSMutableAttributedString alloc]
-      initWithString:[NSString stringWithFormat:@"  %@", [entry message]]
-          attributes:@{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f]}];
+      initWithString:[entry message]
+          attributes:messageAttr];
 
    [attrTextForDisplay appendAttributedString:attrEntryMessage];
 
