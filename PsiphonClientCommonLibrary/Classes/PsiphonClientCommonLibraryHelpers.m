@@ -40,13 +40,13 @@
 	NSString *plistPath = [[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"InAppSettings.bundle"] stringByAppendingPathComponent:plist];
 	NSDictionary *settingsDictionary = [NSDictionary dictionaryWithContentsOfFile:plistPath];
 
-	for (NSDictionary *pref in [settingsDictionary objectForKey:@"PreferenceSpecifiers"]) {
-		NSString *key = [pref objectForKey:@"Key"];
+	for (NSDictionary *pref in settingsDictionary[@"PreferenceSpecifiers"]) {
+		NSString *key = pref[@"Key"];
 		if (key == nil)
 			continue;
 
 		if ([userDefaults objectForKey:key] == NULL) {
-			NSObject *val = [pref objectForKey:@"DefaultValue"];
+			NSObject *val = pref[@"DefaultValue"];
 			if (val == nil)
 				continue;
 
@@ -59,7 +59,7 @@
 	[userDefaults synchronize];
 }
 
-+ (NSString * _Nullable)getPsiphonConfigForFeedbackUpload {
++ (NSString * _Nullable)getPsiphonBundledConfig {
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 
 	NSString *bundledConfigPath = [[[NSBundle mainBundle] resourcePath]
@@ -93,14 +93,14 @@
 }
 
 + (BOOL)unsupportedCharactersForFont:(NSString* _Nonnull)font withString:(NSString* _Nonnull)string {
-    for (NSInteger charIdx = 0; charIdx < string.length; charIdx++) {
+    for (NSUInteger charIdx = 0; charIdx < string.length; charIdx++) {
         NSString *character = [NSString stringWithFormat:@"%C", [string characterAtIndex:charIdx]];
         // TODO: need to enumerate a longer list of special characters for this to be more correct.
         if ([character isEqualToString:@" "]) {
             // Skip special characters
             continue;
         }
-        CGFontRef cgFont = CGFontCreateWithFontName((CFStringRef)font);
+        CGFontRef cgFont = CGFontCreateWithFontName((__bridge CFStringRef)font);
         BOOL unsupported = (CGFontGetGlyphWithGlyphName(cgFont,  (__bridge CFStringRef)character) == 0);
         CGFontRelease(cgFont);
         if (unsupported) {
@@ -108,6 +108,20 @@
         }
     }
     return NO;
+}
+
+// Convert json string to dictionary
++ (NSDictionary*)jsonToDictionary:(NSString*)jsonString {
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *e = nil;
+
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&e];
+
+    if (e) {
+        return nil;
+    }
+
+    return json;
 }
 
 @end

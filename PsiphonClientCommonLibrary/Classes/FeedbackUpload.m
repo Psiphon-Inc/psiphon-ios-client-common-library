@@ -17,15 +17,9 @@
  *
  */
 
-
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
-#import <SystemConfiguration/SystemConfiguration.h>
-#import <CoreFoundation/CoreFoundation.h>
-
 #import "FeedbackUpload.h"
-#import "PsiphonData.h"
 #import "PsiphonSettingsViewController.h"
+#import "PsiphonClientCommonLibraryHelpers.h"
 
 #define kThumbIndexUnselected -1
 #define kQuestionHash "24f5c290039e5b0a2fd17bfcdb8d3108"
@@ -60,9 +54,10 @@
 			 withConnectionType:(NSString*)connectionType
 				   isJailbroken:(BOOL)isJailbroken
 			sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
+			  diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries
 			  {
 
-	NSDictionary *config = [FeedbackUpload jsonToDictionary:psiphonConfig];
+	NSDictionary *config = [PsiphonClientCommonLibraryHelpers jsonToDictionary:psiphonConfig];
 	if (config == nil) {
 		return;
 	}
@@ -90,13 +85,13 @@
 							   @"Message":  @{@"text": safeNullable(comments)},
 							   @"Survey": @{@"json": safeNullable(surveyResponse)}
 							   };
-	[feedbackBlob setObject:feedback forKey:@"Feedback"];
+	feedbackBlob[@"Feedback"] = feedback;
 
 	// If user decides to disclose diagnostics data
 	if (sendDiagnosticInfo == YES) {
 		NSMutableArray *diagnosticHistoryArray = [[NSMutableArray alloc] init];
 
-		for (DiagnosticEntry *d in [[[PsiphonData sharedInstance] diagnosticHistory] copy]) {
+		for (DiagnosticEntry *d in diagnosticEntries) {
 			NSDictionary *entry = @{
 									@"data": [d data],
 									@"msg": [d message],
@@ -121,9 +116,9 @@
 
 			NSArray *f = s.formatArgs;
 			if ([f count] > 0 && s.sensitivity != SensitivityLevelSensitiveFormatArgs) {
-				[entry setObject:f forKey:@"formatArgs"];
+				entry[@"formatArgs"] = f;
 			} else {
-				[entry setObject:@[] forKey:@"formatArgs"];
+				entry[@"formatArgs"] = @[];
 			}
 
 			Throwable *t = s.throwable;
@@ -132,7 +127,7 @@
 											@"message": t.message,
 											@"stack": t.stackTrace
 											};
-				[entry setObject:throwable forKey:@"throwable"];
+				entry[@"throwable"] = throwable;
 			}
 
 			[statusHistoryArray addObject:entry];
@@ -147,8 +142,8 @@
 												 @"PsiphonInfo":
 													 @{
 														 @"CLIENT_VERSION": safeNullable([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]),
-														 @"PROPAGATION_CHANNEL_ID": [config objectForKey:@"PropagationChannelId"],
-														 @"SPONSOR_ID": [config objectForKey: @"SponsorId"]
+														 @"PROPAGATION_CHANNEL_ID": config[@"PropagationChannelId"],
+														 @"SPONSOR_ID": config[@"SponsorId"]
 														 },
 												 @"isAppStoreBuild": @YES,
 												 @"isJailbroken": isJailbroken ? @YES : @NO,
@@ -157,7 +152,7 @@
 												 @"buildInfo": safeNullable(buildInfo)
 												 }
 										 };
-		[feedbackBlob setObject:diagnosticInfo forKey:@"DiagnosticInfo"];
+		feedbackBlob[@"DiagnosticInfo"] = diagnosticInfo;
 	}
 
 	NSString *rndmHexId = [FeedbackUpload generateFeedbackId];
@@ -170,7 +165,7 @@
 							   @"platform": safeNullable(clientPlatform),
 							   @"version": @1
 							   };
-	[feedbackBlob setObject:metadata forKey:@"Metadata"];
+	feedbackBlob[@"Metadata"] = metadata;
 
 	NSError *e = nil;
 	NSData *jsonData = [NSJSONSerialization dataWithJSONObject:feedbackBlob options:0 error:&e];
@@ -181,13 +176,13 @@
 	NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 
 	// Extract feedback config values
-	NSDictionary *feedbackConfig = [config objectForKey:@"feedbackConfig"];
+	NSDictionary *feedbackConfig = config[@"feedbackConfig"];
 	if (feedbackConfig == nil) {
 		return;
 	}
-	NSString *pubKey = [feedbackConfig objectForKey:@"b64EncodedPublicKey"];
-	NSString *uploadServer = [feedbackConfig objectForKey:@"uploadServer"];
-	NSString *uploadServerHeaders = [feedbackConfig objectForKey:@"uploadServerHeaders"];
+	NSString *pubKey = feedbackConfig[@"b64EncodedPublicKey"];
+	NSString *uploadServer = feedbackConfig[@"uploadServer"];
+	NSString *uploadServerHeaders = feedbackConfig[@"uploadServerHeaders"];
 
 	// Upload feedback
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -260,20 +255,6 @@
 	  };
 
 	return deviceInfo;
-}
-
-// Convert json string to dictionary
-+ (NSDictionary*)jsonToDictionary:(NSString*)jsonString {
-	NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-	NSError *e = nil;
-
-	NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&e];
-
-	if (e) {
-		return nil;
-	}
-
-	return json;
 }
 
 @end

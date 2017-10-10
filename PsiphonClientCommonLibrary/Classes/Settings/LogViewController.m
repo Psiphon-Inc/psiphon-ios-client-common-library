@@ -17,24 +17,17 @@
  *
  */
 
-#import <Foundation/Foundation.h>
 #import "LogViewController.h"
-#import "PsiphonData.h"
 
 @implementation LogViewController {
-	NSArray *logs;
 	UITableView *table;
-	NSLock *timerLock;
-	NSTimer *reloadTimer;
 }
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	timerLock = [[NSLock alloc] init];
-	
-	logs = [[PsiphonData sharedInstance] getStatusLogsForDisplay];
-	
+//	timerLock = [[NSLock alloc] init];
+
 	table = [[UITableView alloc] init];
 	table.dataSource = self;
 	table.delegate = self;
@@ -76,16 +69,6 @@
 														  attribute:NSLayoutAttributeBottom
 														 multiplier:1.f
 														   constant:0]];
-	
-	[self scheduleReload];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
-	[[NSNotificationCenter defaultCenter] addObserver:self
-											 selector:@selector(newLogAdded:)
-												 name:@kDisplayLogEntry
-											   object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -97,46 +80,28 @@
 
 // Scroll to bottom of UITableView
 -(void)scrollToBottom {
-	dispatch_async(dispatch_get_main_queue(), ^{
-		if ([logs count] > 0) {
-			NSIndexPath *myIndexPath = [NSIndexPath indexPathForRow:[logs count]-1 inSection:0];
-			[table selectRowAtIndexPath:myIndexPath animated:NO scrollPosition:UITableViewScrollPositionBottom];
-		}
-	});
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if ([self.diagnosticEntries count] > 0) {
+            NSIndexPath *myIndexPath = [NSIndexPath indexPathForRow:[self.diagnosticEntries count] - 1 inSection:0];
+            [table selectRowAtIndexPath:myIndexPath animated:NO scrollPosition:UITableViewScrollPositionBottom];
+        }
+    });
 }
 
-// Reload data and scroll to bottom of UITableView
--(void)newLogAdded:(id)sender {
-	logs = [[PsiphonData sharedInstance] getDiagnosticLogsForDisplay];
-	[self scheduleReload];
-}
-
-// Performance optimization (prevent UIThread from grinding to a halt from rapid calls to [tableView reloadData])
-// TODO: this should be vetted further, there is probably a better solution out there
-- (void)scheduleReload {
-	BOOL acquired = [timerLock tryLock];
-	if (acquired && reloadTimer == nil) {
-		__weak LogViewController *weakSelf = self;
-		reloadTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
-													  repeats:NO
-														block:^(NSTimer *timer){
-															dispatch_async(dispatch_get_main_queue(), ^{
-																[table reloadData];
-																[weakSelf scrollToBottom];
-															});
-															[reloadTimer invalidate];
-															reloadTimer = nil;
-															[timerLock unlock];
-														}];
-	}
+- (void)onDataChanged {
+    [table reloadData];
+    [self scrollToBottom];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [logs count];
+	return [self.diagnosticEntries count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	NSString *statusEntryForDisplay = logs[indexPath.row];
+	DiagnosticEntry *entry = self.diagnosticEntries[indexPath.row];
+
+	NSString *statusEntryForDisplay = [NSString stringWithFormat:@"%@ %@",
+	[entry getTimestampForDisplay], [entry message]];
 	
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:statusEntryForDisplay];
 	
