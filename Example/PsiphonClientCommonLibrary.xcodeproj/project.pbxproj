@@ -366,7 +366,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash \"../genstrings.sh\"\n";
+			shellScript = "cd ..\n/usr/bin/env python \"./genstrings.py\"\nif [ $? != 0 ] ; then\n  exit 1\nfi\ncd -\n";
 		};
 		95E0394E5DB2F6D2722F85F5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

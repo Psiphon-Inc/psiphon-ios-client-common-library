@@ -4,7 +4,7 @@ use_frameworks!
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
 target 'PsiphonClientCommonLibrary_Example' do
-  pod 'InAppSettingsKit', :git => 'https://github.com/Psiphon-Inc/InAppSettingsKit.git', :commit => '1b82ce1'
+  pod 'InAppSettingsKit', :git => 'https://github.com/Psiphon-Inc/InAppSettingsKit.git', :commit => '598c498'
   #pod 'InAppSettingsKit', :path => '../../InAppSettingsKit'
 
   pod 'PsiphonClientCommonLibrary', :path => '../'
