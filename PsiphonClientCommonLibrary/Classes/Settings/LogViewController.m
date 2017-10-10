@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-    self.diagnosticEntries = [[NSArray alloc] init];
+	self.diagnosticEntries = [[NSMutableArray alloc] init];
 
 	self.tableView = [[UITableView alloc] init];
 	self.tableView.dataSource = self;
@@ -74,15 +74,17 @@
 	[super viewWillDisappear:animated];
 }
 
-#pragma mark - UITableView delegate methods
+#pragma mark - Helper methods
 
 // Scroll to bottom of UITableView
 -(void)scrollToBottom {
-    if ([self.diagnosticEntries count] > 0) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[self.diagnosticEntries count] - 1 inSection:0];
-        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:FALSE];
-    }
+	if ([self.diagnosticEntries count] > 0) {
+		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[self.diagnosticEntries count] - 1 inSection:0];
+		[self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:FALSE];
+	}
 }
+
+#pragma mark - UITableView delegate methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [self.diagnosticEntries count];
@@ -91,26 +93,26 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	DiagnosticEntry *entry = self.diagnosticEntries[indexPath.row];
 
-    NSMutableAttributedString *attrTextForDisplay = [[NSMutableAttributedString alloc]
-      initWithString:[NSString stringWithFormat:@"%@  ", [entry getTimestampForDisplay]]
-          attributes:@{NSForegroundColorAttributeName: [UIColor blueColor],
-                       NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:10.f]}];
+	NSMutableAttributedString *attrTextForDisplay = [[NSMutableAttributedString alloc]
+	  initWithString:[NSString stringWithFormat:@"%@  ", [entry getTimestampForDisplay]]
+		  attributes:@{NSForegroundColorAttributeName: [UIColor blueColor],
+					   NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:10.f]}];
 
 	NSDictionary *messageAttr;
 	if ([[entry message] isEqualToString:@"Tunnels: {count:1}"]) {
 		messageAttr = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f],
-		                NSBackgroundColorAttributeName: [UIColor greenColor]};
+						NSBackgroundColorAttributeName: [UIColor greenColor]};
 	} else {
 		messageAttr = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f]};
 	}
 
-    NSMutableAttributedString *attrEntryMessage = [[NSMutableAttributedString alloc]
-      initWithString:[entry message]
-          attributes:messageAttr];
+	NSMutableAttributedString *attrEntryMessage = [[NSMutableAttributedString alloc]
+	  initWithString:[entry message]
+		  attributes:messageAttr];
 
    [attrTextForDisplay appendAttributedString:attrEntryMessage];
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reusableCell"];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reusableCell"];
 
 	if (!cell) {
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"reusableCell"];

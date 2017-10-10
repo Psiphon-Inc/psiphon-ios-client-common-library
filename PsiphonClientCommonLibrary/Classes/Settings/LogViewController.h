@@ -23,7 +23,7 @@
 @interface LogViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 // Data source
-@property (nonatomic) NSArray<DiagnosticEntry*> *diagnosticEntries;
+@property (nonatomic) NSMutableArray<DiagnosticEntry*> *diagnosticEntries;
 
 @property (nonatomic) UITableView *tableView;
 
