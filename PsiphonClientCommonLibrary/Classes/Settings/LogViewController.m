@@ -19,50 +19,48 @@
 
 #import "LogViewController.h"
 
-@implementation LogViewController {
-	UITableView *table;
-}
+@implementation LogViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
-//	timerLock = [[NSLock alloc] init];
 
-	table = [[UITableView alloc] init];
-	table.dataSource = self;
-	table.delegate = self;
-	//    table.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-	//    table.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-	table.estimatedRowHeight = 60;
-	table.rowHeight = UITableViewAutomaticDimension;
+	self.diagnosticEntries = [[NSMutableArray alloc] init];
+
+	self.tableView = [[UITableView alloc] init];
+	self.tableView.dataSource = self;
+	self.tableView.delegate = self;
+	//    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+	//    self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+	self.tableView.estimatedRowHeight = 60;
+	self.tableView.rowHeight = UITableViewAutomaticDimension;
 	
-	[self.view addSubview:table];
+	[self.view addSubview:self.tableView];
 	
 	// setup autolayout
-	table.translatesAutoresizingMaskIntoConstraints = NO;
+	self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
 	
-	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:table
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.tableView
 														  attribute:NSLayoutAttributeLeft
 														  relatedBy:NSLayoutRelationEqual
 															 toItem:self.view
 														  attribute:NSLayoutAttributeLeft
 														 multiplier:1.f
 														   constant:0]];
-	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:table
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.tableView
 														  attribute:NSLayoutAttributeRight
 														  relatedBy:NSLayoutRelationEqual
 															 toItem:self.view
 														  attribute:NSLayoutAttributeRight
 														 multiplier:1.f
 														   constant:0]];
-	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:table
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.tableView
 														  attribute:NSLayoutAttributeTop
 														  relatedBy:NSLayoutRelationEqual
 															 toItem:self.view
 														  attribute:NSLayoutAttributeTop
 														 multiplier:1.f
 														   constant:0]];
-	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:table
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.tableView
 														  attribute:NSLayoutAttributeBottom
 														  relatedBy:NSLayoutRelationEqual
 															 toItem:self.view
@@ -76,22 +74,17 @@
 	[super viewWillDisappear:animated];
 }
 
-#pragma mark - UITableView delegate methods
+#pragma mark - Helper methods
 
 // Scroll to bottom of UITableView
 -(void)scrollToBottom {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if ([self.diagnosticEntries count] > 0) {
-            NSIndexPath *myIndexPath = [NSIndexPath indexPathForRow:[self.diagnosticEntries count] - 1 inSection:0];
-            [table selectRowAtIndexPath:myIndexPath animated:NO scrollPosition:UITableViewScrollPositionBottom];
-        }
-    });
+	if ([self.diagnosticEntries count] > 0) {
+		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[self.diagnosticEntries count] - 1 inSection:0];
+		[self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:FALSE];
+	}
 }
 
-- (void)onDataChanged {
-    [table reloadData];
-    [self scrollToBottom];
-}
+#pragma mark - UITableView delegate methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [self.diagnosticEntries count];
@@ -100,21 +93,37 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	DiagnosticEntry *entry = self.diagnosticEntries[indexPath.row];
 
-	NSString *statusEntryForDisplay = [NSString stringWithFormat:@"%@ %@",
-	[entry getTimestampForDisplay], [entry message]];
-	
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:statusEntryForDisplay];
-	
+	NSMutableAttributedString *attrTextForDisplay = [[NSMutableAttributedString alloc]
+	  initWithString:[NSString stringWithFormat:@"%@  ", [entry getTimestampForDisplay]]
+		  attributes:@{NSForegroundColorAttributeName: [UIColor blueColor],
+					   NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:10.f]}];
+
+	NSDictionary *messageAttr;
+	if ([[entry message] isEqualToString:@"Tunnels: {count:1}"]) {
+		messageAttr = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f],
+						NSBackgroundColorAttributeName: [UIColor greenColor]};
+	} else {
+		messageAttr = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f]};
+	}
+
+	NSMutableAttributedString *attrEntryMessage = [[NSMutableAttributedString alloc]
+	  initWithString:[entry message]
+		  attributes:messageAttr];
+
+   [attrTextForDisplay appendAttributedString:attrEntryMessage];
+
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reusableCell"];
+
 	if (!cell) {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:statusEntryForDisplay];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"reusableCell"];
 	}
 	
 	cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:12.0f];
 	cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
 	cell.textLabel.numberOfLines = 0;
-	cell.textLabel.text = statusEntryForDisplay;
-	
+	cell.textLabel.attributedText = attrTextForDisplay;
+
 	return cell;
 }
 
