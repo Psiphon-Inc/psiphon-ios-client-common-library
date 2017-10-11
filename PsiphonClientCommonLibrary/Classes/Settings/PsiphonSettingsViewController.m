@@ -84,14 +84,27 @@ BOOL linksEnabled;
 
 - (void)setHiddenKeys {
 	// These keys correspond to settings in PsiphonOptions.plist
-	BOOL upstreamProxyEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:kUseUpstreamProxy];
-	BOOL useUpstreamProxyAuthentication = upstreamProxyEnabled && [[NSUserDefaults standardUserDefaults] boolForKey:kUseProxyAuthentication];
 
-	NSArray *upstreamProxyKeys = [NSArray arrayWithObjects:kUpstreamProxyHostAddress, kUpstreamProxyPort, kUseProxyAuthentication, nil];
-	NSArray *proxyAuthenticationKeys = [NSArray arrayWithObjects:kProxyUsername, kProxyPassword, kProxyDomain, nil];
+	UpstreamProxySettings *upstreamProxySettings = [UpstreamProxySettings sharedInstance];
+
+	BOOL upstreamProxyEnabled = [upstreamProxySettings getUseCustomProxySettings];
+	BOOL useUpstreamProxyAuthentication = upstreamProxyEnabled && [upstreamProxySettings getUseProxyAuthentication];
+	BOOL useUpstreamProxyCustomHeaders = upstreamProxyEnabled && [upstreamProxySettings getUseCustomHeaders];
+
+	NSArray *upstreamProxyKeys = [UpstreamProxySettings defaultSettingsKeys];
+	NSArray *proxyAuthenticationKeys = [UpstreamProxySettings authenticationKeys];
+	NSArray *proxyCustomHeaders = [UpstreamProxySettings customHeaderKeys];
 
 	// Hide configurable fields until user chooses to use upstream proxy
 	NSMutableSet *hiddenKeys = upstreamProxyEnabled ? nil : [NSMutableSet setWithArray:upstreamProxyKeys];
+
+	if (!useUpstreamProxyCustomHeaders) {
+		if (hiddenKeys == nil) {
+			hiddenKeys = [NSMutableSet setWithArray:proxyCustomHeaders];
+		} else {
+			[hiddenKeys addObjectsFromArray:proxyCustomHeaders];
+		}
+	}
 
 	// Hide authentication fields until user chooses to use upstream proxy with authentication
 	if (!useUpstreamProxyAuthentication) {
@@ -320,8 +333,9 @@ BOOL linksEnabled;
 
 - (void)settingDidChange:(NSNotification*)notification
 {
-	NSArray *upstreamProxyKeys = [NSArray arrayWithObjects:kUpstreamProxyHostAddress, kUpstreamProxyPort, kUseProxyAuthentication, nil];
-	NSArray *proxyAuthenticationKeys = [NSArray arrayWithObjects:kProxyUsername, kProxyPassword, kProxyDomain, nil];
+	NSArray *proxyDefaultSettingsKeys = [UpstreamProxySettings defaultSettingsKeys];
+	NSArray *proxyAuthenticationKeys = [UpstreamProxySettings authenticationKeys];
+	NSArray *proxyCustomHeaderKeys = [UpstreamProxySettings customHeaderKeys];
 
 	NSString *fieldName = notification.userInfo.allKeys.firstObject;
 
@@ -334,11 +348,14 @@ BOOL linksEnabled;
 
 		if (upstreamProxyEnabled) {
 			// Display proxy configuration fields
-			for (NSString *key in upstreamProxyKeys) {
+			for (NSString *key in proxyDefaultSettingsKeys) {
 				[hiddenKeys removeObject:key];
 			}
 
-			BOOL useUpstreamProxyAuthentication = [[NSUserDefaults standardUserDefaults] boolForKey:kUseProxyAuthentication];
+			UpstreamProxySettings *upstreamProxySettings = [UpstreamProxySettings sharedInstance];
+
+			BOOL useUpstreamProxyAuthentication = [upstreamProxySettings getUseProxyAuthentication];
+			BOOL useUpstreamProxyCustomHeaders = [upstreamProxySettings getUseCustomHeaders];
 
 			if (useUpstreamProxyAuthentication) {
 				// Display proxy authentication fields
@@ -347,10 +364,18 @@ BOOL linksEnabled;
 				}
 			}
 
+			if (useUpstreamProxyCustomHeaders) {
+				// Display proxy custom header fields
+				for (NSString *key in proxyCustomHeaderKeys) {
+					[hiddenKeys removeObject:key];
+				}
+			}
+
 			[self setHiddenKeys:hiddenKeys animated:NO];
 		} else {
-			NSMutableSet *hiddenKeys = [NSMutableSet setWithArray:upstreamProxyKeys];
+			NSMutableSet *hiddenKeys = [NSMutableSet setWithArray:proxyDefaultSettingsKeys];
 			[hiddenKeys addObjectsFromArray:proxyAuthenticationKeys];
+			[hiddenKeys addObjectsFromArray:proxyCustomHeaderKeys];
 			[self setHiddenKeys:hiddenKeys animated:NO];
 		}
 	} else if ([fieldName isEqual:kUseProxyAuthentication]) {
@@ -365,6 +390,22 @@ BOOL linksEnabled;
 			}
 		} else {
 			for (NSString *key in proxyAuthenticationKeys) {
+				[hiddenKeys addObject:key];
+			}
+		}
+		[self setHiddenKeys:hiddenKeys animated:NO];
+	} else if ([fieldName isEqual:kUseUpstreamProxyCustomHeaders]) {
+		// useProxyCustomHeaders toggled, show or hide custom header fields
+		BOOL enabled = (BOOL)[[notification.userInfo objectForKey:kUseUpstreamProxyCustomHeaders] intValue];
+
+		NSMutableSet *hiddenKeys = [NSMutableSet setWithSet:[self hiddenKeys]];
+
+		if (enabled) {
+			for (NSString *key in proxyCustomHeaderKeys) {
+				[hiddenKeys removeObject:key];
+			}
+		} else {
+			for (NSString *key in proxyCustomHeaderKeys) {
 				[hiddenKeys addObject:key];
 			}
 		}
@@ -493,22 +534,39 @@ BOOL linksEnabled;
 			return YES;
 		}
 
-		// No further checking if "use proxy authentication" is off
-		// and has not changed
-		if (!useProxyAuthentication) {
-			return NO;
+		// Check if inputted credentials have changed
+		if (useProxyAuthentication) {
+			// "use proxy authentication" is checked, check if
+			// username || password || domain have changed
+			NSString *username = [_preferencesSnapshot objectForKey:kProxyUsername];
+			NSString *password = [_preferencesSnapshot objectForKey:kProxyPassword];
+			NSString *domain = [_preferencesSnapshot objectForKey:kProxyDomain];
+
+			if (!safeStringsEqual(username,[proxySettings getProxyUsername]) ||
+				!safeStringsEqual(password, [proxySettings getProxyPassword]) ||
+				!safeStringsEqual(domain, [proxySettings getProxyDomain])) {
+				return YES;
+			}
 		}
 
-		// "use proxy authentication" is checked, check if
-		// username || password || domain have changed
-		NSString *username = [_preferencesSnapshot objectForKey:kProxyUsername];
-		NSString *password = [_preferencesSnapshot objectForKey:kProxyPassword];
-		NSString *domain = [_preferencesSnapshot objectForKey:kProxyDomain];
+		BOOL useUpstreamProxyCustomHeaders = [[NSUserDefaults standardUserDefaults] boolForKey:kUseUpstreamProxyCustomHeaders];
 
-		if (!safeStringsEqual(username,[proxySettings getProxyUsername]) ||
-			!safeStringsEqual(password, [proxySettings getProxyPassword]) ||
-			!safeStringsEqual(domain, [proxySettings getProxyDomain])) {
+		if (useUpstreamProxyCustomHeaders != [[_preferencesSnapshot objectForKey:kUseUpstreamProxyCustomHeaders] boolValue]) {
 			return YES;
+		}
+
+		if (useUpstreamProxyCustomHeaders) {
+			// "use custom headers" is checked, check if
+			// any of the headers have changed
+			for (int i = 0; i < kMaxUpstreamProxyCustomHeaders; i++) {
+				NSString *headerNameKey = [proxySettings getHeaderNameKeyN:i];
+				NSString *headerValueKey = [proxySettings getHeaderValueKeyN:i];
+
+				if (!safeStringsEqual([[NSUserDefaults standardUserDefaults] stringForKey:headerNameKey],[_preferencesSnapshot objectForKey:headerNameKey]) ||
+					!safeStringsEqual([[NSUserDefaults standardUserDefaults] stringForKey:headerValueKey],[_preferencesSnapshot objectForKey:headerValueKey])) {
+					return YES;
+				}
+			}
 		}
 	}
 
