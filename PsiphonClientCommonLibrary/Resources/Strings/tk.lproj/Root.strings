@@ -1,102 +1,102 @@
 /*[UNTRANSLATED] Settings view subheading for Psiphon-specific settings. */
-"Psiphon" = "Psiphon";
+"PSIPHON" = "Psiphon";
 
 /* Settings item to change the application UI language. */
-"Language" = "Dil";
+"SETTINGS_LANGUAGE" = "Dil";
 
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
-"Default language" = "Asyl dili";
+"DEFAULT_LANGUAGE" = "Asyl dili";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
-"About" = "Hakynda";
+"SETTINGS_ABOUT" = "Hakynda";
 
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"Change Region" = "Ýurdy Çalyş";
+"CHANGE_REGION" = "Ýurdy Çalyş";
 
 /* Settings item text. Leads to a frequently asked questions page. */
-"FAQ" = "Kän soralýan soraglar";
+"SETTINGS_FAQ" = "Kän soralýan soraglar";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
-"Help" = "Kömek";
+"SETTINGS_HELP_SECTION" = "Kömek";
 
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
-"Privacy Policy" = "Gizlinlik Ugry";
+"SETTINGS_PRIVACY_POLICY" = "Gizlinlik Ugry";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
-"Psiphon Settings" = "Psiphon Sazlamalary";
+"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon Sazlamalary";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"Feedback" = "Seslenme";
+"SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "Seslenme";
 
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"Terms of Use" = "Ulanma Razyçylygy";
+"SETTINGS_TERMS_OF_USE" = "Ulanma Razyçylygy";
 
 /* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"Disable Timeouts" = "Wagt-aralary öçür";
+"DISABLE_TIMEOUTS" = "Wagt-aralary öçür";
 
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
-"Proxy" = "Proksi";
+"PSIPHON_SETTINGS_PROXY_SECTION" = "Proksi";
 
 /* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"Timeouts" = "Wagt-aralary";
+"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "Wagt-aralary";
 
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
-"Use upstream proxy" = "Proksi akymyny ulan";
+"PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "Proksi akymyny ulan";
 
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
-"Host address" = "Eýe salgysy";
+"PSIPHON_SETTINGS_UPSTREAM_HOST" = "Eýe salgysy";
 
 /*[UNTRANSLATED] Settings item text. The network port number for the upstream proxy. Text should be kept short. */
-"Port" = "Port";
+"PSIPHON_SETTINGS_UPSTREAM_PORT" = "Port";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"Use proxy authentication" = "Tassyklanan proksi ulan";
+"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "Tassyklanan proksi ulan";
 
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
-"username" = "ulanjyady";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "ulanjyady";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
-"password" = "açarsözi";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "açarsözi";
 
 /* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
-"example.com" = "mysal.com";
+"EXAMPLE_HOSTNAME" = "mysal.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"Proxy username" = "Proksi ulanyjy ady";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Proksi ulanyjy ady";
 
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
-"Proxy password" = "Proksi açarsözi";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Proksi açarsözi";
 
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
-"Proxy domain" = "Proksi domain";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "Proksi domain";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Comments" = "Siziň Teswirleriňiz";
+"FEEDBACK_COMMENTS_LABEL" = "Siziň Teswirleriňiz";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Email Address" = "Sizin Email Salgyňyz";
+"FEEDBACK_EMAIL_LABEL" = "Sizin Email Salgyňyz";
 
 /* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
-"Where can we respond to you?" = "Nädip size habar edip bileriz?";
+"FEEDBACK_EMAIL_PLACEHOLDER" = "Nädip size habar edip bileriz?";
 
 /* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
-"Diagnostic Data" = "Diagnostiki Maglumat";
+"FEEDBACK_DIAGNOSTIC_DATA_SECTION" = "Diagnostiki Maglumat";
 
 /* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
-"Upload diagnostic data" = "Diagnostiki maglumatlary ýükle";
+"FEEDBACK_DIAGNOSTIC_DATA_LABEL" = "Diagnostiki maglumatlary ýükle";
 
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"My connection is bad, help!" = "Meniň birikmäm erbet, kömek ediň!";
+"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "Meniň birikmäm erbet, kömek ediň!";
 
 /* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"Changing your region to Best Performance increases your chances of getting connected." = "Ýurduňyzy çalyşmak bilen ýokary hilli işleýşi birikdirip bilersiňiz.";
+"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Ýurduňyzy çalyşmak bilen ýokary hilli işleýşi birikdirip bilersiňiz.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
-"Disabling timeouts may help you stay connected on slower networks." = "Wagt-aralaryny öçürmek bilen ýuwaş networklarda bagly galyp bolar.";
+"CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "Wagt-aralaryny öçürmek bilen ýuwaş networklarda bagly galyp bolar.";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
-"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Şuwagtky ulanýan networkiňiz yuwaş ýada jogapsyz bolsa, Psiphon serwerine täzeden baglanyp bilersiňiz.";
+"CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "Şuwagtky ulanýan networkiňiz yuwaş ýada jogapsyz bolsa, Psiphon serwerine täzeden baglanyp bilersiňiz.";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
-"Reconnect to the Psiphon server" = "Psiphon serwerine täzeden birik";
+"FORCE_RECONNECT" = "Psiphon serwerine täzeden birik";
 

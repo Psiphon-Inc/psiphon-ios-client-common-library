@@ -1,102 +1,102 @@
 /*[UNTRANSLATED] Settings view subheading for Psiphon-specific settings. */
-"Psiphon" = "Psiphon";
+"PSIPHON" = "Psiphon";
 
 /*[UNTRANSLATED] Settings item to change the application UI language. */
-"Language" = "Language";
+"SETTINGS_LANGUAGE" = "Language";
 
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
-"Default language" = "기본 언어";
+"DEFAULT_LANGUAGE" = "기본 언어";
 
 /*[UNTRANSLATED] Settings item text. Leads to info about Psiphon Inc. */
-"About" = "About";
+"SETTINGS_ABOUT" = "About";
 
 /*[UNTRANSLATED] Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"Change Region" = "Change Region";
+"CHANGE_REGION" = "Change Region";
 
 /*[UNTRANSLATED] Settings item text. Leads to a frequently asked questions page. */
-"FAQ" = "FAQ";
+"SETTINGS_FAQ" = "FAQ";
 
 /*[UNTRANSLATED] Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc.  */
-"Help" = "Help";
+"SETTINGS_HELP_SECTION" = "Help";
 
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
-"Privacy Policy" = "개인 정보 보호 정책";
+"SETTINGS_PRIVACY_POLICY" = "개인 정보 보호 정책";
 
 /*[UNTRANSLATED] Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
-"Psiphon Settings" = "Psiphon Settings";
+"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon Settings";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"Feedback" = "피드백";
+"SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "피드백";
 
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"Terms of Use" = "이용 약관";
+"SETTINGS_TERMS_OF_USE" = "이용 약관";
 
 /*[UNTRANSLATED] Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"Disable Timeouts" = "Disable Timeouts";
+"DISABLE_TIMEOUTS" = "Disable Timeouts";
 
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
-"Proxy" = "프록시";
+"PSIPHON_SETTINGS_PROXY_SECTION" = "프록시";
 
 /*[UNTRANSLATED] Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"Timeouts" = "Timeouts";
+"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "Timeouts";
 
 /*[UNTRANSLATED] Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
-"Use upstream proxy" = "Use upstream proxy";
+"PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "Use upstream proxy";
 
 /*[UNTRANSLATED] Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
-"Host address" = "Host address";
+"PSIPHON_SETTINGS_UPSTREAM_HOST" = "Host address";
 
 /* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
-"Port" = "포트";
+"PSIPHON_SETTINGS_UPSTREAM_PORT" = "포트";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"Use proxy authentication" = "프록시 인증 사용";
+"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "프록시 인증 사용";
 
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication username. Text should be kept short. */
-"username" = "username";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "username";
 
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication password. Text should be kept short. */
-"password" = "password";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "password";
 
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
-"example.com" = "example.com";
+"EXAMPLE_HOSTNAME" = "example.com";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"Proxy username" = "프록시 username";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "프록시 username";
 
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
-"Proxy password" = "프록시 비밀번호";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "프록시 비밀번호";
 
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
-"Proxy domain" = "프록시 도메인";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "프록시 도메인";
 
 /*[UNTRANSLATED] On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Comments" = "Your Comments";
+"FEEDBACK_COMMENTS_LABEL" = "Your Comments";
 
 /*[UNTRANSLATED] On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
-"Your Email Address" = "Your Email Address";
+"FEEDBACK_EMAIL_LABEL" = "Your Email Address";
 
 /*[UNTRANSLATED] On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
-"Where can we respond to you?" = "Where can we respond to you?";
+"FEEDBACK_EMAIL_PLACEHOLDER" = "Where can we respond to you?";
 
 /*[UNTRANSLATED] On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
-"Diagnostic Data" = "Diagnostic Data";
+"FEEDBACK_DIAGNOSTIC_DATA_SECTION" = "Diagnostic Data";
 
 /*[UNTRANSLATED] On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
-"Upload diagnostic data" = "Upload diagnostic data";
+"FEEDBACK_DIAGNOSTIC_DATA_LABEL" = "Upload diagnostic data";
 
 /*[UNTRANSLATED] Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"My connection is bad, help!" = "My connection is bad, help!";
+"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "My connection is bad, help!";
 
 /*[UNTRANSLATED] Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"Changing your region to Best Performance increases your chances of getting connected." = "Changing your region to Best Performance increases your chances of getting connected.";
+"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Changing your region to Best Performance increases your chances of getting connected.";
 
 /*[UNTRANSLATED] Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
-"Disabling timeouts may help you stay connected on slower networks." = "Disabling timeouts may help you stay connected on slower networks.";
+"CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "Disabling timeouts may help you stay connected on slower networks.";
 
 /*[UNTRANSLATED] Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
-"Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive." = "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.";
+"CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.";
 
 /*[UNTRANSLATED] Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
-"Reconnect to the Psiphon server" = "Reconnect to the Psiphon server";
+"FORCE_RECONNECT" = "Reconnect to the Psiphon server";
 

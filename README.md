@@ -64,7 +64,7 @@ NSLocalizedStringWithDefaultValue(<key>, nil, [PsiphonClientCommonLibraryHelpers
 
 So, when making a minor edit to a string that does not fundamentally change its meaning, do not change the key. When making a major edit that should invalidate existing translations, also change the key. Do not be precious about existing translations: if meaning changes, change the key -- the translations will catch up.
 
-After adding or modifying a string, build the project, that will trigger `genstrings.sh`, which will update `en.lproj/Localizable.strings`. Commit that file with your change and Transifex will automatically pick up the change (overnight).
+After adding or modifying a string, build the project, that will trigger `genstrings.py`, which will update `en.lproj/Localizable.strings`. Commit that file with your change and Transifex will automatically pick up the change (overnight).
 
 #### ...in a `.plist` file`
 
@@ -75,7 +75,40 @@ There are three `.plist` files in this project (all under `Example/PsiphonClient
 * [`ConnectionHelp.plist`][ConnectionHelp.plist]: Settings specifically broken out to help with connection problems.
 * [`Feedback.plist`][Feedback.plist]: The feedback interface.
 
-When adding or modifying strings in these files, you _must_ reflect the changes in [`en.lproj/Root.strings`][Root.strings]. Use the `ALL_CAPS` form described above for the key (yes, that means that the plists will be full of non-English keys), as well as the minor/major edit considerations for changing a key. Provide a comment in `Root.strings` for every entry -- this is the description/context for translators.
+[`en.lproj/Root.strings`][Root.strings] is generated from the `.plist` files by `genstrings.py`. A typical `.plist` item looks like this:
+```xml
+<dict>
+    <key>Title</key>
+    <string>CHANGE_REGION</string>
+    <key>TitleDefault</key>
+    <string>Change Region</string>
+    <key>TitleDescription</key>
+    <string>Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short.</string>
+    <key>BundleTable</key>
+    <string>PsiphonClientCommonLibrary</string>
+    <key>Key</key>
+    <string>regionSelection</string>
+    <key>Type</key>
+    <string>IASKCustomViewSpecifier</string>
+    <key>DefaultValue</key>
+    <string></string>
+</dict>
+```
+
+* `Title` is the string key for the string. It must not be the string itself. (For the minor/major edit reasons described above.)
+* `TitleDefault` is the "default" (i.e., English) value for the string, as passed to `NSLocalizedStringWithDefaultValue`.
+* `TitleDescription` is the description/comment/directive for the translator. It should contain context, instructions, etc.
+* `BundleTable` will always be `PsiphonClientCommonLibrary` for `.plist` files in this project (but not so for the app projects that use this library).
+
+If a string in a `.plist` should _not_ be translated, it should look like this:
+```xml
+<dict>
+    <key>Title</key>
+    <string>Français</string>
+</dict>
+```
+
+In addition to `Title`, `TitleDefault`, `TitleDescription`, there are similar attributes for `FooterText`, `IASKSubtitle`, and `IASKPlaceholder`.
 
 ### Updating translations
 

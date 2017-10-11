@@ -1,0 +1,10 @@
+{
+    "objcRootDir": "PsiphonClientCommonLibrary",
+    "objcIgnoreDirs": [],
+    "plistFiles": [
+        "Example/PsiphonClientCommonLibrary/InAppSettings.bundle/Root.inApp.plist",
+        "PsiphonClientCommonLibrary/Resources/InAppSettings.bundle/ConnectionHelp.plist",
+        "PsiphonClientCommonLibrary/Resources/InAppSettings.bundle/Feedback.plist",
+        "PsiphonClientCommonLibrary/Resources/InAppSettings.bundle/PsiphonSettings.plist"],
+    "enLprojDir": "PsiphonClientCommonLibrary/Resources/Strings/en.lproj"
+}
