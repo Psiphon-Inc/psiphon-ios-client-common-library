@@ -14,16 +14,16 @@
 "FEEDBACK_COMMENTS_PLACEHOLDER" = "О чем вы думаете? Пожалуйста, оставьте отзыв";
 
 /* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "Вы можете найти ответы на большинства распространённых вопросов в наших %@.";
+"FEEDBACK_FAQ_DIRECTION" = "Вы можете найти ответы на большинство распространённых вопросов в наших %@.";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "Узнайте больше о данных, которые мы собираем в %@";
 
 /* Feedback footer text. */
-"FEEDBACK_FOOTER_DIAGNOSTIC" = "Пожалуйста, имейте в виду, что диагностические данные никак не идентифицируют вас, и помогают нам поддерживать бесперебойную работоспособность Psiphon.";
+"FEEDBACK_FOOTER_DIAGNOSTIC" = "Пожалуйста, имейте в виду, что диагностические данные никак не идентифицируют вас, но помогают нам поддерживать работоспособность Psiphon.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "Если вышеуказанная форма не работает, или если вы бы хотели отправить скриншоты, пожалуйста, пишите нам на %@";
+"FEEDBACK_FOOTER_EMAIL" = "Если указанная форма не работает или вы хотите отправить скриншоты, пожалуйста, пишите нам на %@";
 
 /* Introduction text at top of feedback form */
 "FEEDBACK_INTRODUCTION" = "Ваш отзыв сделает Psiphon лучше!";
@@ -68,7 +68,7 @@
 "SERVER_REGION_CH" = "Швейцария";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_CZ" = "Чешская Республика";
+"SERVER_REGION_CZ" = "Чехия";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_DE" = "Германия";

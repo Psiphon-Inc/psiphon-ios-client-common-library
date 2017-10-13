@@ -11,31 +11,31 @@
 "FAQ_URL" = "https://psiphon.ca/tk/faq.html";
 
 /* Comments section placeholder text */
-"FEEDBACK_COMMENTS_PLACEHOLDER" = "Naäme pikir edyarsiñiz? Bize seslenmani ibereniñ";
+"FEEDBACK_COMMENTS_PLACEHOLDER" = "Näme pikir edýärsiñiz? Bize seslenme iberiň";
 
 /* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "Biziñ %@ umumy meselelere çözgüt tapy bilersiñiz.";
+"FEEDBACK_FAQ_DIRECTION" = "Biziñ %@ umumy meselelere çözgüt tapyp bilersiñiz.";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
-"FEEDBACK_FOOTER_DATA_COLLECTION" = "Tomplayan maglumatlarymyz barada köpräk öwren 1%@";
+"FEEDBACK_FOOTER_DATA_COLLECTION" = "Toplaýan maglumatlarymyz barada köpräk öwren 1%@";
 
 /* Feedback footer text. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "Siziñ dykgatyñyza: diagnostiki maglumatlary Sizi belli etmez. Ol bize Psiphon kadaly işletmegine kömek eder.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "Eger-de yokardaky forma isšlemeyän bolsa ya-da ekran suradyñy ibersesiñiz gelse, hayyšt bize email ugradyñ %@";
+"FEEDBACK_FOOTER_EMAIL" = "Eger-de ýokardaky forma işlemeýän bolsa ýa-da ekran suradyny ibermek isleseňiz, haýyş bize email ugradyñ %@";
 
 /* Introduction text at top of feedback form */
-"FEEDBACK_INTRODUCTION" = "Seniñ teswiriñ Psiphony gowlašdyryar!";
+"FEEDBACK_INTRODUCTION" = "Siziň teswiriňiz Psiphon gowylaşdyrýar!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Iber";
 
 /* Text explaining thumbs down choice in feedback */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon köplenç baglanšmany bašaranok yada kanagatlandyryjy iślanok. ";
+"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon köplenç birikmegi\nşowsuz ýada\nkanagatlandyryjy\nişlemeýär.";
 
 /* Text explaining thumbs up choice in feedback */
-"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon meniñ islegime göra išleyär we baglanyar.";
+"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon islegime görä\nbirikýär we \nkadaly işleýär.";
 
 /* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/tk/license.html";
@@ -53,7 +53,7 @@
 "SERVER_REGION_AT" = "Awstriýa";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_BE" = "Belgiya";
+"SERVER_REGION_BE" = "Belgiýa";
 
 /* The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short. */
 "SERVER_REGION_BEST" = "Ýokary hilli işleýişi";

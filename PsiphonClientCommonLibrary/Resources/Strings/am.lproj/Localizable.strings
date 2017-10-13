@@ -17,13 +17,13 @@
 "FEEDBACK_FAQ_DIRECTION" = "ለብዙ የተለመዱ ችግሮች መፍትሄን በ%@ ሊያገኙ ይችላሉ። ";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
-"FEEDBACK_FOOTER_DATA_COLLECTION" = "ስለምንሰበስበው ዳታ የበለጠ ለመማር ይህንን %@ ይጎብኙ። ";
+"FEEDBACK_FOOTER_DATA_COLLECTION" = "ስለምንሰበስበው ዳታ የበለጠ ለማወቅ %@ ይጎብኙ። ";
 
 /* Feedback footer text. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "ይህ የምርመራ ዳታ ማንነትዎን አይለይም፣ እና ሳይፈንን ያለምንም ችግር እንድናሰራ የሚረዳን መሆኑን እባክዎ ያስተውሉ። ";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "ከላይ ያለው ቅጽ የማይሰራ ከሆነ ወይም ቅጽበታዊ ገጽ እይታን መላክ የሚፈልጉ ከሆነ እባክዎን  በዚህ %@ ኢሜል ይላኩልን። ";
+"FEEDBACK_FOOTER_EMAIL" = "ከላይ ያለው ቅጽ የማይሰራ ከሆነ ወይም ቅጽበታዊ ገጽ እይታን መላክ የሚፈልጉ ከሆነ እባክዎን  በ %@ ኢሜል ይላኩልን። ";
 
 /* Introduction text at top of feedback form */
 "FEEDBACK_INTRODUCTION" = "የእርስዎ ግብረ መልስ ሳይፈንን የተሻለ ያደርገዋል!";
@@ -32,7 +32,7 @@
 "FEEDBACK_SEND_BUTTON" = "ላክ ";
 
 /* Text explaining thumbs down choice in feedback */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "ሳይፈን አብዛኛውን  ጊዜ አይሰራም\n ለመገናኘት ወይም\n በደንብ አይሰራም";
+"FEEDBACK_THUMBS_DOWN_TEXT" = "ሳይፈን አብዛኛውን  ጊዜ አልገናኝም\n ይላል ወይም\n በደንብ አይሰራም።";
 
 /* Text explaining thumbs up choice in feedback */
 "FEEDBACK_THUMBS_UP_TEXT" = "ሳይፈን ይገናኛል \nእናም የሚሰራው \nእኔ በምፈልገው መንገድ ነው። ";
@@ -50,7 +50,7 @@
 "PRIVACY_POLICY_URL" = "https://psiphon.ca/en/privacy.html";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_AT" = "ኦስትኢያ ";
+"SERVER_REGION_AT" = "ኦስትሪያ ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_BE" = "ቤልጂየም ";
@@ -110,7 +110,7 @@
 "SERVER_REGION_RO" = "ሮማንያ ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_SE" = "ሲውዲን ";
+"SERVER_REGION_SE" = "ስዊድን ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_SG" = "ሲንጋፖር ";

@@ -35,7 +35,7 @@
 "FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon a menudo\nno logra conectar o\nno tiene suficiente\nrendimiento.";
 
 /* Text explaining thumbs up choice in feedback */
-"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon conecta\ny rinde de la\nforma que quiero.";
+"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon se conecta\ny funciona de la\nforma que quiero.";
 
 /* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/es/license.html";

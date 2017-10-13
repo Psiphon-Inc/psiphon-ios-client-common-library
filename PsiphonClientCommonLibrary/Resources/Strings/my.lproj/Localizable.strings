@@ -17,16 +17,16 @@
 "FEEDBACK_FAQ_DIRECTION" = "ကြုံရလေ့ရှိသောပြဿနာများအတွက် ဖြေရှင်းနည်းများကို %@ တွင်တွေ့နိုင်ပါသည်။";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
-"FEEDBACK_FOOTER_DATA_COLLECTION" = "ကျွန်ုပ်တို့ကောက်ယူသော အချက်အလက်များကို %@ တွင် ပိုမိုသိရှိနိုင်ပါသည်";
+"FEEDBACK_FOOTER_DATA_COLLECTION" = "ကျွနု်ပ်တို့ကောက်ယူသော အချက်အလက်များနှင့်ပတ်သတ်၍ ပိုမိုသိရှိနုင်ရန် ဤ %@ တွင် လေ့လာပါ။";
 
 /* Feedback footer text. */
-"FEEDBACK_FOOTER_DIAGNOSTIC" = "ထူးခြားသည့်ဝိသေသပါသည့်အချက်အလက်သည် သင်မည်သူမည်ဝါဖြစ်ကြောင်းမဖေါ်ပြနိုင်ပါ၊ ထိုအရာသည် Psiphon ကို အဆင်ပြေချောမွေ့စွာ လည်ပတ်နိုင်ရန်အတွက် ကူညီပေးသည်။ ";
+"FEEDBACK_FOOTER_DIAGNOSTIC" = "စစ်ဆေးထားသော အချက်အလက်များသည် သင်မည်သူမည်ဝါဖြစ်ကြောင်းမဖေါ်ပြနိုင်ပါ။ ထိုအရာသည် Psiphon ကို အဆင်ပြေချောမွေ့စွာ လည်ပတ်နိုင်ရန်အတွက် ကူညီပေးသည်။";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "အထက်ဖော်ပြပါပုံစံသည် သင့်အတွက်အဆင်မပြေပါက သို့မဟုတ် သင်သည် screenshot များပေးပို့လိုပါက ကျွန်ုပ်တို့ထံ အီးမေးလ်ပို့ပါ%@";
+"FEEDBACK_FOOTER_EMAIL" = "အထက်ဖော်ပြပါပုံစံသည် သင့်အတွက်အဆင်မပြေပါက သို့မဟုတ် သင်သည် screenshot များပေးပို့လိုပါက ကျွနု်ပ်တို့ထံ အီးမေးလ်ပို့ပါ%@";
 
 /* Introduction text at top of feedback form */
-"FEEDBACK_INTRODUCTION" = "သင့်ရဲ့အကြံပြုတုံ့ပြန်မှုက Psiphon ကိုပို၍ကောင်းမွန်စေပါတယ်။";
+"FEEDBACK_INTRODUCTION" = "သင့်၏ အကြံပြုတုံ့ပြန်မှုက Psiphon ကိုပို၍ကောင်းမွန်စေပါသည်။";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "ပေးပို့ရန်";
@@ -35,7 +35,7 @@
 "FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon သည်မကြာခဏဆိုသလို\nချိတ်ဆက်ခြင်းမပြုနိုင်ပါ သို့မဟုတ်\nကောင်းမွန်စွာ\nလုပ်ဆောင်နိုင်ခြင်းမရှိပါ။";
 
 /* Text explaining thumbs up choice in feedback */
-"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon သည် ချိတ်ဆက်ပြီး\nကျွန်ုပ်လုပ်ဆောင်စေလိုသည့်အတိုင်း\nလုပ်ဆောင်နေပါသည်။";
+"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon သည် ချိတ်ဆက်ပြီး\nကျွနု်ပ်လုပ်ဆောင်စေလိုသည့်အတိုင်း\nလုပ်ဆောင်နေပါသည်။";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/en/license.html";
@@ -44,7 +44,7 @@
 "LOGS_TITLE" = "မှတ်တမ်းများ";
 
 /* Privacy Policy link text */
-"PRIVACY_POLICY_LINK_TEXT" = "ကိုယ်ရေးအချက်အလက်မူဝါဒ";
+"PRIVACY_POLICY_LINK_TEXT" = "ကိုယ်ရေးကိုယ်တာအချက်အလက်လုံခြုံမှုဆိုင်ရာမူဝါဒ";
 
 /*[UNTRANSLATED] External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
 "PRIVACY_POLICY_URL" = "https://psiphon.ca/en/privacy.html";
@@ -83,7 +83,7 @@
 "SERVER_REGION_FR" = "ပြင်သစ်";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_GB" = "ယူနိုက်တက်ကင်းဒမ်း";
+"SERVER_REGION_GB" = "ယူကေ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_HK" = "ဟောင်ကောင်";

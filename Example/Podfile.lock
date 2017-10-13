@@ -1,6 +1,6 @@
 PODS:
   - InAppSettingsKit (2.9.4)
-  - PsiphonClientCommonLibrary (0.2.14):
+  - PsiphonClientCommonLibrary (0.2.15):
     - InAppSettingsKit
 
 DEPENDENCIES:
@@ -21,7 +21,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   InAppSettingsKit: 567ef538698cd6cf3afb9c5529b89a8936fdacb5
-  PsiphonClientCommonLibrary: 74fb17a3bb72c4648a87cfd59478c7d1dda7244e
+  PsiphonClientCommonLibrary: 16eb8b65914bdbcb9782891b889d93934df46bf1
 
 PODFILE CHECKSUM: 16c02ac5a8b7439e7f6ba119ae1ed1746a844258
 
