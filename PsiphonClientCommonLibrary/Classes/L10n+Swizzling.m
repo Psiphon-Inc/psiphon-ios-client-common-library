@@ -86,7 +86,6 @@
 - (NSString *)swizzled_localizedStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName NS_FORMAT_ARGUMENT(1);
 {
 	NSBundle *currentBundle = nil;
-	NSBundle *languageBundle  = nil;
 
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSString* language = [userDefaults objectForKey:appLanguage];
@@ -103,19 +102,28 @@
 		currentBundle = self;
 	}
 
+	NSBundle *languageBundle = currentBundle;
+
 	// Use default localization if language is not set
-	if( language == nil) {
-		return [currentBundle swizzled_localizedStringForKey:key value:value table:tableName];
+	if (language != nil) {
+		languageBundle = [NSBundle bundleWithPath:[currentBundle pathForResource:language ofType:@"lproj"]];
+		if (languageBundle == nil) {
+			languageBundle = currentBundle;
+		}
 	}
 
-	languageBundle = [NSBundle bundleWithPath:[currentBundle pathForResource:language ofType:@"lproj"]];
-	if (languageBundle == nil) {
-		languageBundle = currentBundle;
+	NSString* localizedString = [languageBundle swizzled_localizedStringForKey:key value:value table:tableName];
+
+	if ((language == nil || ![language isEqualToString:@"en"]) &&
+		(localizedString == nil || [localizedString isEqualToString:value])) {
+		// We failed to find the localized string. Maybe it's missing from the .strings file.
+		// Fall back to English.
+		languageBundle = [NSBundle bundleWithPath:[currentBundle pathForResource:@"en" ofType:@"lproj"]];
+		if (languageBundle != nil) {
+			localizedString = [languageBundle swizzled_localizedStringForKey:key value:value table:tableName];
+		}
 	}
 
-	return [languageBundle swizzled_localizedStringForKey:key value:value table:tableName];
+	return localizedString;
 }
 @end
-
-
-

@@ -17,17 +17,25 @@
  *
  */
 
-#define kUseUpstreamProxy			@"useUpstreamProxy"
-#define kUseProxyAuthentication		@"useProxyAuthentication"
-#define kProxyUsername				@"proxyUsername"
-#define kProxyPassword				@"proxyPassword"
-#define kProxyDomain				@"proxyDomain"
-#define kUpstreamProxyHostAddress	@"upstreamProxyHostAddress"
-#define kUpstreamProxyPort			@"upstreamProxyPort"
-
+#define kUseUpstreamProxy                @"useUpstreamProxy"
+#define kUseProxyAuthentication          @"useProxyAuthentication"
+#define kProxyUsername                   @"proxyUsername"
+#define kProxyPassword                   @"proxyPassword"
+#define kProxyDomain                     @"proxyDomain"
+#define kUpstreamProxyHostAddress        @"upstreamProxyHostAddress"
+#define kUpstreamProxyPort               @"upstreamProxyPort"
+#define kUpstreamProxyPort               @"upstreamProxyPort"
+#define kUseUpstreamProxyCustomHeaders   @"useUpstreamProxyCustomHeaders"
+#define kUpstreamProxyCustomHeader       @"upstreamProxyCustomHeader"
+#define kUpstreamProxyCustomHeaderName   @"upstreamProxyCustomHeaderName"
+#define kUpstreamProxyCustomHeaderValue  @"upstreamProxyCustomHeaderValue"
+#define kMaxUpstreamProxyCustomHeaders   3
 
 @interface UpstreamProxySettings : NSObject
 + (instancetype)sharedInstance;
++ (NSArray<NSString*>*)defaultSettingsKeys;
++ (NSArray<NSString*>*)authenticationKeys;
++ (NSArray<NSString*>*)customHeaderKeys;
 
 - (NSString*)getUpstreamProxyUrl;
 - (BOOL)getUseCustomProxySettings;
@@ -37,4 +45,8 @@
 - (NSString*)getProxyUsername;
 - (NSString*)getProxyPassword;
 - (NSString*)getProxyDomain;
+- (BOOL)getUseCustomHeaders;
+- (NSString*)getHeaderNameKeyN:(int)n;
+- (NSString*)getHeaderValueKeyN:(int)n;
+- (NSString*)getUpstreamProxyCustomHeaders;
 @end

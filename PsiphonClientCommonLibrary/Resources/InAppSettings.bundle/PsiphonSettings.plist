@@ -185,6 +185,144 @@
 			<string>Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short.</string>
 		</dict>
 		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>useUpstreamProxyCustomHeaders</string>
+			<key>Title</key>
+			<string>PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL</string>
+			<key>TitleDefault</key>
+			<string>Use custom headers</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short.</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyCustomHeader0</string>
+			<key>Title</key>
+			<string>PSIPHON_SETTINGS_UPSTREAM_HEADER_1</string>
+			<key>TitleDefault</key>
+			<string>Header 1</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Header text above the text boxes where the user configures the first of three custom headers to be passed along to the upstream proxy. Text should be kept short.</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyCustomHeaderName0</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IASKPlaceholder</key>
+			<string>PSIPHON_SETTINGS_ENTER_HEADER_NAME</string>
+			<key>IASKPlaceholderDefault</key>
+			<string>Enter header name</string>
+			<key>IASKPlaceholderDescription</key>
+			<string>Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short.</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyCustomHeaderValue0</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IASKPlaceholder</key>
+			<string>PSIPHON_SETTINGS_ENTER_HEADER_VALUE</string>
+			<key>IASKPlaceholderDefault</key>
+			<string>Enter header value</string>
+			<key>IASKPlaceholderDescription</key>
+		  <string>Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short.</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyCustomHeader1</string>
+			<key>Title</key>
+			<string>PSIPHON_SETTINGS_UPSTREAM_HEADER_2</string>
+			<key>TitleDefault</key>
+			<string>Header 2</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Header text above the text boxes where the user configures the second of three custom headers to be passed along to the upstream proxy. Text should be kept short.</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyCustomHeaderName1</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IASKPlaceholder</key>
+			<string>PSIPHON_SETTINGS_ENTER_HEADER_NAME</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyCustomHeaderValue1</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IASKPlaceholder</key>
+			<string>PSIPHON_SETTINGS_ENTER_HEADER_VALUE</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyCustomHeader2</string>
+			<key>Title</key>
+			<string>PSIPHON_SETTINGS_UPSTREAM_HEADER_3</string>
+			<key>TitleDefault</key>
+			<string>Header 3</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Header text above the text boxes where the user configures the third of three custom headers to be passed along to the upstream proxy. Text should be kept short.</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyCustomHeaderName2</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IASKPlaceholder</key>
+			<string>PSIPHON_SETTINGS_ENTER_HEADER_NAME</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>upstreamProxyCustomHeaderValue2</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IASKPlaceholder</key>
+			<string>PSIPHON_SETTINGS_ENTER_HEADER_VALUE</string>
+		</dict>
+		<dict>
 			<key>Title</key>
 			<string>LOGS</string>
 			<key>Type</key>
