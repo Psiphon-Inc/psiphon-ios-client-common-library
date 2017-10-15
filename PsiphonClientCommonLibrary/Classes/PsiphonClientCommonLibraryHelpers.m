@@ -37,8 +37,20 @@
 + (void)initializeDefaultsFor:(NSString*)plist {
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
+	// We'll look for the plist first in the main bundle...
 	NSString *plistPath = [[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"InAppSettings.bundle"] stringByAppendingPathComponent:plist];
 	NSDictionary *settingsDictionary = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+
+	// ...and then in the PsiphonClientCommonLibrary bundle.
+	if (settingsDictionary == nil) {
+		plistPath = [[[PsiphonClientCommonLibraryHelpers commonLibraryBundle] bundlePath] stringByAppendingPathComponent:plist];
+		settingsDictionary = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+	}
+
+	if (settingsDictionary == nil) {
+		NSLog(@"initializeDefaultsFor: Failed to find plist: %@", plist);
+		abort();
+	}
 
 	for (NSDictionary *pref in settingsDictionary[@"PreferenceSpecifiers"]) {
 		NSString *key = pref[@"Key"];
