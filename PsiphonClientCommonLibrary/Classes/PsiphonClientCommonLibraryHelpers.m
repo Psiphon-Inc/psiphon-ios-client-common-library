@@ -47,6 +47,11 @@
 		settingsDictionary = [NSDictionary dictionaryWithContentsOfFile:plistPath];
 	}
 
+	if (settingsDictionary == nil) {
+		NSLog(@"initializeDefaultsFor: Failed to find plist: %@", plist);
+		abort();
+	}
+
 	for (NSDictionary *pref in settingsDictionary[@"PreferenceSpecifiers"]) {
 		NSString *key = pref[@"Key"];
 		if (key == nil)
