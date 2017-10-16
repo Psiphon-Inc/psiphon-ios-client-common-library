@@ -4,7 +4,7 @@
 "PSIPHON" = "Psiphon";
 
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"CHANGE_REGION" = "Change Region";
+"CHANGE_REGION" = "Change region";
 
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
 "DEFAULT_LANGUAGE" = "Default language";
@@ -13,7 +13,7 @@
 "SETTINGS_LANGUAGE" = "Language";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
-"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon Settings";
+"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon settings";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
 "SETTINGS_HELP_SECTION" = "Help";
@@ -36,14 +36,14 @@
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "About";
 
-/* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
+/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Changing your region to Best Performance increases your chances of getting connected.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "Disabling timeouts may help you stay connected on slower networks.";
 
-/* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"DISABLE_TIMEOUTS" = "Disable Timeouts";
+/* Settings item text, under 'Psiphon settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
+"DISABLE_TIMEOUTS" = "Disable timeouts";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.";
