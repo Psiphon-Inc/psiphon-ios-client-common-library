@@ -120,3 +120,12 @@
 /* Settings item text. Header text above the text boxes where the user configures the third of three custom headers to be passed along to the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_HEADER_3" = "Header 3";
 
+/* Settings item text. Header text above the text boxes where the user configures the third of three custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_4" = "Header 4";
+
+/* Settings item text. Header text above the text boxes where the user configures the third of three custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_5" = "Header 5";
+
+/* Settings item text. Header text above the text boxes where the user configures the third of three custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_6" = "Header 6";
+

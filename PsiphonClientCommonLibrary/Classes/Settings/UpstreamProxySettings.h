@@ -29,7 +29,7 @@
 #define kUpstreamProxyCustomHeader       @"upstreamProxyCustomHeader"
 #define kUpstreamProxyCustomHeaderName   @"upstreamProxyCustomHeaderName"
 #define kUpstreamProxyCustomHeaderValue  @"upstreamProxyCustomHeaderValue"
-#define kMaxUpstreamProxyCustomHeaders   3
+#define kMaxUpstreamProxyCustomHeaders   6
 
 @interface UpstreamProxySettings : NSObject
 + (instancetype)sharedInstance;
