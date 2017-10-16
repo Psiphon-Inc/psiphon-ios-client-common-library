@@ -13,7 +13,7 @@
 "SETTINGS_LANGUAGE" = "Language";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
-"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon settings";
+"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon Settings";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
 "SETTINGS_HELP_SECTION" = "Help";
