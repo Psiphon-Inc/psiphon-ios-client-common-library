@@ -69,7 +69,7 @@
 			<key>FooterTextDefault</key>
 			<string>Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.</string>
 			<key>FooterTextDescription</key>
-			<string>Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page.</string>
+			<string>Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 		</dict>
@@ -81,7 +81,7 @@
 			<key>TitleDefault</key>
 			<string>Reconnect to the Psiphon server</string>
 			<key>TitleDescription</key>
-			<string>Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one.</string>
+			<string>Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
