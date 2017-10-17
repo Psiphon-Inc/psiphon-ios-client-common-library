@@ -212,7 +212,7 @@
 
 -(NSAttributedString*)generateIntroString {
 	NSString *faqPhrase = NSLocalizedStringWithDefaultValue(@"FAQ_LINK_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Frequently Asked Questions", @"FAQ link text");
-	NSString *introTextPart1 = [NSLocalizedStringWithDefaultValue(@"FEEDBACK_INTRODUCTION", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Your feedback makes Psiphon better!", "Introduction text at top of feedback form") stringByAppendingString:@"\n\n"];
+	NSString *introTextPart1 = [NSLocalizedStringWithDefaultValue(@"FEEDBACK_INTRODUCTION", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Your feedback makes Psiphon better!", "Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'.") stringByAppendingString:@"\n\n"];
 	NSString *introTextPart2 = NSLocalizedStringWithDefaultValue(@"FEEDBACK_FAQ_DIRECTION", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"You can find solutions to many common problems in our %@.", "Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed.");
 
 	NSString *faqText = [NSString stringWithFormat:introTextPart2, faqPhrase];
@@ -237,7 +237,7 @@
 	NSString *privacyPolicyPhrase = NSLocalizedStringWithDefaultValue(@"PRIVACY_POLICY_LINK_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Privacy Policy", "Privacy Policy link text");
 	NSString *feedbackEmail = @"feedback.ios@psiphon.ca";
 
-	NSString *localizedTextPart1 = [NSLocalizedStringWithDefaultValue(@"FEEDBACK_FOOTER_DIAGNOSTIC", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Please note that this diagnostic data does not identify you, and it helps us keep Psiphon running smoothly.", @"Feedback footer text.") stringByAppendingString:@"\n\n"];
+	NSString *localizedTextPart1 = [NSLocalizedStringWithDefaultValue(@"FEEDBACK_FOOTER_DIAGNOSTIC", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Please note that this diagnostic data does not identify you, and it helps us keep Psiphon running smoothly.", @"Feedback footer text. DO NOT translate the word 'Psiphon'.") stringByAppendingString:@"\n\n"];
 	NSString *footerTextPart2 = [NSLocalizedStringWithDefaultValue(@"FEEDBACK_FOOTER_DATA_COLLECTION", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Learn more about the data we collect in our %@", @"Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed.") stringByAppendingString:@"\n\n"];
 	NSString *footerTextPart3 = NSLocalizedStringWithDefaultValue(@"FEEDBACK_FOOTER_EMAIL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"If the above form is not working or you would like to send screenshots, please email us at %@", @"Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed.");
 
