@@ -1,8 +1,5 @@
 /* THIS FILE IS GENERATED. DO NOT EDIT. */
 
-/* Settings view subheading for Psiphon-specific settings. */
-"PSIPHON" = "Psiphon";
-
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
 "CHANGE_REGION" = "Change region";
 
@@ -12,7 +9,7 @@
 /* Settings item to change the application UI language. */
 "SETTINGS_LANGUAGE" = "Language";
 
-/* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
+/* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon". */
 "PSIPHON_SUBSETTINGS_LABEL" = "Psiphon settings";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
@@ -45,10 +42,10 @@
 /* Settings item text, under 'Psiphon settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
 "DISABLE_TIMEOUTS" = "Disable timeouts";
 
-/* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
+/* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
 "CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.";
 
-/* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
+/* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "Reconnect to the Psiphon server";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */

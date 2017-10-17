@@ -5,14 +5,9 @@
 	<key>PreferenceSpecifiers</key>
 	<array>
 		<dict>
+			<!-- Not translated -->
 			<key>Title</key>
-			<string>PSIPHON</string>
-			<key>TitleDefault</key>
 			<string>Psiphon</string>
-			<key>TitleDescription</key>
-			<string>Settings view subheading for Psiphon-specific settings.</string>
-			<key>BundleTable</key>
-			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -238,7 +233,7 @@
 			<key>TitleDefault</key>
 			<string>Psiphon settings</string>
 			<key>TitleDescription</key>
-			<string>Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'.</string>
+			<string>Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon".</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>

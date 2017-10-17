@@ -55,8 +55,8 @@
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
 
 		// Localized text
-		_thumbsUpText = NSLocalizedStringWithDefaultValue(@"FEEDBACK_THUMBS_UP_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Psiphon connects\nand performs the\nway I want it to.", @"Text explaining thumbs up choice in feedback");
-		_thumbsDownText = NSLocalizedStringWithDefaultValue(@"FEEDBACK_THUMBS_DOWN_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Psiphon often fails\nto connect or\ndoesn't perform well\nenough." , @"Text explaining thumbs down choice in feedback");
+		_thumbsUpText = NSLocalizedStringWithDefaultValue(@"FEEDBACK_THUMBS_UP_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Psiphon connects\nand performs the\nway I want it to.", @"Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'.");
+		_thumbsDownText = NSLocalizedStringWithDefaultValue(@"FEEDBACK_THUMBS_DOWN_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Psiphon often fails\nto connect or\ndoesn't perform well\nenough." , @"Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'.");
 
 		// Determine proper dimensions to fit image and localized text
 		_maxImageHeight = MAX([PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:kThumbsDownColor].size.height, [PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:kThumbsDownGrayscale].size.height);
