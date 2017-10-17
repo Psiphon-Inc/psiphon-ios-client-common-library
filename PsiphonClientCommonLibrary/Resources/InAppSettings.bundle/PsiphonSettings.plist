@@ -184,22 +184,22 @@
 			<key>IASKPlaceholderDescription</key>
 			<string>Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short.</string>
 		</dict>
-        <dict>
-            <key>File</key>
-            <string>CustomHeaders</string>
-            <key>Key</key>
-            <string>setUpstreamProxyCustomHeaders</string>
-            <key>Title</key>
-            <string>PSIPHON_CUSTOM_HEADERS_SUBSETTINGS_LABEL</string>
-            <key>TitleDefault</key>
-            <string>Custom HTTP headers</string>
-            <key>TitleDescription</key>
-            <string>Settings item text. Leads to settings specific to the custom headers.</string>
-            <key>BundleTable</key>
-            <string>PsiphonClientCommonLibrary</string>
-            <key>Type</key>
-            <string>PSChildPaneSpecifier</string>
-        </dict>
+		<dict>
+			<key>File</key>
+			<string>CustomHeaders</string>
+			<key>Key</key>
+			<string>setUpstreamProxyCustomHeaders</string>
+			<key>Title</key>
+			<string>PSIPHON_CUSTOM_HEADERS_SUBSETTINGS_LABEL</string>
+			<key>TitleDefault</key>
+			<string>Custom HTTP headers</string>
+			<key>TitleDescription</key>
+			<string>Settings item text. Leads to settings specific to the custom headers.</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>	
+		</dict>
 		<dict>
 			<key>Title</key>
 			<string>LOGS</string>
