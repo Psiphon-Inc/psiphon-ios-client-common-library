@@ -26,6 +26,7 @@
 #define kUpstreamProxyPort               @"upstreamProxyPort"
 #define kUpstreamProxyPort               @"upstreamProxyPort"
 #define kUseUpstreamProxyCustomHeaders   @"useUpstreamProxyCustomHeaders"
+#define kSetUpstreamProxyCustomHeaders   @"setUpstreamProxyCustomHeaders"
 #define kUpstreamProxyCustomHeader       @"upstreamProxyCustomHeader"
 #define kUpstreamProxyCustomHeaderName   @"upstreamProxyCustomHeaderName"
 #define kUpstreamProxyCustomHeaderValue  @"upstreamProxyCustomHeaderValue"
