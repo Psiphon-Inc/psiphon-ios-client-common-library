@@ -12,19 +12,16 @@
 			<key>FooterText</key>
 			<string>CONNECTION_HELP_BEST_PERFORMANCE_FOOTER</string>
 			<key>FooterTextDefault</key>
-			<string>Changing your region to Best Performance increases your chances of getting connected.</string>
+			<string>Changing your region to “Best performance” increases your chances of getting connected.</string>
 			<key>FooterTextDescription</key>
 			<string>Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 		</dict>
 		<dict>
+			<!-- String defined in Root.inApp.plist -->
 			<key>Title</key>
 			<string>CHANGE_REGION</string>
-			<key>TitleDefault</key>
-			<string>Change region</string>
-			<key>TitleDescription</key>
-			<string>Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Key</key>
