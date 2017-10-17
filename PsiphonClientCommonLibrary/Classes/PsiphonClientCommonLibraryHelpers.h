@@ -24,7 +24,13 @@
 
 + (NSBundle * _Nonnull)commonLibraryBundle;
 + (UIImage * _Nullable)imageFromCommonLibraryNamed:(NSString* _Nonnull)imageName;
-+ (void)initializeDefaultsFor:(NSString* _Nonnull)plist;
+
+/*!
+ Starting from `rootPlist`, walk through all referenced plists initializing
+ defaults as needed.
+ */
++ (void)initializeDefaultsForPlistsFromRoot:(NSString* _Nonnull)rootPlist;
+
 + (NSString * _Nullable)getPsiphonBundledConfig;
 + (BOOL)unsupportedCharactersForFont:(NSString* _Nonnull)font withString:(NSString* _Nonnull)string;
 + (NSDictionary * _Nullable)jsonToDictionary:(NSString* _Nonnull)jsonString;

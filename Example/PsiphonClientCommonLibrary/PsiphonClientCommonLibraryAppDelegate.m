@@ -63,8 +63,7 @@
 }
 
 - (void)initializeDefaults {
-    [PsiphonClientCommonLibraryHelpers initializeDefaultsFor:@"Root.inApp.plist"];
-    [PsiphonClientCommonLibraryHelpers initializeDefaultsFor:@"Feedback.plist"];
+    [PsiphonClientCommonLibraryHelpers initializeDefaultsForPlistsFromRoot:@"Root.inApp"];
 }
 
 @end
