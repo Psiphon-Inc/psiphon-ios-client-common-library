@@ -5,6 +5,7 @@
         "Example/PsiphonClientCommonLibrary/InAppSettings.bundle/Root.inApp.plist",
         "PsiphonClientCommonLibrary/Resources/InAppSettings.bundle/ConnectionHelp.plist",
         "PsiphonClientCommonLibrary/Resources/InAppSettings.bundle/Feedback.plist",
-        "PsiphonClientCommonLibrary/Resources/InAppSettings.bundle/PsiphonSettings.plist"],
+        "PsiphonClientCommonLibrary/Resources/InAppSettings.bundle/PsiphonSettings.plist",
+        "PsiphonClientCommonLibrary/Resources/InAppSettings.bundle/CustomHeaders.plist"],
     "enLprojDir": "PsiphonClientCommonLibrary/Resources/Strings/en.lproj"
 }
