@@ -7,6 +7,18 @@
 	<key>PreferenceSpecifiers</key>
 	<array>
 		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>FooterText</key>
+			<string>CUSTOM_HEADERS_FOOTER</string>
+			<key>FooterTextDefault</key>
+			<string>Some network configurations may require custom HTTP headers in order to connect successfully.</string>
+			<key>FooterTextDescription</key>
+			<string>Explanatory text for the "Use custom headers" setting.</string>
+			<key>BundleTable</key>
+			<string>PsiphonClientCommonLibrary</string>
+		</dict>
+		<dict>
 			<key>DefaultValue</key>
 			<false/>
 			<key>Key</key>
