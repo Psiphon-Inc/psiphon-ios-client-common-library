@@ -103,7 +103,7 @@
 }
 
 + (NSArray<NSString*>*)defaultSettingsKeys {
-	return @[kUpstreamProxyHostAddress, kUpstreamProxyPort, kUseProxyAuthentication, kUseUpstreamProxyCustomHeaders, kSetUpstreamProxyCustomHeaders];
+	return @[kUpstreamProxyHostAddress, kUpstreamProxyPort, kUseProxyAuthentication];
 }
 
 + (NSArray<NSString*>*)authenticationKeys {
