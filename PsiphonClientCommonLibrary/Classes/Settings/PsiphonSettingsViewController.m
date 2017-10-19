@@ -505,6 +505,10 @@ BOOL linksEnabled;
 			return YES;
 		}
 
+		if (useCustomHeaders != [proxySettings getUseCustomHeaders]) {
+			return YES;
+		}
+
 		// No further checking if "use proxy" and "use custom headers" is off and has not
 		// changed
 		if (!useUpstreamProxy && !useCustomHeaders) {
