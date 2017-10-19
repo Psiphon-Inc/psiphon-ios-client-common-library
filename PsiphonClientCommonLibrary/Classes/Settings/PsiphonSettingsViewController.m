@@ -499,14 +499,15 @@ BOOL linksEnabled;
 
 		// Check if "use proxy" has changed
 		BOOL useUpstreamProxy = [[_preferencesSnapshot objectForKey:kUseUpstreamProxy] boolValue];
+		BOOL useCustomHeaders = [[_preferencesSnapshot objectForKey:kUseUpstreamProxyCustomHeaders] boolValue];
 
 		if (useUpstreamProxy != [proxySettings getUseCustomProxySettings]) {
 			return YES;
 		}
 
-		// No further checking if "use proxy" is off and has not
+		// No further checking if "use proxy" and "use custom headers" is off and has not
 		// changed
-		if (!useUpstreamProxy) {
+		if (!useUpstreamProxy && !useCustomHeaders) {
 			return NO;
 		}
 
