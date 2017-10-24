@@ -89,7 +89,7 @@ BOOL linksEnabled;
 
 	BOOL upstreamProxyEnabled = [upstreamProxySettings getUseCustomProxySettings];
 	BOOL useUpstreamProxyAuthentication = upstreamProxyEnabled && [upstreamProxySettings getUseProxyAuthentication];
-	BOOL useUpstreamProxyCustomHeaders = upstreamProxyEnabled && [upstreamProxySettings getUseCustomHeaders];
+	BOOL useUpstreamProxyCustomHeaders = [upstreamProxySettings getUseCustomHeaders];
 
 	NSArray *upstreamProxyKeys = [UpstreamProxySettings defaultSettingsKeys];
 	NSArray *proxyAuthenticationKeys = [UpstreamProxySettings authenticationKeys];
@@ -355,7 +355,6 @@ BOOL linksEnabled;
 			UpstreamProxySettings *upstreamProxySettings = [UpstreamProxySettings sharedInstance];
 
 			BOOL useUpstreamProxyAuthentication = [upstreamProxySettings getUseProxyAuthentication];
-			BOOL useUpstreamProxyCustomHeaders = [upstreamProxySettings getUseCustomHeaders];
 
 			if (useUpstreamProxyAuthentication) {
 				// Display proxy authentication fields
@@ -364,18 +363,10 @@ BOOL linksEnabled;
 				}
 			}
 
-			if (useUpstreamProxyCustomHeaders) {
-				// Display proxy custom header fields
-				for (NSString *key in proxyCustomHeaderKeys) {
-					[hiddenKeys removeObject:key];
-				}
-			}
-
 			[self setHiddenKeys:hiddenKeys animated:NO];
 		} else {
 			NSMutableSet *hiddenKeys = [NSMutableSet setWithArray:proxyDefaultSettingsKeys];
 			[hiddenKeys addObjectsFromArray:proxyAuthenticationKeys];
-			[hiddenKeys addObjectsFromArray:proxyCustomHeaderKeys];
 			[self setHiddenKeys:hiddenKeys animated:NO];
 		}
 	} else if ([fieldName isEqual:kUseProxyAuthentication]) {
@@ -508,14 +499,19 @@ BOOL linksEnabled;
 
 		// Check if "use proxy" has changed
 		BOOL useUpstreamProxy = [[_preferencesSnapshot objectForKey:kUseUpstreamProxy] boolValue];
+		BOOL useCustomHeaders = [[_preferencesSnapshot objectForKey:kUseUpstreamProxyCustomHeaders] boolValue];
 
 		if (useUpstreamProxy != [proxySettings getUseCustomProxySettings]) {
 			return YES;
 		}
 
-		// No further checking if "use proxy" is off and has not
+		if (useCustomHeaders != [proxySettings getUseCustomHeaders]) {
+			return YES;
+		}
+
+		// No further checking if "use proxy" and "use custom headers" is off and has not
 		// changed
-		if (!useUpstreamProxy) {
+		if (!useUpstreamProxy && !useCustomHeaders) {
 			return NO;
 		}
 
