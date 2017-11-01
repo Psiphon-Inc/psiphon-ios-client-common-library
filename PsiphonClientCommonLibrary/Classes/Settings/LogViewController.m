@@ -98,19 +98,29 @@
 		  attributes:@{NSForegroundColorAttributeName: [UIColor blueColor],
 					   NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:10.f]}];
 
-	NSDictionary *messageAttr;
-	if ([[entry message] isEqualToString:@"Tunnels: {count:1}"]) {
-		messageAttr = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f],
-						NSBackgroundColorAttributeName: [UIColor greenColor]};
-	} else {
-		messageAttr = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f]};
+	NSDictionary *emoNoticeMapping = @{
+		@"Tunnels: {\"count\":1}": @"🚀",
+		@"Homepage": @"🏡",
+		@"Info": @"ℹ️",
+		@"Alert": @"🚨",
+		@"ActiveTunnel": @"🚇"
+	};
+
+	NSDictionary *messageAttr = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.f]};
+	NSString *displayMessage = [entry message];
+
+	for (NSString *key in emoNoticeMapping) {
+		if (([[entry message] length] >= [key length])
+			&& ([[[entry message] substringToIndex:[key length]] isEqualToString:key])) {
+			displayMessage = [NSString stringWithFormat:@"%@ %@", emoNoticeMapping[key], [entry message]];
+		}
 	}
 
 	NSMutableAttributedString *attrEntryMessage = [[NSMutableAttributedString alloc]
-	  initWithString:[entry message]
+	  initWithString:displayMessage
 		  attributes:messageAttr];
 
-   [attrTextForDisplay appendAttributedString:attrEntryMessage];
+	[attrTextForDisplay appendAttributedString:attrEntryMessage];
 
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reusableCell"];
 
