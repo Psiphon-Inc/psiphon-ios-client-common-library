@@ -19,22 +19,22 @@
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "ང་ཚོས་མཁོ་བསྡུ་བྱས་པའི་ཡིག་ཆའི་སྐོར་ཤེས་རྟོགས་མང་ཙམ་གནང་རོགས།%@";
 
-/* Feedback footer text. */
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "ཁྱེད་རང་གི་མཁྱེན་རྟོགས་ཀྱི་སླད་དུ་ཞུ་རྒྱུར། དྲྭ་ནད་ཅན་གྱི་ཡིག་ཆ་འདིས་ཁྱེད་རང་ངོས་འཛིན་ཐུབ་མ་སོང་། འདིས་སཡི་ཕོན་ལས་སླ་པོའི་ངང་ནས་འཁོར་སྐྱོད་བྱེད་ཐུབ།";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "གོང་གི་འགེངས་ཤོག་འདི་ལས་ཀ་མ་བྱས་པའམ་ཡང་ན་ཁྱེད་རང་གིས་པར་ལེན་རྒྱུད་དེ་གཏོང་འདོད་ན་ང་ཚོའི་གློག་འཕྲིན་ཐོག་འབྲེལ་བ་གནང་རོགས།%@";
 
-/* Introduction text at top of feedback form */
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "ཁྱེད་རང་གི་དགོངས་འཆར་འདིས་་སཡི་ཕོན་གོང་འཕེལ་དུ་བཏང་ཡོད། !";
 
 /*[UNTRANSLATED] Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Send";
 
-/* Text explaining thumbs down choice in feedback */
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "སཡི་ཕོན་ཡང་སེ་མཐུད་ཀ་ཆད་ཅིང་།\nལས་ཀ་དེ་ཙམ་\nཡག་པོ་\nབྱེད་ཐུབ་ཀྱི་མིན་འདུག";
 
-/* Text explaining thumbs up choice in feedback */
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_UP_TEXT" = "སཡི་ཕོན་གྱིས་\nངའི་རང་གི་འདོད་མོས་ལྟར་\nལས་ཀ་བྱེད་ཐུབ།";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */

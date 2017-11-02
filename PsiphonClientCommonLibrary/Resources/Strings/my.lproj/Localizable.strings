@@ -19,22 +19,22 @@
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "ကျွနု်ပ်တို့ကောက်ယူသော အချက်အလက်များနှင့်ပတ်သတ်၍ ပိုမိုသိရှိနုင်ရန် ဤ %@ တွင် လေ့လာပါ။";
 
-/* Feedback footer text. */
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "စစ်ဆေးထားသော အချက်အလက်များသည် သင်မည်သူမည်ဝါဖြစ်ကြောင်းမဖေါ်ပြနိုင်ပါ။ ထိုအရာသည် Psiphon ကို အဆင်ပြေချောမွေ့စွာ လည်ပတ်နိုင်ရန်အတွက် ကူညီပေးသည်။";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "အထက်ဖော်ပြပါပုံစံသည် သင့်အတွက်အဆင်မပြေပါက သို့မဟုတ် သင်သည် screenshot များပေးပို့လိုပါက ကျွနု်ပ်တို့ထံ အီးမေးလ်ပို့ပါ%@";
 
-/* Introduction text at top of feedback form */
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "သင့်၏ အကြံပြုတုံ့ပြန်မှုက Psiphon ကိုပို၍ကောင်းမွန်စေပါသည်။";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "ပေးပို့ရန်";
 
-/* Text explaining thumbs down choice in feedback */
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon သည်မကြာခဏဆိုသလို\nချိတ်ဆက်ခြင်းမပြုနိုင်ပါ သို့မဟုတ်\nကောင်းမွန်စွာ\nလုပ်ဆောင်နိုင်ခြင်းမရှိပါ။";
 
-/* Text explaining thumbs up choice in feedback */
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_UP_TEXT" = "Psiphon သည် ချိတ်ဆက်ပြီး\nကျွနု်ပ်လုပ်ဆောင်စေလိုသည့်အတိုင်း\nလုပ်ဆောင်နေပါသည်။";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */

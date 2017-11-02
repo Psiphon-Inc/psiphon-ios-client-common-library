@@ -19,22 +19,22 @@
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "Apprenez-en davantage sur les données que nous recueillons dans notre %@";
 
-/* Feedback footer text. */
-"FEEDBACK_FOOTER_DIAGNOSTIC" = "Veuillez noter que ces données de diagnostic ne vous identifient pas et nous permettent d'assurer le fonctionnement fluide de Psiphon.";
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
+"FEEDBACK_FOOTER_DIAGNOSTIC" = "Veuillez noter que ces données de diagnostic ne vous identifient pas et nous permettent d’assurer le fonctionnement fluide de Psiphon.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "Si le formulaire ci-dessus ne fonctionne pas ou si vous souhaitez nous faire parvenir des captures d'écran, veuillez nous envoyer un courriel à %@";
+"FEEDBACK_FOOTER_EMAIL" = "Si le formulaire ci-dessus ne fonctionne pas ou si vous souhaitez nous faire parvenir des captures d’écran, veuillez nous envoyer un courriel à %@";
 
-/* Introduction text at top of feedback form */
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "Votre rétroaction améliore Psiphon !";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Envoyer";
 
-/* Text explaining thumbs down choice in feedback */
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon ne se connecte\nsouvent pas et ne\nfonctionne pas\nassez bien.";
 
-/* Text explaining thumbs up choice in feedback */
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_UP_TEXT" = "Psiphon se connecte\net fonctionne\ncomme je le souhaite.";
 
 /* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
@@ -56,7 +56,7 @@
 "SERVER_REGION_BE" = "Belgique";
 
 /* The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short. */
-"SERVER_REGION_BEST" = "Les meilleures performances";
+"SERVER_REGION_BEST" = "Meilleures performances";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_BG" = "Bulgarie";
