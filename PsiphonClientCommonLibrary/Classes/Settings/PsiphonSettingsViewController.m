@@ -195,12 +195,6 @@ BOOL linksEnabled;
 		// Add flag and region name to detailTextLabel section of cell
 		[cell.contentView addSubview:flagImage];
 
-	} else if ([specifier.key isEqualToString:kDisableTimeouts]) {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
-		cell.selectionStyle = UITableViewCellSelectionStyleNone;
-		cell.accessoryView = [[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 79, 27)];
-		cell.textLabel.text = NSLocalizedStringWithDefaultValue(@"DISABLE_TIMEOUTS", nil, [NSBundle mainBundle], @"Disable timeouts", @"App settings switch label for disabling timeouts.");
-		cell.detailTextLabel.text = NSLocalizedStringWithDefaultValue(@"DISABLE_TIMEOUTS_DESCRIPTION", nil, [NSBundle mainBundle], @"Disable timeouts for slow networks", @"More complete description of the disable timeouts switch indicating to the user that this switch is meant to be used for slow networks");
 	}
 
 	if ([links containsObject:specifier.key]) {
