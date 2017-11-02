@@ -49,5 +49,5 @@
 - (BOOL)getUseCustomHeaders;
 - (NSString*)getHeaderNameKeyN:(int)n;
 - (NSString*)getHeaderValueKeyN:(int)n;
-- (NSString*)getUpstreamProxyCustomHeaders;
+- (NSDictionary*)getUpstreamProxyCustomHeaders;
 @end
