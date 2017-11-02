@@ -1,5 +1,5 @@
 {
-    "objcRootDir": "PsiphonClientCommonLibrary",
+    "objcRootDir": ".",
     "objcIgnoreDirs": [],
     "plistFiles": [
         "Example/PsiphonClientCommonLibrary/InAppSettings.bundle/Root.inApp.plist",

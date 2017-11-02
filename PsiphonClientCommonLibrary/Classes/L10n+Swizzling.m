@@ -19,6 +19,7 @@
 
 #import <objc/runtime.h>
 #import "PsiphonSettingsViewController.h"
+#import "PsiphonClientCommonLibraryHelpers.h"
 
 @implementation UIApplication (UIInterfaceDirection)
 
@@ -114,10 +115,19 @@
 
 	NSString* localizedString = [languageBundle swizzled_localizedStringForKey:key value:value table:tableName];
 
+    // If we failed to find the localized string, look in the common library bundle.
+    if (language != nil && ![language isEqualToString:@"en"] &&
+        (localizedString == nil || [localizedString isEqualToString:value])) {
+        languageBundle = [NSBundle bundleWithPath:[[PsiphonClientCommonLibraryHelpers commonLibraryBundle] pathForResource:language ofType:@"lproj"]];
+        if (languageBundle != nil) {
+            localizedString = [languageBundle swizzled_localizedStringForKey:key value:value table:tableName];
+        }
+    }
+
+    // If we *still* failed to find the localized string, then maybe it's missing from the .strings file.
+    // Fall back to English.
 	if ((language == nil || ![language isEqualToString:@"en"]) &&
 		(localizedString == nil || [localizedString isEqualToString:value])) {
-		// We failed to find the localized string. Maybe it's missing from the .strings file.
-		// Fall back to English.
 		languageBundle = [NSBundle bundleWithPath:[currentBundle pathForResource:@"en" ofType:@"lproj"]];
 		if (languageBundle != nil) {
 			localizedString = [languageBundle swizzled_localizedStringForKey:key value:value table:tableName];
