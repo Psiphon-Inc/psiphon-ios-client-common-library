@@ -42,6 +42,7 @@ DEFAULT_LANGS = {
     'el_GR': 'el',      # Greek
     'es': 'es',         # Spanish
     'fa': 'fa',         # Farsi/Persian
+    'fa_AF': 'fa-AF',   # Dari (Afgan Farsi)
     'fi_FI': 'fi',      # Finnish
     'fr': 'fr',         # French
     'hr': 'hr',         # Croation
@@ -57,6 +58,7 @@ DEFAULT_LANGS = {
     'pt_BR': 'pt-BR',   # Portuguese-Brazil
     'pt_PT': 'pt-PT',   # Portuguese-Portugal
     'ru': 'ru',         # Russian
+    'tg': 'tg',         # Tajik
     'th': 'th',         # Thai
     'tk': 'tk',         # Turkmen
     'tr': 'tr',         # Turkish

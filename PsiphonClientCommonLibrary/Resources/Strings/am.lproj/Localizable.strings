@@ -19,22 +19,22 @@
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "ስለምንሰበስበው ዳታ የበለጠ ለማወቅ %@ ይጎብኙ። ";
 
-/* Feedback footer text. */
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "ይህ የምርመራ ዳታ ማንነትዎን አይለይም፣ እና ሳይፈንን ያለምንም ችግር እንድናሰራ የሚረዳን መሆኑን እባክዎ ያስተውሉ። ";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "ከላይ ያለው ቅጽ የማይሰራ ከሆነ ወይም ቅጽበታዊ ገጽ እይታን መላክ የሚፈልጉ ከሆነ እባክዎን  በ %@ ኢሜል ይላኩልን። ";
 
-/* Introduction text at top of feedback form */
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "የእርስዎ ግብረ መልስ ሳይፈንን የተሻለ ያደርገዋል!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "ላክ ";
 
-/* Text explaining thumbs down choice in feedback */
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "ሳይፈን አብዛኛውን  ጊዜ አልገናኝም\n ይላል ወይም\n በደንብ አይሰራም።";
 
-/* Text explaining thumbs up choice in feedback */
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_UP_TEXT" = "ሳይፈን ይገናኛል \nእናም የሚሰራው \nእኔ በምፈልገው መንገድ ነው። ";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */

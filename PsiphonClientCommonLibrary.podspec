@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PsiphonClientCommonLibrary'
-  s.version          = '0.2.21'
+  s.version          = '0.2.22'
   s.summary          = 'Psiphon iOS Shared Client Library.'
 
 # This description is used to generate tags and improve search results.

@@ -19,22 +19,22 @@
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "اعرف المزيد حول ما نجمعه من بيانات في %@";
 
-/* Feedback footer text. */
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "الرجاء الإنتباه أن هذه البيانات التشخيصية لا تكشف هويتك، إنما تساعد سايفون على العمل بشكل أفضل.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "إذا كان النموذج أعلاه لا يعمل، أو كنتم ترغبون في إرسال لقطة شاشة ، يرجى مراسلتنا على %@";
 
-/* Introduction text at top of feedback form */
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "ملاحظاتك تجعل سايفون أفضل!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "أرسل";
 
-/* Text explaining thumbs down choice in feedback */
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "غالبا ما يفشل سايفون\n بالإتصال أو\nلا يعمل بشكل جيد.";
 
-/* Text explaining thumbs up choice in feedback */
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_UP_TEXT" = "ينجح سايفون بالاتصال \nويعمل بشكل جيد \nكما نتمنى";
 
 /* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */

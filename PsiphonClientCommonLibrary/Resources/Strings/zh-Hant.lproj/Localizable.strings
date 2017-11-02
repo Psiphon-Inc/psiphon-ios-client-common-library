@@ -19,22 +19,22 @@
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "了解我們收集哪些資料，請見%@";
 
-/* Feedback footer text. */
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "請注意此診斷資料不會泄露您的身份，它將幫助我們保持賽風平穩運行";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "如果上方的表格無法運作，用戶可以將螢幕截圖，用電郵方式寄給我們%@";
 
-/* Introduction text at top of feedback form */
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "您的回饋讓賽風變得更好！";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "傳送";
 
-/* Text explaining thumbs down choice in feedback */
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "賽風經常連線失敗\n表現不盡人意。\n　　　";
 
-/* Text explaining thumbs up choice in feedback */
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_UP_TEXT" = "賽風連線\n表現如我所願";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */

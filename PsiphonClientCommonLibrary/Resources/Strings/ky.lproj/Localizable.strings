@@ -19,22 +19,22 @@
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "Биз чогулткан маалыматтар жөнундө биздин %@ ичинен билиңиз";
 
-/* Feedback footer text. */
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "Эскертүү, бул жөндөө маалыматтар сизди аныктабайт, жана бизге Psiphon'ду үзгүлтүксүз иштетүүгө жардам берет.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "Эгер форма иштебесе же скриншотторду жөнөтүүнү каласаңыз, бизге %@ адресине жазыңыз";
 
-/* Introduction text at top of feedback form */
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "Сиздин пикириңиз Psiphon'ду жакшыраак кылат!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Жөнөтүү";
 
-/* Text explaining thumbs down choice in feedback */
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon көп учурда\nбайланышты жоготот\nжана жетиштүү жакшы иштебейт.";
 
-/* Text explaining thumbs up choice in feedback */
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_UP_TEXT" = "Psiphon мен каалагандай \nбайланышат\nжана иштейт.";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */

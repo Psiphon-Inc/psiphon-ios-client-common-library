@@ -19,22 +19,22 @@
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "Μάθετε περισσότερα σχετικά με τα δεδομένα που συλλέγουμε στο %@ μας";
 
-/* Feedback footer text. */
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "Παρακαλούμε λάβετε υπόψη ότι αυτά τα διαγνωστικά δεδομένα δεν σας ταυτοποιούν και μας βοηθούν να διατηρούμε την ομαλή  λειτουργία του Psiphon.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "Εάν η παραπάνω φόρμα δεν λειτουργεί ή θα θέλατε να στείλετε στιγμιότυπα οθόνης, στείλτε μας email στο %@";
 
-/* Introduction text at top of feedback form */
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "Τα σχόλιά σας κάνουν το Psiphon καλύτερο!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Αποστολή";
 
-/* Text explaining thumbs down choice in feedback */
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "Το Psiphon συχνά αποτυγχάνει\nνα συνδεθεί ή\nδεν λειτουργεί αρκετά\nκαλά.";
 
-/* Text explaining thumbs up choice in feedback */
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_UP_TEXT" = "Το Psiphon συνδέεται\nκαι εκτελείται\nόπως θέλω.";
 
 /* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */

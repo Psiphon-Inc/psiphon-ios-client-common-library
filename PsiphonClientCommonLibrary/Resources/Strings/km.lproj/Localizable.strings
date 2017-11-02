@@ -19,22 +19,22 @@
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "ស្វែងយល់បន្ថែមពីទិន្នន័យ យើងប្រមូលពី %@ របស់យើង";
 
-/* Feedback footer text. */
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "សូមចំណាំថាទិន្នន័យវិភាគ មិនអាចបង្ហាញអត្តសញ្ញាណអ្នកឡើយ និងវាជួយអ្នកដំណើរការ Psiphon យ៉ាងរលូន។";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "ប្រសិនបើទម្រង់ខាងលើមិនដំណើរការ ឬអ្នកចង់ផ្ញើរូបអេក្រង់ សូមផ្ញើអ៊ីម៉ែលមកកាន់យើង %@";
 
-/* Introduction text at top of feedback form */
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "មតិអ្នកធ្វើឲ្យ Psiphon កាន់តែប្រសើរ!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "ផ្ញើ";
 
-/* Text explaining thumbs down choice in feedback */
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon ជាញឹកញយបរាជ័យ\nក្នុងការតភ្ជាប់ ឬ\nមិនដំណើរការដោយ\nប្រក្រតី។";
 
-/* Text explaining thumbs up choice in feedback */
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_THUMBS_UP_TEXT" = "Psiphon តភ្ជាប់\nនិងដំណើរការ\nតាមអ្វីដែលខ្ញុំចង់បាន។";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */

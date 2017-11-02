@@ -1,6 +1,3 @@
-/*[UNTRANSLATED] Settings view subheading for Psiphon-specific settings. */
-"PSIPHON" = "Psiphon";
-
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
 "CHANGE_REGION" = "Changer de région";
 
@@ -10,7 +7,7 @@
 /* Settings item to change the application UI language. */
 "SETTINGS_LANGUAGE" = "Langue";
 
-/* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. */
+/* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon". */
 "PSIPHON_SUBSETTINGS_LABEL" = "Paramètres de Psiphon";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
@@ -29,24 +26,24 @@
 "SETTINGS_PRIVACY_POLICY" = "Politique de confidentialité";
 
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"SETTINGS_TERMS_OF_USE" = "Conditions générales d'utilisation ";
+"SETTINGS_TERMS_OF_USE" = "Conditions générales d’utilisation ";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "À propos";
 
-/* Explanatory text for the "Change Region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Sélectionner « Les meilleures performances » comme région augmente vos chances d'être connecté.";
+/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
+"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Sélectionner « Meilleures performances » comme région augmente vos chances d’être connecté.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "La désactivation des temporisations pourrait vous aider à rester connecté sur les réseaux plus lents.";
 
-/* Settings item text, under 'Psiphon Settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
+/* Settings item text, under 'Psiphon settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
 "DISABLE_TIMEOUTS" = "Désactiver les temporisations";
 
-/* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. */
+/* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
 "CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "Vous reconnecter au serveur Psiphon pourrait vous aider si votre connexion actuelle est lente ou ne répond plus.";
 
-/* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. */
+/* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "Se reconnecter au serveur Psiphon";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
@@ -74,19 +71,19 @@
 "PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "Utiliser un mandataire ascendant";
 
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HOST" = "Adresse de l'hôte";
+"PSIPHON_SETTINGS_UPSTREAM_HOST" = "Adresse de l’hôte";
 
 /*[UNTRANSLATED] Settings item text. The network port number for the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_PORT" = "Port";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "Utiliser l'authentification pour le mandataire";
+"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "Utiliser l’authentification pour le mandataire";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Mandataire - Nom d'utilisateur";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Mandataire - Nom d’utilisateur";
 
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "nom d'utilisateur";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "nom d’utilisateur";
 
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Mandataire - Mot de passe";
@@ -100,21 +97,36 @@
 /* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "EXAMPLE_HOSTNAME" = "exemple.com";
 
-/*[UNTRANSLATED] Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "Use custom headers";
+/* Settings item text. Leads to settings specific to the custom headers. */
+"PSIPHON_CUSTOM_HEADERS_SUBSETTINGS_LABEL" = "En-têtes HTTP personnalisés";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the first of three custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "Header 1";
+/* Explanatory text for the "Use custom headers" setting. */
+"CUSTOM_HEADERS_FOOTER" = "Certaines connexions réseau pourraient exiger des en-têtes HTTP personnalisés afin de se connecter avec succès.";
 
-/*[UNTRANSLATED] Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "Enter header name";
+/* Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "Utiliser des en-têtes personnalisés";
 
-/*[UNTRANSLATED] Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "Enter header value";
+/* Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
+"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "Saisir le nom de l’en-tête";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the second of three custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "Header 2";
+/* Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
+"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "Saisir la valeur de l’en-tête";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the third of three custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_3" = "Header 3";
+/* Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "En-tête 1";
+
+/* Settings item text. Header text above the text boxes where the user configures the second of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "En-tête 2";
+
+/* Settings item text. Header text above the text boxes where the user configures the third of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_3" = "En-tête 3";
+
+/* Settings item text. Header text above the text boxes where the user configures the fourth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_4" = "En-tête 4";
+
+/* Settings item text. Header text above the text boxes where the user configures the fifth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_5" = "En-tête 5";
+
+/* Settings item text. Header text above the text boxes where the user configures the sixth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_6" = "En-tête 6";
 
