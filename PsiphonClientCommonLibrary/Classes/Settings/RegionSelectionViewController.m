@@ -106,6 +106,12 @@
 
 	cell.imageView.image = [[PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:r.flagResourceId] countryFlag];
 	cell.textLabel.text = [[RegionAdapter sharedInstance] getLocalizedRegionTitle:r.code];
+
+	// RTL text alignment override
+	if([UIApplication sharedApplication].userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionRightToLeft) {
+		cell.textLabel.textAlignment = NSTextAlignmentRight;
+	}
+
 	cell.userInteractionEnabled = YES;
 	cell.hidden = !r.serverExists;
 
