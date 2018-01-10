@@ -4,6 +4,9 @@
 /* Cancel action */
 "CANCEL_ACTION" = "Annuleren";
 
+/* Title of the button that dismisses the settings menu (InAppSettingsKit) */
+"DONE_ACTION" = "Klaar";
+
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "Veel gestelde vragen";
 
@@ -43,6 +46,15 @@
 /* Title of screen that displays logs */
 "LOGS_TITLE" = "LOGBOEK";
 
+/* Shown when the device is not configured for sending email. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED" = "Mail niet geconfigureerd";
+
+/* Description for the 'Mail not configured' message. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED_DESC" = "Dit apparaat is niet geconfigureerd voor versturen Email. A.u.b configureer de Mail instellingen in de Instellings app.";
+
+/* Alert OK Button. (InAppSettingsKit) */
+"OK_BUTTON" = "Oke";
+
 /* Privacy Policy link text */
 "PRIVACY_POLICY_LINK_TEXT" = "privacybeleid";
 
@@ -56,7 +68,7 @@
 "SERVER_REGION_BE" = "Belgie";
 
 /* The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short. */
-"SERVER_REGION_BEST" = "Beste Prestaties";
+"SERVER_REGION_BEST" = "Beste prestaties";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_BG" = "Bulgarije";
@@ -117,4 +129,7 @@
 
 /*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "United States";
+
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "Instellingen";
 

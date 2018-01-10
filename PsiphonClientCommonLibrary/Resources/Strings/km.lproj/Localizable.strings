@@ -4,6 +4,9 @@
 /* Cancel action */
 "CANCEL_ACTION" = "បោះបង់";
 
+/* Title of the button that dismisses the settings menu (InAppSettingsKit) */
+"DONE_ACTION" = "បានរួចរាល់";
+
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "សំណួរសួរញឹកញាប់";
 
@@ -42,6 +45,15 @@
 
 /* Title of screen that displays logs */
 "LOGS_TITLE" = "កំណត់ត្រា";
+
+/* Shown when the device is not configured for sending email. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED" = "សារមិនបានកំណត់";
+
+/* Description for the 'Mail not configured' message. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED_DESC" = "ឧបករណ៍នេះ មិនបានកំណត់សម្រាប់បញ្ជូនអ៊ីម៉ែលទេ។ សូមកំណត់ សារក្នុងកម្មវិធី កំណត់។";
+
+/* Alert OK Button. (InAppSettingsKit) */
+"OK_BUTTON" = "យល់ព្រម";
 
 /* Privacy Policy link text */
 "PRIVACY_POLICY_LINK_TEXT" = "គោលការណ៍​ភាព​ឯកជន";
@@ -117,4 +129,7 @@
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "សហរដ្ឋអាមេរិក";
+
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "ការកំណត់";
 
