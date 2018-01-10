@@ -47,7 +47,7 @@
 "FORCE_RECONNECT" = "តភ្ជាប់ម្តងទៀតទៅម៉ាស៊ីនមេ Psiphon ";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"FEEDBACK_COMMENTS_LABEL" = "មតិយោបល់អ្នក";
+"FEEDBACK_COMMENTS_LABEL" = "មតិយោបល់របស់អ្នក";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_EMAIL_LABEL" = "អាសយដ្ឋានអ៊ីម៉ែលអ្នក";
@@ -106,14 +106,14 @@
 /* Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "ប្រើចំណងជើងផ្សេង";
 
+/* Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "ចំណងជើង 1";
+
 /* Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
 "PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "បញ្ចូលឈ្មោះចំណងជើង";
 
 /* Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
 "PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "បញ្ចូលតម្លៃចំណងជើង";
-
-/* Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "ចំណងជើង 1";
 
 /* Settings item text. Header text above the text boxes where the user configures the second of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "ចំណងជើង 2";

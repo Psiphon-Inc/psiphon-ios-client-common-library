@@ -1,5 +1,5 @@
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"CHANGE_REGION" = "تغییر کشور";
+"CHANGE_REGION" = "تغییر کشور ";
 
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
 "DEFAULT_LANGUAGE" = "زبان پیش‌فرض";
@@ -32,13 +32,13 @@
 "SETTINGS_ABOUT" = "درباره‌ی سایفون";
 
 /* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "تغییر منطقه‌ی سرور به بهترین عملکرد احتمال برقراری اتصال را بالا می‌برد.";
+"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "تغییر منطقه‌ی سرور به بهترین عملکرد, احتمال برقراری اتصال را بالا می‌برد.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "غیرفعال کردن تایم‌اوت شاید به برقراری اتصال در شبکه‌‌های ضعیف‌تر کمک کند.";
 
 /* Settings item text, under 'Psiphon settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"DISABLE_TIMEOUTS" = "از کار انداختن تایم‌اوت";
+"DISABLE_TIMEOUTS" = "غیرفعال کردن وقفه ها";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
 "CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "اتصال دوباره به سرور سایفون شاید مشکل کندی و کارکرد نامناسب اتصال را رفع کند.";
@@ -97,36 +97,36 @@
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "EXAMPLE_HOSTNAME" = "example.com";
 
-/*[UNTRANSLATED] Settings item text. Leads to settings specific to the custom headers. */
-"PSIPHON_CUSTOM_HEADERS_SUBSETTINGS_LABEL" = "Custom HTTP headers";
+/* Settings item text. Leads to settings specific to the custom headers. */
+"PSIPHON_CUSTOM_HEADERS_SUBSETTINGS_LABEL" = "سرتیتر های HTTP شخصی";
 
 /*[UNTRANSLATED] Explanatory text for the "Use custom headers" setting. */
 "CUSTOM_HEADERS_FOOTER" = "Some network configurations may require custom HTTP headers in order to connect successfully.";
 
-/*[UNTRANSLATED] Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "Use custom headers";
+/* Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "استفاده از سرتیتر شخصی";
 
-/*[UNTRANSLATED] Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "Enter header name";
+/* Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "سرتیتر 1";
 
-/*[UNTRANSLATED] Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "Enter header value";
+/* Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
+"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "نام سرتیتر را وارد کنید";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "Header 1";
+/* Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
+"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "مقدار سرتیتر را وارد کنید";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the second of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "Header 2";
+/* Settings item text. Header text above the text boxes where the user configures the second of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "سرتیتر 2";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the third of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_3" = "Header 3";
+/* Settings item text. Header text above the text boxes where the user configures the third of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_3" = "سرتیتر 3";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the fourth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_4" = "Header 4";
+/* Settings item text. Header text above the text boxes where the user configures the fourth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_4" = "سرتیتر 4";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the fifth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_5" = "Header 5";
+/* Settings item text. Header text above the text boxes where the user configures the fifth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_5" = "سرتیتر 5";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the sixth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_6" = "Header 6";
+/* Settings item text. Header text above the text boxes where the user configures the sixth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_6" = "سرتیتر 6";
 

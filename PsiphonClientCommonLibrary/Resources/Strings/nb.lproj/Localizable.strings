@@ -4,6 +4,9 @@
 /* Cancel action */
 "CANCEL_ACTION" = "Avbryt";
 
+/* Title of the button that dismisses the settings menu (InAppSettingsKit) */
+"DONE_ACTION" = "Ferdig";
+
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "Ofte Stilte Spørsmål";
 
@@ -42,6 +45,15 @@
 
 /* Title of screen that displays logs */
 "LOGS_TITLE" = "Logger";
+
+/* Shown when the device is not configured for sending email. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED" = "E-post ikke oppsatt";
+
+/* Description for the 'Mail not configured' message. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED_DESC" = "Denne enheten er ikke oppsatt for forsendelse av e-post. Sett opp e-postinnstillingene i innstillingsprogrammet.";
+
+/*[UNTRANSLATED] Alert OK Button. (InAppSettingsKit) */
+"OK_BUTTON" = "OK";
 
 /* Privacy Policy link text */
 "PRIVACY_POLICY_LINK_TEXT" = "Personverns-praksis";
@@ -117,4 +129,7 @@
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "Amerikas forente stater";
+
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "Innstillinger";
 

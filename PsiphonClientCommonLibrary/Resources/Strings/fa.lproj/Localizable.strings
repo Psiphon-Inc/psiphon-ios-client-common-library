@@ -4,6 +4,9 @@
 /* Cancel action */
 "CANCEL_ACTION" = "لغو";
 
+/* Title of the button that dismisses the settings menu (InAppSettingsKit) */
+"DONE_ACTION" = "انجام شد";
+
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "سوال‌های متداول";
 
@@ -42,6 +45,15 @@
 
 /* Title of screen that displays logs */
 "LOGS_TITLE" = "گزارش‌ها";
+
+/* Shown when the device is not configured for sending email. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED" = "ایمیل پیکربندی نشده است";
+
+/* Description for the 'Mail not configured' message. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED_DESC" = "دستگاه برای فرستادن ایمیل پیکربندی نشده است. لطفاً تنظیمات ایمیل را در تنظیمات اپلیکیشن پیکربندی کنید.";
+
+/* Alert OK Button. (InAppSettingsKit) */
+"OK_BUTTON" = "خوب";
 
 /* Privacy Policy link text */
 "PRIVACY_POLICY_LINK_TEXT" = "حریم خصوصی";
@@ -117,4 +129,7 @@
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "ایالات متحده آمریکا";
+
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "تنظیمات";
 

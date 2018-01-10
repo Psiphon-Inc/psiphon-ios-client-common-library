@@ -106,14 +106,14 @@
 /* Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "Usar cabeceras personalizadas";
 
+/* Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "Cabecera 1";
+
 /* Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
 "PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "Introduzca el nombre de la cabecera";
 
 /* Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
 "PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "Introduzca valor la cabecera";
-
-/* Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "Cabecera 1";
 
 /* Settings item text. Header text above the text boxes where the user configures the second of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "Cabecera 2";
