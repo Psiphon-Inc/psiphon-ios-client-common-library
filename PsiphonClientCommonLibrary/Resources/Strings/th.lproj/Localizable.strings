@@ -43,8 +43,8 @@
 /* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/th/license.html";
 
-/*[UNTRANSLATED] Title of screen that displays logs */
-"LOGS_TITLE" = "Logs";
+/* Title of screen that displays logs */
+"LOGS_TITLE" = "ปูม";
 
 /*[UNTRANSLATED] Shown when the device is not configured for sending email. (InAppSettingsKit) */
 "MAIL_NOT_CONFIGURED" = "Mail not configured";

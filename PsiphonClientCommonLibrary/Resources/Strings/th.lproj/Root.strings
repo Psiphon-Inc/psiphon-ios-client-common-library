@@ -61,8 +61,8 @@
 /*[UNTRANSLATED] On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
 "FEEDBACK_DIAGNOSTIC_DATA_LABEL" = "Upload diagnostic data";
 
-/*[UNTRANSLATED] Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "Timeouts";
+/* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
+"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "หมดเวลา";
 
 /* Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
 "PSIPHON_SETTINGS_PROXY_SECTION" = "พร็อกซี";
