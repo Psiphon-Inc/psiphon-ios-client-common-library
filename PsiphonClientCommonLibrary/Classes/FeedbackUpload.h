@@ -24,15 +24,15 @@ typedef void (^SendFeedbackHandler)(NSString *jsonString, NSString *pubKey, NSSt
 
 @interface FeedbackUpload : NSObject
 + (NSString*)generateFeedbackId;
-+ (void)generateAndSendFeedback:(NSInteger)thumbIndex
-					  buildInfo:(NSString*)buildInfo
-					   comments:(NSString*)comments
-						  email:(NSString*)email
-			 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
-			  withPsiphonConfig:(NSString*)psiphonConfig
-			 withClientPlatform:(NSString*)clientPlatform
-			 withConnectionType:(NSString*)connectionType
-				   isJailbroken:(BOOL)isJailbroken
-			sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
-		      diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries;
++ (NSError*)generateAndSendFeedback:(NSInteger)thumbIndex
+                          buildInfo:(NSString*)buildInfo
+                           comments:(NSString*)comments
+                              email:(NSString*)email
+                 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
+                  withPsiphonConfig:(NSString*)psiphonConfig
+                 withClientPlatform:(NSString*)clientPlatform
+                 withConnectionType:(NSString*)connectionType
+                       isJailbroken:(BOOL)isJailbroken
+                sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
+                  diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries;
 @end
