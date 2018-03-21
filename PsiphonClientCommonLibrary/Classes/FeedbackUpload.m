@@ -27,15 +27,6 @@
 
 #define safeNullable(x) x != nil ? x : @""
 
-@interface Feedback : NSObject
-
-@end
-
-@implementation Feedback {
-}
-
-@end
-
 @implementation FeedbackUpload
 
 // Form and send feedback blob which conforms to structure
@@ -43,35 +34,33 @@
 // https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/EmailResponder/FeedbackDecryptor/templates/?at=default
 // Matching format used by android client,
 // https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/Android/app/src/main/java/com/psiphon3/psiphonlibrary/Diagnostics.java
-// TODO: will fail silently on any errors
-+ (void)generateAndSendFeedback:(NSInteger)thumbIndex
-					  buildInfo:(NSString*)buildInfo
-					   comments:(NSString*)comments
-						  email:(NSString*)email
-			 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
-			  withPsiphonConfig:(NSString*)psiphonConfig
-			 withClientPlatform:(NSString*)clientPlatform
-			 withConnectionType:(NSString*)connectionType
-				   isJailbroken:(BOOL)isJailbroken
-			sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
-			  diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries
-			  {
-
++ (NSError*)generateAndSendFeedback:(NSInteger)thumbIndex
+						  buildInfo:(NSString*)buildInfo
+						   comments:(NSString*)comments
+							  email:(NSString*)email
+				 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
+				  withPsiphonConfig:(NSString*)psiphonConfig
+				 withClientPlatform:(NSString*)clientPlatform
+				 withConnectionType:(NSString*)connectionType
+					   isJailbroken:(BOOL)isJailbroken
+				sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
+				  diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries
+{
 	NSDictionary *config = [PsiphonClientCommonLibraryHelpers jsonToDictionary:psiphonConfig];
 	if (config == nil) {
-		return;
+		return [FeedbackUpload errorWithMessage:@"Failed to deserialize psiphon config." fromFunction:__FUNCTION__];
 	}
 
 	NSMutableDictionary *feedbackBlob = [[NSMutableDictionary alloc] init];
 
 	// Ensure the survey response is valid
 	if (thumbIndex < -1 || thumbIndex > 1) {
-		return;
+		return [FeedbackUpload errorWithMessage:[NSString stringWithFormat:@"Survey response was invalid. Received thumbIndex: %ld.", thumbIndex] fromFunction:__FUNCTION__];
 	}
 
 	// Ensure either feedback or survey response was completed
 	if (thumbIndex == -1 && sendDiagnosticInfo == false && comments.length == 0 && email.length == 0) {
-		return;
+		return [FeedbackUpload errorWithMessage:@"Survey response was incomplete." fromFunction:__FUNCTION__];
 	}
 
 	// Check survey response
@@ -157,7 +146,7 @@
 
 	NSString *rndmHexId = [FeedbackUpload generateFeedbackId];
 	if (rndmHexId == nil) {
-		return;
+		return [FeedbackUpload errorWithMessage:@"Failed to generate random id for feedback." fromFunction:__FUNCTION__];
 	}
 
 	NSDictionary *metadata = @{
@@ -170,7 +159,7 @@
 	NSError *e = nil;
 	NSData *jsonData = [NSJSONSerialization dataWithJSONObject:feedbackBlob options:0 error:&e];
 	if (e != nil) {
-		return;
+		return [FeedbackUpload errorWithMessage:@"Failed to serialize json object." fromFunction:__FUNCTION__];;
 	}
 
 	NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
@@ -178,7 +167,7 @@
 	// Extract feedback config values
 	NSDictionary *feedbackConfig = config[@"feedbackConfig"];
 	if (feedbackConfig == nil) {
-		return;
+		return [FeedbackUpload errorWithMessage:@"Feedback config in psiphon config is nil." fromFunction:__FUNCTION__];
 	}
 	NSString *pubKey = feedbackConfig[@"b64EncodedPublicKey"];
 	NSString *uploadServer = feedbackConfig[@"uploadServer"];
@@ -188,6 +177,8 @@
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 		sendFeedbackHandler(jsonString, pubKey, uploadServer, uploadServerHeaders);
 	});
+
+	return nil;
 }
 
 // Generate random feedback ID
@@ -255,6 +246,16 @@
 	  };
 
 	return deviceInfo;
+}
+
+#pragma mark - Error Formatting
+
++ (NSError *)errorWithMessage:(NSString*)message fromFunction:(const char*)funcname
+{
+	NSString *desc = [NSString stringWithFormat:@"PsiCashLib:: %s: %@", funcname, message];
+	return [NSError errorWithDomain:@"FeedbackUploadErrorDomain"
+							   code:-1
+						   userInfo:@{NSLocalizedDescriptionKey: desc}];
 }
 
 @end
