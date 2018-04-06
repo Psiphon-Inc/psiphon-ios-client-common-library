@@ -4,8 +4,8 @@
 /* Cancel action */
 "CANCEL_ACTION" = "Скасувати";
 
-/*[UNTRANSLATED] Title of the button that dismisses the settings menu (InAppSettingsKit) */
-"DONE_ACTION" = "Done";
+/* Title of the button that dismisses the settings menu (InAppSettingsKit) */
+"DONE_ACTION" = "Готово";
 
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "Часті Питання";
@@ -46,14 +46,14 @@
 /* Title of screen that displays logs */
 "LOGS_TITLE" = "Журнали";
 
-/*[UNTRANSLATED] Shown when the device is not configured for sending email. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED" = "Mail not configured";
+/* Shown when the device is not configured for sending email. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED" = "Пошта не налаштована";
 
-/*[UNTRANSLATED] Description for the 'Mail not configured' message. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED_DESC" = "This device is not configured for sending Email. Please configure the Mail settings in the Settings app.";
+/* Description for the 'Mail not configured' message. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED_DESC" = "Цей пристрій не налаштовано для надсилання електронної пошти. Будь ласка, задайте параметри пошти в додатку Налаштування.";
 
-/*[UNTRANSLATED] Alert OK Button. (InAppSettingsKit) */
-"OK_BUTTON" = "OK";
+/* Alert OK Button. (InAppSettingsKit) */
+"OK_BUTTON" = "Гаразд";
 
 /* Privacy Policy link text */
 "PRIVACY_POLICY_LINK_TEXT" = "Політика конфіденційності";
@@ -130,6 +130,6 @@
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "Сполучені Штати Америки";
 
-/*[UNTRANSLATED] Title of the settings (aka preferences) view (InAppSettingsKit) */
-"SETTINGS_TITLE" = "Settings";
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "Параметри";
 

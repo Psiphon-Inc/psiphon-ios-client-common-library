@@ -4,8 +4,8 @@
 /* Cancel action */
 "CANCEL_ACTION" = "Cancelar";
 
-/*[UNTRANSLATED] Title of the button that dismisses the settings menu (InAppSettingsKit) */
-"DONE_ACTION" = "Done";
+/* Title of the button that dismisses the settings menu (InAppSettingsKit) */
+"DONE_ACTION" = "Concluído";
 
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "Perguntas Mais Frequentes";
