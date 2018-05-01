@@ -138,14 +138,14 @@
 }
 
 - (void)onAvailableEgressRegions:(NSArray*)availableEgressRegions {
-	// When PsiphonTunnel (https://github.com/Psiphon-Labs/psiphon-tunnel-core/tree/master/MobileLibrary/iOS/PsiphonTunnel)
-	// via tunnel core (https://github.com/Psiphon-Labs/psiphon-tunnel-core/tree/master/psiphon) has emitted a notice
-	// indicating the latest set of available egress regions the region adapter is updated to reflect this latest internal
-	// state. Once tunnel core has determined a region to be available it will always remain available. This means a region
-	// will never "disappear" in the eyes of the region adapter singleton.
-	// For this reason we do not handle the scenario where:
-	// - User selects a region
-	// - That region becomes unavailable and "disappears"
+	// If selected region is no longer available select best performance and restart
+	if (![selectedRegion isEqualToString:kPsiphonRegionBestPerformance] && ![availableEgressRegions containsObject:selectedRegion]) {
+		selectedRegion = kPsiphonRegionBestPerformance;
+		id<RegionAdapterDelegate> strongDelegate = self.delegate;
+		if ([strongDelegate respondsToSelector:@selector(selectedRegionDisappearedThenSwitchedToBestPerformance)]) {
+			[strongDelegate selectedRegionDisappearedThenSwitchedToBestPerformance];
+		}
+	}
 
 	// Should use a dictionary for performance if # of regions ever increases dramatically
 	for (Region *region in regions) {
