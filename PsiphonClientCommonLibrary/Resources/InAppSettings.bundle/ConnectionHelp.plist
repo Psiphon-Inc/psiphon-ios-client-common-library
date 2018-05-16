@@ -10,9 +10,9 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>FooterText</key>
-			<string>CONNECTION_HELP_BEST_PERFORMANCE_FOOTER</string>
+			<string>CONNECTION_HELP_FASTEST_COUNTRY_FOOTER</string>
 			<key>FooterTextDefault</key>
-			<string>Changing your region to “Best performance” increases your chances of getting connected.</string>
+			<string>Changing your region to “Fastest Country” increases your chances of getting connected.</string>
 			<key>FooterTextDescription</key>
 			<string>Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page.</string>
 			<key>BundleTable</key>
