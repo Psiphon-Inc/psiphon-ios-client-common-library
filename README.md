@@ -1,5 +1,9 @@
 # PsiphonClientCommonLibrary
 
+## Versioning
+
+As of version 1.0.0 this pod adheres to [Semantic Versioning 2.0.0](https://semver.org/)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first. Then open `PsiphonClientCommonLibrary.xcworkspace` in Xcode.

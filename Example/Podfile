@@ -1,5 +1,7 @@
 use_frameworks!
 
+platform :ios, '8.3'
+
 # Disable sending stats
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
