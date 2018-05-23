@@ -18,6 +18,7 @@
  */
 
 #import "FeedbackUpload.h"
+#import "Device.h"
 #import "PsiphonSettingsViewController.h"
 #import "PsiphonClientCommonLibraryHelpers.h"
 
@@ -240,7 +241,7 @@
 	@{
 	  @"systemName":device.systemName,
 	  @"systemVersion":device.systemVersion,
-	  @"model":device.model,
+	  @"model":[Device name],
 	  @"localizedModel":device.localizedModel,
 	  @"userInterfaceIdiom":userInterfaceIdiomString
 	  };
