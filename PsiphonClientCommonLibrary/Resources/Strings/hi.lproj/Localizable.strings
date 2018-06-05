@@ -2,134 +2,134 @@
 "ABOUT_PAGE_URL" = "https://psiphon.ca/en/about.html";
 
 /* Cancel action */
-"CANCEL_ACTION" = "বাতিল";
+"CANCEL_ACTION" = "रद्द करना";
 
 /* Title of the button that dismisses the settings menu (InAppSettingsKit) */
-"DONE_ACTION" = "সম্পন্ন";
+"DONE_ACTION" = "सम्पन्न";
 
 /* FAQ link text */
-"FAQ_LINK_TEXT" = "প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী";
+"FAQ_LINK_TEXT" = "अक्सर पूछे जाने वाले प्रश्न";
 
 /*[UNTRANSLATED] External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french. */
 "FAQ_URL" = "https://psiphon.ca/en/faq.html";
 
 /* Comments section placeholder text */
-"FEEDBACK_COMMENTS_PLACEHOLDER" = "আপনি কি ভাবছেন? আমাদের আপনার মতামত দিন দয়া করে";
+"FEEDBACK_COMMENTS_PLACEHOLDER" = "आपके दिमाग मे क्या है? कृपया हमें अपना फ़ीडबैक छोड़ दें";
 
 /* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "আপনি আমাদের অনেক সাধারণ সমস্যার সমাধান খুঁজে পেতে পারেন%@";
+"FEEDBACK_FAQ_DIRECTION" = "तुम्हारा दिमाग क्या है? कृपया हमें अपनी प्रतिक्रिया दें छोड़ दें%@";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
-"FEEDBACK_FOOTER_DATA_COLLECTION" = "আমাদের  সংগৃহীত তথ্য সম্পর্কে আরও জানুন%@";
+"FEEDBACK_FOOTER_DATA_COLLECTION" = "हमारे द्वारा एकत्र किए जाने वाले डेटा के बारे में अधिक जानें%@";
 
 /* Feedback footer text. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_FOOTER_DIAGNOSTIC" = "দয়া করে মনে রাখবেন যে এই ডায়াগনোস্টিক ডেটা আপনাকে সনাক্ত করে না, এবং এটি সাইফনকে মসৃণভাবে চলতে সহায়তা করে।";
+"FEEDBACK_FOOTER_DIAGNOSTIC" = "कृपया ध्यान दें कि यह डायग्नोस्टिक डेटा आपकी पहचान नहीं करता है, और यह Psiphon को आसानी से चलने में हमारी मदद करता है।";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "যদি উপরের ফর্মটি কাজ না করে অথবা আপনি স্ক্রিনশটগুলি পাঠাতে চান তবে দয়া করে আমাদের ইমেল করুন%@";
+"FEEDBACK_FOOTER_EMAIL" = "यदि उपरोक्त फॉर्म काम नहीं कर रहा है या आप स्क्रीनशॉट भेजना चाहते हैं, तो कृपया हमें ईमेल करें%@";
 
 /* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_INTRODUCTION" = "আপনার প্রতিক্রিয়া সাইফনকে ভাল করে তোলে!";
+"FEEDBACK_INTRODUCTION" = "आपका फीफ़ीफ़न बेहतर बनाता है!";
 
 /* Text of button to send feedback */
-"FEEDBACK_SEND_BUTTON" = "পাঠান";
+"FEEDBACK_SEND_BUTTON" = "भेजना";
 
 /* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "সাইফন প্রায়ই ব্যর্থ হয়\nসংযোগ করতে বা \nসঞ্চালিত হয় না\nভালভাবে।";
+"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon अक्सर विफल रहता है\nकनेक्ट करने के लिए या\nअच्छा प्रदर्शन नहीं करता है\nपर्याप्त।";
 
 /* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_UP_TEXT" = "সাইফন সংযোগ স্থাপন করে\nএবং সম্পাদন করে\nআমি যেভাবে চাই।";
+"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon जोड़ता है\nऔर प्रदर्शन करता है\nजिस तरह से मैं इसे करना चाहता हूँ";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/en/license.html";
 
 /* Title of screen that displays logs */
-"LOGS_TITLE" = "কার্যবিবরণীগুলি";
+"LOGS_TITLE" = "लॉग्स";
 
 /* Shown when the device is not configured for sending email. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED" = "মেল কনফিগার করা নেই";
+"MAIL_NOT_CONFIGURED" = "मेल कॉन्फ़िगर नहीं किया गया";
 
 /* Description for the 'Mail not configured' message. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED_DESC" = "এই ডিভাইসটি ইমেল পাঠানোর জন্য সেটিংস কনফিগার করা হয় না। দয়া করে এ মেল সেটিংসটি কনফিগার করুন।";
+"MAIL_NOT_CONFIGURED_DESC" = "इस डिवाइस को ईमेल भेजने के लिए कॉन्फ़िगर नहीं किया गया है सेटिंग्स ऐप में मेल सेटिंग्स कॉन्फ़िगर करें";
 
 /* Alert OK Button. (InAppSettingsKit) */
-"OK_BUTTON" = "ঠিক আছে";
+"OK_BUTTON" = "ठीक है ";
 
 /* Privacy Policy link text */
-"PRIVACY_POLICY_LINK_TEXT" = "গোপনীয়তা নীতি";
+"PRIVACY_POLICY_LINK_TEXT" = "गोपनीयता नीति";
 
 /*[UNTRANSLATED] External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
 "PRIVACY_POLICY_URL" = "https://psiphon.ca/en/privacy.html";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_AT" = "অস্ট্রিয়া";
+"SERVER_REGION_AT" = "ऑस्ट्रिया";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_BE" = "বেলজিয়াম";
+"SERVER_REGION_BE" = "बेल्जियम";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_BG" = "বুলগেরিয়া";
+"SERVER_REGION_BG" = "बुल्गारिया";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_CA" = "কানাডা";
+"SERVER_REGION_CA" = "कनाडा";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_CH" = "সুইজারল্যান্ড";
+"SERVER_REGION_CH" = "स्विजरलैंड";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_CZ" = "চেক প্রজাতন্ত্র";
+"SERVER_REGION_CZ" = "चेक गणराज्य";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_DE" = "জার্মানি";
+"SERVER_REGION_DE" = "जर्मनी";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_DK" = "ডেনমার্ক";
+"SERVER_REGION_DK" = "डेनमार्क";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_ES" = "স্পেন";
+"SERVER_REGION_ES" = "स्पेन";
 
-/* The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short. */
-"SERVER_REGION_FASTEST_COUNTRY" = "দ্রুততম দেশ";
-
-/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_FR" = "ফ্রান্স";
+/*[UNTRANSLATED] The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short. */
+"SERVER_REGION_FASTEST_COUNTRY" = "Fastest Country";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_GB" = "যুক্তরাজ্য";
+"SERVER_REGION_FR" = "फ्रांस";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_HK" = "হংকং";
+"SERVER_REGION_GB" = "यूनाइटेड किंगडम";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_HU" = "হাঙ্গেরি";
+"SERVER_REGION_HK" = "हाँग काँग";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_IN" = "ভারত";
+"SERVER_REGION_HU" = "हंगरी";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_IT" = "ইতালি";
+"SERVER_REGION_IN" = "भारत";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_JP" = "জাপান";
+"SERVER_REGION_IT" = "इटली";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_NL" = "নেদারল্যান্ডস";
+"SERVER_REGION_JP" = "जापान";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_NO" = "নরওয়ে";
+"SERVER_REGION_NL" = "नीदरलैंड";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_RO" = "রোমানিয়া";
+"SERVER_REGION_NO" = "नॉर्वे";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_SE" = "সুইডেন";
+"SERVER_REGION_RO" = "रोमानिया";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_SG" = "সিঙ্গাপুর";
+"SERVER_REGION_SE" = "स्वीडन";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_US" = "যুক্তরাষ্ট্র";
+"SERVER_REGION_SG" = "सिंगापुर";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_US" = "अमेरिका";
 
 /* Title of the settings (aka preferences) view (InAppSettingsKit) */
-"SETTINGS_TITLE" = "সেটিংস";
+"SETTINGS_TITLE" = "सेटिंग्स";
 

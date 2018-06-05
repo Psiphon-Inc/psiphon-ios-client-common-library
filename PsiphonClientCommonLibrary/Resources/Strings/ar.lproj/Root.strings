@@ -2,7 +2,7 @@
 "CHANGE_REGION" = "تغيير المنطقة";
 
 /* Item in a list of languages. Sets the application UI language to the one used by the system. */
-"DEFAULT_LANGUAGE" = "اللغة الإفتراضية";
+"DEFAULT_LANGUAGE" = "اللغة الافتراضية";
 
 /* Settings item to change the application UI language. */
 "SETTINGS_LANGUAGE" = "اللغة";
@@ -26,13 +26,13 @@
 "SETTINGS_PRIVACY_POLICY" = "سياسة الخصوصية";
 
 /* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"SETTINGS_TERMS_OF_USE" = "شروط الإستخدام";
+"SETTINGS_TERMS_OF_USE" = "شروط الاستخدام";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "حول";
 
-/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "تغيير منطقتك إلى \"أفضل اداء\" يزيد فرصتك في الحصول على إتصال.";
+/*[UNTRANSLATED] Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
+"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Changing your region to “Fastest Country” increases your chances of getting connected.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "يمكن أن يساعد إلغاء ميزة \"الإنقطاع عند نفاذ المدة\" في المحافظة على الإتصال على الشبكات الضعيفة";

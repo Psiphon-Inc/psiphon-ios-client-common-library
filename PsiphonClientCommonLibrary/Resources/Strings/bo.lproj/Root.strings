@@ -31,8 +31,8 @@
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "སྐོར།";
 
-/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "ནུས་པ་ཆེ་ཤོས་ཐོན་སའི་ས་གནས་ལ་བརྗེ་པོ་རྒྱབ་པ་དེས་དྲྭ་རྒྱར་མཐུད་ཐུབ་པའི་རེ་བ་ཆེ་བ་ཡོད།";
+/*[UNTRANSLATED] Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
+"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Changing your region to “Fastest Country” increases your chances of getting connected.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "དུས་རྫོགས་མེད་པ་བཟོས་པ་དེས་ཁྱེད་རང་དྲྭ་རྒྱ་ཞན་པོ་ཡོད་ནའང་མཐུད་ཐུབ་པར་ཕན་ཐོག་སྲིད།";

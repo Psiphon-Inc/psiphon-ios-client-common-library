@@ -1,35 +1,35 @@
-/*[UNTRANSLATED] Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"CHANGE_REGION" = "Change region";
+/* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
+"CHANGE_REGION" = "क्षेत्र बदलें";
 
 /*[UNTRANSLATED] Item in a list of languages. Sets the application UI language to the one used by the system. */
 "DEFAULT_LANGUAGE" = "Default language";
 
 /* Settings item to change the application UI language. */
-"SETTINGS_LANGUAGE" = "Kieli";
+"SETTINGS_LANGUAGE" = "भाषा";
 
 /*[UNTRANSLATED] Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon". */
 "PSIPHON_SUBSETTINGS_LABEL" = "Psiphon settings";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
-"SETTINGS_HELP_SECTION" = "Opaste";
+"SETTINGS_HELP_SECTION" = "सहायता";
 
 /*[UNTRANSLATED] Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
 "SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "My connection is bad, help!";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "Palaute";
+"SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "प्रतिक्रिया";
 
-/* Settings item text. Leads to a frequently asked questions page. */
-"SETTINGS_FAQ" = "UKK";
+/*[UNTRANSLATED] Settings item text. Leads to a frequently asked questions page. */
+"SETTINGS_FAQ" = "FAQ";
 
-/*[UNTRANSLATED] Settings item text. Leads to a web page with the Psiphon privacy policy. */
-"SETTINGS_PRIVACY_POLICY" = "Privacy Policy";
+/* Settings item text. Leads to a web page with the Psiphon privacy policy. */
+"SETTINGS_PRIVACY_POLICY" = "गोपनीयता नीति";
 
-/* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"SETTINGS_TERMS_OF_USE" = "Käyttöehdot";
+/*[UNTRANSLATED] Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
+"SETTINGS_TERMS_OF_USE" = "Terms of Use";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
-"SETTINGS_ABOUT" = "Ohjelmasta";
+"SETTINGS_ABOUT" = "बारे में";
 
 /*[UNTRANSLATED] Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Changing your region to “Fastest Country” increases your chances of getting connected.";
@@ -61,8 +61,8 @@
 /*[UNTRANSLATED] On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
 "FEEDBACK_DIAGNOSTIC_DATA_LABEL" = "Upload diagnostic data";
 
-/*[UNTRANSLATED] Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "Timeouts";
+/* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
+"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "टाइमआउट";
 
 /*[UNTRANSLATED] Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
 "PSIPHON_SETTINGS_PROXY_SECTION" = "Proxy";
@@ -73,23 +73,23 @@
 /*[UNTRANSLATED] Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_HOST" = "Host address";
 
-/* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_PORT" = "Portti";
+/*[UNTRANSLATED] Settings item text. The network port number for the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_PORT" = "Port";
 
-/* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "Käytä välityspalvelintodentamista";
+/*[UNTRANSLATED] Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "Use proxy authentication";
 
-/* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Välityspalvelinkäyttäjätunnus";
+/*[UNTRANSLATED] Settings item text for upstream proxy authentication username. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Proxy username";
 
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication username. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "username";
 
-/* Settings item text for upstream proxy authentication password. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Välityspalvelinsalasana";
+/*[UNTRANSLATED] Settings item text for upstream proxy authentication password. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Proxy password";
 
-/* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "salasana";
+/*[UNTRANSLATED] Placeholder text for the upstream proxy authentication password. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "password";
 
 /*[UNTRANSLATED] Settings item text for upstream proxy authentication domain. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "Proxy domain";
