@@ -46,6 +46,7 @@ DEFAULT_LANGS = {
     'fa_AF': 'fa-AF',   # Dari (Afgan Farsi)
     'fi_FI': 'fi',      # Finnish
     'fr': 'fr',         # French
+    'hi': 'hi',         # Hindi
     'hr': 'hr',         # Croation
     'id': 'id',         # Indonesian
     'it': 'it',         # Italian

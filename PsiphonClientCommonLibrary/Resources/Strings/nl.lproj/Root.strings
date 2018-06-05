@@ -32,7 +32,7 @@
 "SETTINGS_ABOUT" = "Over";
 
 /* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Wijziging uw regio in 'Beste prestaties', vergroot u uw kans om verbonden te raken.";
+"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Als je je regio wijzigt in 'Snelste land', vergroot je de kans om verbonden te raken.";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "Uitschakelen van time-outs kan u helpen om op langere netwerken verbonden te blijven.";

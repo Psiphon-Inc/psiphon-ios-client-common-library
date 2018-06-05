@@ -1,5 +1,5 @@
-/*[UNTRANSLATED] Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
-"CHANGE_REGION" = "Change region";
+/* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
+"CHANGE_REGION" = "Bölge değiştir";
 
 /*[UNTRANSLATED] Item in a list of languages. Sets the application UI language to the one used by the system. */
 "DEFAULT_LANGUAGE" = "Default language";
@@ -7,14 +7,14 @@
 /*[UNTRANSLATED] Settings item to change the application UI language. */
 "SETTINGS_LANGUAGE" = "Language";
 
-/*[UNTRANSLATED] Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon". */
-"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon settings";
+/* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon". */
+"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon ayarları";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
 "SETTINGS_HELP_SECTION" = "Yardım";
 
-/*[UNTRANSLATED] Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "My connection is bad, help!";
+/* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
+"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "Bağlantım çok kötü, yardım!";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
 "SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "Geri bildirim";
@@ -32,7 +32,7 @@
 "SETTINGS_ABOUT" = "Hakkında";
 
 /*[UNTRANSLATED] Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Changing your region to “Best performance” increases your chances of getting connected.";
+"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Changing your region to “Fastest Country” increases your chances of getting connected.";
 
 /*[UNTRANSLATED] Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "Disabling timeouts may help you stay connected on slower networks.";
