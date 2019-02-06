@@ -30,10 +30,10 @@
 
     uname(&systemInfo);
 
-    NSString *code = [NSString stringWithCString:systemInfo.machine
+    NSString* code = [NSString stringWithCString:systemInfo.machine
                                         encoding:NSUTF8StringEncoding];
 
-    static NSDictionary *deviceNamesByCode = nil;
+    static NSDictionary* deviceNamesByCode = nil;
 
     if (!deviceNamesByCode) {
 
@@ -76,6 +76,10 @@
                               @"iPhone10,5": @"iPhone 8 Plus",     // GSM
                               @"iPhone10,3": @"iPhone X",          // CDMA
                               @"iPhone10,6": @"iPhone X",          // GSM
+                              @"iPhone11,2": @"iPhone XS",         //
+                              @"iPhone11,4": @"iPhone XS Max",     //
+                              @"iPhone11,6": @"iPhone XS Max",     // China
+                              @"iPhone11,8": @"iPhone XR",         //
 
                               @"iPad4,1"   : @"iPad Air",          // 5th Generation iPad (iPad Air) - Wifi
                               @"iPad4,2"   : @"iPad Air",          // 5th Generation iPad (iPad Air) - Cellular
@@ -89,15 +93,23 @@
                               };
     }
 
-    NSString *deviceName = [deviceNamesByCode objectForKey:code];
+    NSString* deviceName = [deviceNamesByCode objectForKey:code];
 
     if (!deviceName) {
-        // Not found on database. Just return code:
-        if (!code) {
-            return @"error";
-        }
+        // Not found on database. At least guess main device type from string contents:
 
-        return code;
+        if ([code rangeOfString:@"iPod"].location != NSNotFound) {
+            deviceName = @"iPod Touch";
+        }
+        else if([code rangeOfString:@"iPad"].location != NSNotFound) {
+            deviceName = @"iPad";
+        }
+        else if([code rangeOfString:@"iPhone"].location != NSNotFound){
+            deviceName = @"iPhone";
+        }
+        else {
+            deviceName = @"Unknown";
+        }
     }
 
     return deviceName;
