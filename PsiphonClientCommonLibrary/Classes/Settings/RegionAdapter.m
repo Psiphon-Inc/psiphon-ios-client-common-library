@@ -66,6 +66,7 @@
 	regions = [[NSMutableArray alloc] initWithArray:
 			   @[[[Region alloc] initWithParams:kPsiphonRegionBestPerformance andResourceId:@"flag-best-performance" exists:YES],
 				 [[Region alloc] initWithParams:@"AT" andResourceId:@"flag-at" exists:NO],
+                 [[Region alloc] initWithParams:@"AU" andResourceId:@"flag-au" exists:NO],
 				 [[Region alloc] initWithParams:@"BE" andResourceId:@"flag-be" exists:NO],
 				 [[Region alloc] initWithParams:@"BG" andResourceId:@"flag-bg" exists:NO],
 				 [[Region alloc] initWithParams:@"CA" andResourceId:@"flag-ca" exists:NO],
@@ -85,6 +86,7 @@
 				 [[Region alloc] initWithParams:@"NO" andResourceId:@"flag-no" exists:NO],
 				 [[Region alloc] initWithParams:@"PL" andResourceId:@"flag-pl" exists:NO],
 				 [[Region alloc] initWithParams:@"RO" andResourceId:@"flag-ro" exists:NO],
+                 [[Region alloc] initWithParams:@"RS" andResourceId:@"flag-rs" exists:NO],
 				 [[Region alloc] initWithParams:@"SE" andResourceId:@"flag-se" exists:NO],
 				 [[Region alloc] initWithParams:@"SG" andResourceId:@"flag-sg" exists:NO],
 				 [[Region alloc] initWithParams:@"SK" andResourceId:@"flag-sk" exists:NO],
@@ -99,6 +101,7 @@
 	return @{
 			 kPsiphonRegionBestPerformance: NSLocalizedStringWithDefaultValue(@"SERVER_REGION_FASTEST_COUNTRY", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Fastest Country",@"The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short."),
 			 @"AT": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_AT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Austria", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+             @"AU": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_AU", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Australia", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
 			 @"BE": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_BE", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Belgium", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
 			 @"BG": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_BG", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Bulgaria", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
 			 @"CA": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_CA", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Canada", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
@@ -118,11 +121,22 @@
 			 @"NO": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_NO", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Norway", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
 			 @"PL": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_PL", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Poland", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
 			 @"RO": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_RO", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Romania", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+             @"RS": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_RS", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Serbia", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
 			 @"SE": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_SE", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Sweden", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-			 @"SK": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_SK", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Slovakia", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
 			 @"SG": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_SG", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Singapore", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
+             @"SK": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_SK", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Slovakia", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
 			 @"US": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_US", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"United States", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country.")
 			 };
+}
+
+// See comment in header.
+- (NSArray*)getAllPossibleRegionCodes {
+    NSMutableArray *regionCodes = [[NSMutableArray alloc] initWithCapacity:regions.count];
+    for (Region *region in regions) {
+        [regionCodes addObject:region.code];
+    }
+
+    return regionCodes;
 }
 
 + (instancetype)sharedInstance
