@@ -4,8 +4,8 @@
 /* Cancel action */
 "CANCEL_ACTION" = "Ακύρωση";
 
-/*[UNTRANSLATED] Title of the button that dismisses the settings menu (InAppSettingsKit) */
-"DONE_ACTION" = "Done";
+/* Title of the button that dismisses the settings menu (InAppSettingsKit) */
+"DONE_ACTION" = "Έγινε";
 
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "Συχνές Ερωτήσεις ";
@@ -118,6 +118,9 @@
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_NO" = "Νορβηγία";
 
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_PL" = "Poland";
+
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_RO" = "Ρουμανία";
 
@@ -127,9 +130,12 @@
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_SG" = "Σιγκαπούρη";
 
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_SK" = "Slovakia";
+
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "Ηνωμένες Πολιτείες";
 
-/*[UNTRANSLATED] Title of the settings (aka preferences) view (InAppSettingsKit) */
-"SETTINGS_TITLE" = "Settings";
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "Ρυθμίσεις";
 

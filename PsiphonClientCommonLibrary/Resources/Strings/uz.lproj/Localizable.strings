@@ -4,8 +4,8 @@
 /* Cancel action */
 "CANCEL_ACTION" = "Bekor qilish";
 
-/*[UNTRANSLATED] Title of the button that dismisses the settings menu (InAppSettingsKit) */
-"DONE_ACTION" = "Done";
+/* Title of the button that dismisses the settings menu (InAppSettingsKit) */
+"DONE_ACTION" = "Тайёр ";
 
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "Ko‘p so‘raladigan savollar";
@@ -46,11 +46,11 @@
 /* Title of screen that displays logs */
 "LOGS_TITLE" = "Jurnal";
 
-/*[UNTRANSLATED] Shown when the device is not configured for sending email. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED" = "Mail not configured";
+/* Shown when the device is not configured for sending email. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED" = "Pochta ilovasi sozlanmagan";
 
-/*[UNTRANSLATED] Description for the 'Mail not configured' message. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED_DESC" = "This device is not configured for sending Email. Please configure the Mail settings in the Settings app.";
+/* Description for the 'Mail not configured' message. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED_DESC" = "Bu qurilmada e-pochta yuborish sozlanmagan. Pochta ilovasini Sozlamalar orqali sozlang.";
 
 /*[UNTRANSLATED] Alert OK Button. (InAppSettingsKit) */
 "OK_BUTTON" = "OK";
@@ -118,6 +118,9 @@
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_NO" = "Norvegiya";
 
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_PL" = "Poland";
+
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_RO" = "Ruminiya";
 
@@ -127,9 +130,12 @@
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_SG" = "Singapur";
 
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_SK" = "Slovakia";
+
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "AQSH";
 
-/*[UNTRANSLATED] Title of the settings (aka preferences) view (InAppSettingsKit) */
-"SETTINGS_TITLE" = "Settings";
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "Sozlamalar";
 

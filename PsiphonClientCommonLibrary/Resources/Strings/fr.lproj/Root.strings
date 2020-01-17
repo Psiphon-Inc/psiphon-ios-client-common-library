@@ -46,6 +46,9 @@
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "Se reconnecter au serveur Psiphon";
 
+/* Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
+"REINSTALL_VPN_PROFILE_FOOTER" = "Si presser sur le bouton Démarrer/Arrêter semble ne rien faire, il vous faudra peut-être réinstaller le profil Psiphon RPV.";
+
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_COMMENTS_LABEL" = "Vos commentaires";
 
@@ -80,19 +83,19 @@
 "PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "Utiliser l’authentification pour le mandataire";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Mandataire - Nom d’utilisateur";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Mandataire — Nom d’utilisateur";
 
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "nom d’utilisateur";
 
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Mandataire - Mot de passe";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Mandataire — Mot de passe";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "mot de passe";
 
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "Mandataire - Domaine";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "Mandataire — Domaine";
 
 /* Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "EXAMPLE_HOSTNAME" = "exemple.com";

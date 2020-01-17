@@ -13,32 +13,32 @@
 /* External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french. */
 "FAQ_URL" = "https://psiphon.ca/id/faq.html";
 
-/*[UNTRANSLATED] Comments section placeholder text */
-"FEEDBACK_COMMENTS_PLACEHOLDER" = "What's on your mind? Please leave us your feedback";
+/* Comments section placeholder text */
+"FEEDBACK_COMMENTS_PLACEHOLDER" = "Apa yang Anda pikirkan? Silakan beri saran untuk kami.";
 
-/*[UNTRANSLATED] Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "You can find solutions to many common problems in our %@.";
+/* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
+"FEEDBACK_FAQ_DIRECTION" = "Anda bisa menemukan solusi di sebagian besar masalah dalam %@.";
 
-/*[UNTRANSLATED] Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
-"FEEDBACK_FOOTER_DATA_COLLECTION" = "Learn more about the data we collect in our %@";
+/* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
+"FEEDBACK_FOOTER_DATA_COLLECTION" = "Pelajari lebih lanjut perihal data yang kami kumpulkan dalam %@";
 
-/*[UNTRANSLATED] Feedback footer text. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_FOOTER_DIAGNOSTIC" = "Please note that this diagnostic data does not identify you, and it helps us keep Psiphon running smoothly.";
+/* Feedback footer text. DO NOT translate the word 'Psiphon'. */
+"FEEDBACK_FOOTER_DIAGNOSTIC" = "Mohon perhatikan bahwa diagnosis data tidak mengenali Anda, dan itu membantu kami menjalankan Psiphon dengan mulus.";
 
-/*[UNTRANSLATED] Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "If the above form is not working or you would like to send screenshots, please email us at %@";
+/* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
+"FEEDBACK_FOOTER_EMAIL" = "Jika formulir di atas tidak berfungsi atau Anda ingin mengirimkan tangkapan layar, silakan kirimkan surel ke %@.";
 
-/*[UNTRANSLATED] Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_INTRODUCTION" = "Your feedback makes Psiphon better!";
+/* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
+"FEEDBACK_INTRODUCTION" = "Masukan Anda membuat Psiphon lebih baik!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Kirim";
 
-/*[UNTRANSLATED] Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon often fails\nto connect or\ndoesn't perform well\nenough.";
+/* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
+"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon sering kali gagal\nuntuk terhubung atau\ntidak cukup baik bekerja.";
 
-/*[UNTRANSLATED] Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon connects\nand performs the\nway I want it to.";
+/* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
+"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon terhubung\ndan bekerja\nsebagaimana saya inginkan.";
 
 /* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/id/license.html";
@@ -46,11 +46,11 @@
 /* Title of screen that displays logs */
 "LOGS_TITLE" = "Log";
 
-/*[UNTRANSLATED] Shown when the device is not configured for sending email. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED" = "Mail not configured";
+/* Shown when the device is not configured for sending email. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED" = "Surel tidak diatur";
 
-/*[UNTRANSLATED] Description for the 'Mail not configured' message. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED_DESC" = "This device is not configured for sending Email. Please configure the Mail settings in the Settings app.";
+/* Description for the 'Mail not configured' message. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED_DESC" = "Perangkat ini tidak diatur untuk mengirimkan Surel. Silakan setel pengaturan Surel di Pengaturan aplikasi.";
 
 /* Alert OK Button. (InAppSettingsKit) */
 "OK_BUTTON" = "OKE";
@@ -118,6 +118,9 @@
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_NO" = "Norwegia";
 
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_PL" = "Polandia";
+
 /*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_RO" = "Romania";
 
@@ -127,9 +130,12 @@
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_SG" = "Singapura";
 
+/*[UNTRANSLATED] Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_SK" = "Slovakia";
+
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "Amerika Serikat";
 
-/*[UNTRANSLATED] Title of the settings (aka preferences) view (InAppSettingsKit) */
-"SETTINGS_TITLE" = "Settings";
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "Pengaturan";
 

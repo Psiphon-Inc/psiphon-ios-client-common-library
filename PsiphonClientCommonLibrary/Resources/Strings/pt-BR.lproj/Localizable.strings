@@ -119,6 +119,9 @@
 "SERVER_REGION_NO" = "Noruega";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_PL" = "Polônia";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_RO" = "Romênia";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
@@ -128,8 +131,11 @@
 "SERVER_REGION_SG" = "Singapura";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_SK" = "Eslováquia";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "Estados Unidos";
 
-/*[UNTRANSLATED] Title of the settings (aka preferences) view (InAppSettingsKit) */
-"SETTINGS_TITLE" = "Settings";
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "Configurações";
 
