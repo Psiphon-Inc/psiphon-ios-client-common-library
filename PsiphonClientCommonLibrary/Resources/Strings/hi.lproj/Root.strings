@@ -19,8 +19,8 @@
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
 "SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "प्रतिक्रिया";
 
-/*[UNTRANSLATED] Settings item text. Leads to a frequently asked questions page. */
-"SETTINGS_FAQ" = "FAQ";
+/* Settings item text. Leads to a frequently asked questions page. */
+"SETTINGS_FAQ" = "सामान्य प्रश्न";
 
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
 "SETTINGS_PRIVACY_POLICY" = "गोपनीयता नीति";
@@ -45,6 +45,9 @@
 
 /*[UNTRANSLATED] Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "Reconnect to the Psiphon server";
+
+/*[UNTRANSLATED] Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
+"REINSTALL_VPN_PROFILE_FOOTER" = "If pressing the start/stop button seems to do nothing you may need to reinstall the Psiphon VPN profile.";
 
 /*[UNTRANSLATED] On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_COMMENTS_LABEL" = "Your Comments";

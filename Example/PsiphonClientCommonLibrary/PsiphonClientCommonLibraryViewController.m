@@ -19,6 +19,7 @@
 
 
 #import "PsiphonClientCommonLibraryViewController.h"
+#import "RegionAdapter.h"
 
 @interface PsiphonClientCommonLibraryViewController ()
 
@@ -30,7 +31,9 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+	[super viewDidLoad];
+	RegionAdapter *regionAdapter = [RegionAdapter sharedInstance];
+	[regionAdapter onAvailableEgressRegions:[regionAdapter getAllPossibleRegionCodes]];
 	[self addOpenSettingsButton];
 }
 

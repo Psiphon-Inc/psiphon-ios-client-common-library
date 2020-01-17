@@ -39,6 +39,9 @@
 - (void)setSelectedRegion:(NSString*)regionCode;
 - (void)reloadTitlesForNewLocalization;
 - (NSArray*)getRegions;
+// Returns all possible region codes.
+// e.g. @[@"AT", @"BE", ...]
+- (NSArray*)getAllPossibleRegionCodes;
 - (Region*)getSelectedRegion;
 - (NSString*)getLocalizedRegionTitle:(NSString*)regionCode;
 @end

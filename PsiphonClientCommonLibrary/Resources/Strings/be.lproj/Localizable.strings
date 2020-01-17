@@ -4,8 +4,8 @@
 /* Cancel action */
 "CANCEL_ACTION" = "Скасаваць";
 
-/*[UNTRANSLATED] Title of the button that dismisses the settings menu (InAppSettingsKit) */
-"DONE_ACTION" = "Done";
+/* Title of the button that dismisses the settings menu (InAppSettingsKit) */
+"DONE_ACTION" = "Гатова";
 
 /* FAQ link text */
 "FAQ_LINK_TEXT" = "Тыповыя пытанні";
@@ -46,11 +46,11 @@
 /* Title of screen that displays logs */
 "LOGS_TITLE" = "Журналы";
 
-/*[UNTRANSLATED] Shown when the device is not configured for sending email. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED" = "Mail not configured";
+/* Shown when the device is not configured for sending email. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED" = "Брак канфігурацыі пошты";
 
-/*[UNTRANSLATED] Description for the 'Mail not configured' message. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED_DESC" = "This device is not configured for sending Email. Please configure the Mail settings in the Settings app.";
+/* Description for the 'Mail not configured' message. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED_DESC" = "Прылада не сканфігураваная, каб слаць электронныя паведамленні. Калі ласка, сканфігуруйце налады пошты ў прыладанні Наладаў";
 
 /*[UNTRANSLATED] Alert OK Button. (InAppSettingsKit) */
 "OK_BUTTON" = "OK";
@@ -119,6 +119,9 @@
 "SERVER_REGION_NO" = "Нарвегія";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_PL" = "Польшчы";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_RO" = "Румынія";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
@@ -128,8 +131,11 @@
 "SERVER_REGION_SG" = "Сінгапур";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_SK" = "Славакія";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "Злучаныя Штаты Амерыкі";
 
-/*[UNTRANSLATED] Title of the settings (aka preferences) view (InAppSettingsKit) */
-"SETTINGS_TITLE" = "Settings";
+/* Title of the settings (aka preferences) view (InAppSettingsKit) */
+"SETTINGS_TITLE" = "Налады";
 

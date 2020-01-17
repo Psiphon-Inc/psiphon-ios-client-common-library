@@ -14,7 +14,7 @@
 "SETTINGS_HELP_SECTION" = "ជំនួយ";
 
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "ការតភ្ជាប់របស់ខ្ញុំមានល្អទេ, ជួយផង!";
+"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "ការតភ្ជាប់របស់ខ្ញុំមិនល្អទេ, ជួយផង!";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
 "SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "មតិយោបល់";
@@ -31,8 +31,8 @@
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "អំពី";
 
-/*[UNTRANSLATED] Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Changing your region to “Fastest Country” increases your chances of getting connected.";
+/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
+"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "ផ្លាស់ប្តូរតំបន់របស់អ្នកទៅ \"ប្រទេសលឿនបំផុត\" បង្កើនឱកាសនៃការតភ្ជាប់។";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "ការបិទការហួសម៉ោង អាចជួយអ្នកឲ្យតភ្ជាប់លើបណ្តាញដែលយឺត។​";
@@ -45,6 +45,9 @@
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "តភ្ជាប់ម្តងទៀតទៅម៉ាស៊ីនមេ Psiphon ";
+
+/* Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
+"REINSTALL_VPN_PROFILE_FOOTER" = "ប្រសិនបើចុចប៊ូតុងចាប់ផ្ដើម / បញ្ឈប់ នោះហាក់ដូចជាមិនបានធ្វើអ្វីទេ​ អ្នកប្រហែលជាត្រូវតំឡើងPsiphon VPN ឡើងវិញ។";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_COMMENTS_LABEL" = "មតិយោបល់របស់អ្នក";

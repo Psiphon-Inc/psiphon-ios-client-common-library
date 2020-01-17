@@ -31,8 +31,8 @@
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "সম্বন্ধে";
 
-/*[UNTRANSLATED] Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Changing your region to “Fastest Country” increases your chances of getting connected.";
+/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
+"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = " \"দ্রুততম দেশ\" নির্বাচন করলে আপনার সংযোগের সম্ভাবনা বাড়ায়।";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "সময়সীমা নিষ্ক্রিয় করা আপনাকে ধীর নেটওয়ার্কগুলিতে সংযুক্ত থাকতে সহায়তা করতে পারে।";
@@ -45,6 +45,9 @@
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "সাইফন সার্ভারের সাথে পুনরায় সংযোগ স্থাপন করুন";
+
+/* Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
+"REINSTALL_VPN_PROFILE_FOOTER" = "স্টার্ট / স্টপ বোতামটি টিপে যদি মনে হয় কিছুই হচ্ছেনা তবে সাইফোনের ভিপিএন প্রোফাইলটি পুনরায় ইনস্টল করতে হবে।";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_COMMENTS_LABEL" = "আপনার মন্তব্য";

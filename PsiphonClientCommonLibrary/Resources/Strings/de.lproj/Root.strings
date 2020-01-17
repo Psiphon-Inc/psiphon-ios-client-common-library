@@ -46,6 +46,9 @@
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "Verbindung zum Psiphon-Server wiederherstellen";
 
+/*[UNTRANSLATED] Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
+"REINSTALL_VPN_PROFILE_FOOTER" = "If pressing the start/stop button seems to do nothing you may need to reinstall the Psiphon VPN profile.";
+
 /*[UNTRANSLATED] On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_COMMENTS_LABEL" = "Your Comments";
 
@@ -104,16 +107,16 @@
 "CUSTOM_HEADERS_FOOTER" = "Some network configurations may require custom HTTP headers in order to connect successfully.";
 
 /* Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "Benutzerdefinierte Überschriften verwenden";
+"PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "Benutzerdefinierte Kopfdaten verwenden";
 
 /* Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "Überschrift 1";
 
 /* Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "Überschriftsnamen eingeben";
+"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "Kopfdatennamen eingeben";
 
 /* Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "Überschriftswert eingeben";
+"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "Kopfdatenwert eingeben";
 
 /* Settings item text. Header text above the text boxes where the user configures the second of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "Überschrift 2";

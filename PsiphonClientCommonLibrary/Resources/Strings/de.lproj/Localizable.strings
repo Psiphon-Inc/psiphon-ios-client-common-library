@@ -49,8 +49,8 @@
 /* Shown when the device is not configured for sending email. (InAppSettingsKit) */
 "MAIL_NOT_CONFIGURED" = "Mail nicht konfiguriert";
 
-/*[UNTRANSLATED] Description for the 'Mail not configured' message. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED_DESC" = "This device is not configured for sending Email. Please configure the Mail settings in the Settings app.";
+/* Description for the 'Mail not configured' message. (InAppSettingsKit) */
+"MAIL_NOT_CONFIGURED_DESC" = "Dieses Gerät ist nicht für das Senden einer E-Mail konfiguriert. Bitte konfigurieren Sie die E-Mail-Einstellungen in der App Einstellungen.";
 
 /*[UNTRANSLATED] Alert OK Button. (InAppSettingsKit) */
 "OK_BUTTON" = "OK";
@@ -119,6 +119,9 @@
 "SERVER_REGION_NO" = "Norwegen";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_PL" = "Polen";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_RO" = "Rumänien";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
@@ -126,6 +129,9 @@
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_SG" = "Singapur";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_SK" = "Slowakei";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_US" = "Vereinigte Staaten";

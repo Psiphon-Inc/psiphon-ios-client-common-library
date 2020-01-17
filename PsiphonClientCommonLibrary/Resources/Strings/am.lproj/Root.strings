@@ -8,7 +8,7 @@
 "SETTINGS_LANGUAGE" = "ቋንቋ ";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon". */
-"PSIPHON_SUBSETTINGS_LABEL" = "የሳይፈን ቅንብሮች ";
+"PSIPHON_SUBSETTINGS_LABEL" = "የ Psiphon (ሳይፈን) ቅንብሮች";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
 "SETTINGS_HELP_SECTION" = "እገዛ";
@@ -31,8 +31,8 @@
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "ስለ ";
 
-/*[UNTRANSLATED] Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Changing your region to “Fastest Country” increases your chances of getting connected.";
+/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
+"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "ክልልዎን ወደ \"ፈጣኑ ሀገር \" መለወጥ የመገናኘት ዕድልዎን ይጨምራል።";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = " የጊዜ እረፍቶችን ማቦዘን በዝግተኛ ኔትወርኮች ተገናኝቶ ለመቆየት ሊረዳዎ ይችላል። ";
@@ -41,10 +41,13 @@
 "DISABLE_TIMEOUTS" = "የእረፍት ጊዜዎችን ያቦዝኑ ";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
-"CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "የአሁን ግንኙነትዎ ዘገምተኛ ወይም ምላሽ የማይሰጥ ከሆነ ከሳይፈን አገልጋይ ጋር እንደገና መገናኘት ሊያግዝ ይችላል።  ";
+"CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "የአሁን ግንኙነትዎ ዘገምተኛ ወይም ምላሽ የማይሰጥ ከሆነ ከሳይፈን አገልጋይ ጋር እንደገና መገናኘት ሊያግዝ ይችላል።";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "ከሳይፈን አገልጋይ ጋር እንደገና ተገናኝ";
+
+/* Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
+"REINSTALL_VPN_PROFILE_FOOTER" = "ማጫወቻ/ማቆሚያ ቁልፉ ምንም በሚጫኑበት ወቅት ምንም የማይሰራ ከሆነ Psiphon (ሳይፈን)ን ከእንደገና መጫን ሊያስፈልግ ይችላል።   ";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_COMMENTS_LABEL" = "አስተያየቶችዎ ";
@@ -97,36 +100,36 @@
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "EXAMPLE_HOSTNAME" = "example.com";
 
-/*[UNTRANSLATED] Settings item text. Leads to settings specific to the custom headers. */
-"PSIPHON_CUSTOM_HEADERS_SUBSETTINGS_LABEL" = "Custom HTTP headers";
+/* Settings item text. Leads to settings specific to the custom headers. */
+"PSIPHON_CUSTOM_HEADERS_SUBSETTINGS_LABEL" = "ብጁ HTTP ውርድ";
 
-/*[UNTRANSLATED] Explanatory text for the "Use custom headers" setting. */
-"CUSTOM_HEADERS_FOOTER" = "Some network configurations may require custom HTTP headers in order to connect successfully.";
+/* Explanatory text for the "Use custom headers" setting. */
+"CUSTOM_HEADERS_FOOTER" = "የአንዳንድ አውታረ መረብ ውቅሮች በተሳካ ሁኔታ ግንኙነት ለማበጀት ብጁ HTTP ውርድ ሊያስፈልጋቸው ይችላል።";
 
-/*[UNTRANSLATED] Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "Use custom headers";
+/* Settings item text. Some users will need to set custom HTTP headers to authenticate or convey other information to the upstream proxy. Enabling the switch beside this text will allow users to configure the headers they want passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_USE_CUSTOM_HEADERS_LABEL" = "ብጁ ውርዶችን ተጠቀም";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "Header 1";
+/* Settings item text. Header text above the text boxes where the user configures the first of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "ውርድ 1";
 
-/*[UNTRANSLATED] Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "Enter header name";
+/* Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
+"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "የውርድ ስም ያስገቡ";
 
-/*[UNTRANSLATED] Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "Enter header value";
+/* Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
+"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "የውርድ ዕሴት ያስገቡ";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the second of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "Header 2";
+/* Settings item text. Header text above the text boxes where the user configures the second of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "ውርድ 2";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the third of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_3" = "Header 3";
+/* Settings item text. Header text above the text boxes where the user configures the third of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_3" = "ውርድ 3";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the fourth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_4" = "Header 4";
+/* Settings item text. Header text above the text boxes where the user configures the fourth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_4" = "ውርድ 4";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the fifth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_5" = "Header 5";
+/* Settings item text. Header text above the text boxes where the user configures the fifth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_5" = "ውርድ 5";
 
-/*[UNTRANSLATED] Settings item text. Header text above the text boxes where the user configures the sixth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_6" = "Header 6";
+/* Settings item text. Header text above the text boxes where the user configures the sixth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_6" = "ውርድ 6";
 

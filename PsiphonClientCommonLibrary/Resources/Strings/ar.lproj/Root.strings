@@ -31,8 +31,8 @@
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "حول";
 
-/*[UNTRANSLATED] Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Changing your region to “Fastest Country” increases your chances of getting connected.";
+/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
+"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "تغيير منطقتك إلى \"أسرع بلد\"  يزيد من فرص إتصالك";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "يمكن أن يساعد إلغاء ميزة \"الإنقطاع عند نفاذ المدة\" في المحافظة على الإتصال على الشبكات الضعيفة";
@@ -45,6 +45,9 @@
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "إعادة الإتصال بخادوم سايفون ";
+
+/* Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
+"REINSTALL_VPN_PROFILE_FOOTER" = "في حالة عدم الاستجابة عند الضغط على زر البدء / الإيقاف ، فقد تحتاج إلى إعادة تثبيت ملف Psiphon VPN.";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_COMMENTS_LABEL" = "تعليقاتك";

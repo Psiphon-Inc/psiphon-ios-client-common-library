@@ -8,7 +8,7 @@
 "SETTINGS_LANGUAGE" = "語言";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon". */
-"PSIPHON_SUBSETTINGS_LABEL" = "賽風設定";
+"PSIPHON_SUBSETTINGS_LABEL" = "Psiphon 設定";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
 "SETTINGS_HELP_SECTION" = "幫助";
@@ -31,8 +31,8 @@
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "關於";
 
-/*[UNTRANSLATED] Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "Changing your region to “Fastest Country” increases your chances of getting connected.";
+/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
+"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "將地區改成\"高速連線地區\"，可提高連線機會。";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "關閉逾時可以有助於在低速網路中保持連線。";
@@ -45,6 +45,9 @@
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
 "FORCE_RECONNECT" = "重新連接到賽風伺服器　";
+
+/* Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
+"REINSTALL_VPN_PROFILE_FOOTER" = "如果按啟動/停止按鈕無效，可以試試重新安裝 Psiphon VPN。";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_COMMENTS_LABEL" = "用戶評論";
