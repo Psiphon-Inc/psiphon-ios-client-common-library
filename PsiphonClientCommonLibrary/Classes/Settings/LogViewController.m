@@ -317,11 +317,36 @@
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
 	@synchronized (self) {
-		self->searchFilter = [self->searchBar.text stringByReplacingCharactersInRange:range withString:string];
-		self->displayedEntries = [NSMutableArray arrayWithArray:
-								  [LogViewController filterEntries:self->diagnosticEntries
-														withFilter:self->searchFilter
-												  andCaseSensitive:self->caseSensitiveSearchEnabled]];
+
+		NSString *newSearchFilter = [self->searchBar.text stringByReplacingCharactersInRange:range
+																				  withString:string];
+		NSArray *entriesToSearch;
+
+		if (self->searchFilter && [self->searchFilter length] > 0) {
+
+			NSRange range = [newSearchFilter rangeOfString:self->searchFilter];
+
+			if (range.location == 0 && range.length == [self->searchFilter length]) {
+				// Performance:
+				// Only search the displayed entries because the new search filter is a
+				// concatenation of the previous one.
+				entriesToSearch = self->displayedEntries;
+			} else {
+				entriesToSearch = self->diagnosticEntries;
+			}
+		} else {
+			entriesToSearch = self->diagnosticEntries;
+		}
+
+		if (entriesToSearch && [entriesToSearch count] > 0) {
+			self->displayedEntries = [NSMutableArray arrayWithArray:
+									  [LogViewController filterEntries:entriesToSearch
+															withFilter:newSearchFilter
+													  andCaseSensitive:self->caseSensitiveSearchEnabled]];
+		}
+
+		self->searchFilter = newSearchFilter;
+
 		[self.tableView reloadData];
 		[self scrollToBottom];
 	}
