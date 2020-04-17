@@ -26,7 +26,7 @@ A shared library that encapsulates common client code used across different Psip
   s.author           = { 'Psiphon Inc.' => 'info@psiphon.ca' }
   s.source           = { :git => 'https://github.com/Psiphon-Inc/psiphon-ios-client-common-library.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'PsiphonClientCommonLibrary/Classes/**/*'
   s.resource_bundles = {
