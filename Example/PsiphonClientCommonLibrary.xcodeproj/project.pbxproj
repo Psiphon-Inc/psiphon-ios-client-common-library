@@ -211,8 +211,8 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				205B1520471809715376F239 /* [CP] Embed Pods Frameworks */,
-				95E0394E5DB2F6D2722F85F5 /* [CP] Copy Pods Resources */,
 				661DA4CF1F68509300BB4B93 /* ShellScript */,
+				A192C2559573D88A13BA0942 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,8 +231,8 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				35883A3B2B2A573C9E1A5785 /* [CP] Embed Pods Frameworks */,
-				1B53F6347E99A6D0A4D2F4CC /* [CP] Copy Pods Resources */,
+				180416083D6FAF0A2D05C50A /* [CP] Embed Pods Frameworks */,
+				3CF7EBFE8CAB1CAF9E723053 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,19 +305,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B53F6347E99A6D0A4D2F4CC /* [CP] Copy Pods Resources */ = {
+		180416083D6FAF0A2D05C50A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		205B1520471809715376F239 /* [CP] Embed Pods Frameworks */ = {
@@ -340,19 +344,23 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Example/Pods-PsiphonClientCommonLibrary_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		35883A3B2B2A573C9E1A5785 /* [CP] Embed Pods Frameworks */ = {
+		3CF7EBFE8CAB1CAF9E723053 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiphonClientCommonLibrary_Tests/Pods-PsiphonClientCommonLibrary_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		661DA4CF1F68509300BB4B93 /* ShellScript */ = {
@@ -368,14 +376,18 @@
 			shellPath = /bin/sh;
 			shellScript = "cd ..\n/usr/bin/env python \"./genstrings.py\"\nif [ $? != 0 ] ; then\n  exit 1\nfi\ncd -\n";
 		};
-		95E0394E5DB2F6D2722F85F5 /* [CP] Copy Pods Resources */ = {
+		A192C2559573D88A13BA0942 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
 			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

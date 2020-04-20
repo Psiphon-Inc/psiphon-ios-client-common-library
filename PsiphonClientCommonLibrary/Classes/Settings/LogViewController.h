@@ -20,13 +20,17 @@
 #import <UIKit/UIKit.h>
 #import "PsiphonData.h"
 
-@interface LogViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-
-// Data source
-@property (nonatomic) NSMutableArray<DiagnosticEntry*> *diagnosticEntries;
+@interface LogViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
 @property (nonatomic) UITableView *tableView;
 
+/// Scroll to the bottom of the tableview.
 - (void)scrollToBottom;
+
+/// Add new diagnostic entries and reload the table.
+- (void)addEntries:(NSArray<DiagnosticEntry*>*)entries;
+
+/// Returns true if the last row of the tableview is visible, else false.
+- (BOOL)lastRowVisible;
 
 @end

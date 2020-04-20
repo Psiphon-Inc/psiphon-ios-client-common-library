@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PsiphonClientCommonLibrary'
-  s.version          = '1.2.2'
+  s.version          = '1.2.3'
   s.summary          = 'Psiphon iOS Shared Client Library.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ A shared library that encapsulates common client code used across different Psip
   s.author           = { 'Psiphon Inc.' => 'info@psiphon.ca' }
   s.source           = { :git => 'https://github.com/Psiphon-Inc/psiphon-ios-client-common-library.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'PsiphonClientCommonLibrary/Classes/**/*'
   s.resource_bundles = {
