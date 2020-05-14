@@ -8,7 +8,7 @@
 "SETTINGS_LANGUAGE" = "زبان";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon". */
-"PSIPHON_SUBSETTINGS_LABEL" = "تنظیمات سایفون";
+"PSIPHON_SUBSETTINGS_LABEL" = "تنظیمات Psiphon";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
 "SETTINGS_HELP_SECTION" = "کمک";
@@ -29,7 +29,7 @@
 "SETTINGS_TERMS_OF_USE" = "شرایط استفاده ";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
-"SETTINGS_ABOUT" = "درباره‌ی سایفون";
+"SETTINGS_ABOUT" = "درباره‌ی Psiphon";
 
 /* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "تغییر منطقه به «سریع‌ترین کشور» احتمال برقراری ارتباط را افزایش می‌دهد.";
@@ -41,10 +41,10 @@
 "DISABLE_TIMEOUTS" = "غیرفعال کردن وقفه‌ها";
 
 /* Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
-"CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "اتصال دوباره به سرور سایفون شاید مشکل کندی و قطعی اتصال را رفع کند.";
+"CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "اتصال دوباره به سرور Psiphon شاید مشکل کندی و قطعی اتصال را رفع کند.";
 
 /* Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'. */
-"FORCE_RECONNECT" = "اتصال دوباره به سرور سایفون";
+"FORCE_RECONNECT" = "اتصال دوباره به سرور Psiphon";
 
 /* Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
 "REINSTALL_VPN_PROFILE_FOOTER" = "اگر فشار دادن دکمه‌ی شروع/توقف کاری نمی‌‌کند، باید  پروفایل Psiphon VPN را دوباره نصب کنید.";

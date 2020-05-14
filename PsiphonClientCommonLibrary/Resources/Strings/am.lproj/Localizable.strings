@@ -8,37 +8,37 @@
 "DONE_ACTION" = "ተጠናቋል ";
 
 /* FAQ link text */
-"FAQ_LINK_TEXT" = "ተደጋግመው የሚጠየቁ ጥያቄዎች እና መልሶቻቸው ";
+"FAQ_LINK_TEXT" = "በተደጋጋሚ የሚጠየቁ ጥያቄዎች";
 
 /*[UNTRANSLATED] External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french. */
 "FAQ_URL" = "https://psiphon.ca/en/faq.html";
 
 /* Comments section placeholder text */
-"FEEDBACK_COMMENTS_PLACEHOLDER" = "ምን እያሰቡ ነው?  እባክዎት ግብረ መልስዎን ያስቀምጡልን ";
+"FEEDBACK_COMMENTS_PLACEHOLDER" = "ምን እያሰቡ ነው? እባክዎ ግብረመልስዎን ያስቀምጡልን ";
 
 /* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "ለብዙ የተለመዱ ችግሮች መፍትሄን በ%@ ሊያገኙ ይችላሉ። ";
+"FEEDBACK_FAQ_DIRECTION" = "ለብዙ የተለመዱ ችግሮች መፍትሄዎች በ %@ ሊያገኙ ይችላሉ። ";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
-"FEEDBACK_FOOTER_DATA_COLLECTION" = "ስለምንሰበስበው ዳታ የበለጠ ለማወቅ %@ ይጎብኙ። ";
+"FEEDBACK_FOOTER_DATA_COLLECTION" = "ስለምንሰበስበው ውሂብ የበለጠ ለማወቅ %@ ይጎብኙ። ";
 
 /* Feedback footer text. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_FOOTER_DIAGNOSTIC" = "ይህ የምርመራ ዳታ ማንነትዎን አይለይም፣ እና ሳይፈንን ያለምንም ችግር እንድናሰራ የሚረዳን መሆኑን እባክዎ ያስተውሉ። ";
+"FEEDBACK_FOOTER_DIAGNOSTIC" = "ይህ የምርመራ ውሂብ ማንነትዎን አያጋልጥም፤ Psiphonን ያለምንም ችግር እንድናሠራ የሚረዳ ነው።";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "ከላይ ያለው ቅጽ የማይሰራ ከሆነ ወይም ቅጽበታዊ ገጽ እይታን መላክ የሚፈልጉ ከሆነ እባክዎን  በ %@ ኢሜል ይላኩልን። ";
+"FEEDBACK_FOOTER_EMAIL" = "ከላይ ያለው ቅጽ የማይሠራ ከሆነ ወይም ቅጽበታዊ ገጽ ዕይታን መላክ የሚፈልጉ ከሆነ እባክዎን ወደ %@ ኢሜይል ይላኩልን። ";
 
 /* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_INTRODUCTION" = "የእርስዎ ግብረ መልስ ሳይፈንን የተሻለ ያደርገዋል!";
+"FEEDBACK_INTRODUCTION" = "የእርስዎ ግብረመልስ Psiphonን የተሻለ ያደርገዋል!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "ላክ ";
 
 /* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "ሳይፈን አብዛኛውን  ጊዜ አልገናኝም\n ይላል ወይም\n በደንብ አይሰራም።";
+"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon (ሳይፈን) አብዛኛውን ጊዜ አልገናኝም\nይላል ወይም\nበደንብ አይሠራም።";
 
 /* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_UP_TEXT" = "ሳይፈን ይገናኛል \nእናም የሚሰራው \nእኔ በምፈልገው መንገድ ነው። ";
+"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon ይገናኛል \nእናም የሚሠራው \nእኔ በምፈልገው መንገድ ነው። ";
 
 /*[UNTRANSLATED] External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/en/license.html";
@@ -47,10 +47,10 @@
 "LOGS_TITLE" = "መዝገቦች ";
 
 /* Shown when the device is not configured for sending email. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED" = "ሜሉ አልተዋቀረም ";
+"MAIL_NOT_CONFIGURED" = "ሜይል አልተዋቀረም ";
 
 /* Description for the 'Mail not configured' message. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED_DESC" = "ይህ መሳሪያ ኢሜል ለመላክ አልተዋቀረም። የመተግበሪያው ቅንብሮች ውስጥ በመግባት የሜል ቅንብሩን እባክዎ ያዋቅሩ።  ";
+"MAIL_NOT_CONFIGURED_DESC" = "ይህ መሣሪያ ኢሜይል ለመላክ አልተዋቀረም። የመተግበሪያው ቅንብሮች ውስጥ በመግባት የሜይል ቅንብሩን እባክዎ ያዋቅሩ።  ";
 
 /* Alert OK Button. (InAppSettingsKit) */
 "OK_BUTTON" = "እሺ ";
@@ -65,6 +65,9 @@
 "SERVER_REGION_AT" = "ኦስትሪያ ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_AU" = "አውስትራሊያ";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_BE" = "ቤልጂየም ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
@@ -74,7 +77,7 @@
 "SERVER_REGION_CA" = "ካናዳ ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_CH" = "ሲውዘርላንድ ";
+"SERVER_REGION_CH" = "ስዊዘርላንድ ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_CZ" = "ቼክ ሪፐብሊክ ";
@@ -104,7 +107,7 @@
 "SERVER_REGION_HU" = "ሃንጋሪ ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_IN" = "ህንድ ";
+"SERVER_REGION_IN" = "ሕንድ ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_IT" = "ጣሊያን ";
@@ -123,6 +126,9 @@
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_RO" = "ሮማንያ ";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_RS" = "ሰርቢያ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_SE" = "ስዊድን ";

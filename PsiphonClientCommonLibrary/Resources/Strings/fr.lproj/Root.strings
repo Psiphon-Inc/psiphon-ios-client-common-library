@@ -14,7 +14,7 @@
 "SETTINGS_HELP_SECTION" = "Aide";
 
 /* Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
-"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "Ma connexion est mauvaise, aidez-moi !";
+"SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "Ma connexion est mauvaise, aidez-moi.";
 
 /* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
 "SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "Rétroaction";

@@ -8,7 +8,7 @@
 "SETTINGS_LANGUAGE" = "ቋንቋ ";
 
 /* Settings item text. Leads to settings specific to the Psiphon tunnel, like 'Disable timeouts' and 'Use upstream proxy'. DO NOT translate the word "Psiphon". */
-"PSIPHON_SUBSETTINGS_LABEL" = "የ Psiphon (ሳይፈን) ቅንብሮች";
+"PSIPHON_SUBSETTINGS_LABEL" = "የ Psiphon ቅንብሮች";
 
 /* Settings section text. This section contains 'Feedback', 'FAQ', 'About', etc. */
 "SETTINGS_HELP_SECTION" = "እገዛ";
@@ -47,7 +47,7 @@
 "FORCE_RECONNECT" = "ከሳይፈን አገልጋይ ጋር እንደገና ተገናኝ";
 
 /* Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
-"REINSTALL_VPN_PROFILE_FOOTER" = "ማጫወቻ/ማቆሚያ ቁልፉ ምንም በሚጫኑበት ወቅት ምንም የማይሰራ ከሆነ Psiphon (ሳይፈን)ን ከእንደገና መጫን ሊያስፈልግ ይችላል።   ";
+"REINSTALL_VPN_PROFILE_FOOTER" = "ማጫወቻ/ማቆሚያ ቁልፉ ምንም በሚጫኑበት ወቅት ምንም የማይሰራ ከሆነ (Psiphonን ከእንደገና መጫን ሊያስፈልግ ይችላል።   ";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
 "FEEDBACK_COMMENTS_LABEL" = "አስተያየቶችዎ ";
@@ -71,7 +71,7 @@
 "PSIPHON_SETTINGS_PROXY_SECTION" = "ተዘዋዋሪ";
 
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
-"PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "የላይ ተኪ ተጠቀም ";
+"PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "የላይ ወኪል ተጠቀም ";
 
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_HOST" = "አስተናጋጅ አድራሻ ";
@@ -80,22 +80,22 @@
 "PSIPHON_SETTINGS_UPSTREAM_PORT" = "ወደብ";
 
 /* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "የተኪ ማረጋገጫን ተጠቀም ";
+"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "የወኪል ማረጋገጫን ተጠቀም ";
 
 /* Settings item text for upstream proxy authentication username. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "የተኪ የተጠቃሚ ስም ";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "የወኪል የተጠቃሚ ስም ";
 
 /* Placeholder text for the upstream proxy authentication username. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "የተጠቃሚ ስም ";
 
 /* Settings item text for upstream proxy authentication password. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "የተኪ የይለፍ ቃል ";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "የወኪል የይለፍ ቃል ";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "የይለፍ ቃል ";
 
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "የተኪ ጎራ ";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "የወኪል ጎራ ";
 
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "EXAMPLE_HOSTNAME" = "example.com";
