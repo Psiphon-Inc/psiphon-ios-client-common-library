@@ -23,22 +23,22 @@
 "FEEDBACK_FOOTER_DATA_COLLECTION" = "در صفحه‌ی %@ درباره‌ی داده‌هایی که ما جمع‌آوری می‌کنیم بیشتر بخوانید ";
 
 /* Feedback footer text. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_FOOTER_DIAGNOSTIC" = "لطفاً به خاطر داشته باشید که این داده‌‌های تشخیصی به هیچ عنوان هویت شما را آشکار نمی‌کند و به بهبود عملکرد سایفون کمک می‌کند.";
+"FEEDBACK_FOOTER_DIAGNOSTIC" = "لطفاً به خاطر داشته باشید که این داده‌‌های تشخیصی به هیچ عنوان هویت شما را آشکار نمی‌کند و به بهبود عملکرد Psiphon کمک می‌کند.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
 "FEEDBACK_FOOTER_EMAIL" = "اگر می‌خواهید تصویری از صفحه‌ موبایلتان برای ما بفرستید و فرم بالا کار نمی‌کند، آن را به آدرس  %@  ایمیل کنید.";
 
 /* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_INTRODUCTION" = "بازخورد‌های شما عملکرد سایفون را بهبود می‌بخشد!";
+"FEEDBACK_INTRODUCTION" = "بازخورد‌های شما عملکرد Psiphon را بهبود می‌بخشد!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "ارسال";
 
 /* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "سایفون گاهی \nوصل نمی‌شود یا \nبه اندازه کافی \nخوب کار نمی‌کند.";
+"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon گاهی \nوصل نمی‌شود یا \nبه اندازه کافی \nخوب کار نمی‌کند.";
 
 /* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_UP_TEXT" = "سایفون به‌ خوبی \nوصل می‌شود و\n کار می‌کند.";
+"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon به‌ خوبی \nوصل می‌شود و\n کار می‌کند.";
 
 /* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/fa/license.html";
@@ -63,6 +63,9 @@
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_AT" = "اتریش";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_AU" = "استرالیا";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_BE" = "بلژیک";
@@ -123,6 +126,9 @@
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_RO" = "رومانی";
+
+/* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
+"SERVER_REGION_RS" = "صربستان";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_SE" = "سوئد";

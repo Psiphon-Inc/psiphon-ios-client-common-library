@@ -16,8 +16,8 @@
 /*[UNTRANSLATED] Label for a settings item that will lead the user to some suggestions for improving a "bad" -- slow, unresponsive, etc. -- connection. This text should be kept short. */
 "SETTINGS_BAD_CONNECTION_SUBSETTINGS_LABEL" = "My connection is bad, help!";
 
-/*[UNTRANSLATED] Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
-"SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "Feedback";
+/* Settings item text. Leads to screen where user can send feedback about the app to Psiphon Inc. Should be kept short. */
+"SETTINGS_FEEDBACK_SUBSETTINGS_LABEL" = "การตอบสนอง";
 
 /*[UNTRANSLATED] Settings item text. Leads to a frequently asked questions page. */
 "SETTINGS_FAQ" = "FAQ";

@@ -6,7 +6,7 @@ platform :ios, '8.3'
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
 target 'PsiphonClientCommonLibrary_Example' do
-  pod 'InAppSettingsKit', :git => 'https://github.com/Psiphon-Inc/InAppSettingsKit.git', :commit => '598c498'
+  pod 'InAppSettingsKit', :git => 'https://github.com/Psiphon-Inc/InAppSettingsKit.git', :commit => '8bd203c'
   #pod 'InAppSettingsKit', :path => '../../InAppSettingsKit'
 
   pod 'PsiphonClientCommonLibrary', :path => '../'

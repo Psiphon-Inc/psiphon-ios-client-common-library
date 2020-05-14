@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PsiphonClientCommonLibrary'
-  s.version          = '1.2.3'
+  s.version          = '2.0.0'
   s.summary          = 'Psiphon iOS Shared Client Library.'
 
 # This description is used to generate tags and improve search results.
@@ -34,5 +34,5 @@ A shared library that encapsulates common client code used across different Psip
   }
 
   s.public_header_files = 'PsiphonClientCommonLibrary/Classes/**/*.h'
-  s.dependency 'InAppSettingsKit'
+  s.dependency 'InAppSettingsKit', "2.15"
 end

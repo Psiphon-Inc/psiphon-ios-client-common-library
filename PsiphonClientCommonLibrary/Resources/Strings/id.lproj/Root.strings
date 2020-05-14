@@ -49,29 +49,29 @@
 /* Explanatory text for the "Reinstall VPN profie" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
 "REINSTALL_VPN_PROFILE_FOOTER" = "Jika menekan tombol mulai/berhenti sepertinya tidak menghasilkan apa-apa, Anda mungkin perlu memasang ulang profil Psiphon VPN.";
 
-/*[UNTRANSLATED] On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
-"FEEDBACK_COMMENTS_LABEL" = "Your Comments";
+/* On the feedback screen, this is the label on the text box where the user can supply their comments that will be sent to Psiphon Inc. This text should be kept short. */
+"FEEDBACK_COMMENTS_LABEL" = "Komentar Anda";
 
-/*[UNTRANSLATED] On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
-"FEEDBACK_EMAIL_LABEL" = "Your Email Address";
+/* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
+"FEEDBACK_EMAIL_LABEL" = "Alamat surel Anda";
 
-/*[UNTRANSLATED] On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
-"FEEDBACK_EMAIL_PLACEHOLDER" = "Where can we respond to you?";
+/* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
+"FEEDBACK_EMAIL_PLACEHOLDER" = "Dimana kami bisa menjawab Anda?";
 
-/*[UNTRANSLATED] On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
-"FEEDBACK_DIAGNOSTIC_DATA_SECTION" = "Diagnostic Data";
+/* On the feedback screen, this is the label above the "Upload diagnostic data" option. This text should be kept short. */
+"FEEDBACK_DIAGNOSTIC_DATA_SECTION" = "Data Diagnosa";
 
-/*[UNTRANSLATED] On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
-"FEEDBACK_DIAGNOSTIC_DATA_LABEL" = "Upload diagnostic data";
+/* On the feedback screen, this is the label for the option that causes some diagnostic data to be send along with the feedback. The diagnostic data is stuff like OS version, app configuration, and logs indicating Psiphon connection info. This text should be kept short. */
+"FEEDBACK_DIAGNOSTIC_DATA_LABEL" = "Unggah data diagnosa";
 
-/*[UNTRANSLATED] Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
-"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "Timeouts";
+/* Settings sub-group text. The group contains 'Disable timeouts'. Refers to network request timeouts. Text should be kept short. */
+"PSIPHON_SETTINGS_TIMEOUTS_SECTION" = "Waktu habis";
 
 /*[UNTRANSLATED] Settings sub-group text. The group contains 'Use upstream proxy'. Text should be kept short. */
 "PSIPHON_SETTINGS_PROXY_SECTION" = "Proxy";
 
 /* Settings item text. User can configure Psiphon to a server connect through another proxy. So the proxy is 'upstream' of the client -- between the client and the server. Text should be kept short. */
-"PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "Menggunakan proxy upstream";
+"PSIPHON_SETTINGS_USE_UPSTREAM_LABEL" = "Menggunakan arus proxy";
 
 /* Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_HOST" = "Alamat host";
@@ -92,7 +92,7 @@
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Kata sandi proksi";
 
 /* Placeholder text for the upstream proxy authentication password. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "Pasword";
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "Kata sandi";
 
 /* Settings item text for upstream proxy authentication domain. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "Domain proksi";
@@ -113,23 +113,23 @@
 "PSIPHON_SETTINGS_UPSTREAM_HEADER_1" = "Atasan 1";
 
 /* Placeholder text for the name of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header name should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "Masukkan nama atasan";
+"PSIPHON_SETTINGS_ENTER_HEADER_NAME" = "Masukkan nama judul";
 
 /* Placeholder text for the value of an HTTP header which should be set and passed along to the upstream proxy. This should convey to the user that a header value should be used in this field. Text should be kept short. */
-"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "Masukkan nilai atasan";
+"PSIPHON_SETTINGS_ENTER_HEADER_VALUE" = "Masukkan nilai judul";
 
 /* Settings item text. Header text above the text boxes where the user configures the second of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "Atasan 2";
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_2" = "Judul 2";
 
 /* Settings item text. Header text above the text boxes where the user configures the third of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_3" = "Atasan 3";
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_3" = "Judul 3";
 
 /* Settings item text. Header text above the text boxes where the user configures the fourth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_4" = "Atasan 4";
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_4" = "Judul 4";
 
 /* Settings item text. Header text above the text boxes where the user configures the fifth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_5" = "Atasan 5";
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_5" = "Judul 5";
 
 /* Settings item text. Header text above the text boxes where the user configures the sixth of six custom headers to be passed along to the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_HEADER_6" = "Atasan 6";
+"PSIPHON_SETTINGS_UPSTREAM_HEADER_6" = "Judul 6";
 
