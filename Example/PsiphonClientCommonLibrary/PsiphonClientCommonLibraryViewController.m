@@ -111,8 +111,11 @@
 - (void)reloadAndOpenSettings {
 	__weak PsiphonClientCommonLibraryViewController *weakSelf = self;
 	[appSettingsViewController dismissViewControllerAnimated:NO completion:^{
-		appSettingsViewController = nil;
-		[weakSelf openPsiphonSettings];
+        __strong PsiphonClientCommonLibraryViewController *strongSelf = weakSelf;
+        if (strongSelf) {
+            strongSelf->appSettingsViewController = nil;
+            [strongSelf openPsiphonSettings];
+        }
 	}];
 }
 

@@ -238,8 +238,7 @@ BOOL linksEnabled;
 		targetViewController.showDoneButton = NO;
 		targetViewController.showCreditsFooter = NO; // Does not reload the tableview (but next setters do it)
 		targetViewController.title = specifier.title;
-
-		IASK_IF_IOS7_OR_GREATER(targetViewController.view.tintColor = self.view.tintColor;)
+        targetViewController.view.tintColor = self.view.tintColor;
 
 		[self.navigationController pushViewController:targetViewController animated:YES];
 	} else if ([specifier.key isEqualToString:kUpstreamProxyPort] || [specifier.key isEqualToString:kUpstreamProxyHostAddress]) {
@@ -297,30 +296,28 @@ BOOL linksEnabled;
 		return 0;
 #endif
 	}
-	IASK_IF_IOS7_OR_GREATER
-	(
-	 NSDictionary *rowHeights = @{UIContentSizeCategoryExtraSmall: @(44),
-								  UIContentSizeCategorySmall: @(44),
-								  UIContentSizeCategoryMedium: @(44),
-								  UIContentSizeCategoryLarge: @(44),
-								  UIContentSizeCategoryExtraLarge: @(47)};
-	 CGFloat rowHeight = (CGFloat)[rowHeights[UIApplication.sharedApplication.preferredContentSizeCategory] doubleValue];
 
-	 rowHeight = rowHeight != 0 ? rowHeight : 51;
+    NSDictionary *rowHeights = @{UIContentSizeCategoryExtraSmall: @(44),
+                                 UIContentSizeCategorySmall: @(44),
+                                 UIContentSizeCategoryMedium: @(44),
+                                 UIContentSizeCategoryLarge: @(44),
+                                 UIContentSizeCategoryExtraLarge: @(47)};
+    CGFloat rowHeight = (CGFloat)[rowHeights[UIApplication.sharedApplication.preferredContentSizeCategory] doubleValue];
 
-	 // Give multi-line cell more height per newline occurrence
-	 NSError *error = NULL;
-	 NSRegularExpression *newLineRegex = [NSRegularExpression regularExpressionWithPattern:@"\n" options:0 error:&error];
+    rowHeight = rowHeight != 0 ? rowHeight : 51;
 
-	 // Failed to compile/init regex
-	 if (error != NULL)
-	 return rowHeight;
+    // Give multi-line cell more height per newline occurrence
+    NSError *error = NULL;
+    NSRegularExpression *newLineRegex = [NSRegularExpression regularExpressionWithPattern:@"\n" options:0 error:&error];
 
-	 NSUInteger numberOfNewLines = [newLineRegex numberOfMatchesInString:specifier.title options:0 range:NSMakeRange(0, [specifier.title length])];
+    // Failed to compile/init regex
+    if (error != NULL) {
+        return rowHeight;
+    }
 
-	 return rowHeight + numberOfNewLines * 20;
-	 );
-	return 44;
+    NSUInteger numberOfNewLines = [newLineRegex numberOfMatchesInString:specifier.title options:0 range:NSMakeRange(0, [specifier.title length])];
+
+    return rowHeight + numberOfNewLines * 20;
 }
 
 - (void)IASKTextFieldDidEndEditing:(id)sender {

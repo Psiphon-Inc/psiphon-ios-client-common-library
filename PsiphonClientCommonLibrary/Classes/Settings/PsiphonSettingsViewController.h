@@ -19,7 +19,7 @@
 
 
 #import <UIKit/UIKit.h>
-#import "IASKAppSettingsViewController.h"
+#import <InAppSettingsKit/IASKAppSettingsViewController.h>
 #import "FeedbackViewController.h"
 #import "PsiphonClientCommonLibraryConstants.h"
 

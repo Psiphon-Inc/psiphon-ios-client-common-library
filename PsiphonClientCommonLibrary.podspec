@@ -34,5 +34,5 @@ A shared library that encapsulates common client code used across different Psip
   }
 
   s.public_header_files = 'PsiphonClientCommonLibrary/Classes/**/*.h'
-  s.dependency 'InAppSettingsKit'
+  s.dependency 'InAppSettingsKit', "2.15"
 end
