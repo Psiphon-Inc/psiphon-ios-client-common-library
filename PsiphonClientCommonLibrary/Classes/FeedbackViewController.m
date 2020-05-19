@@ -21,7 +21,7 @@
 #import "FeedbackThumbsCell.h"
 #import "FeedbackViewController.h"
 #import "IASKSettingsReader.h"
-#import "IASKTextViewCell.h"
+#import "IASKTextViewCellWithPlaceholder.h"
 #import "PsiphonClientCommonLibraryHelpers.h"
 
 #define kCommentsFrameHeight 44*3
@@ -36,7 +36,7 @@
 @implementation FeedbackViewController {
 	FeedbackThumbsCell *_thumbsCell;
 
-	IASKTextViewCell *_comments;
+	IASKTextViewCellWithPlaceholder *_comments;
 	NSString *_commentsPlaceholder;
 
 	IASKTextViewCell *_introCell;
@@ -93,7 +93,7 @@
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
 	NSInteger selectedThumbIndex = _thumbsCell.segmentedControl.selectedSegmentIndex;
-	NSString *comments = (_comments.textView.textColor == [UIColor blackColor]) ? _comments.textView.text: @""; // textview contains placeholder text, user has inputted nothing
+	NSString *comments = _comments.showingPlaceholder ? _comments.textView.text: @""; // textview contains placeholder text, user has inputted nothing
 	NSString *emailAddress = [userDefaults stringForKey:kEmailSpecifierKey];
 	BOOL uploadDiagnostics = [userDefaults boolForKey:kSendDiagnosticsSpecifierKey];
 
@@ -109,12 +109,9 @@
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForSpecifier:(IASKSpecifier*)specifier {
 	if ([specifier.key isEqualToString:kCommentsSpecifierKey]) {
 		if (_comments == NULL) {
-			_comments = [[IASKTextViewCell alloc] init];
-
-			[_comments.textView setDelegate:self];
+			_comments = [[IASKTextViewCellWithPlaceholder alloc] initWithPlaceholder:_commentsPlaceholder];
 			[_comments.textView setFont:_comments.textView.font];
 			[_comments.textView setScrollEnabled:YES];
-			[_comments.textView setText:_commentsPlaceholder];
 			[_comments.textView setTextColor:_greyPlaceholderColor];
 		}
 		[_comments setClipsToBounds:YES];
@@ -129,11 +126,23 @@
 			_introCell = [self createTextCell:_introText
 									 withFont:_headerAndFooterFont];
 		}
+		if (@available(iOS 13.0, *)) {
+			_introCell.textView.textColor = UIColor.labelColor;
+		} else {
+			// Fallback on earlier versions
+			_introCell.textView.textColor = UIColor.blackColor;
+		}
 		return _introCell;
 	} else if ([specifier.key isEqualToString:kFooterTextSpecifierKey]) {
 		if (_footerCell == NULL) {
 			_footerCell = [self createTextCell:_footerText
 									  withFont:_headerAndFooterFont];
+		}
+		if (@available(iOS 13.0, *)) {
+			_footerCell.textView.textColor = UIColor.secondaryLabelColor;
+		} else {
+			// Fallback on earlier versions
+			_footerCell.textView.textColor = UIColor.lightGrayColor ;
 		}
 		return _footerCell;
 	}
@@ -279,41 +288,6 @@
 	}
 	[self.navigationController dismissViewControllerAnimated:YES completion:nil];
 	return NO;
-}
-
-- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
-{
-	if (_comments != NULL && textView == _comments.textView) { // Clear placeholder text when editing begins
-		if (textView.textColor != [UIColor blackColor]) {
-			[textView setText:@""];
-			[textView setTextColor:[UIColor blackColor]];
-		}
-	}
-
-	return YES;
-}
-
-- (void)textViewDidChange:(UITextView *)textView
-{
-	if (_comments != NULL && textView == _comments.textView) { // Re-add placeholder text and remove focus if user removes all inputted text
-		if (textView.text.length == 0){
-			[textView setText:_commentsPlaceholder];
-			[textView setTextColor:_greyPlaceholderColor];
-			[textView resignFirstResponder];
-		}
-	}
-}
-
-- (BOOL)textViewShouldEndEditing:(UITextView *)textView
-{
-	if (_comments != NULL && textView == _comments.textView) { // Re-add placeholder if focus changes and field is empty
-		if (textView.text.length == 0){
-			[textView setText:_commentsPlaceholder];
-			[textView setTextColor:_greyPlaceholderColor];
-			[textView resignFirstResponder];
-		}
-	}
-	return YES;
 }
 
 #pragma mark - Getters

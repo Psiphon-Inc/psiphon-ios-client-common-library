@@ -175,7 +175,19 @@
 	[image drawInRect:CGRectMake(0.5 * ( width / 2 - image.size.width ), imageYOffset, image.size.width, image.size.height)];
 
 	// Draw text on new image below the provided image
-	[text drawInRect:CGRectMake(0.5 * ( width / 2  - textWidth ), _maxImageHeight + kTopToImageOffset + kImageToTextOffset, textWidth, r.size.height) withAttributes:@{NSFontAttributeName: font, NSParagraphStyleAttributeName: style}];
+	UIColor *labelColor;
+	if (@available(iOS 13.0, *)) {
+		labelColor = UIColor.labelColor;
+	} else {
+		// Fallback on earlier versions
+		labelColor = UIColor.blackColor;
+	}
+
+	CGRect textRect = CGRectMake(0.5 * ( width / 2  - textWidth ), _maxImageHeight + kTopToImageOffset + kImageToTextOffset, textWidth, r.size.height);
+	[text drawInRect:textRect
+	  withAttributes:@{NSFontAttributeName: font,
+					   NSParagraphStyleAttributeName: style,
+					   NSForegroundColorAttributeName: labelColor}];
 
 	// Return the rendered image
 	UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
