@@ -37,15 +37,12 @@
 	FeedbackThumbsCell *_thumbsCell;
 
 	IASKTextViewCellWithPlaceholder *_comments;
-	NSString *_commentsPlaceholder;
 
 	IASKTextViewCell *_introCell;
 	IASKTextViewCell *_footerCell;
 	NSAttributedString *_introText;
 	NSAttributedString *_footerText;
 	UIFont *_headerAndFooterFont;
-
-	UIColor *_greyPlaceholderColor;
 }
 
 - (void)viewDidLoad
@@ -71,10 +68,6 @@
 	_headerAndFooterFont = [UIFont fontWithName:@"HelveticaNeue" size:14.0f];
 	_introText = [self generateIntroString];
 	_footerText = [self generateFooterString];
-
-	// Comments textView
-	_greyPlaceholderColor = [[UIColor alloc] initWithRed:199.0/255 green:199.0/255 blue:205.0/255 alpha:1];
-	_commentsPlaceholder = NSLocalizedStringWithDefaultValue(@"FEEDBACK_COMMENTS_PLACEHOLDER", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"What's on your mind? Please leave us your feedback", @"Comments section placeholder text");
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -109,10 +102,14 @@
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForSpecifier:(IASKSpecifier*)specifier {
 	if ([specifier.key isEqualToString:kCommentsSpecifierKey]) {
 		if (_comments == NULL) {
-			_comments = [[IASKTextViewCellWithPlaceholder alloc] initWithPlaceholder:_commentsPlaceholder];
+			_comments = [[IASKTextViewCellWithPlaceholder alloc]
+						 initWithPlaceholder:NSLocalizedStringWithDefaultValue(@"FEEDBACK_COMMENTS_PLACEHOLDER",
+																			   nil,
+																			   [PsiphonClientCommonLibraryHelpers commonLibraryBundle],
+																			   @"What's on your mind? Please leave us your feedback",
+																			   @"Comments section placeholder text")];
 			[_comments.textView setFont:_comments.textView.font];
 			[_comments.textView setScrollEnabled:YES];
-			[_comments.textView setTextColor:_greyPlaceholderColor];
 		}
 		[_comments setClipsToBounds:YES];
 		return _comments;
