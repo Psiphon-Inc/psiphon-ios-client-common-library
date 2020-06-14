@@ -86,7 +86,7 @@
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
 	NSInteger selectedThumbIndex = _thumbsCell.segmentedControl.selectedSegmentIndex;
-	NSString *comments = _comments.showingPlaceholder ? _comments.textView.text: @""; // textview contains placeholder text, user has inputted nothing
+	NSString *comments = _comments.showingPlaceholder ? @"" : _comments.textView.text; // textview contains placeholder text, user has inputted nothing
 	NSString *emailAddress = [userDefaults stringForKey:kEmailSpecifierKey];
 	BOOL uploadDiagnostics = [userDefaults boolForKey:kSendDiagnosticsSpecifierKey];
 
