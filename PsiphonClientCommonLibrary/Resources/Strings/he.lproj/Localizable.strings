@@ -8,7 +8,7 @@
 "DONE_ACTION" = "סיים";
 
 /* FAQ link text */
-"FAQ_LINK_TEXT" = "שאלות ותשובות שכיחות";
+"FAQ_LINK_TEXT" = "שאלות נפוצות";
 
 /* External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french. */
 "FAQ_URL" = "https://psiphon.ca/he/faq.html";
@@ -26,7 +26,7 @@
 "FEEDBACK_FOOTER_DIAGNOSTIC" = "אנא שים לב שנתונים אבחנתיים אלו אינם מזהים אותך, והם עוזרים לנו להשאיר את Psiphon רץ בצורה חלקה.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "אם הצורה למעלה אינה עובדת או שאתה רוצה לשלוח צילומי מסך, אנא שלח לנו דוא\"ל בכתובת %@";
+"FEEDBACK_FOOTER_EMAIL" = "אם הצורה למעלה אינה עובדת או שאתה רוצה לשלוח צילומי מסך, אנא שלח לנו דוא״ל בכתובת %@";
 
 /* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
 "FEEDBACK_INTRODUCTION" = "המשוב שלך הופך את Psiphon לטוב יותר!";
@@ -47,10 +47,10 @@
 "LOGS_TITLE" = "רשומות";
 
 /* Shown when the device is not configured for sending email. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED" = "דוא\"ל לא הוגדר";
+"MAIL_NOT_CONFIGURED" = "דוא״ל לא תוצר";
 
 /* Description for the 'Mail not configured' message. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED_DESC" = "מכשיר זה אינו מוגדר לשליחת דוא\"ל. אנא הגדר את הגדרות הדוא\"ל ביישום הגדרות.";
+"MAIL_NOT_CONFIGURED_DESC" = "מכשיר זה אינו מתוצר לשליחת דוא״ל. אנא תצר את הגדרות הדוא״ל ביישום הגדרות.";
 
 /* Alert OK Button. (InAppSettingsKit) */
 "OK_BUTTON" = "אישור";
@@ -77,10 +77,10 @@
 "SERVER_REGION_CA" = "קנדה";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_CH" = "שוויצריה";
+"SERVER_REGION_CH" = "שוויץ";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_CZ" = "קזחסטן";
+"SERVER_REGION_CZ" = "צ'כיה";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_DE" = "גרמניה";
@@ -98,10 +98,10 @@
 "SERVER_REGION_FR" = "צרפת";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_GB" = "בריטניה";
+"SERVER_REGION_GB" = "הממלכה המאוחדת";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
-"SERVER_REGION_HK" = "הונג-קונג";
+"SERVER_REGION_HK" = "הונג קונג";
 
 /* Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country. */
 "SERVER_REGION_HU" = "הונגריה";

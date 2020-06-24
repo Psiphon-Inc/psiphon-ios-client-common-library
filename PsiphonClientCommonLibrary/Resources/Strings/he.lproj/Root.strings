@@ -53,7 +53,7 @@
 "FEEDBACK_COMMENTS_LABEL" = "ההערות שלך";
 
 /* On the feedback screen, this is the label on the text box where the user can supply their email address along with their feedback that will be sent to Psiphon Inc. This text should be kept short. */
-"FEEDBACK_EMAIL_LABEL" = "כתובת הדוא\"ל שלך";
+"FEEDBACK_EMAIL_LABEL" = "כתובת הדוא״ל שלך";
 
 /* On the feedback screen, this is the placeholder text for the email address text field. This text should be kept short. */
 "FEEDBACK_EMAIL_PLACEHOLDER" = "איפה אנחנו יכולים להגיב לך?";
