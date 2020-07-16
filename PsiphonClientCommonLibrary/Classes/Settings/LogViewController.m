@@ -41,7 +41,12 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-	[self.view setBackgroundColor:UIColor.whiteColor];
+	if (@available(iOS 13.0, *)) {
+		[self.view setBackgroundColor:UIColor.secondarySystemBackgroundColor];
+	} else {
+		// Fallback on earlier versions
+		[self.view setBackgroundColor:UIColor.whiteColor];
+	}
 	[self registerForKeyboardNotifications];
 
 	self->diagnosticEntries = [[NSMutableArray alloc] init];
@@ -53,8 +58,13 @@
 	[self.view addSubview:self->caseSensitiveButton];
 
 	[self->caseSensitiveButton setTitle:@"Aa" forState:UIControlStateNormal];
-	[self->caseSensitiveButton setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
-	[self->caseSensitiveButton setTitleColor:UIColor.blueColor forState:UIControlStateSelected];
+	if (@available(iOS 13.0, *)) {
+		[self->caseSensitiveButton setTitleColor:UIColor.quaternaryLabelColor forState:UIControlStateNormal];
+		[self->caseSensitiveButton setTitleColor:UIColor.labelColor forState:UIControlStateSelected];
+	} else {
+		[self->caseSensitiveButton setTitleColor:UIColor.lightTextColor forState:UIControlStateNormal];
+		[self->caseSensitiveButton setTitleColor:UIColor.blackColor forState:UIControlStateSelected];
+	}
 	[self->caseSensitiveButton setAlpha:0.74];
 	self->caseSensitiveButton.translatesAutoresizingMaskIntoConstraints = NO;
 
@@ -68,6 +78,12 @@
 	[self.view addSubview:self->searchBar];
 
 	self->searchBar.font = [UIFont systemFontOfSize:15];
+	if (@available(iOS 13.0, *)) {
+		self->searchBar.textColor = UIColor.labelColor;
+	} else {
+		// Fallback on earlier versions
+		self->searchBar.textColor = UIColor.whiteColor;
+	}
 	self->searchBar.placeholder = @"search";
 	self->searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
 	self->searchBar.keyboardType = UIKeyboardTypeDefault;
