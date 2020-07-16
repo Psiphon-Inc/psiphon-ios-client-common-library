@@ -62,7 +62,7 @@
 		[self->caseSensitiveButton setTitleColor:UIColor.quaternaryLabelColor forState:UIControlStateNormal];
 		[self->caseSensitiveButton setTitleColor:UIColor.labelColor forState:UIControlStateSelected];
 	} else {
-		[self->caseSensitiveButton setTitleColor:UIColor.lightTextColor forState:UIControlStateNormal];
+		[self->caseSensitiveButton setTitleColor:UIColor.lightGrayColor forState:UIControlStateNormal];
 		[self->caseSensitiveButton setTitleColor:UIColor.blackColor forState:UIControlStateSelected];
 	}
 	[self->caseSensitiveButton setAlpha:0.74];
@@ -82,7 +82,7 @@
 		self->searchBar.textColor = UIColor.labelColor;
 	} else {
 		// Fallback on earlier versions
-		self->searchBar.textColor = UIColor.whiteColor;
+		self->searchBar.textColor = UIColor.blackColor;
 	}
 	self->searchBar.placeholder = @"search";
 	self->searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
