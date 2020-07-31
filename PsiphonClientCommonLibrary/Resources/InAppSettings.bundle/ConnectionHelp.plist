@@ -10,16 +10,15 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>FooterText</key>
-			<string>CONNECTION_HELP_FASTEST_COUNTRY_FOOTER</string>
+			<string>CONNECTION_HELP_BEST_PERFORMANCE_FOOTER</string>
 			<key>FooterTextDefault</key>
-			<string>Changing your region to “Fastest Country” increases your chances of getting connected.</string>
+			<string>Changing your region to “Best performance” increases your chances of getting connected.</string>
 			<key>FooterTextDescription</key>
-			<string>Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page.</string>
+			<string>Explanatory text for the &quot;Select server region&quot; setting on the &quot;My connection is bad, help!&quot; settings page.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 		</dict>
 		<dict>
-			<!-- String defined in Root.inApp.plist -->
 			<key>Title</key>
 			<string>CHANGE_REGION</string>
 			<key>BundleTable</key>
@@ -39,7 +38,7 @@
 			<key>FooterTextDefault</key>
 			<string>Disabling timeouts may help you stay connected on slower networks.</string>
 			<key>FooterTextDescription</key>
-			<string>Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page.</string>
+			<string>Explanatory text for the &quot;Disable Timeouts&quot; setting on the &quot;My connection is bad, help!&quot; settings page.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 		</dict>
@@ -53,7 +52,7 @@
 			<key>TitleDefault</key>
 			<string>Disable timeouts</string>
 			<key>TitleDescription</key>
-			<string>Settings item text, under 'Psiphon settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short.</string>
+			<string>Settings item text, under &apos;Psiphon settings&apos;. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>
@@ -69,7 +68,7 @@
 			<key>FooterTextDefault</key>
 			<string>Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.</string>
 			<key>FooterTextDescription</key>
-			<string>Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'.</string>
+			<string>Explanatory text for the &quot;Reconnect to the Psiphon server&quot; command on the &quot;My connection is bad, help!&quot; settings page. DO NOT translate the word &apos;Psiphon&apos;.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 		</dict>
@@ -81,7 +80,7 @@
 			<key>TitleDefault</key>
 			<string>Reconnect to the Psiphon server</string>
 			<key>TitleDescription</key>
-			<string>Label for a command on the "My connection is bad, help!" settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word 'Psiphon'.</string>
+			<string>Label for a command on the &quot;My connection is bad, help!&quot; settings page that causes Psiphon to close its server connection and open a new one. DO NOT translate the word &apos;Psiphon&apos;.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 			<key>Type</key>

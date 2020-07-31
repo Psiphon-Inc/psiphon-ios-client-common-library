@@ -10,11 +10,11 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>FooterText</key>
-			<string>CONNECTION_HELP_FASTEST_COUNTRY_FOOTER</string>
+			<string>CONNECTION_HELP_BEST_PERFORMANCE_FOOTER</string>
 			<key>FooterTextDefault</key>
-			<string>Changing your region to “Fastest Country” increases your chances of getting connected.</string>
+			<string>Changing your region to “Best performance” increases your chances of getting connected.</string>
 			<key>FooterTextDescription</key>
-			<string>Explanatory text for the &quot;Change region&quot; setting on the &quot;My connection is bad, help!&quot; settings page.</string>
+			<string>Explanatory text for the &quot;Select server region&quot; setting on the &quot;My connection is bad, help!&quot; settings page.</string>
 			<key>BundleTable</key>
 			<string>PsiphonClientCommonLibrary</string>
 		</dict>
