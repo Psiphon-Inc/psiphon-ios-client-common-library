@@ -83,7 +83,7 @@ There are three `.plist` files in this project (all under `Example/PsiphonClient
 ```xml
 <dict>
     <key>Title</key>
-    <string>CHANGE_REGION</string>
+    <string>SELECT_SERVER_REGION</string>
     <key>TitleDefault</key>
     <string>Select server region</string>
     <key>TitleDescription</key>
