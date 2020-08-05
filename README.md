@@ -83,9 +83,9 @@ There are three `.plist` files in this project (all under `Example/PsiphonClient
 ```xml
 <dict>
     <key>Title</key>
-    <string>CHANGE_REGION</string>
+    <string>SELECT_SERVER_REGION</string>
     <key>TitleDefault</key>
-    <string>Change Region</string>
+    <string>Select server region</string>
     <key>TitleDescription</key>
     <string>Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short.</string>
     <key>BundleTable</key>
