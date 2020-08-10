@@ -31,8 +31,11 @@
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "关于";
 
-/* Explanatory text for the "Change region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_FASTEST_COUNTRY_FOOTER" = "将您的区域改为“最快的国家”可增加您连接成功的机会。";
+/* Explanatory text for the "Select server region" setting on the "My connection is bad, help!" settings page. */
+"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "将您的区域改为“最佳性能”可增加您连接成功的机会。";
+
+/* Title for screen that allows user to select their desired server region. */
+"SELECT_SERVER_REGION" = "选择服务器地区";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "关闭超时有助于在低速网络中保持连接。";
