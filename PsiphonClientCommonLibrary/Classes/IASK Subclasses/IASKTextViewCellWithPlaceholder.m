@@ -26,68 +26,68 @@
 @end
 
 @implementation IASKTextViewCellWithPlaceholder {
-	NSString *placeholder;
+    NSString *placeholder;
 }
 
 - (instancetype)initWithPlaceholder:(NSString*)placeholder {
-	self = [super init];
-	if (self) {
-		self->placeholder = placeholder;
-		self.textView.delegate = self;
-		[self showPlaceholder];
-	}
-	return self;
+    self = [super init];
+    if (self) {
+        self->placeholder = placeholder;
+        self.textView.delegate = self;
+        [self showPlaceholder];
+    }
+    return self;
 }
 
 #pragma mark - UITextView delegate methods
 
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView
 {
-	if (self.showingPlaceholder == TRUE) {
-		self.textView.text = @"";
-		if (@available(iOS 13.0, *)) {
-			self.textView.textColor = UIColor.labelColor;
-		} else {
-			// Fallback on earlier versions
-			self.textView.textColor = UIColor.blackColor;
-		}
-		self.showingPlaceholder = FALSE;
-	}
+    if (self.showingPlaceholder == TRUE) {
+        self.textView.text = @"";
+        if (@available(iOS 13.0, *)) {
+            self.textView.textColor = UIColor.labelColor;
+        } else {
+            // Fallback on earlier versions
+            self.textView.textColor = UIColor.blackColor;
+        }
+        self.showingPlaceholder = FALSE;
+    }
 
-	return YES;
+    return YES;
 }
 
 - (void)textViewDidChange:(UITextView *)textView
 {
-	[self showPlaceholderIfInputEmpty];
+    [self showPlaceholderIfInputEmpty];
 }
 
 - (BOOL)textViewShouldEndEditing:(UITextView *)textView
 {
-	[self showPlaceholderIfInputEmpty];
-	return YES;
+    [self showPlaceholderIfInputEmpty];
+    return YES;
 }
 
 #pragma mark - Helpers
 
 - (void)showPlaceholderIfInputEmpty {
-	if (self.showingPlaceholder == FALSE) {
-		if (self.textView.text.length == 0) {
-			[self showPlaceholder];
-			[self.textView resignFirstResponder];
-		}
-	}
+    if (self.showingPlaceholder == FALSE) {
+        if (self.textView.text.length == 0) {
+            [self showPlaceholder];
+            [self.textView resignFirstResponder];
+        }
+    }
 }
 
 - (void)showPlaceholder {
-	self.textView.text = self->placeholder;
-	self.showingPlaceholder = TRUE;
-	if (@available(iOS 13.0, *)) {
-		self.textView.textColor = UIColor.tertiaryLabelColor;
-	} else {
-		// Fallback on earlier versions
-		self.textView.textColor = UIColor.lightGrayColor;
-	}
+    self.textView.text = self->placeholder;
+    self.showingPlaceholder = TRUE;
+    if (@available(iOS 13.0, *)) {
+        self.textView.textColor = UIColor.tertiaryLabelColor;
+    } else {
+        // Fallback on earlier versions
+        self.textView.textColor = UIColor.lightGrayColor;
+    }
 }
 
 @end

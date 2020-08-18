@@ -33,12 +33,12 @@
 @implementation ProxySettings
 
 - (id)initWithSettings:(NSString*)host port:(NSString*)port {
-	self = [super init];
-	if (self) {
-		self.proxyHost = host;
-		self.proxyPort = port;
-	}
-	return self;
+    self = [super init];
+    if (self) {
+        self.proxyHost = host;
+        self.proxyPort = port;
+    }
+    return self;
 }
 
 @end
@@ -57,13 +57,13 @@
 @implementation ProxyCredentials
 
 - (id)initWithCredentials:(NSString*)username password:(NSString*)password domain:(NSString*)domain {
-	self = [super init];
-	if (self) {
-		self.username = username;
-		self.password = password;
-		self.domain = domain;
-	}
-	return self;
+    self = [super init];
+    if (self) {
+        self.username = username;
+        self.password = password;
+        self.domain = domain;
+    }
+    return self;
 }
 
 @end
@@ -78,12 +78,12 @@
 @implementation ProxyHeader
 
 - (id)initWithNameAndValue:(NSString*)name value:(NSString*)value {
-	self = [super init];
-	if (self) {
-		self.name = name;
-		self.value = value;
-	}
-	return self;
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.value = value;
+    }
+    return self;
 }
 
 @end
@@ -94,111 +94,111 @@
 
 + (instancetype)sharedInstance
 {
-	static dispatch_once_t once;
-	static id sharedInstance;
-	dispatch_once(&once, ^{
-		sharedInstance = [[self alloc] init];
-	});
-	return sharedInstance;
+    static dispatch_once_t once;
+    static id sharedInstance;
+    dispatch_once(&once, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
 }
 
 + (NSArray<NSString*>*)defaultSettingsKeys {
-	return @[kUpstreamProxyHostAddress, kUpstreamProxyPort, kUseProxyAuthentication];
+    return @[kUpstreamProxyHostAddress, kUpstreamProxyPort, kUseProxyAuthentication];
 }
 
 + (NSArray<NSString*>*)authenticationKeys {
-	return @[kProxyUsername, kProxyPassword, kProxyDomain];
+    return @[kProxyUsername, kProxyPassword, kProxyDomain];
 }
 
 + (NSArray<NSString*>*)customHeaderKeys {
-	static dispatch_once_t once;
-	static NSArray<NSString*> *customHeaderKeys;
-	__weak UpstreamProxySettings *safeSelf = [UpstreamProxySettings sharedInstance];
-	dispatch_once(&once, ^{
-		NSMutableArray *headerKeys = [[NSMutableArray alloc] initWithCapacity:kMaxUpstreamProxyCustomHeaders];
+    static dispatch_once_t once;
+    static NSArray<NSString*> *customHeaderKeys;
+    __weak UpstreamProxySettings *safeSelf = [UpstreamProxySettings sharedInstance];
+    dispatch_once(&once, ^{
+        NSMutableArray *headerKeys = [[NSMutableArray alloc] initWithCapacity:kMaxUpstreamProxyCustomHeaders];
 
-		for (int i = 0; i < kMaxUpstreamProxyCustomHeaders; i++) {
-			[headerKeys addObject:[safeSelf getHeaderSeparatorKeyN:i]];
-			[headerKeys addObject:[safeSelf getHeaderNameKeyN:i]];
-			[headerKeys addObject:[safeSelf getHeaderValueKeyN:i]];
-		}
-		customHeaderKeys = [NSArray arrayWithArray:headerKeys];
-	});
-	return customHeaderKeys;
+        for (int i = 0; i < kMaxUpstreamProxyCustomHeaders; i++) {
+            [headerKeys addObject:[safeSelf getHeaderSeparatorKeyN:i]];
+            [headerKeys addObject:[safeSelf getHeaderNameKeyN:i]];
+            [headerKeys addObject:[safeSelf getHeaderValueKeyN:i]];
+        }
+        customHeaderKeys = [NSArray arrayWithArray:headerKeys];
+    });
+    return customHeaderKeys;
 }
 
 - (BOOL)getUseCustomProxySettings {
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kUseUpstreamProxy];
+    return [[NSUserDefaults standardUserDefaults] boolForKey:kUseUpstreamProxy];
 }
 
 - (NSString*)getCustomProxyHost {
-	NSString *hostAddress = [[NSUserDefaults standardUserDefaults] stringForKey:kUpstreamProxyHostAddress];
-	return hostAddress.length == 0 ? @"" : hostAddress;
+    NSString *hostAddress = [[NSUserDefaults standardUserDefaults] stringForKey:kUpstreamProxyHostAddress];
+    return hostAddress.length == 0 ? @"" : hostAddress;
 }
 
 - (NSString*)getCustomProxyPort {
-	NSString *proxyPort = [[NSUserDefaults standardUserDefaults] stringForKey:kUpstreamProxyPort];
-	return proxyPort.length == 0 ? @"" : proxyPort;
+    NSString *proxyPort = [[NSUserDefaults standardUserDefaults] stringForKey:kUpstreamProxyPort];
+    return proxyPort.length == 0 ? @"" : proxyPort;
 }
 
 - (BOOL)getUseProxyAuthentication {
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kUseProxyAuthentication];
+    return [[NSUserDefaults standardUserDefaults] boolForKey:kUseProxyAuthentication];
 }
 
 - (NSString*)getProxyUsername {
-	return [[NSUserDefaults standardUserDefaults] stringForKey:kProxyUsername];
+    return [[NSUserDefaults standardUserDefaults] stringForKey:kProxyUsername];
 }
 
 - (NSString*)getProxyPassword {
-	return [[NSUserDefaults standardUserDefaults] stringForKey:kProxyPassword];
+    return [[NSUserDefaults standardUserDefaults] stringForKey:kProxyPassword];
 }
 
 - (NSString*)getProxyDomain {
-	return [[NSUserDefaults standardUserDefaults] stringForKey:kProxyDomain];
+    return [[NSUserDefaults standardUserDefaults] stringForKey:kProxyDomain];
 }
 
 - (ProxySettings*)getProxySettings {
-	if (![self getUseCustomProxySettings]) {
-		return nil;
-	}
+    if (![self getUseCustomProxySettings]) {
+        return nil;
+    }
 
-	NSString *proxyHost = [self getCustomProxyHost];
-	NSString *proxyPort = [self getCustomProxyPort];
+    NSString *proxyHost = [self getCustomProxyHost];
+    NSString *proxyPort = [self getCustomProxyPort];
 
-	if (proxyHost.length == 0) {
-		return nil;
-	}
-	if (proxyPort.length == 0) {
-		return nil;
-	}
+    if (proxyHost.length == 0) {
+        return nil;
+    }
+    if (proxyPort.length == 0) {
+        return nil;
+    }
 
-	ProxySettings *proxySettings = [[ProxySettings alloc] initWithSettings:proxyHost port:proxyPort];
+    ProxySettings *proxySettings = [[ProxySettings alloc] initWithSettings:proxyHost port:proxyPort];
 
-	return proxySettings;
+    return proxySettings;
 }
 
 - (ProxyCredentials*)getProxyCredentials {
-	if (![self getUseProxyAuthentication]) {
-		return nil;
-	}
+    if (![self getUseProxyAuthentication]) {
+        return nil;
+    }
 
-	NSString *username = [self getProxyUsername];
-	NSString *password = [self getProxyPassword];
-	NSString *domain = [self getProxyDomain];
+    NSString *username = [self getProxyUsername];
+    NSString *password = [self getProxyPassword];
+    NSString *domain = [self getProxyDomain];
 
-	NSCharacterSet *whitespace = [NSCharacterSet whitespaceCharacterSet];
+    NSCharacterSet *whitespace = [NSCharacterSet whitespaceCharacterSet];
 
-	if (username.length == 0 || [username stringByTrimmingCharactersInSet:whitespace].length == 0) {
-		return nil;
-	}
-	if (password.length == 0 || [password stringByTrimmingCharactersInSet:whitespace].length == 0) {
-		return nil;
-	}
-	if (domain.length == 0 || [domain stringByTrimmingCharactersInSet:whitespace].length == 0) {
-		return [[ProxyCredentials alloc] initWithCredentials:username password:password domain:@""];
-	}
+    if (username.length == 0 || [username stringByTrimmingCharactersInSet:whitespace].length == 0) {
+        return nil;
+    }
+    if (password.length == 0 || [password stringByTrimmingCharactersInSet:whitespace].length == 0) {
+        return nil;
+    }
+    if (domain.length == 0 || [domain stringByTrimmingCharactersInSet:whitespace].length == 0) {
+        return [[ProxyCredentials alloc] initWithCredentials:username password:password domain:@""];
+    }
 
-	return [[ProxyCredentials alloc] initWithCredentials:username password:password domain:domain];
+    return [[ProxyCredentials alloc] initWithCredentials:username password:password domain:domain];
 }
 
 // Returns a tunnel-core compatible proxy URL for the
@@ -207,109 +207,109 @@
 //       http://user:password@proxyhost:8080,
 //       http://user%20name:pass%20word@proxyhost:12345, etc.
 - (NSString*)getUpstreamProxyUrl {
-	ProxySettings *proxySettings = [self getProxySettings];
+    ProxySettings *proxySettings = [self getProxySettings];
 
-	if (proxySettings == nil) {
-		return @"";
-	}
+    if (proxySettings == nil) {
+        return @"";
+    }
 
-	NSMutableString *url = [[NSMutableString alloc] initWithString:@"http://"];
+    NSMutableString *url = [[NSMutableString alloc] initWithString:@"http://"];
 
-	ProxyCredentials *credentials = [self getProxyCredentials];
+    ProxyCredentials *credentials = [self getProxyCredentials];
 
-	if (credentials != nil) {
-		if ([credentials.domain length] != 0) {
-			NSString *unreserved = @"-._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-			NSString *subdelims = @"!$&'(/)*+,;=";
-			NSString *domainAllowed = [unreserved stringByAppendingString:subdelims];
-			NSCharacterSet *domainAllowedCharSet =
-				[NSCharacterSet characterSetWithCharactersInString:domainAllowed];
-			NSString *encodedDomain =
-				[credentials.domain stringByAddingPercentEncodingWithAllowedCharacters:domainAllowedCharSet];
-			[url appendString:encodedDomain];
-			[url appendString:@"%5C"]; // URL encoding of "\"
-		}
-		NSString *encodedUsername =
-			[credentials.username stringByAddingPercentEncodingWithAllowedCharacters:
-			 NSCharacterSet.URLUserAllowedCharacterSet];
-		[url appendString:encodedUsername];
-		[url appendString:@":"];
-		NSString *encodedPassword =
-			[credentials.password stringByAddingPercentEncodingWithAllowedCharacters:
-			 NSCharacterSet.URLPasswordAllowedCharacterSet];
-		[url appendString:encodedPassword];
-		[url appendString:@"@"];
-	}
+    if (credentials != nil) {
+        if ([credentials.domain length] != 0) {
+            NSString *unreserved = @"-._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            NSString *subdelims = @"!$&'(/)*+,;=";
+            NSString *domainAllowed = [unreserved stringByAppendingString:subdelims];
+            NSCharacterSet *domainAllowedCharSet =
+                [NSCharacterSet characterSetWithCharactersInString:domainAllowed];
+            NSString *encodedDomain =
+                [credentials.domain stringByAddingPercentEncodingWithAllowedCharacters:domainAllowedCharSet];
+            [url appendString:encodedDomain];
+            [url appendString:@"%5C"]; // URL encoding of "\"
+        }
+        NSString *encodedUsername =
+            [credentials.username stringByAddingPercentEncodingWithAllowedCharacters:
+             NSCharacterSet.URLUserAllowedCharacterSet];
+        [url appendString:encodedUsername];
+        [url appendString:@":"];
+        NSString *encodedPassword =
+            [credentials.password stringByAddingPercentEncodingWithAllowedCharacters:
+             NSCharacterSet.URLPasswordAllowedCharacterSet];
+        [url appendString:encodedPassword];
+        [url appendString:@"@"];
+    }
 
-	[url appendString:proxySettings.proxyHost];
-	[url appendString:@":"];
-	[url appendString:proxySettings.proxyPort];
+    [url appendString:proxySettings.proxyHost];
+    [url appendString:@":"];
+    [url appendString:proxySettings.proxyPort];
 
-	return url;
+    return url;
 }
 
 - (BOOL)getUseCustomHeaders {
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kUseUpstreamProxyCustomHeaders];
+    return [[NSUserDefaults standardUserDefaults] boolForKey:kUseUpstreamProxyCustomHeaders];
 }
 
 - (NSString*)getHeaderSeparatorKeyN:(int)n {
-	NSString *key = [kUpstreamProxyCustomHeader stringByAppendingString:[NSString stringWithFormat:@"%i", n, nil]];
-	return key;
+    NSString *key = [kUpstreamProxyCustomHeader stringByAppendingString:[NSString stringWithFormat:@"%i", n, nil]];
+    return key;
 }
 
 - (NSString*)getHeaderNameKeyN:(int)n {
-	NSString *key = [kUpstreamProxyCustomHeaderName stringByAppendingString:[NSString stringWithFormat:@"%i", n, nil]];
-	return key;
+    NSString *key = [kUpstreamProxyCustomHeaderName stringByAppendingString:[NSString stringWithFormat:@"%i", n, nil]];
+    return key;
 }
 
 - (NSString*)getHeaderValueKeyN:(int)n {
-	NSString *key = [kUpstreamProxyCustomHeaderValue stringByAppendingString:[NSString stringWithFormat:@"%i", n, nil]];
-	return key;
+    NSString *key = [kUpstreamProxyCustomHeaderValue stringByAppendingString:[NSString stringWithFormat:@"%i", n, nil]];
+    return key;
 }
 
 - (ProxyHeader*)getHeaderN:(int)n {
-	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-	NSString *name = [userDefaults stringForKey:[self getHeaderNameKeyN:n]];
-	NSString *value = [userDefaults stringForKey:[self getHeaderValueKeyN:n]];
-	if (![name length]) {
-		return nil;
-	} else if (value == nil) {
-		value = @"";
-	}
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *name = [userDefaults stringForKey:[self getHeaderNameKeyN:n]];
+    NSString *value = [userDefaults stringForKey:[self getHeaderValueKeyN:n]];
+    if (![name length]) {
+        return nil;
+    } else if (value == nil) {
+        value = @"";
+    }
 
-	return [[ProxyHeader alloc] initWithNameAndValue:name value:value];
+    return [[ProxyHeader alloc] initWithNameAndValue:name value:value];
 }
 
 - (NSArray<ProxyHeader*>*)getHeaders {
-	if (![self getUseCustomHeaders]) {
-		return nil;
-	}
+    if (![self getUseCustomHeaders]) {
+        return nil;
+    }
 
-	NSMutableArray *headers = [[NSMutableArray alloc] initWithCapacity:kMaxUpstreamProxyCustomHeaders];
-	for (int i = 0; i < kMaxUpstreamProxyCustomHeaders; i++) {
-		ProxyHeader *header = [self getHeaderN:i];
-		if (header) {
-			[headers addObject:header];
-		}
-	}
+    NSMutableArray *headers = [[NSMutableArray alloc] initWithCapacity:kMaxUpstreamProxyCustomHeaders];
+    for (int i = 0; i < kMaxUpstreamProxyCustomHeaders; i++) {
+        ProxyHeader *header = [self getHeaderN:i];
+        if (header) {
+            [headers addObject:header];
+        }
+    }
 
-	return [NSArray arrayWithArray:headers];
+    return [NSArray arrayWithArray:headers];
 }
 
 - (NSDictionary*)getUpstreamProxyCustomHeaders {
-	NSArray<ProxyHeader*> *headers = [self getHeaders];
+    NSArray<ProxyHeader*> *headers = [self getHeaders];
 
-	if (headers == nil) {
-		return @{};
-	}
+    if (headers == nil) {
+        return @{};
+    }
 
-	NSMutableDictionary<NSString*, NSArray<NSString*>*> *headersFormattedForJson = [[NSMutableDictionary alloc] initWithCapacity:kMaxUpstreamProxyCustomHeaders];
+    NSMutableDictionary<NSString*, NSArray<NSString*>*> *headersFormattedForJson = [[NSMutableDictionary alloc] initWithCapacity:kMaxUpstreamProxyCustomHeaders];
 
-	for (ProxyHeader *header in headers) {
-		[headersFormattedForJson setObject:@[header.value] forKey:header.name];
-	}
+    for (ProxyHeader *header in headers) {
+        [headersFormattedForJson setObject:@[header.value] forKey:header.name];
+    }
 
-	return [NSDictionary dictionaryWithDictionary:headersFormattedForJson];
+    return [NSDictionary dictionaryWithDictionary:headersFormattedForJson];
 }
 
 @end
