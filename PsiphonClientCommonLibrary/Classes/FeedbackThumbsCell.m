@@ -35,108 +35,108 @@
 #define kTextToBottomOffset 10.0
 
 @implementation FeedbackThumbsCell {
-	// Text attributes
-	NSString *_thumbsUpText;
-	NSString *_thumbsDownText;
-	UIFont *_font;
+    // Text attributes
+    NSString *_thumbsUpText;
+    NSString *_thumbsDownText;
+    UIFont *_font;
 
-	// Sizing
-	CGFloat _maxImageHeight;
-	CGFloat _requiredHeight;
-	CGFloat _segmentedControlWidth;
-	CGFloat _segmentedControlHeight;
+    // Sizing
+    CGFloat _maxImageHeight;
+    CGFloat _requiredHeight;
+    CGFloat _segmentedControlWidth;
+    CGFloat _segmentedControlHeight;
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-		// Styling
-		UIColor *highlightTint = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:0.8];
-		_font = [UIFont systemFontOfSize:14.0f];
-		self.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        // Styling
+        UIColor *highlightTint = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:0.8];
+        _font = [UIFont systemFontOfSize:14.0f];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
 
-		// Localized text
-		_thumbsUpText = NSLocalizedStringWithDefaultValue(@"FEEDBACK_THUMBS_UP_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Psiphon connects\nand performs the\nway I want it to.", @"Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'.");
-		_thumbsDownText = NSLocalizedStringWithDefaultValue(@"FEEDBACK_THUMBS_DOWN_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Psiphon often fails\nto connect or\ndoesn't perform well\nenough." , @"Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'.");
+        // Localized text
+        _thumbsUpText = NSLocalizedStringWithDefaultValue(@"FEEDBACK_THUMBS_UP_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Psiphon connects\nand performs the\nway I want it to.", @"Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'.");
+        _thumbsDownText = NSLocalizedStringWithDefaultValue(@"FEEDBACK_THUMBS_DOWN_TEXT", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Psiphon often fails\nto connect or\ndoesn't perform well\nenough." , @"Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'.");
 
-		// Determine proper dimensions to fit image and localized text
-		_maxImageHeight = MAX([PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:kThumbsDownColor].size.height, [PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:kThumbsDownGrayscale].size.height);
-		_segmentedControlWidth = self.bounds.size.width;
-		_segmentedControlHeight = [self requiredFrameHeight:_maxImageHeight
-													strings:[NSArray arrayWithObjects:_thumbsUpText, _thumbsDownText, nil]
-											   textBoxWidth:_segmentedControlWidth cellFont:_font];
+        // Determine proper dimensions to fit image and localized text
+        _maxImageHeight = MAX([PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:kThumbsDownColor].size.height, [PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:kThumbsDownGrayscale].size.height);
+        _segmentedControlWidth = self.bounds.size.width;
+        _segmentedControlHeight = [self requiredFrameHeight:_maxImageHeight
+                                                    strings:[NSArray arrayWithObjects:_thumbsUpText, _thumbsDownText, nil]
+                                               textBoxWidth:_segmentedControlWidth cellFont:_font];
 
-		// Create images with text
-		UIImage *thumbsUp = [self thumbsImage:kThumbsUpIndex selectedSegmentIndex:-1 withHeight:_segmentedControlHeight];
-		UIImage *thumbsDown = [self thumbsImage:kThumbsDownIndex selectedSegmentIndex:-1 withHeight:_segmentedControlHeight];
-		NSArray *mySegments = [NSArray arrayWithObjects:thumbsUp, thumbsDown, nil];
+        // Create images with text
+        UIImage *thumbsUp = [self thumbsImage:kThumbsUpIndex selectedSegmentIndex:-1 withHeight:_segmentedControlHeight];
+        UIImage *thumbsDown = [self thumbsImage:kThumbsDownIndex selectedSegmentIndex:-1 withHeight:_segmentedControlHeight];
+        NSArray *mySegments = [NSArray arrayWithObjects:thumbsUp, thumbsDown, nil];
 
-		UISegmentedControl *sc = [[UISegmentedControl alloc] initWithItems:mySegments];
+        UISegmentedControl *sc = [[UISegmentedControl alloc] initWithItems:mySegments];
 
-		// Sizing
-		sc.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleHeight;
-		sc.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
-		[sc addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
+        // Sizing
+        sc.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleHeight;
+        sc.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
+        [sc addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
 
-		// Set tints
-		[((UIView *)[sc subviews][0]) setTintColor:highlightTint];
-		[((UIView *)[sc subviews][1]) setTintColor:highlightTint];
+        // Set tints
+        [((UIView *)[sc subviews][0]) setTintColor:highlightTint];
+        [((UIView *)[sc subviews][1]) setTintColor:highlightTint];
 
-		// Add UISegmentedControl to cell
-		[self.contentView addSubview:sc];
-		[self setSegmentedControl:sc];
-		_requiredHeight = _segmentedControlHeight;
-	}
+        // Add UISegmentedControl to cell
+        [self.contentView addSubview:sc];
+        [self setSegmentedControl:sc];
+        _requiredHeight = _segmentedControlHeight;
+    }
 
-	return self;
+    return self;
 }
 
 #pragma mark - Action handling
 
 // Change images based on user selection
 -(void)segmentAction:(UISegmentedControl*)sender {
-	[sender setImage:[self thumbsImage:kThumbsUpIndex selectedSegmentIndex:sender.selectedSegmentIndex withHeight:sender.frame.size.height] forSegmentAtIndex:kThumbsUpIndex];
-	[sender setImage:[self thumbsImage:kThumbsDownIndex selectedSegmentIndex:sender.selectedSegmentIndex withHeight:sender.frame.size.height] forSegmentAtIndex:kThumbsDownIndex];
+    [sender setImage:[self thumbsImage:kThumbsUpIndex selectedSegmentIndex:sender.selectedSegmentIndex withHeight:sender.frame.size.height] forSegmentAtIndex:kThumbsUpIndex];
+    [sender setImage:[self thumbsImage:kThumbsDownIndex selectedSegmentIndex:sender.selectedSegmentIndex withHeight:sender.frame.size.height] forSegmentAtIndex:kThumbsDownIndex];
 }
 
 // Return proper thumb image based on user selection
 - (UIImage *)thumbsImage:(NSUInteger)index selectedSegmentIndex:(NSInteger)selectedIndex withHeight:(CGFloat)height
 {
-	BOOL isThumbsUp = index == kThumbsUpIndex;
+    BOOL isThumbsUp = index == kThumbsUpIndex;
 
-	UIImage *image;
+    UIImage *image;
 
-	if (index == selectedIndex) {
-		image = [PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:isThumbsUp ? kThumbsUpColor : kThumbsDownColor];
-	} else {
-		image = [PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:isThumbsUp ? kThumbsUpGrayscale : kThumbsDownGrayscale];
-	}
+    if (index == selectedIndex) {
+        image = [PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:isThumbsUp ? kThumbsUpColor : kThumbsDownColor];
+    } else {
+        image = [PsiphonClientCommonLibraryHelpers imageFromCommonLibraryNamed:isThumbsUp ? kThumbsUpGrayscale : kThumbsDownGrayscale];
+    }
 
-	return [self imageWithText:image
-					  withText:isThumbsUp ? _thumbsUpText : _thumbsDownText
-					 cellWidth:_segmentedControlWidth
-					cellHeight:height
-					  cellFont:_font];
+    return [self imageWithText:image
+                      withText:isThumbsUp ? _thumbsUpText : _thumbsDownText
+                     cellWidth:_segmentedControlWidth
+                    cellHeight:height
+                      cellFont:_font];
 }
 
 #pragma mark - Image creation and sizing
 
 // Return the required frame height to display largest button in segmented control (image + text size)
 -(CGFloat)requiredFrameHeight:(CGFloat)imageHeight strings:(NSArray*)strings textBoxWidth:(NSInteger)textBoxWidth cellFont:(UIFont*)font {
-	NSInteger textWidth = textBoxWidth * kTextToButtonSizeRatio; // Pad the sides of the text as percentage of button width
-	CGFloat height = 0;
+    NSInteger textWidth = textBoxWidth * kTextToButtonSizeRatio; // Pad the sides of the text as percentage of button width
+    CGFloat height = 0;
 
-	// Find the largest text height required (_thumbsUpText vs. _thumbsDownText)
-	for (NSString *string in strings) {
-		CGRect r = [string boundingRectWithSize:CGSizeMake(textWidth, 0)
-										options:NSStringDrawingUsesLineFragmentOrigin
-									 attributes:@{NSFontAttributeName:font}
-										context:nil];
-		if (r.size.height > height) {
-			height = r.size.height;
-		}
-	}
+    // Find the largest text height required (_thumbsUpText vs. _thumbsDownText)
+    for (NSString *string in strings) {
+        CGRect r = [string boundingRectWithSize:CGSizeMake(textWidth, 0)
+                                        options:NSStringDrawingUsesLineFragmentOrigin
+                                     attributes:@{NSFontAttributeName:font}
+                                        context:nil];
+        if (r.size.height > height) {
+            height = r.size.height;
+        }
+    }
 
-	return kTopToImageOffset + imageHeight + kImageToTextOffset + height + kTextToBottomOffset;
+    return kTopToImageOffset + imageHeight + kImageToTextOffset + height + kTextToBottomOffset;
 }
 
 // Returns a new rectangular image consisting of the provided image and text stacked in the centre
@@ -151,55 +151,55 @@
 //
 -(UIImage*)imageWithText:(UIImage*)image withText:(NSString*)text cellWidth:(NSInteger)width cellHeight:(NSInteger)height cellFont:(UIFont*)font
 {
-	NSInteger textWidth = width * kTextToButtonSizeRatio; // Pad the sides of the text as percentage of button width
-	CGRect r = [text boundingRectWithSize:CGSizeMake(textWidth, 0)
-								  options:NSStringDrawingUsesLineFragmentOrigin
-							   attributes:@{NSFontAttributeName:font}
-								  context:nil];
+    NSInteger textWidth = width * kTextToButtonSizeRatio; // Pad the sides of the text as percentage of button width
+    CGRect r = [text boundingRectWithSize:CGSizeMake(textWidth, 0)
+                                  options:NSStringDrawingUsesLineFragmentOrigin
+                               attributes:@{NSFontAttributeName:font}
+                                  context:nil];
 
-	// Size of the new image
-	CGSize size = CGSizeMake(width / 2, MAX(height, kTopToImageOffset + _maxImageHeight + kImageToTextOffset + r.size.height + kTextToBottomOffset));
+    // Size of the new image
+    CGSize size = CGSizeMake(width / 2, MAX(height, kTopToImageOffset + _maxImageHeight + kImageToTextOffset + r.size.height + kTextToBottomOffset));
 
-	// Begin rendering image
-	UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-	CGContextRef context = UIGraphicsGetCurrentContext();
-	CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
+    // Begin rendering image
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
 
-	// Text styling
-	NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
-	style.alignment = NSTextAlignmentCenter;
+    // Text styling
+    NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    style.alignment = NSTextAlignmentCenter;
 
-	// Add provided image to new image
-	// Ensure images of different sizes have the same calculated y offset
-	CGFloat imageYOffset = (_maxImageHeight - image.size.height) / 2 + kTopToImageOffset;
-	[image drawInRect:CGRectMake(0.5 * ( width / 2 - image.size.width ), imageYOffset, image.size.width, image.size.height)];
+    // Add provided image to new image
+    // Ensure images of different sizes have the same calculated y offset
+    CGFloat imageYOffset = (_maxImageHeight - image.size.height) / 2 + kTopToImageOffset;
+    [image drawInRect:CGRectMake(0.5 * ( width / 2 - image.size.width ), imageYOffset, image.size.width, image.size.height)];
 
-	// Draw text on new image below the provided image
-	UIColor *labelColor;
-	if (@available(iOS 13.0, *)) {
-		labelColor = UIColor.labelColor;
-	} else {
-		// Fallback on earlier versions
-		labelColor = UIColor.blackColor;
-	}
+    // Draw text on new image below the provided image
+    UIColor *labelColor;
+    if (@available(iOS 13.0, *)) {
+        labelColor = UIColor.labelColor;
+    } else {
+        // Fallback on earlier versions
+        labelColor = UIColor.blackColor;
+    }
 
-	CGRect textRect = CGRectMake(0.5 * ( width / 2  - textWidth ), _maxImageHeight + kTopToImageOffset + kImageToTextOffset, textWidth, r.size.height);
-	[text drawInRect:textRect
-	  withAttributes:@{NSFontAttributeName: font,
-					   NSParagraphStyleAttributeName: style,
-					   NSForegroundColorAttributeName: labelColor}];
+    CGRect textRect = CGRectMake(0.5 * ( width / 2  - textWidth ), _maxImageHeight + kTopToImageOffset + kImageToTextOffset, textWidth, r.size.height);
+    [text drawInRect:textRect
+      withAttributes:@{NSFontAttributeName: font,
+                       NSParagraphStyleAttributeName: style,
+                       NSForegroundColorAttributeName: labelColor}];
 
-	// Return the rendered image
-	UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-	UIGraphicsEndImageContext();
-	return [newImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    // Return the rendered image
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return [newImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 #pragma mark - Public getters
 
 // Return cell height required to render properly
 -(CGFloat)requiredHeight {
-	return _requiredHeight;
+    return _requiredHeight;
 }
 
 @end

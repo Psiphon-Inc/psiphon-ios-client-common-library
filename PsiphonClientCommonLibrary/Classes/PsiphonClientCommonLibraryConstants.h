@@ -27,10 +27,10 @@
 /* Psiphon connection states */
 typedef NS_ENUM(NSInteger, ConnectionState)
 {
-	ConnectionStateDisconnected,
-	ConnectionStateConnecting,
-	ConnectionStateConnected,
-	ConnectionStateWaitingForNetwork
+    ConnectionStateDisconnected,
+    ConnectionStateConnecting,
+    ConnectionStateConnected,
+    ConnectionStateWaitingForNetwork
 };
 
 #endif /* PsiphonClientCommonLibraryConstants_h */
