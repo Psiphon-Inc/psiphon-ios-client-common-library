@@ -76,6 +76,7 @@
 				<string>pt-BR</string>
 				<string>pt-PT</string>
 				<string>ru</string>
+                <string>sw</string>
 				<string>tg</string>
 				<string>th</string>
 				<string>tk</string>
@@ -221,6 +222,10 @@
 					<key>Title</key>
 					<string>Русский</string>
 				</dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Kiswahili</string>
+                </dict>
 				<dict>
 					<key>Title</key>
 					<string>тоҷики</string>
