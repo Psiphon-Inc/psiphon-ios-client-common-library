@@ -20,19 +20,21 @@
 #import <Foundation/Foundation.h>
 #import "PsiphonData.h"
 
-typedef void (^SendFeedbackHandler)(NSString *jsonString, NSString *pubKey, NSString *uploadServer, NSString *uploadServerHeaders);
+NS_ASSUME_NONNULL_BEGIN
 
 @interface FeedbackUpload : NSObject
 + (NSString*)generateFeedbackId;
-+ (NSError*)generateAndSendFeedback:(NSInteger)thumbIndex
-                          buildInfo:(NSString*)buildInfo
-                           comments:(NSString*)comments
-                              email:(NSString*)email
-                 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
-                  withPsiphonConfig:(NSString*)psiphonConfig
-                 withClientPlatform:(NSString*)clientPlatform
-                 withConnectionType:(NSString*)connectionType
-                       isJailbroken:(BOOL)isJailbroken
-                sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
-                  diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries;
++ (NSString*_Nullable)generateFeedbackJSON:(NSInteger)thumbIndex
+                                 buildInfo:(NSString*_Nullable)buildInfo
+                                  comments:(NSString*_Nullable)comments
+                                     email:(NSString*_Nullable)email
+                        sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
+                         withPsiphonConfig:(NSString*)psiphonConfig
+                        withClientPlatform:(NSString*_Nullable)clientPlatform
+                        withConnectionType:(NSString*_Nullable)connectionType
+                              isJailbroken:(BOOL)isJailbroken
+                         diagnosticEntries:(NSArray<DiagnosticEntry *>*_Nullable)diagnosticEntries
+                                     error:(NSError*_Nullable*)outError;
 @end
+
+NS_ASSUME_NONNULL_END
