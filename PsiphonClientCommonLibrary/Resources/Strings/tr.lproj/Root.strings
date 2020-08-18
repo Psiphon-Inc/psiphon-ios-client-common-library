@@ -32,10 +32,10 @@
 "SETTINGS_ABOUT" = "Hakkında";
 
 /* Explanatory text for the "Select server region" setting on the "My connection is bad, help!" settings page. */
-"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Bölgeyi \"En İyi Performans\" olarak değiştirirseniz bağlanma olasılığınız artar.";
+"CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Bölgeyi \"En iyi başarım\" olarak değiştirirseniz bağlantı kurma şansınız artar.";
 
 /* Title for screen that allows user to select their desired server region. */
-"SELECT_SERVER_REGION" = "Sunucu bölgesi seçin";
+"SELECT_SERVER_REGION" = "Sunucu bölgesini seçin";
 
 /* Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "Yavaş ağlarda zaman aşımını devre dışı bırakmak bağlı kalmanıza yardımcı olabilir.";
