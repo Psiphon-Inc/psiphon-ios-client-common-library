@@ -35,33 +35,41 @@
 // https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/EmailResponder/FeedbackDecryptor/templates/?at=default
 // Matching format used by android client,
 // https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/Android/app/src/main/java/com/psiphon3/psiphonlibrary/Diagnostics.java
-+ (NSError*)generateAndSendFeedback:(NSInteger)thumbIndex
-						  buildInfo:(NSString*)buildInfo
-						   comments:(NSString*)comments
-							  email:(NSString*)email
-				 sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
-				  withPsiphonConfig:(NSString*)psiphonConfig
-				 withClientPlatform:(NSString*)clientPlatform
-				 withConnectionType:(NSString*)connectionType
-					   isJailbroken:(BOOL)isJailbroken
-				sendFeedbackHandler:(SendFeedbackHandler)sendFeedbackHandler
-				  diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries
-{
++ (NSString*)generateFeedbackJSON:(NSInteger)thumbIndex
+						buildInfo:(NSString*)buildInfo
+						 comments:(NSString*)comments
+							email:(NSString*)email
+			   sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
+				withPsiphonConfig:(NSString*)psiphonConfig
+			   withClientPlatform:(NSString*)clientPlatform
+			   withConnectionType:(NSString*)connectionType
+					 isJailbroken:(BOOL)isJailbroken
+				diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries
+							error:(NSError*_Nullable*)outError {
+
+	*outError = nil;
+
 	NSDictionary *config = [PsiphonClientCommonLibraryHelpers jsonToDictionary:psiphonConfig];
 	if (config == nil) {
-		return [FeedbackUpload errorWithMessage:@"Failed to deserialize psiphon config." fromFunction:__FUNCTION__];
+		*outError = [FeedbackUpload errorWithMessage:@"Failed to deserialize psiphon config."
+										fromFunction:__FUNCTION__];
+		return nil;
 	}
 
 	NSMutableDictionary *feedbackBlob = [[NSMutableDictionary alloc] init];
 
 	// Ensure the survey response is valid
 	if (thumbIndex < -1 || thumbIndex > 1) {
-		return [FeedbackUpload errorWithMessage:[NSString stringWithFormat:@"Survey response was invalid. Received thumbIndex: %ld.", thumbIndex] fromFunction:__FUNCTION__];
+		*outError = [FeedbackUpload errorWithMessage:[NSString stringWithFormat:@"Survey response was invalid. Received thumbIndex: %ld.", thumbIndex]
+										fromFunction:__FUNCTION__];
+		return nil;
 	}
 
 	// Ensure either feedback or survey response was completed
 	if (thumbIndex == -1 && sendDiagnosticInfo == false && comments.length == 0 && email.length == 0) {
-		return [FeedbackUpload errorWithMessage:@"Survey response was incomplete." fromFunction:__FUNCTION__];
+		*outError = [FeedbackUpload errorWithMessage:@"Survey response was incomplete."
+										fromFunction:__FUNCTION__];
+		return nil;
 	}
 
 	// Check survey response
@@ -147,7 +155,8 @@
 
 	NSString *rndmHexId = [FeedbackUpload generateFeedbackId];
 	if (rndmHexId == nil) {
-		return [FeedbackUpload errorWithMessage:@"Failed to generate random id for feedback." fromFunction:__FUNCTION__];
+		*outError = [FeedbackUpload errorWithMessage:@"Failed to generate random id for feedback." fromFunction:__FUNCTION__];
+		return nil;
 	}
 
 	NSDictionary *metadata = @{
@@ -160,26 +169,13 @@
 	NSError *e = nil;
 	NSData *jsonData = [NSJSONSerialization dataWithJSONObject:feedbackBlob options:0 error:&e];
 	if (e != nil) {
-		return [FeedbackUpload errorWithMessage:@"Failed to serialize json object." fromFunction:__FUNCTION__];;
+		*outError = [FeedbackUpload errorWithMessage:@"Failed to serialize json object." fromFunction:__FUNCTION__];;
+		return nil;
 	}
 
 	NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 
-	// Extract feedback config values
-	NSDictionary *feedbackConfig = config[@"feedbackConfig"];
-	if (feedbackConfig == nil) {
-		return [FeedbackUpload errorWithMessage:@"Feedback config in psiphon config is nil." fromFunction:__FUNCTION__];
-	}
-	NSString *pubKey = feedbackConfig[@"b64EncodedPublicKey"];
-	NSString *uploadServer = feedbackConfig[@"uploadServer"];
-	NSString *uploadServerHeaders = feedbackConfig[@"uploadServerHeaders"];
-
-	// Upload feedback
-	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-		sendFeedbackHandler(jsonString, pubKey, uploadServer, uploadServerHeaders);
-	});
-
-	return nil;
+	return jsonString;
 }
 
 // Generate random feedback ID
@@ -235,7 +231,10 @@
 		case UIUserInterfaceIdiomCarPlay:
 			userInterfaceIdiomString = @"carPlay";
 			break;
-	}
+        case UIUserInterfaceIdiomMac:
+            userInterfaceIdiomString = @"mac";
+            break;
+    }
 
 	NSDictionary<NSString*, NSString*> *deviceInfo =
 	@{
@@ -253,7 +252,7 @@
 
 + (NSError *)errorWithMessage:(NSString*)message fromFunction:(const char*)funcname
 {
-	NSString *desc = [NSString stringWithFormat:@"PsiCashLib:: %s: %@", funcname, message];
+	NSString *desc = [NSString stringWithFormat:@"PsiphonClientCommonLibrary:%s: %@", funcname, message];
 	return [NSError errorWithDomain:@"FeedbackUploadErrorDomain"
 							   code:-1
 						   userInfo:@{NSLocalizedDescriptionKey: desc}];
