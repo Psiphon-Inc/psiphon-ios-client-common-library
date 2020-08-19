@@ -203,8 +203,9 @@
 
 // Returns a tunnel-core compatible proxy URL for the
 // current user configured proxy settings.
-// e.g., http://NTDOMAIN\NTUser:password@proxyhost:3375,
-//       http://user:password@proxyhost:8080", etc.
+// e.g., http://NTDOMAIN%5CNTUser:password@proxyhost:3375,
+//       http://user:password@proxyhost:8080,
+//       http://user%20name:pass%20word@proxyhost:12345, etc.
 - (NSString*)getUpstreamProxyUrl {
 	ProxySettings *proxySettings = [self getProxySettings];
 
@@ -219,11 +220,21 @@
 	if (credentials != nil) {
 		if ([credentials.domain length] != 0) {
 			[url appendString:credentials.domain];
-			[url appendString:@"\\"];
+			NSCharacterSet *urlEncodingSet =
+				[[NSCharacterSet characterSetWithCharactersInString:@" \"#%/:<>?@[\\]^`{|}"] invertedSet];
+			NSString *encodedBackslash =
+				[@"\\" stringByAddingPercentEncodingWithAllowedCharacters:urlEncodingSet];
+			[url appendString:encodedBackslash];
 		}
-		[url appendString:credentials.username];
+		NSString *encodedUsername =
+			[credentials.username stringByAddingPercentEncodingWithAllowedCharacters:
+			 NSCharacterSet.URLUserAllowedCharacterSet];
+		[url appendString:encodedUsername];
 		[url appendString:@":"];
-		[url appendString:credentials.password];
+		NSString *encodedPassword =
+			[credentials.username stringByAddingPercentEncodingWithAllowedCharacters:
+			 NSCharacterSet.URLPasswordAllowedCharacterSet];
+		[url appendString:encodedPassword];
 		[url appendString:@"@"];
 	}
 
