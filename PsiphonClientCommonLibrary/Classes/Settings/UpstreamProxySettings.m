@@ -220,11 +220,7 @@
 	if (credentials != nil) {
 		if ([credentials.domain length] != 0) {
 			[url appendString:credentials.domain];
-			NSCharacterSet *urlEncodingSet =
-				[[NSCharacterSet characterSetWithCharactersInString:@" \"#%/:<>?@[\\]^`{|}"] invertedSet];
-			NSString *encodedBackslash =
-				[@"\\" stringByAddingPercentEncodingWithAllowedCharacters:urlEncodingSet];
-			[url appendString:encodedBackslash];
+			[url appendString:@"%5C"]; // URL encoding of "\"
 		}
 		NSString *encodedUsername =
 			[credentials.username stringByAddingPercentEncodingWithAllowedCharacters:
