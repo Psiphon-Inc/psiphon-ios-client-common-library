@@ -219,7 +219,14 @@
 
 	if (credentials != nil) {
 		if ([credentials.domain length] != 0) {
-			[url appendString:credentials.domain];
+			NSString *unreserved = @"-._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+			NSString *subdelims = @"!$&'(/)*+,;=";
+			NSString *domainAllowed = [unreserved stringByAppendingString:subdelims];
+			NSCharacterSet *domainAllowedCharSet =
+				[NSCharacterSet characterSetWithCharactersInString:domainAllowed];
+			NSString *encodedDomain =
+				[credentials.domain stringByAddingPercentEncodingWithAllowedCharacters:domainAllowedCharSet];
+			[url appendString:encodedDomain];
 			[url appendString:@"%5C"]; // URL encoding of "\"
 		}
 		NSString *encodedUsername =
