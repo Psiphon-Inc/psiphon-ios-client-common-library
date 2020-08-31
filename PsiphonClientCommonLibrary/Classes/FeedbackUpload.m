@@ -40,7 +40,7 @@
                          comments:(NSString*)comments
                             email:(NSString*)email
                sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
-                withPsiphonConfig:(NSString*)psiphonConfig
+                withPsiphonConfig:(NSDictionary*)psiphonConfig
                withClientPlatform:(NSString*)clientPlatform
                withConnectionType:(NSString*)connectionType
                      isJailbroken:(BOOL)isJailbroken
@@ -49,18 +49,13 @@
 
     *outError = nil;
 
-    NSDictionary *config = [PsiphonClientCommonLibraryHelpers jsonToDictionary:psiphonConfig];
-    if (config == nil) {
-        *outError = [FeedbackUpload errorWithMessage:@"Failed to deserialize psiphon config."
-                                        fromFunction:__FUNCTION__];
-        return nil;
-    }
+    NSDictionary *config = [psiphonConfig copy];
 
     NSMutableDictionary *feedbackBlob = [[NSMutableDictionary alloc] init];
 
     // Ensure the survey response is valid
     if (thumbIndex < -1 || thumbIndex > 1) {
-        *outError = [FeedbackUpload errorWithMessage:[NSString stringWithFormat:@"Survey response was invalid. Received thumbIndex: %ld.", thumbIndex]
+        *outError = [FeedbackUpload errorWithMessage:[NSString stringWithFormat:@"Survey response was invalid. Received thumbIndex: %ld.", (long)thumbIndex]
                                         fromFunction:__FUNCTION__];
         return nil;
     }

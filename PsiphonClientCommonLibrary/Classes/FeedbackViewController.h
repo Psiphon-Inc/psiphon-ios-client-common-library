@@ -22,7 +22,7 @@
 #import "IASKAppSettingsViewController.h"
 
 @protocol FeedbackViewControllerDelegate <NSObject>
-- (void)userSubmittedFeedback:(NSUInteger)selectedThumbIndex
+- (void)userSubmittedFeedback:(NSInteger)selectedThumbIndex
                      comments:(NSString*)comments
                         email:(NSString*)email
             uploadDiagnostics:(BOOL)uploadDiagnostics;

@@ -81,8 +81,8 @@
     [super viewWillDisappear:animated];
 }
 
-- (void)sendFeedback:(id)sender
-{
+- (void)sendFeedback:(id)sender {
+
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
     NSInteger selectedThumbIndex = _thumbsCell.segmentedControl.selectedSegmentIndex;
@@ -90,11 +90,12 @@
     NSString *emailAddress = [userDefaults stringForKey:kEmailSpecifierKey];
     BOOL uploadDiagnostics = [userDefaults boolForKey:kSendDiagnosticsSpecifierKey];
 
+    [self.navigationController popViewControllerAnimated:YES];
+
     id<FeedbackViewControllerDelegate> strongDelegate = self.feedbackDelegate;
     if ([strongDelegate respondsToSelector:@selector(userSubmittedFeedback:comments:email:uploadDiagnostics:)]) {
         [strongDelegate userSubmittedFeedback:selectedThumbIndex comments:comments email:emailAddress uploadDiagnostics:uploadDiagnostics];
     }
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - IASK UITableView delegate methods

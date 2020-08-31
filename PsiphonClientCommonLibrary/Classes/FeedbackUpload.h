@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
                                   comments:(NSString*_Nullable)comments
                                      email:(NSString*_Nullable)email
                         sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
-                         withPsiphonConfig:(NSString*)psiphonConfig
+                         withPsiphonConfig:(NSDictionary*)psiphonConfig
                         withClientPlatform:(NSString*_Nullable)clientPlatform
                         withConnectionType:(NSString*_Nullable)connectionType
                               isJailbroken:(BOOL)isJailbroken
