@@ -235,7 +235,7 @@
 		[url appendString:encodedUsername];
 		[url appendString:@":"];
 		NSString *encodedPassword =
-			[credentials.username stringByAddingPercentEncodingWithAllowedCharacters:
+			[credentials.password stringByAddingPercentEncodingWithAllowedCharacters:
 			 NSCharacterSet.URLPasswordAllowedCharacterSet];
 		[url appendString:encodedPassword];
 		[url appendString:@"@"];
