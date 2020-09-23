@@ -17,7 +17,7 @@
  *
  */
 
-#import "FeedbackUpload.h"
+#import "Feedback.h"
 #import "Device.h"
 #import "PsiphonSettingsViewController.h"
 #import "PsiphonClientCommonLibraryHelpers.h"
@@ -28,7 +28,7 @@
 
 #define safeNullable(x) x != nil ? x : @""
 
-@implementation FeedbackUpload
+@implementation Feedback
 
 // Form and send feedback blob which conforms to structure
 // expected by the feedback template for ios,
@@ -55,15 +55,15 @@
 
     // Ensure the survey response is valid
     if (thumbIndex < -1 || thumbIndex > 1) {
-        *outError = [FeedbackUpload errorWithMessage:[NSString stringWithFormat:@"Survey response was invalid. Received thumbIndex: %ld.", (long)thumbIndex]
-                                        fromFunction:__FUNCTION__];
+        *outError = [Feedback errorWithMessage:[NSString stringWithFormat:@"Survey response was invalid. Received thumbIndex: %ld.", (long)thumbIndex]
+                                  fromFunction:__FUNCTION__];
         return nil;
     }
 
     // Ensure either feedback or survey response was completed
     if (thumbIndex == -1 && sendDiagnosticInfo == false && comments.length == 0 && email.length == 0) {
-        *outError = [FeedbackUpload errorWithMessage:@"Survey response was incomplete."
-                                        fromFunction:__FUNCTION__];
+        *outError = [Feedback errorWithMessage:@"Survey response was incomplete."
+                                  fromFunction:__FUNCTION__];
         return nil;
     }
 
@@ -131,7 +131,7 @@
                                          @"StatusHistory": statusHistoryArray,
                                          @"SystemInformation":
                                              @{
-                                                 @"Build": [FeedbackUpload gatherDeviceInfo],
+                                                 @"Build": [Feedback gatherDeviceInfo],
                                                  @"PsiphonInfo":
                                                      @{
                                                          @"CLIENT_VERSION": safeNullable([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]),
@@ -148,9 +148,9 @@
         feedbackBlob[@"DiagnosticInfo"] = diagnosticInfo;
     }
 
-    NSString *rndmHexId = [FeedbackUpload generateFeedbackId];
+    NSString *rndmHexId = [Feedback generateFeedbackId];
     if (rndmHexId == nil) {
-        *outError = [FeedbackUpload errorWithMessage:@"Failed to generate random id for feedback." fromFunction:__FUNCTION__];
+        *outError = [Feedback errorWithMessage:@"Failed to generate random id for feedback." fromFunction:__FUNCTION__];
         return nil;
     }
 
@@ -164,7 +164,7 @@
     NSError *e = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:feedbackBlob options:0 error:&e];
     if (e != nil) {
-        *outError = [FeedbackUpload errorWithMessage:@"Failed to serialize json object." fromFunction:__FUNCTION__];;
+        *outError = [Feedback errorWithMessage:@"Failed to serialize json object." fromFunction:__FUNCTION__];;
         return nil;
     }
 
@@ -178,7 +178,7 @@
 {
     NSMutableString *feedbackID = NULL;
     size_t numBytes = 8;
-    uint8_t *randomBytes = [FeedbackUpload generateRandomBytes:numBytes];
+    uint8_t *randomBytes = [Feedback generateRandomBytes:numBytes];
     if (randomBytes != NULL) {
         // Two hex characters are required to represent each byte
         feedbackID = [[NSMutableString alloc] initWithCapacity:numBytes*2];
@@ -248,7 +248,7 @@
 + (NSError *)errorWithMessage:(NSString*)message fromFunction:(const char*)funcname
 {
     NSString *desc = [NSString stringWithFormat:@"PsiphonClientCommonLibrary:%s: %@", funcname, message];
-    return [NSError errorWithDomain:@"FeedbackUploadErrorDomain"
+    return [NSError errorWithDomain:@"FeedbackErrorDomain"
                                code:-1
                            userInfo:@{NSLocalizedDescriptionKey: desc}];
 }

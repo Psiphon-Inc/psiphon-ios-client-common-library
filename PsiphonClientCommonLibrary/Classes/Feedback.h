@@ -22,7 +22,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeedbackUpload : NSObject
+@interface Feedback : NSObject
 + (NSString*)generateFeedbackId;
 + (NSString*_Nullable)generateFeedbackJSON:(NSInteger)thumbIndex
                                  buildInfo:(NSString*_Nullable)buildInfo

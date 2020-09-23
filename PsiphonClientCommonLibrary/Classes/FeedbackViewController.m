@@ -17,7 +17,6 @@
  *
  */
 
-#import <PsiphonClientCommonLibrary/FeedbackUpload.h>
 #import "FeedbackThumbsCell.h"
 #import "FeedbackViewController.h"
 #import "IASKSettingsReader.h"
