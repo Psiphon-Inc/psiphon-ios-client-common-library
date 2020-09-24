@@ -45,6 +45,7 @@
                withConnectionType:(NSString*)connectionType
                      isJailbroken:(BOOL)isJailbroken
                 diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries
+                    statusEntries:(NSArray<StatusEntry *>*)statusEntries
                             error:(NSError*_Nullable*)outError {
 
     *outError = nil;
@@ -95,7 +96,7 @@
 
         NSMutableArray *statusHistoryArray = [[NSMutableArray alloc] init];
 
-        for (StatusEntry *s in [[PsiphonData sharedInstance] statusHistory]) {
+        for (StatusEntry *s in statusEntries) {
             // Don't send any sensitive logs or debug logs
             if (s.sensitivity == SensitivityLevelSensitiveLog || s.priority == PriorityDebug) {
                 continue;

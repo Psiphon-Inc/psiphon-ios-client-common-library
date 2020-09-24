@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
                         withConnectionType:(NSString*_Nullable)connectionType
                               isJailbroken:(BOOL)isJailbroken
                          diagnosticEntries:(NSArray<DiagnosticEntry *>*_Nullable)diagnosticEntries
+                             statusEntries:(NSArray<StatusEntry *>*_Nullable)statusEntries
                                      error:(NSError*_Nullable*)outError;
 @end
 
