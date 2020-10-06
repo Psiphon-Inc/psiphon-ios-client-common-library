@@ -30,23 +30,19 @@
 
 @implementation Feedback
 
-// Form and send feedback blob which conforms to structure
-// expected by the feedback template for ios,
-// https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/EmailResponder/FeedbackDecryptor/templates/?at=default
-// Matching format used by android client,
-// https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/Android/app/src/main/java/com/psiphon3/psiphonlibrary/Diagnostics.java
-+ (NSString*)generateFeedbackJSON:(NSInteger)thumbIndex
-                        buildInfo:(NSString*)buildInfo
-                         comments:(NSString*)comments
-                            email:(NSString*)email
-               sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
-                withPsiphonConfig:(NSDictionary*)psiphonConfig
-               withClientPlatform:(NSString*)clientPlatform
-               withConnectionType:(NSString*)connectionType
-                     isJailbroken:(BOOL)isJailbroken
-                diagnosticEntries:(NSArray<DiagnosticEntry *>*)diagnosticEntries
-                    statusEntries:(NSArray<StatusEntry *>*)statusEntries
-                            error:(NSError*_Nullable*)outError {
++ (NSString*_Nullable)generateFeedbackJSON:(NSInteger)thumbIndex
+                                 buildInfo:(NSString*_Nullable)buildInfo
+                                  comments:(NSString*_Nullable)comments
+                                     email:(NSString*_Nullable)email
+                        sendDiagnosticInfo:(BOOL)sendDiagnosticInfo
+                                feedbackId:(NSString*)feedbackId
+                             psiphonConfig:(NSDictionary*)psiphonConfig
+                            clientPlatform:(NSString*_Nullable)clientPlatform
+                            connectionType:(NSString*_Nullable)connectionType
+                              isJailbroken:(BOOL)isJailbroken
+                         diagnosticEntries:(NSArray<DiagnosticEntry *>*_Nullable)diagnosticEntries
+                             statusEntries:(NSArray<StatusEntry *>*_Nullable)statusEntries
+                                     error:(NSError*_Nullable*)outError {
 
     *outError = nil;
 
@@ -149,14 +145,8 @@
         feedbackBlob[@"DiagnosticInfo"] = diagnosticInfo;
     }
 
-    NSString *rndmHexId = [Feedback generateFeedbackId];
-    if (rndmHexId == nil) {
-        *outError = [Feedback errorWithMessage:@"Failed to generate random id for feedback." fromFunction:__FUNCTION__];
-        return nil;
-    }
-
     NSDictionary *metadata = @{
-                               @"id": rndmHexId,
+                               @"id": feedbackId,
                                @"platform": safeNullable(clientPlatform),
                                @"version": @1
                                };
@@ -174,7 +164,6 @@
     return jsonString;
 }
 
-// Generate random feedback ID
 + (NSString*)generateFeedbackId
 {
     NSMutableString *feedbackID = NULL;
@@ -185,11 +174,10 @@
         feedbackID = [[NSMutableString alloc] initWithCapacity:numBytes*2];
         for(NSInteger index = 0; index < numBytes; index++)
         {
-            [feedbackID appendFormat: @"%02hhX", randomBytes[index]];
+            [feedbackID appendFormat:@"%02hhX", randomBytes[index]];
         }
     }
 
-    free(randomBytes);
     return feedbackID;
 }
 
