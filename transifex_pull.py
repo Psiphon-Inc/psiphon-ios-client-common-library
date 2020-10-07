@@ -64,6 +64,7 @@ DEFAULT_LANGS = {
     'sw': 'sw',         # Swahili
     'tg': 'tg',         # Tajik
     'th': 'th',         # Thai
+    'ti': 'ti',         # Tigrinya
     'tk': 'tk',         # Turkmen
     'tr': 'tr',         # Turkish
     'uk': 'uk',         # Ukrainian

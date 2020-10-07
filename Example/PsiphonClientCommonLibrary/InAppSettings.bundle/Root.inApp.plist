@@ -76,9 +76,10 @@
 				<string>pt-BR</string>
 				<string>pt-PT</string>
 				<string>ru</string>
-                <string>sw</string>
+				<string>sw</string>
 				<string>tg</string>
 				<string>th</string>
+				<string>ti</string>
 				<string>tk</string>
 				<string>tr</string>
 				<string>uk</string>
@@ -165,7 +166,6 @@
 					<key>Title</key>
 					<string>עברית</string>
 				</dict>
-
 				<dict>
 					<key>Title</key>
 					<string>हिन्दी</string>
@@ -222,10 +222,10 @@
 					<key>Title</key>
 					<string>Русский</string>
 				</dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Kiswahili</string>
-                </dict>
+				<dict>
+					<key>Title</key>
+					<string>Kiswahili</string>
+				</dict>
 				<dict>
 					<key>Title</key>
 					<string>тоҷики</string>
@@ -233,6 +233,10 @@
 				<dict>
 					<key>Title</key>
 					<string>ภาษาไทย</string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>ትግርኛ</string>
 				</dict>
 				<dict>
 					<key>Title</key>
