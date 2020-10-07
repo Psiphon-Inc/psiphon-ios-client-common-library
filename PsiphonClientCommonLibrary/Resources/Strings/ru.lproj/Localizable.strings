@@ -8,7 +8,7 @@
 "DONE_ACTION" = "Готово";
 
 /* FAQ link text */
-"FAQ_LINK_TEXT" = "Часто задаваемые вопросы";
+"FAQ_LINK_TEXT" = "FAQ";
 
 /* External link to the FAQ page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/faq.html for french. */
 "FAQ_URL" = "https://psiphon.ca/ru/faq.html";
@@ -17,46 +17,46 @@
 "FEEDBACK_COMMENTS_PLACEHOLDER" = "О чем вы думаете? Пожалуйста, оставьте отзыв";
 
 /* Text referring user to frequently asked questions. %@ is where the separate translation for the phrase 'Frequently Asked Questions' will be placed. */
-"FEEDBACK_FAQ_DIRECTION" = "Вы можете найти ответы на большинство распространённых вопросов в наших %@.";
+"FEEDBACK_FAQ_DIRECTION" = "Вы можете найти решения большинства проблем здесь: %@.";
 
 /* Feedback footer text referring users to privacy policy. %@ is where the separate translation for the phrase 'Privacy Policy' will be placed. */
-"FEEDBACK_FOOTER_DATA_COLLECTION" = "Узнайте больше о данных, которые мы собираем в %@";
+"FEEDBACK_FOOTER_DATA_COLLECTION" = "Узнайте больше о данных, которые мы собираем: %@";
 
 /* Feedback footer text. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_FOOTER_DIAGNOSTIC" = "Пожалуйста, имейте в виду, что диагностические данные никак не идентифицируют вас, но помогают нам поддерживать работоспособность Psiphon.";
+"FEEDBACK_FOOTER_DIAGNOSTIC" = "Диагностические данные никак не идентифицируют вас, но помогают нам поддерживать работоспособность Psiphon.";
 
 /* Feedback footer text referring users to feedback email. %@ is where the separate translation for the email will be placed. */
-"FEEDBACK_FOOTER_EMAIL" = "Если указанная форма не работает или вы хотите отправить скриншоты, пожалуйста, пишите нам на %@";
+"FEEDBACK_FOOTER_EMAIL" = "Если форма не работает или вы хотите отправить скриншоты, пожалуйста, пишите нам на %@";
 
 /* Introduction text at top of feedback form. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_INTRODUCTION" = "Ваш отзыв сделает Psiphon лучше!";
+"FEEDBACK_INTRODUCTION" = "Ваши отзывы делают Psiphon лучше!";
 
 /* Text of button to send feedback */
 "FEEDBACK_SEND_BUTTON" = "Отправить";
 
 /* Text explaining thumbs down choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon часто не может\nустановить соединение или\nне работает достаточно\nхорошо.";
+"FEEDBACK_THUMBS_DOWN_TEXT" = "Psiphon часто не может\nустановить соединение или\nработает недостаточно\nхорошо.";
 
 /* Text explaining thumbs up choice in feedback. DO NOT translate the word 'Psiphon'. */
-"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon соединяется\nи работает так\nкак мне надо.";
+"FEEDBACK_THUMBS_UP_TEXT" = "Psiphon соединяется\nи работает так,\nкак мне надо.";
 
 /* External link to the license page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/license.html for french. */
 "LICENSE_PAGE_URL" = "https://psiphon.ca/ru/license.html";
 
 /* Title of screen that displays logs */
-"LOGS_TITLE" = "Журналы";
+"LOGS_TITLE" = "Логи";
 
 /* Shown when the device is not configured for sending email. (InAppSettingsKit) */
 "MAIL_NOT_CONFIGURED" = "Почта не настроена";
 
 /* Description for the 'Mail not configured' message. (InAppSettingsKit) */
-"MAIL_NOT_CONFIGURED_DESC" = "Устройство не настроено на отправку электронной почты. Пожалуйста, установите параметры почты в приложении \"Настройки\".";
+"MAIL_NOT_CONFIGURED_DESC" = "Устройство не настроено для отправки email. Пожалуйста, настройте параметры почты в приложении \"Настройки\".";
 
 /*[UNTRANSLATED] Alert OK Button. (InAppSettingsKit) */
 "OK_BUTTON" = "OK";
 
 /* Privacy Policy link text */
-"PRIVACY_POLICY_LINK_TEXT" = "Политика конфиденциальности";
+"PRIVACY_POLICY_LINK_TEXT" = "Политика приватности";
 
 /* External link to the privacy policy page. Please update this with the correct language specific link (if available) e.g. https://psiphon.ca/fr/privacy.html for french. */
 "PRIVACY_POLICY_URL" = "https://psiphon.ca/ru/privacy.html";
