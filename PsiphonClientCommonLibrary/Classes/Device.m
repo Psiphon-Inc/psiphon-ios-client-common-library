@@ -99,18 +99,10 @@
     NSString* deviceName = [deviceNamesByCode objectForKey:code];
 
     if (!deviceName) {
-        // Not found on database. At least guess main device type from string contents:
-
-        if ([code rangeOfString:@"iPod"].location != NSNotFound) {
-            deviceName = @"iPod Touch";
-        }
-        else if([code rangeOfString:@"iPad"].location != NSNotFound) {
-            deviceName = @"iPad";
-        }
-        else if([code rangeOfString:@"iPhone"].location != NSNotFound){
-            deviceName = @"iPhone";
-        }
-        else {
+        if ([code length] > 0) {
+            // Fallback on the device code.
+            deviceName = code;
+        } else {
             deviceName = @"Unknown";
         }
     }
