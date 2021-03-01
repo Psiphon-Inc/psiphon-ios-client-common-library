@@ -57,6 +57,8 @@ typedef NS_ENUM(NSInteger, PriorityLevel) {
 @end
 
 @interface DiagnosticEntry : NSObject
++ (DiagnosticEntry*)msg:(NSString*)msg;
++ (DiagnosticEntry*)msg:(NSString*)msg andTimestamp:(NSDate*)timestamp;
 - (id)init:(NSString*)msg;
 - (id)init:(NSString*)msg andTimestamp:(NSDate*)timestamp;
 - (NSString*)getTimestampForDisplay;
@@ -86,6 +88,7 @@ sensitivity:(SensitivityLevel)sensitivity
 @interface PsiphonData : NSObject
 + (instancetype)sharedInstance;
 + (NSString*)dateToISO8601:(NSDate*)date;
++ (NSDate*)iso8601ToDate:(NSString*)iso8601Date;
 + (NSString*)timestampForDisplay:(NSDate*)timestamp;
 
 - (void)addDiagnosticEntry:(DiagnosticEntry*)entry;

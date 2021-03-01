@@ -46,6 +46,14 @@
 @synthesize message = _message;
 @synthesize data = _data;
 
++ (DiagnosticEntry*)msg:(NSString*)msg {
+    return [[DiagnosticEntry alloc] init:msg];
+}
+
++ (DiagnosticEntry*)msg:(NSString*)msg andTimestamp:(NSDate*)timestamp {
+    return [[DiagnosticEntry alloc] init:msg andTimestamp:timestamp];
+}
+
 - (id)init:(NSString*)msg nameValuePairs:(NSArray*)nameValuePairs {
     self = [super init];
     
@@ -163,14 +171,10 @@ sensitivity:(SensitivityLevel)sensitivity
 }
 
 
-
-/**
- This method is thread-safe.
- // ISO8601DateFormatter method only available in iOS 10.0+
- // Follows format specified in `getISO8601String` https://bitbucket.org/psiphon/psiphon-circumvention-system/src/default/Android/app/src/main/java/com/psiphon3/psiphonlibrary/Utils.java#Utils.java-614
- // http://stackoverflow.com/questions/28016578/swift-how-to-create-a-date-time-stamp-and-format-as-iso-8601-rfc-3339-utc-tim
- */
-+ (NSString*)dateToISO8601:(NSDate*)date {
+/// The ISO8601DateFormatter class is only available in iOS 10.0+.
+/// Follows format specified in `getISO8601String` https://github.com/Psiphon-Inc/psiphon-android/blob/d8575fc48aaf2e32f137ae25fa0705933234649b/app/src/main/java/com/psiphon3/psiphonlibrary/Utils.java#L631
+/// http://stackoverflow.com/questions/28016578/swift-how-to-create-a-date-time-stamp-and-format-as-iso-8601-rfc-3339-utc-tim
++ (NSDateFormatter*)iso8601DateFormatter {
     static dispatch_once_t once;
     static NSDateFormatter *formatter;
     dispatch_once(&once, ^{
@@ -180,10 +184,17 @@ sensitivity:(SensitivityLevel)sensitivity
         formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
         formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSX";
     });
-    
-    return [formatter stringFromDate:date];
+    return formatter;
 }
 
+
++ (NSString*)dateToISO8601:(NSDate*)date {
+    return [[PsiphonData iso8601DateFormatter] stringFromDate:date];
+}
+
++ (NSDate*)iso8601ToDate:(NSString*)iso8601Date {
+    return [[PsiphonData iso8601DateFormatter] dateFromString:iso8601Date];
+}
 
 /**
  Convert timestamp to shortened human readible format for display.
