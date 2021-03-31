@@ -67,7 +67,7 @@
     // adding a new server region.
     // $ ghci
     // > let f x = case x of; [] -> return (); (x:xs) -> (putStrLn $ "[[Region alloc] initWithParams:@\"" <> map Data.Char.toUpper x <> "\" andResourceId:@\"flag-" <> map Data.Char.toLower x <> "\" exists:NO],") >> f xs;
-    // > f (Data.List.sort ["AR","AT","AU","BE","BG","BR","CA","CH","CL","CZ","DE","DK","ES","FI","FR","GB","HK","HU","IE","IN","IS","IT","JP","KE","KR","MX","NL","NO","PL","RO","RS","SE","SG","SK","TW","US","ZA"])
+    // > f (Data.List.sort ["AR","AT","AU","BE","BG","BR","CA","CH","CL","CZ","DE","DK","ES","FI","FR","GB","HU","IE","IN","IS","IT","JP","KE","KR","MX","NL","NO","PL","RO","RS","SE","SG","SK","TW","US","ZA"])
     regions = [[NSMutableArray alloc] initWithArray:
                @[[[Region alloc] initWithParams:kPsiphonRegionBestPerformance andResourceId:@"flag-best-performance" exists:YES],
                  [[Region alloc] initWithParams:@"AR" andResourceId:@"flag-ar" exists:NO],
@@ -86,7 +86,6 @@
                  [[Region alloc] initWithParams:@"FI" andResourceId:@"flag-fi" exists:NO],
                  [[Region alloc] initWithParams:@"FR" andResourceId:@"flag-fr" exists:NO],
                  [[Region alloc] initWithParams:@"GB" andResourceId:@"flag-gb" exists:NO],
-                 [[Region alloc] initWithParams:@"HK" andResourceId:@"flag-hk" exists:NO],
                  [[Region alloc] initWithParams:@"HU" andResourceId:@"flag-hu" exists:NO],
                  [[Region alloc] initWithParams:@"IE" andResourceId:@"flag-ie" exists:NO],
                  [[Region alloc] initWithParams:@"IN" andResourceId:@"flag-in" exists:NO],
@@ -118,7 +117,7 @@
     // adding a new server region.
     // $ ghci
     // > let f x = case x of; [] -> return (); ((code,name):xs) -> (putStrLn $ "@\"" <> map Data.Char.toUpper code <> "\": NSLocalizedStringWithDefaultValue(@\"SERVER_REGION_" <> map Data.Char.toUpper code <> "\", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @\"" <> name <> "\", @\"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country.\"),") >> f xs;
-    // > f (Data.List.sort [("AE","United Arab Emirates"),("AR","Argentina"),("AT","Austria"),("AU","Australia"),("BE","Belgium"),("BG","Bulgaria"),("BR","Brazil"),("CA","Canada"),("CH","Switzerland"),("CL","Chile"),("CZ","Czech Republic"),("DE","Germany"),("DK","Denmark"),("ES","Spain"),("FI","Finland"),("FR","France"),("GB","United Kingdom"),("HK","Hong Kong"),("HU","Hungary"),("IE","Ireland"),("IN","India"),("IS","Iceland"),("IT","Italy"),("JP","Japan"),("KE","Kenya"),("KR","Korea"),("MX","Mexico"),("NL","Netherlands"),("NO","Norway"),("PL","Poland"),("RO","Romania"),("RS","Serbia"),("SE","Sweden"),("SG","Singapore"),("SK","Slovakia"),("TW","Taiwan"),("US","United States"),("ZA","South Africa")])
+    // > f (Data.List.sort [("AE","United Arab Emirates"),("AR","Argentina"),("AT","Austria"),("AU","Australia"),("BE","Belgium"),("BG","Bulgaria"),("BR","Brazil"),("CA","Canada"),("CH","Switzerland"),("CL","Chile"),("CZ","Czech Republic"),("DE","Germany"),("DK","Denmark"),("ES","Spain"),("FI","Finland"),("FR","France"),("GB","United Kingdom"),("HU","Hungary"),("IE","Ireland"),("IN","India"),("IS","Iceland"),("IT","Italy"),("JP","Japan"),("KE","Kenya"),("KR","Korea"),("MX","Mexico"),("NL","Netherlands"),("NO","Norway"),("PL","Poland"),("RO","Romania"),("RS","Serbia"),("SE","Sweden"),("SG","Singapore"),("SK","Slovakia"),("TW","Taiwan"),("US","United States"),("ZA","South Africa")])
     return @{
              kPsiphonRegionBestPerformance: NSLocalizedStringWithDefaultValue(@"SERVER_REGION_BEST_PERFORMANCE", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Best performance",@"The name of the pseudo-region a user can select if they want to use a Psiphon server with the best performance -- speed, latency, etc., rather than specify a particular region/country. This appears in a combo box and should be kept short."),
              @"AE": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_AE", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"United Arab Emirates", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
@@ -138,7 +137,6 @@
              @"FI": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_FI", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Finland", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
              @"FR": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_FR", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"France", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
              @"GB": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_GB", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"United Kingdom", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
-             @"HK": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_HK", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Hong Kong", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
              @"HU": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_HU", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Hungary", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
              @"IE": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_IE", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"Ireland", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
              @"IN": NSLocalizedStringWithDefaultValue(@"SERVER_REGION_IN", nil, [PsiphonClientCommonLibraryHelpers commonLibraryBundle], @"India", @"Name of a country/region where Psiphon servers are located. The user can choose to only use servers in that country."),
