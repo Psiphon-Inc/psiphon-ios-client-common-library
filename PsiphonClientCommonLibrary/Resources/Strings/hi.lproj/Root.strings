@@ -1,8 +1,8 @@
 /* Settings item text. Leads to the user being able to choose which country/region they want to use a Psiphon Server in. Should be kept short. */
 "CHANGE_REGION" = "क्षेत्र बदलें";
 
-/*[UNTRANSLATED] Item in a list of languages. Sets the application UI language to the one used by the system. */
-"DEFAULT_LANGUAGE" = "Default language";
+/* Item in a list of languages. Sets the application UI language to the one used by the system. */
+"DEFAULT_LANGUAGE" = "डिफ़ॉल्ट भाषा";
 
 /* Settings item to change the application UI language. */
 "SETTINGS_LANGUAGE" = "भाषा";
@@ -25,8 +25,8 @@
 /* Settings item text. Leads to a web page with the Psiphon privacy policy. */
 "SETTINGS_PRIVACY_POLICY" = "गोपनीयता नीति";
 
-/*[UNTRANSLATED] Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
-"SETTINGS_TERMS_OF_USE" = "Terms of Use";
+/* Settings item text. Leads to web page with Psiphon's end user license agreement. Should be kept short. */
+"SETTINGS_TERMS_OF_USE" = "उपयोग की शर्तें";
 
 /* Settings item text. Leads to info about Psiphon Inc. */
 "SETTINGS_ABOUT" = "बारे में";
@@ -34,14 +34,14 @@
 /*[UNTRANSLATED] Explanatory text for the "Select server region" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_BEST_PERFORMANCE_FOOTER" = "Changing your region to “Best performance” increases your chances of getting connected.";
 
-/*[UNTRANSLATED] Title for screen that allows user to select their desired server region. */
-"SELECT_SERVER_REGION" = "Select server region";
+/* Title for screen that allows user to select their desired server region. */
+"SELECT_SERVER_REGION" = "सर्वर क्षेत्र चुने";
 
 /*[UNTRANSLATED] Explanatory text for the "Disable Timeouts" setting on the "My connection is bad, help!" settings page. */
 "CONNECTION_HELP_DISABLE_TIMEOUTS_FOOTER" = "Disabling timeouts may help you stay connected on slower networks.";
 
-/*[UNTRANSLATED] Settings item text, under 'Psiphon settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
-"DISABLE_TIMEOUTS" = "Disable timeouts";
+/* Settings item text, under 'Psiphon settings'. Disabling timeouts in the Psiphon tunnel can help in really bad network conditions. Text should be kept short. */
+"DISABLE_TIMEOUTS" = "टाइमआउट अक्षम करें";
 
 /*[UNTRANSLATED] Explanatory text for the "Reconnect to the Psiphon server" command on the "My connection is bad, help!" settings page. DO NOT translate the word 'Psiphon'. */
 "CONNECTION_HELP_FORCE_RECONNECT_FOOTER" = "Reconnecting to the Psiphon server may help if your current connection is slow or non-responsive.";
@@ -79,26 +79,26 @@
 /*[UNTRANSLATED] Settings item text. The host name or address for the upstream proxy. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_HOST" = "Host address";
 
-/*[UNTRANSLATED] Settings item text. The network port number for the upstream proxy. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_PORT" = "Port";
+/* Settings item text. The network port number for the upstream proxy. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_PORT" = "पोर्ट";
 
-/*[UNTRANSLATED] Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "Use proxy authentication";
+/* Settings item text. Some upstream proxies will require authentication (like username and password) to use. This enables that authentication. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_USE_AUTH" = "प्रॉक्सी प्रमाणीकरण का इस्तेमाल करें";
 
-/*[UNTRANSLATED] Settings item text for upstream proxy authentication username. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "Proxy username";
+/* Settings item text for upstream proxy authentication username. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME" = "प्रॉक्सी उपयोगकर्ता नाम";
 
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication username. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_USERNAME_PLACEHOLDER" = "username";
 
-/*[UNTRANSLATED] Settings item text for upstream proxy authentication password. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "Proxy password";
+/* Settings item text for upstream proxy authentication password. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD" = "प्रॉक्सी पासवर्ड";
 
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication password. Text should be kept short. */
 "PSIPHON_SETTINGS_UPSTREAM_AUTH_PASSWORD_PLACEHOLDER" = "password";
 
-/*[UNTRANSLATED] Settings item text for upstream proxy authentication domain. Text should be kept short. */
-"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "Proxy domain";
+/* Settings item text for upstream proxy authentication domain. Text should be kept short. */
+"PSIPHON_SETTINGS_UPSTREAM_AUTH_DOMAIN" = "प्रॉक्सी डोमेन";
 
 /*[UNTRANSLATED] Placeholder text for the upstream proxy authentication domain. This should convey to the user that a domain name should be used in this field. Text should be kept short. */
 "EXAMPLE_HOSTNAME" = "example.com";
