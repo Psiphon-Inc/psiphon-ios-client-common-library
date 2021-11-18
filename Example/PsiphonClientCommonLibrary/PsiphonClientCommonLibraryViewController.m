@@ -127,13 +127,13 @@
 	return YES; // always on in example
 }
 
-- (void)userPressedURL:(NSURL *)URL {
+- (void)userPressedURL:(NSURL *)URL viewController:(FeedbackViewController *)viewController {
 	dispatch_async(dispatch_get_main_queue(), ^{
 		[[UIApplication sharedApplication] openURL:URL];
 	});
 }
 
-- (void) userSubmittedFeedback:(NSUInteger)selectedThumbIndex comments:(NSString *)comments email:(NSString *)email uploadDiagnostics:(BOOL)uploadDiagnostics {
+- (void)userSubmittedFeedback:(NSUInteger)selectedThumbIndex comments:(NSString *)comments email:(NSString *)email uploadDiagnostics:(BOOL)uploadDiagnostics viewController:(FeedbackViewController *)viewController {
 	// no action needed for example
 }
 
