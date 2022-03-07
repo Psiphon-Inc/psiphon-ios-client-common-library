@@ -70,6 +70,8 @@
                 [jsonObject setObject:nameValuePairs[i*2+1] forKey:nameValuePairs[i*2]];
             }
             _data = jsonObject;
+        } else {
+            _data = nil;
         }
     }
     
